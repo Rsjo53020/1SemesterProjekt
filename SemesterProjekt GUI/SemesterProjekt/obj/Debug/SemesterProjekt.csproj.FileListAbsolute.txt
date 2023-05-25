@@ -1,0 +1,48 @@
+C:\Users\Alex\Desktop\SemesterProjekt\SemesterProjekt\obj\Debug\SemesterProjekt.csproj.AssemblyReference.cache
+C:\Users\Alex\Desktop\SemesterProjekt\SemesterProjekt\obj\Debug\SemesterProjekt.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alex\Desktop\SemesterProjekt\SemesterProjekt\obj\Debug\SemesterProjekt.GUIMain.resources
+C:\Users\Alex\Desktop\SemesterProjekt\SemesterProjekt\obj\Debug\SemesterProjekt.csproj.GenerateResource.cache
+C:\Users\Alex\Desktop\SemesterProjekt\SemesterProjekt\obj\Debug\SemesterProjekt.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Desktop\SemesterProjekt\SemesterProjekt\bin\Debug\SemesterProjekt.exe.config
+C:\Users\Alex\Desktop\SemesterProjekt\SemesterProjekt\bin\Debug\SemesterProjekt.exe
+C:\Users\Alex\Desktop\SemesterProjekt\SemesterProjekt\bin\Debug\SemesterProjekt.pdb
+C:\Users\Alex\Desktop\SemesterProjekt\SemesterProjekt\obj\Debug\SemesterProjekt.exe
+C:\Users\Alex\Desktop\SemesterProjekt\SemesterProjekt\obj\Debug\SemesterProjekt.pdb
+C:\Users\Alex\Desktop\SemesterProjekt\SemesterProjekt\obj\Debug\SemesterProjekt.Properties.Resources.resources
+C:\Users\Alex\Desktop\SemesterProjekt\SemesterProjekt\obj\Debug\SemesterProjekt.GUIOpretProdukt.resources
+C:\Users\Alex\Desktop\SemesterProjekt GUI\SemesterProjekt\bin\Debug\SemesterProjekt.exe.config
+C:\Users\Alex\Desktop\SemesterProjekt GUI\SemesterProjekt\bin\Debug\SemesterProjekt.exe
+C:\Users\Alex\Desktop\SemesterProjekt GUI\SemesterProjekt\bin\Debug\SemesterProjekt.pdb
+C:\Users\Alex\Desktop\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.csproj.AssemblyReference.cache
+C:\Users\Alex\Desktop\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alex\Desktop\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.GUIOpretProdukt.resources
+C:\Users\Alex\Desktop\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.GUIMain.resources
+C:\Users\Alex\Desktop\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.Properties.Resources.resources
+C:\Users\Alex\Desktop\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.csproj.GenerateResource.cache
+C:\Users\Alex\Desktop\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Desktop\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.exe
+C:\Users\Alex\Desktop\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.pdb
+D:\SemesterProjekt GUI\SemesterProjekt\bin\Debug\SemesterProjekt.exe.config
+D:\SemesterProjekt GUI\SemesterProjekt\bin\Debug\SemesterProjekt.exe
+D:\SemesterProjekt GUI\SemesterProjekt\bin\Debug\SemesterProjekt.pdb
+D:\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.csproj.AssemblyReference.cache
+D:\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.csproj.SuggestedBindingRedirects.cache
+D:\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.GUIOpretProdukt.resources
+D:\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.GUIMain.resources
+D:\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.Properties.Resources.resources
+D:\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.csproj.GenerateResource.cache
+D:\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.csproj.CoreCompileInputs.cache
+D:\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.exe
+D:\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.pdb
+C:\Users\Alexa\Desktop\SemesterProjekt GUI\SemesterProjekt\bin\Debug\SemesterProjekt.exe.config
+C:\Users\Alexa\Desktop\SemesterProjekt GUI\SemesterProjekt\bin\Debug\SemesterProjekt.exe
+C:\Users\Alexa\Desktop\SemesterProjekt GUI\SemesterProjekt\bin\Debug\SemesterProjekt.pdb
+C:\Users\Alexa\Desktop\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.csproj.AssemblyReference.cache
+C:\Users\Alexa\Desktop\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alexa\Desktop\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.GUIOpretProdukt.resources
+C:\Users\Alexa\Desktop\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.GUIMain.resources
+C:\Users\Alexa\Desktop\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.Properties.Resources.resources
+C:\Users\Alexa\Desktop\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.csproj.GenerateResource.cache
+C:\Users\Alexa\Desktop\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.csproj.CoreCompileInputs.cache
+C:\Users\Alexa\Desktop\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.exe
+C:\Users\Alexa\Desktop\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.pdb
