@@ -36,6 +36,7 @@
             this.TB_EMail = new System.Windows.Forms.TextBox();
             this.dataGridView1_SearchCustomer = new System.Windows.Forms.DataGridView();
             this.BTN_SearchCustomer = new System.Windows.Forms.Button();
+            this.BTN_DeleteCustomer = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1_SearchCustomer)).BeginInit();
             this.SuspendLayout();
@@ -71,6 +72,7 @@
             this.label1.Size = new System.Drawing.Size(205, 31);
             this.label1.TabIndex = 18;
             this.label1.Text = "Kunde Tlf + 45 :";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -82,6 +84,7 @@
             this.label2.Size = new System.Drawing.Size(190, 31);
             this.label2.TabIndex = 19;
             this.label2.Text = "Kunde E-Mail :";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // TB_Tlf
             // 
@@ -89,6 +92,7 @@
             this.TB_Tlf.Name = "TB_Tlf";
             this.TB_Tlf.Size = new System.Drawing.Size(325, 22);
             this.TB_Tlf.TabIndex = 20;
+            this.TB_Tlf.TextChanged += new System.EventHandler(this.TB_Tlf_TextChanged);
             // 
             // TB_EMail
             // 
@@ -119,12 +123,24 @@
             this.BTN_SearchCustomer.Text = "Søg Kunde";
             this.BTN_SearchCustomer.UseVisualStyleBackColor = false;
             // 
+            // BTN_DeleteCustomer
+            // 
+            this.BTN_DeleteCustomer.BackColor = System.Drawing.Color.White;
+            this.BTN_DeleteCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_DeleteCustomer.Location = new System.Drawing.Point(615, 444);
+            this.BTN_DeleteCustomer.Name = "BTN_DeleteCustomer";
+            this.BTN_DeleteCustomer.Size = new System.Drawing.Size(173, 63);
+            this.BTN_DeleteCustomer.TabIndex = 24;
+            this.BTN_DeleteCustomer.Text = "Slet Kunde";
+            this.BTN_DeleteCustomer.UseVisualStyleBackColor = false;
+            // 
             // SøgKunde
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 518);
+            this.Controls.Add(this.BTN_DeleteCustomer);
             this.Controls.Add(this.BTN_SearchCustomer);
             this.Controls.Add(this.dataGridView1_SearchCustomer);
             this.Controls.Add(this.TB_EMail);
@@ -134,6 +150,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "SøgKunde";
             this.Text = "SøgKunde";
+            this.Load += new System.EventHandler(this.SøgKunde_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1_SearchCustomer)).EndInit();
@@ -152,5 +169,6 @@
         private System.Windows.Forms.TextBox TB_EMail;
         private System.Windows.Forms.DataGridView dataGridView1_SearchCustomer;
         private System.Windows.Forms.Button BTN_SearchCustomer;
+        private System.Windows.Forms.Button BTN_DeleteCustomer;
     }
 }

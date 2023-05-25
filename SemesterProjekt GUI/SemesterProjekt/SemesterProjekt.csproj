@@ -66,6 +66,12 @@
     <Compile Include="GUI\GUIMain.Designer.cs">
       <DependentUpon>GUIMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\OpdaterKunde.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\OpdaterKunde.Designer.cs">
+      <DependentUpon>OpdaterKunde.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\OpretKunde.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUIMain.resx">
       <DependentUpon>GUIMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\OpdaterKunde.resx">
+      <DependentUpon>OpdaterKunde.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\OpretKunde.resx">
       <DependentUpon>OpretKunde.cs</DependentUpon>
