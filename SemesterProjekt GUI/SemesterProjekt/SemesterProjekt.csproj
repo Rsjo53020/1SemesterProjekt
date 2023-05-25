@@ -54,12 +54,6 @@
     <Compile Include="GUI\FundetOrdre.Designer.cs">
       <DependentUpon>FundetOrdre.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\GUIOpretProdukt.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\GUIOpretProdukt.Designer.cs">
-      <DependentUpon>GUIOpretProdukt.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\GUIMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +65,12 @@
     </Compile>
     <Compile Include="GUI\SøgOrdre.Designer.cs">
       <DependentUpon>SøgOrdre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\OpretProdukt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\OpretProdukt.Designer.cs">
+      <DependentUpon>OpretProdukt.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Database.cs" />
@@ -95,11 +95,11 @@
     <EmbeddedResource Include="GUI\FundetOrdre.resx">
       <DependentUpon>FundetOrdre.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\GUIOpretProdukt.resx">
-      <DependentUpon>GUIOpretProdukt.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUIMain.resx">
       <DependentUpon>GUIMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\OpretProdukt.resx">
+      <DependentUpon>OpretProdukt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

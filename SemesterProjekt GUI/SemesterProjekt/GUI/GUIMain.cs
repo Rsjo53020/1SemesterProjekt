@@ -85,7 +85,7 @@ namespace SemesterProjekt
         private void Btn_CreateProduct_Click(object sender, EventArgs e)
         {
             panelFormsLoader.Visible = true;
-            openFormsLoader(new GUIOpretProdukt());
+            openFormsLoader(new OpretProdukt());
         }
 
         private void GUIMain_Load(object sender, EventArgs e)

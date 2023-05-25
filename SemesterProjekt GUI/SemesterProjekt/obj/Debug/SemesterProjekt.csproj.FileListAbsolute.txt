@@ -46,3 +46,14 @@ C:\Users\Alexa\Desktop\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterPro
 C:\Users\Alexa\Desktop\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.csproj.CoreCompileInputs.cache
 C:\Users\Alexa\Desktop\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.exe
 C:\Users\Alexa\Desktop\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.pdb
+C:\Users\ronni\source\repos\Rsjo53020\1semesterProjekt\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.csproj.AssemblyReference.cache
+C:\Users\ronni\source\repos\Rsjo53020\1semesterProjekt\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.csproj.SuggestedBindingRedirects.cache
+C:\Users\ronni\source\repos\Rsjo53020\1semesterProjekt\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.GUI.FundetOrdre.resources
+C:\Users\ronni\source\repos\Rsjo53020\1semesterProjekt\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.OpretProdukt.resources
+C:\Users\ronni\source\repos\Rsjo53020\1semesterProjekt\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.GUIMain.resources
+C:\Users\ronni\source\repos\Rsjo53020\1semesterProjekt\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.GUI.VisProdukt.resources
+C:\Users\ronni\source\repos\Rsjo53020\1semesterProjekt\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.Properties.Resources.resources
+C:\Users\ronni\source\repos\Rsjo53020\1semesterProjekt\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.csproj.GenerateResource.cache
+C:\Users\ronni\source\repos\Rsjo53020\1semesterProjekt\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.csproj.CoreCompileInputs.cache
+C:\Users\ronni\source\repos\Rsjo53020\1semesterProjekt\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.exe
+C:\Users\ronni\source\repos\Rsjo53020\1semesterProjekt\SemesterProjekt GUI\SemesterProjekt\obj\Debug\SemesterProjekt.pdb
