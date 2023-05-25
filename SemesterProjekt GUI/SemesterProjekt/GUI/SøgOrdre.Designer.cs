@@ -125,6 +125,7 @@
             // 
             // BTN_Delete
             // 
+            this.BTN_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.BTN_Delete.Location = new System.Drawing.Point(847, 140);
             this.BTN_Delete.Name = "BTN_Delete";
             this.BTN_Delete.Size = new System.Drawing.Size(324, 91);

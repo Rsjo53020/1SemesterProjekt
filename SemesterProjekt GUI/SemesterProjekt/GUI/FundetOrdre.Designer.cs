@@ -207,6 +207,7 @@
             // 
             // BTN_PrintToTxt
             // 
+            this.BTN_PrintToTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.BTN_PrintToTxt.Location = new System.Drawing.Point(371, 564);
             this.BTN_PrintToTxt.Name = "BTN_PrintToTxt";
             this.BTN_PrintToTxt.Size = new System.Drawing.Size(324, 91);
@@ -216,6 +217,7 @@
             // 
             // BTN_UpdateOrder
             // 
+            this.BTN_UpdateOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.BTN_UpdateOrder.Location = new System.Drawing.Point(25, 564);
             this.BTN_UpdateOrder.Name = "BTN_UpdateOrder";
             this.BTN_UpdateOrder.Size = new System.Drawing.Size(324, 91);
