@@ -361,3 +361,4 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/SemesterProjekt GUI/SemesterProjekt/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
