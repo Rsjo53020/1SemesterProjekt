@@ -84,6 +84,12 @@
     <Compile Include="GUI\SøgOrdre.Designer.cs">
       <DependentUpon>SøgOrdre.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\VisLager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\VisLager.Designer.cs">
+      <DependentUpon>VisLager.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Database.cs" />
     <Compile Include="Models\IntelligentRådgivning.cs" />
@@ -121,6 +127,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\SøgOrdre.resx">
       <DependentUpon>SøgOrdre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\VisLager.resx">
+      <DependentUpon>VisLager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
