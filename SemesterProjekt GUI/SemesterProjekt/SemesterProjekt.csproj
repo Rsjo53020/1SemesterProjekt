@@ -110,6 +110,9 @@
     <EmbeddedResource Include="GUI\OpretKunde.resx">
       <DependentUpon>OpretKunde.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SøgOrdre.resx">
+      <DependentUpon>SøgOrdre.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
