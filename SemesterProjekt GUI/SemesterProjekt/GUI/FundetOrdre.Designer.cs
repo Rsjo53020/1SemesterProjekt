@@ -44,6 +44,7 @@
             this.LB_OrderDate = new System.Windows.Forms.Label();
             this.TB_OrderID = new System.Windows.Forms.TextBox();
             this.LB_OrderID = new System.Windows.Forms.Label();
+            this.BTN_PrintToTxt = new System.Windows.Forms.Button();
             this.PANEL_FindOrder.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -203,12 +204,22 @@
             this.LB_OrderID.TabIndex = 16;
             this.LB_OrderID.Text = "Ordre ID:";
             // 
+            // BTN_PrintToTxt
+            // 
+            this.BTN_PrintToTxt.Location = new System.Drawing.Point(334, 564);
+            this.BTN_PrintToTxt.Name = "BTN_PrintToTxt";
+            this.BTN_PrintToTxt.Size = new System.Drawing.Size(324, 91);
+            this.BTN_PrintToTxt.TabIndex = 31;
+            this.BTN_PrintToTxt.Text = "Udskriv til .txt fil";
+            this.BTN_PrintToTxt.UseVisualStyleBackColor = true;
+            // 
             // FundetOrdre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(1426, 695);
+            this.Controls.Add(this.BTN_PrintToTxt);
             this.Controls.Add(this.PANEL_FindOrder);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.TB_LineID);
@@ -251,5 +262,6 @@
         private System.Windows.Forms.Label LB_OrderDate;
         private System.Windows.Forms.TextBox TB_OrderID;
         private System.Windows.Forms.Label LB_OrderID;
+        private System.Windows.Forms.Button BTN_PrintToTxt;
     }
 }

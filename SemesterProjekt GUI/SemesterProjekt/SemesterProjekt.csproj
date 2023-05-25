@@ -54,9 +54,7 @@
     <Compile Include="GUI\FundetOrdre.Designer.cs">
       <DependentUpon>FundetOrdre.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\GUIOpretProdukt.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="GUI\GUIOpretProdukt.cs" />
     <Compile Include="GUI\GUIOpretProdukt.Designer.cs">
       <DependentUpon>GUIOpretProdukt.cs</DependentUpon>
     </Compile>
