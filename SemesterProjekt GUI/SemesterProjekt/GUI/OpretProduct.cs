@@ -16,5 +16,6 @@ namespace SemesterProjekt.GUI
         {
             InitializeComponent();
         }
+
     }
 }
