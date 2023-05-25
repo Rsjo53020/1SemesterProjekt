@@ -72,6 +72,12 @@
     <Compile Include="GUI\OpretKunde.Designer.cs">
       <DependentUpon>OpretKunde.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\OpretProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\OpretProduct.Designer.cs">
+      <DependentUpon>OpretProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\SøgOrdre.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\OpretKunde.resx">
       <DependentUpon>OpretKunde.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\OpretProduct.resx">
+      <DependentUpon>OpretProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\SøgOrdre.resx">
       <DependentUpon>SøgOrdre.cs</DependentUpon>
