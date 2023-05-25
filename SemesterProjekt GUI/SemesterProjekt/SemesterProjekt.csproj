@@ -48,15 +48,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\BGFStartside.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\BGFStartside.Designer.cs">
+      <DependentUpon>BGFStartside.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\FundetOrdre.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\FundetOrdre.Designer.cs">
       <DependentUpon>FundetOrdre.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\GUIOpretProdukt.cs" />
-    <Compile Include="GUI\GUIOpretProdukt.Designer.cs">
-      <DependentUpon>GUIOpretProdukt.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\GUIMain.cs">
       <SubType>Form</SubType>
@@ -96,11 +98,11 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <EmbeddedResource Include="GUI\BGFStartside.resx">
+      <DependentUpon>BGFStartside.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\FundetOrdre.resx">
       <DependentUpon>FundetOrdre.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\GUIOpretProdukt.resx">
-      <DependentUpon>GUIOpretProdukt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUIMain.resx">
       <DependentUpon>GUIMain.cs</DependentUpon>
