@@ -45,6 +45,7 @@
             this.TB_OrderID = new System.Windows.Forms.TextBox();
             this.LB_OrderID = new System.Windows.Forms.Label();
             this.BTN_PrintToTxt = new System.Windows.Forms.Button();
+            this.BTN_UpdateOrder = new System.Windows.Forms.Button();
             this.PANEL_FindOrder.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -206,12 +207,23 @@
             // 
             // BTN_PrintToTxt
             // 
-            this.BTN_PrintToTxt.Location = new System.Drawing.Point(334, 564);
+            this.BTN_PrintToTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.BTN_PrintToTxt.Location = new System.Drawing.Point(371, 564);
             this.BTN_PrintToTxt.Name = "BTN_PrintToTxt";
             this.BTN_PrintToTxt.Size = new System.Drawing.Size(324, 91);
             this.BTN_PrintToTxt.TabIndex = 31;
             this.BTN_PrintToTxt.Text = "Udskriv til .txt fil";
             this.BTN_PrintToTxt.UseVisualStyleBackColor = true;
+            // 
+            // BTN_UpdateOrder
+            // 
+            this.BTN_UpdateOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.BTN_UpdateOrder.Location = new System.Drawing.Point(25, 564);
+            this.BTN_UpdateOrder.Name = "BTN_UpdateOrder";
+            this.BTN_UpdateOrder.Size = new System.Drawing.Size(324, 91);
+            this.BTN_UpdateOrder.TabIndex = 32;
+            this.BTN_UpdateOrder.Text = "Opdater Ordre";
+            this.BTN_UpdateOrder.UseVisualStyleBackColor = true;
             // 
             // FundetOrdre
             // 
@@ -219,6 +231,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(1426, 695);
+            this.Controls.Add(this.BTN_UpdateOrder);
             this.Controls.Add(this.BTN_PrintToTxt);
             this.Controls.Add(this.PANEL_FindOrder);
             this.Controls.Add(this.dateTimePicker1);
@@ -263,5 +276,6 @@
         private System.Windows.Forms.TextBox TB_OrderID;
         private System.Windows.Forms.Label LB_OrderID;
         private System.Windows.Forms.Button BTN_PrintToTxt;
+        private System.Windows.Forms.Button BTN_UpdateOrder;
     }
 }

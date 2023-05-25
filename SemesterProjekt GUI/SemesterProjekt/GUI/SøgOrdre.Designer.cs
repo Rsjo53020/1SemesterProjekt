@@ -36,6 +36,7 @@
             this.LB_OrderDateStart = new System.Windows.Forms.Label();
             this.LB_Orders = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.BTN_Delete = new System.Windows.Forms.Button();
             this.PANEL_FindOrder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -122,12 +123,23 @@
             this.dataGridView1.Size = new System.Drawing.Size(964, 391);
             this.dataGridView1.TabIndex = 37;
             // 
+            // BTN_Delete
+            // 
+            this.BTN_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.BTN_Delete.Location = new System.Drawing.Point(847, 140);
+            this.BTN_Delete.Name = "BTN_Delete";
+            this.BTN_Delete.Size = new System.Drawing.Size(324, 91);
+            this.BTN_Delete.TabIndex = 38;
+            this.BTN_Delete.Text = "Slet Ordre";
+            this.BTN_Delete.UseVisualStyleBackColor = true;
+            // 
             // SøgOrdre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(1259, 674);
+            this.Controls.Add(this.BTN_Delete);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.LB_Orders);
             this.Controls.Add(this.dateTimePicker2);
@@ -155,5 +167,6 @@
         private System.Windows.Forms.Label LB_OrderDateStart;
         private System.Windows.Forms.Label LB_Orders;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button BTN_Delete;
     }
 }
