@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\FundetOrdre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FundetOrdre.Designer.cs">
+      <DependentUpon>FundetOrdre.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\GUIOpretProdukt.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <EmbeddedResource Include="GUI\FundetOrdre.resx">
+      <DependentUpon>FundetOrdre.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUIOpretProdukt.resx">
       <DependentUpon>GUIOpretProdukt.cs</DependentUpon>
     </EmbeddedResource>
