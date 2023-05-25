@@ -101,11 +101,11 @@
             // 
             this.dataGridView1_SearchCustomer.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.dataGridView1_SearchCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1_SearchCustomer.Location = new System.Drawing.Point(12, 199);
+            this.dataGridView1_SearchCustomer.Location = new System.Drawing.Point(12, 197);
             this.dataGridView1_SearchCustomer.Name = "dataGridView1_SearchCustomer";
             this.dataGridView1_SearchCustomer.RowHeadersWidth = 51;
             this.dataGridView1_SearchCustomer.RowTemplate.Height = 24;
-            this.dataGridView1_SearchCustomer.Size = new System.Drawing.Size(776, 239);
+            this.dataGridView1_SearchCustomer.Size = new System.Drawing.Size(776, 241);
             this.dataGridView1_SearchCustomer.TabIndex = 22;
             // 
             // BTN_SearchCustomer
