@@ -66,6 +66,12 @@
     <Compile Include="GUI\GUIMain.Designer.cs">
       <DependentUpon>GUIMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\SøgOrdre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\SøgOrdre.Designer.cs">
+      <DependentUpon>SøgOrdre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Database.cs" />
     <Compile Include="Models\IntelligentRådgivning.cs" />
