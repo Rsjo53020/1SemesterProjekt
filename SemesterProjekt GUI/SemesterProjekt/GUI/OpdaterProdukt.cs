@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace SemesterProjekt.GUI
 {
-    public partial class VisProdukt : Form
+    public partial class OpdaterProdukt : Form
     {
-        public VisProdukt()
+        public OpdaterProdukt()
         {
             InitializeComponent();
-        }
-
-
-        private void PANEL_FindOrder_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
