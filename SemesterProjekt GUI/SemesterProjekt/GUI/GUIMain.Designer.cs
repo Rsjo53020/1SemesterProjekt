@@ -33,7 +33,6 @@
             this.Btn_ViewStock = new System.Windows.Forms.Button();
             this.Btn_Stock = new System.Windows.Forms.Button();
             this.OrdersSubMenuPanel = new System.Windows.Forms.Panel();
-            this.Btn_DeleteOrder = new System.Windows.Forms.Button();
             this.Btn_SearchOrder = new System.Windows.Forms.Button();
             this.Btn_Ordre = new System.Windows.Forms.Button();
             this.CustomerSubMenuPanel = new System.Windows.Forms.Panel();
@@ -49,7 +48,7 @@
             this.Btn_CreateProduct = new System.Windows.Forms.Button();
             this.Btn_Produkt = new System.Windows.Forms.Button();
             this.PanelLogo = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.BTN_SynsPunkt = new System.Windows.Forms.Label();
             this.panelFormsLoader = new System.Windows.Forms.Panel();
             this.SideMenuPanel.SuspendLayout();
             this.StockSubMenuPanel.SuspendLayout();
@@ -74,9 +73,9 @@
             this.SideMenuPanel.Controls.Add(this.PanelLogo);
             this.SideMenuPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.SideMenuPanel.Location = new System.Drawing.Point(0, 0);
-            this.SideMenuPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.SideMenuPanel.Margin = new System.Windows.Forms.Padding(4);
             this.SideMenuPanel.Name = "SideMenuPanel";
-            this.SideMenuPanel.Size = new System.Drawing.Size(400, 851);
+            this.SideMenuPanel.Size = new System.Drawing.Size(356, 681);
             this.SideMenuPanel.TabIndex = 0;
             this.SideMenuPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.SideMenuPanel_Paint);
             // 
@@ -85,10 +84,10 @@
             this.StockSubMenuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
             this.StockSubMenuPanel.Controls.Add(this.Btn_ViewStock);
             this.StockSubMenuPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.StockSubMenuPanel.Location = new System.Drawing.Point(0, 1063);
-            this.StockSubMenuPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.StockSubMenuPanel.Location = new System.Drawing.Point(0, 789);
+            this.StockSubMenuPanel.Margin = new System.Windows.Forms.Padding(4);
             this.StockSubMenuPanel.Name = "StockSubMenuPanel";
-            this.StockSubMenuPanel.Size = new System.Drawing.Size(379, 78);
+            this.StockSubMenuPanel.Size = new System.Drawing.Size(335, 62);
             this.StockSubMenuPanel.TabIndex = 8;
             // 
             // Btn_ViewStock
@@ -100,14 +99,15 @@
             this.Btn_ViewStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.Btn_ViewStock.ForeColor = System.Drawing.Color.Gainsboro;
             this.Btn_ViewStock.Location = new System.Drawing.Point(0, 0);
-            this.Btn_ViewStock.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_ViewStock.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_ViewStock.Name = "Btn_ViewStock";
-            this.Btn_ViewStock.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.Btn_ViewStock.Size = new System.Drawing.Size(379, 61);
+            this.Btn_ViewStock.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.Btn_ViewStock.Size = new System.Drawing.Size(335, 49);
             this.Btn_ViewStock.TabIndex = 0;
             this.Btn_ViewStock.Text = "Vis Lager";
             this.Btn_ViewStock.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Btn_ViewStock.UseVisualStyleBackColor = false;
+            this.Btn_ViewStock.Click += new System.EventHandler(this.Btn_ViewStock_Click);
             // 
             // Btn_Stock
             // 
@@ -116,11 +116,11 @@
             this.Btn_Stock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Stock.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.Btn_Stock.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Btn_Stock.Location = new System.Drawing.Point(0, 994);
-            this.Btn_Stock.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_Stock.Location = new System.Drawing.Point(0, 734);
+            this.Btn_Stock.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Stock.Name = "Btn_Stock";
-            this.Btn_Stock.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.Btn_Stock.Size = new System.Drawing.Size(379, 69);
+            this.Btn_Stock.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.Btn_Stock.Size = new System.Drawing.Size(335, 55);
             this.Btn_Stock.TabIndex = 7;
             this.Btn_Stock.Text = "Lager";
             this.Btn_Stock.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -130,32 +130,13 @@
             // OrdersSubMenuPanel
             // 
             this.OrdersSubMenuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.OrdersSubMenuPanel.Controls.Add(this.Btn_DeleteOrder);
             this.OrdersSubMenuPanel.Controls.Add(this.Btn_SearchOrder);
             this.OrdersSubMenuPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.OrdersSubMenuPanel.Location = new System.Drawing.Point(0, 863);
-            this.OrdersSubMenuPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.OrdersSubMenuPanel.Location = new System.Drawing.Point(0, 681);
+            this.OrdersSubMenuPanel.Margin = new System.Windows.Forms.Padding(4);
             this.OrdersSubMenuPanel.Name = "OrdersSubMenuPanel";
-            this.OrdersSubMenuPanel.Size = new System.Drawing.Size(379, 131);
+            this.OrdersSubMenuPanel.Size = new System.Drawing.Size(335, 53);
             this.OrdersSubMenuPanel.TabIndex = 6;
-            // 
-            // Btn_DeleteOrder
-            // 
-            this.Btn_DeleteOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.Btn_DeleteOrder.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Btn_DeleteOrder.FlatAppearance.BorderSize = 0;
-            this.Btn_DeleteOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_DeleteOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.Btn_DeleteOrder.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Btn_DeleteOrder.Location = new System.Drawing.Point(0, 61);
-            this.Btn_DeleteOrder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Btn_DeleteOrder.Name = "Btn_DeleteOrder";
-            this.Btn_DeleteOrder.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.Btn_DeleteOrder.Size = new System.Drawing.Size(379, 61);
-            this.Btn_DeleteOrder.TabIndex = 2;
-            this.Btn_DeleteOrder.Text = "Slet Ordre";
-            this.Btn_DeleteOrder.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_DeleteOrder.UseVisualStyleBackColor = false;
             // 
             // Btn_SearchOrder
             // 
@@ -166,14 +147,15 @@
             this.Btn_SearchOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.Btn_SearchOrder.ForeColor = System.Drawing.Color.Gainsboro;
             this.Btn_SearchOrder.Location = new System.Drawing.Point(0, 0);
-            this.Btn_SearchOrder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_SearchOrder.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_SearchOrder.Name = "Btn_SearchOrder";
-            this.Btn_SearchOrder.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.Btn_SearchOrder.Size = new System.Drawing.Size(379, 61);
+            this.Btn_SearchOrder.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.Btn_SearchOrder.Size = new System.Drawing.Size(335, 49);
             this.Btn_SearchOrder.TabIndex = 1;
             this.Btn_SearchOrder.Text = "Søg Ordre";
             this.Btn_SearchOrder.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Btn_SearchOrder.UseVisualStyleBackColor = false;
+            this.Btn_SearchOrder.Click += new System.EventHandler(this.Btn_SearchOrder_Click);
             // 
             // Btn_Ordre
             // 
@@ -182,11 +164,11 @@
             this.Btn_Ordre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Ordre.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.Btn_Ordre.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Btn_Ordre.Location = new System.Drawing.Point(0, 794);
-            this.Btn_Ordre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_Ordre.Location = new System.Drawing.Point(0, 626);
+            this.Btn_Ordre.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Ordre.Name = "Btn_Ordre";
-            this.Btn_Ordre.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.Btn_Ordre.Size = new System.Drawing.Size(379, 69);
+            this.Btn_Ordre.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.Btn_Ordre.Size = new System.Drawing.Size(335, 55);
             this.Btn_Ordre.TabIndex = 5;
             this.Btn_Ordre.Text = "Ordre";
             this.Btn_Ordre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -201,10 +183,10 @@
             this.CustomerSubMenuPanel.Controls.Add(this.Btn_ViewCustomer);
             this.CustomerSubMenuPanel.Controls.Add(this.Btn_CreateCustomer);
             this.CustomerSubMenuPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.CustomerSubMenuPanel.Location = new System.Drawing.Point(0, 525);
-            this.CustomerSubMenuPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.CustomerSubMenuPanel.Location = new System.Drawing.Point(0, 411);
+            this.CustomerSubMenuPanel.Margin = new System.Windows.Forms.Padding(4);
             this.CustomerSubMenuPanel.Name = "CustomerSubMenuPanel";
-            this.CustomerSubMenuPanel.Size = new System.Drawing.Size(379, 269);
+            this.CustomerSubMenuPanel.Size = new System.Drawing.Size(335, 215);
             this.CustomerSubMenuPanel.TabIndex = 4;
             // 
             // Btn_UpdateCustomerInfo
@@ -215,15 +197,16 @@
             this.Btn_UpdateCustomerInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_UpdateCustomerInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.Btn_UpdateCustomerInfo.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Btn_UpdateCustomerInfo.Location = new System.Drawing.Point(0, 183);
-            this.Btn_UpdateCustomerInfo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_UpdateCustomerInfo.Location = new System.Drawing.Point(0, 147);
+            this.Btn_UpdateCustomerInfo.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_UpdateCustomerInfo.Name = "Btn_UpdateCustomerInfo";
-            this.Btn_UpdateCustomerInfo.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.Btn_UpdateCustomerInfo.Size = new System.Drawing.Size(379, 75);
+            this.Btn_UpdateCustomerInfo.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.Btn_UpdateCustomerInfo.Size = new System.Drawing.Size(335, 60);
             this.Btn_UpdateCustomerInfo.TabIndex = 3;
             this.Btn_UpdateCustomerInfo.Text = "Opdater Oplysninger";
             this.Btn_UpdateCustomerInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Btn_UpdateCustomerInfo.UseVisualStyleBackColor = false;
+            this.Btn_UpdateCustomerInfo.Click += new System.EventHandler(this.Btn_UpdateCustomerInfo_Click);
             // 
             // button4
             // 
@@ -233,11 +216,11 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.button4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button4.Location = new System.Drawing.Point(0, 122);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button4.Location = new System.Drawing.Point(0, 98);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(379, 61);
+            this.button4.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.button4.Size = new System.Drawing.Size(335, 49);
             this.button4.TabIndex = 2;
             this.button4.Text = "Slet Kunde";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -251,15 +234,16 @@
             this.Btn_ViewCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_ViewCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.Btn_ViewCustomer.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Btn_ViewCustomer.Location = new System.Drawing.Point(0, 61);
-            this.Btn_ViewCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_ViewCustomer.Location = new System.Drawing.Point(0, 49);
+            this.Btn_ViewCustomer.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_ViewCustomer.Name = "Btn_ViewCustomer";
-            this.Btn_ViewCustomer.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.Btn_ViewCustomer.Size = new System.Drawing.Size(379, 61);
+            this.Btn_ViewCustomer.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.Btn_ViewCustomer.Size = new System.Drawing.Size(335, 49);
             this.Btn_ViewCustomer.TabIndex = 1;
             this.Btn_ViewCustomer.Text = "Søg Kunde";
             this.Btn_ViewCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Btn_ViewCustomer.UseVisualStyleBackColor = false;
+            this.Btn_ViewCustomer.Click += new System.EventHandler(this.Btn_ViewCustomer_Click);
             // 
             // Btn_CreateCustomer
             // 
@@ -270,14 +254,15 @@
             this.Btn_CreateCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.Btn_CreateCustomer.ForeColor = System.Drawing.Color.Gainsboro;
             this.Btn_CreateCustomer.Location = new System.Drawing.Point(0, 0);
-            this.Btn_CreateCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_CreateCustomer.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_CreateCustomer.Name = "Btn_CreateCustomer";
-            this.Btn_CreateCustomer.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.Btn_CreateCustomer.Size = new System.Drawing.Size(379, 61);
+            this.Btn_CreateCustomer.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.Btn_CreateCustomer.Size = new System.Drawing.Size(335, 49);
             this.Btn_CreateCustomer.TabIndex = 0;
             this.Btn_CreateCustomer.Text = "Opret Kunde";
             this.Btn_CreateCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Btn_CreateCustomer.UseVisualStyleBackColor = false;
+            this.Btn_CreateCustomer.Click += new System.EventHandler(this.Btn_CreateCustomer_Click);
             // 
             // Btn_Customer
             // 
@@ -286,11 +271,11 @@
             this.Btn_Customer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Customer.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.Btn_Customer.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Btn_Customer.Location = new System.Drawing.Point(0, 456);
-            this.Btn_Customer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_Customer.Location = new System.Drawing.Point(0, 356);
+            this.Btn_Customer.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Customer.Name = "Btn_Customer";
-            this.Btn_Customer.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.Btn_Customer.Size = new System.Drawing.Size(379, 69);
+            this.Btn_Customer.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.Btn_Customer.Size = new System.Drawing.Size(335, 55);
             this.Btn_Customer.TabIndex = 3;
             this.Btn_Customer.Text = "Kunde";
             this.Btn_Customer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -305,10 +290,10 @@
             this.ProductSubMenuPanel.Controls.Add(this.Btn_ViewProduct);
             this.ProductSubMenuPanel.Controls.Add(this.Btn_CreateProduct);
             this.ProductSubMenuPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ProductSubMenuPanel.Location = new System.Drawing.Point(0, 187);
-            this.ProductSubMenuPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ProductSubMenuPanel.Location = new System.Drawing.Point(0, 141);
+            this.ProductSubMenuPanel.Margin = new System.Windows.Forms.Padding(4);
             this.ProductSubMenuPanel.Name = "ProductSubMenuPanel";
-            this.ProductSubMenuPanel.Size = new System.Drawing.Size(379, 269);
+            this.ProductSubMenuPanel.Size = new System.Drawing.Size(335, 215);
             this.ProductSubMenuPanel.TabIndex = 2;
             // 
             // Btn_UpdateProduct
@@ -319,15 +304,16 @@
             this.Btn_UpdateProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_UpdateProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.Btn_UpdateProduct.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Btn_UpdateProduct.Location = new System.Drawing.Point(0, 183);
-            this.Btn_UpdateProduct.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_UpdateProduct.Location = new System.Drawing.Point(0, 147);
+            this.Btn_UpdateProduct.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_UpdateProduct.Name = "Btn_UpdateProduct";
-            this.Btn_UpdateProduct.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.Btn_UpdateProduct.Size = new System.Drawing.Size(379, 75);
+            this.Btn_UpdateProduct.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.Btn_UpdateProduct.Size = new System.Drawing.Size(335, 60);
             this.Btn_UpdateProduct.TabIndex = 3;
             this.Btn_UpdateProduct.Text = "Opdater Produkt";
             this.Btn_UpdateProduct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Btn_UpdateProduct.UseVisualStyleBackColor = false;
+            this.Btn_UpdateProduct.Click += new System.EventHandler(this.Btn_UpdateProduct_Click);
             // 
             // Btn_DeleteProduct
             // 
@@ -337,15 +323,16 @@
             this.Btn_DeleteProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_DeleteProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.Btn_DeleteProduct.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Btn_DeleteProduct.Location = new System.Drawing.Point(0, 122);
-            this.Btn_DeleteProduct.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_DeleteProduct.Location = new System.Drawing.Point(0, 98);
+            this.Btn_DeleteProduct.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_DeleteProduct.Name = "Btn_DeleteProduct";
-            this.Btn_DeleteProduct.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.Btn_DeleteProduct.Size = new System.Drawing.Size(379, 61);
+            this.Btn_DeleteProduct.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.Btn_DeleteProduct.Size = new System.Drawing.Size(335, 49);
             this.Btn_DeleteProduct.TabIndex = 2;
             this.Btn_DeleteProduct.Text = "Slet Produkt";
             this.Btn_DeleteProduct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Btn_DeleteProduct.UseVisualStyleBackColor = false;
+            this.Btn_DeleteProduct.Click += new System.EventHandler(this.Btn_DeleteProduct_Click);
             // 
             // Btn_ViewProduct
             // 
@@ -355,15 +342,16 @@
             this.Btn_ViewProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_ViewProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.Btn_ViewProduct.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Btn_ViewProduct.Location = new System.Drawing.Point(0, 61);
-            this.Btn_ViewProduct.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_ViewProduct.Location = new System.Drawing.Point(0, 49);
+            this.Btn_ViewProduct.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_ViewProduct.Name = "Btn_ViewProduct";
-            this.Btn_ViewProduct.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.Btn_ViewProduct.Size = new System.Drawing.Size(379, 61);
+            this.Btn_ViewProduct.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.Btn_ViewProduct.Size = new System.Drawing.Size(335, 49);
             this.Btn_ViewProduct.TabIndex = 1;
             this.Btn_ViewProduct.Text = "Vis Produkter";
             this.Btn_ViewProduct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Btn_ViewProduct.UseVisualStyleBackColor = false;
+            this.Btn_ViewProduct.Click += new System.EventHandler(this.Btn_ViewProduct_Click);
             // 
             // Btn_CreateProduct
             // 
@@ -374,10 +362,10 @@
             this.Btn_CreateProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.Btn_CreateProduct.ForeColor = System.Drawing.Color.Gainsboro;
             this.Btn_CreateProduct.Location = new System.Drawing.Point(0, 0);
-            this.Btn_CreateProduct.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_CreateProduct.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_CreateProduct.Name = "Btn_CreateProduct";
-            this.Btn_CreateProduct.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.Btn_CreateProduct.Size = new System.Drawing.Size(379, 61);
+            this.Btn_CreateProduct.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.Btn_CreateProduct.Size = new System.Drawing.Size(335, 49);
             this.Btn_CreateProduct.TabIndex = 0;
             this.Btn_CreateProduct.Text = "Opret Produkt";
             this.Btn_CreateProduct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -392,11 +380,11 @@
             this.Btn_Produkt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Produkt.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.Btn_Produkt.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Btn_Produkt.Location = new System.Drawing.Point(0, 118);
-            this.Btn_Produkt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_Produkt.Location = new System.Drawing.Point(0, 86);
+            this.Btn_Produkt.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Produkt.Name = "Btn_Produkt";
-            this.Btn_Produkt.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.Btn_Produkt.Size = new System.Drawing.Size(379, 69);
+            this.Btn_Produkt.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.Btn_Produkt.Size = new System.Drawing.Size(335, 55);
             this.Btn_Produkt.TabIndex = 1;
             this.Btn_Produkt.Text = "Produkt";
             this.Btn_Produkt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -406,51 +394,49 @@
             // PanelLogo
             // 
             this.PanelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.PanelLogo.Controls.Add(this.label1);
+            this.PanelLogo.Controls.Add(this.BTN_SynsPunkt);
             this.PanelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelLogo.Location = new System.Drawing.Point(0, 0);
-            this.PanelLogo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.PanelLogo.Margin = new System.Windows.Forms.Padding(4);
             this.PanelLogo.Name = "PanelLogo";
-            this.PanelLogo.Size = new System.Drawing.Size(379, 118);
+            this.PanelLogo.Size = new System.Drawing.Size(335, 86);
             this.PanelLogo.TabIndex = 0;
             // 
-            // label1
+            // BTN_SynsPunkt
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(40, 40);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(247, 42);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "SYNSPUNKT";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.BTN_SynsPunkt.AutoSize = true;
+            this.BTN_SynsPunkt.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_SynsPunkt.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BTN_SynsPunkt.Location = new System.Drawing.Point(36, 32);
+            this.BTN_SynsPunkt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.BTN_SynsPunkt.Name = "BTN_SynsPunkt";
+            this.BTN_SynsPunkt.Size = new System.Drawing.Size(247, 42);
+            this.BTN_SynsPunkt.TabIndex = 0;
+            this.BTN_SynsPunkt.Text = "SYNSPUNKT";
             // 
             // panelFormsLoader
             // 
             this.panelFormsLoader.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelFormsLoader.Location = new System.Drawing.Point(400, 0);
-            this.panelFormsLoader.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panelFormsLoader.Location = new System.Drawing.Point(356, 0);
+            this.panelFormsLoader.Margin = new System.Windows.Forms.Padding(4);
             this.panelFormsLoader.Name = "panelFormsLoader";
-            this.panelFormsLoader.Size = new System.Drawing.Size(998, 851);
+            this.panelFormsLoader.Size = new System.Drawing.Size(887, 681);
             this.panelFormsLoader.TabIndex = 1;
             // 
             // GUIMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1398, 851);
+            this.ClientSize = new System.Drawing.Size(1243, 681);
             this.Controls.Add(this.panelFormsLoader);
             this.Controls.Add(this.SideMenuPanel);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1416, 898);
-            this.MinimumSize = new System.Drawing.Size(1416, 898);
+            this.MaximumSize = new System.Drawing.Size(1261, 728);
+            this.MinimumSize = new System.Drawing.Size(1261, 728);
             this.Name = "GUIMain";
             this.Text = "GUIMain";
-            this.Load += new System.EventHandler(this.GUIMain_Load);
             this.SideMenuPanel.ResumeLayout(false);
             this.StockSubMenuPanel.ResumeLayout(false);
             this.OrdersSubMenuPanel.ResumeLayout(false);
@@ -473,7 +459,6 @@
         private System.Windows.Forms.Button Btn_Produkt;
         private System.Windows.Forms.Panel PanelLogo;
         private System.Windows.Forms.Panel OrdersSubMenuPanel;
-        private System.Windows.Forms.Button Btn_DeleteOrder;
         private System.Windows.Forms.Button Btn_SearchOrder;
         private System.Windows.Forms.Button Btn_Ordre;
         private System.Windows.Forms.Panel CustomerSubMenuPanel;
@@ -485,7 +470,7 @@
         private System.Windows.Forms.Panel StockSubMenuPanel;
         private System.Windows.Forms.Button Btn_ViewStock;
         private System.Windows.Forms.Button Btn_Stock;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label BTN_SynsPunkt;
         private System.Windows.Forms.Panel panelFormsLoader;
     }
 }

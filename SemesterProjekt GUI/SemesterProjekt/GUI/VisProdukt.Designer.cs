@@ -43,12 +43,11 @@
             // LB_ShowProduct
             // 
             this.LB_ShowProduct.AutoSize = true;
-            this.LB_ShowProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.LB_ShowProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.LB_ShowProduct.ForeColor = System.Drawing.Color.Gainsboro;
-            this.LB_ShowProduct.Location = new System.Drawing.Point(819, 44);
-            this.LB_ShowProduct.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LB_ShowProduct.Location = new System.Drawing.Point(546, 28);
             this.LB_ShowProduct.Name = "LB_ShowProduct";
-            this.LB_ShowProduct.Size = new System.Drawing.Size(243, 51);
+            this.LB_ShowProduct.Size = new System.Drawing.Size(164, 31);
             this.LB_ShowProduct.TabIndex = 16;
             this.LB_ShowProduct.Text = "Vis Produkt";
             // 
@@ -58,28 +57,25 @@
             this.PANEL_FindOrder.Controls.Add(this.LB_ShowProduct);
             this.PANEL_FindOrder.Dock = System.Windows.Forms.DockStyle.Top;
             this.PANEL_FindOrder.Location = new System.Drawing.Point(0, 0);
-            this.PANEL_FindOrder.Margin = new System.Windows.Forms.Padding(4);
             this.PANEL_FindOrder.Name = "PANEL_FindOrder";
-            this.PANEL_FindOrder.Size = new System.Drawing.Size(1994, 145);
+            this.PANEL_FindOrder.Size = new System.Drawing.Size(1283, 93);
             this.PANEL_FindOrder.TabIndex = 33;
             this.PANEL_FindOrder.Paint += new System.Windows.Forms.PaintEventHandler(this.PANEL_FindOrder_Paint);
             // 
             // TB_FindKategory
             // 
             this.TB_FindKategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.TB_FindKategory.Location = new System.Drawing.Point(592, 301);
-            this.TB_FindKategory.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TB_FindKategory.Location = new System.Drawing.Point(395, 193);
             this.TB_FindKategory.Name = "TB_FindKategory";
-            this.TB_FindKategory.Size = new System.Drawing.Size(589, 55);
+            this.TB_FindKategory.Size = new System.Drawing.Size(394, 37);
             this.TB_FindKategory.TabIndex = 88;
             // 
             // TB_FindProductName
             // 
             this.TB_FindProductName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.TB_FindProductName.Location = new System.Drawing.Point(592, 183);
-            this.TB_FindProductName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TB_FindProductName.Location = new System.Drawing.Point(395, 117);
             this.TB_FindProductName.Name = "TB_FindProductName";
-            this.TB_FindProductName.Size = new System.Drawing.Size(589, 55);
+            this.TB_FindProductName.Size = new System.Drawing.Size(394, 37);
             this.TB_FindProductName.TabIndex = 87;
             // 
             // label4
@@ -87,10 +83,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.label4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label4.Location = new System.Drawing.Point(40, 308);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(27, 197);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(188, 48);
+            this.label4.Size = new System.Drawing.Size(123, 31);
             this.label4.TabIndex = 85;
             this.label4.Text = "Kategori:";
             // 
@@ -99,18 +94,18 @@
             this.Label2.AutoSize = true;
             this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.Label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Label2.Location = new System.Drawing.Point(40, 190);
-            this.Label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label2.Location = new System.Drawing.Point(27, 122);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(277, 48);
+            this.Label2.Size = new System.Drawing.Size(182, 31);
             this.Label2.TabIndex = 83;
             this.Label2.Text = "Produkt navn:";
             // 
             // BTN_FindProduct
             // 
-            this.BTN_FindProduct.Location = new System.Drawing.Point(1360, 207);
+            this.BTN_FindProduct.Location = new System.Drawing.Point(907, 132);
+            this.BTN_FindProduct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BTN_FindProduct.Name = "BTN_FindProduct";
-            this.BTN_FindProduct.Size = new System.Drawing.Size(348, 122);
+            this.BTN_FindProduct.Size = new System.Drawing.Size(232, 78);
             this.BTN_FindProduct.TabIndex = 89;
             this.BTN_FindProduct.Text = "SØG";
             this.BTN_FindProduct.UseVisualStyleBackColor = true;
@@ -120,19 +115,20 @@
             this.DGV_ShowFindProduct.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.DGV_ShowFindProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV_ShowFindProduct.GridColor = System.Drawing.SystemColors.ButtonFace;
-            this.DGV_ShowFindProduct.Location = new System.Drawing.Point(48, 469);
+            this.DGV_ShowFindProduct.Location = new System.Drawing.Point(32, 300);
+            this.DGV_ShowFindProduct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DGV_ShowFindProduct.Name = "DGV_ShowFindProduct";
             this.DGV_ShowFindProduct.RowHeadersWidth = 82;
             this.DGV_ShowFindProduct.RowTemplate.Height = 33;
-            this.DGV_ShowFindProduct.Size = new System.Drawing.Size(1660, 438);
+            this.DGV_ShowFindProduct.Size = new System.Drawing.Size(1107, 280);
             this.DGV_ShowFindProduct.TabIndex = 90;
             // 
             // VisProdukt
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1994, 948);
+            this.ClientSize = new System.Drawing.Size(1283, 607);
             this.Controls.Add(this.DGV_ShowFindProduct);
             this.Controls.Add(this.BTN_FindProduct);
             this.Controls.Add(this.TB_FindKategory);
@@ -140,6 +136,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.Label2);
             this.Controls.Add(this.PANEL_FindOrder);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "VisProdukt";
             this.Text = "VisProdukt";
             this.PANEL_FindOrder.ResumeLayout(false);

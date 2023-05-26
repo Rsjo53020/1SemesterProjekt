@@ -28,43 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.BT_Butik = new System.Windows.Forms.Button();
-            this.BT_Kunde = new System.Windows.Forms.Button();
+            this.BTN_Butik = new System.Windows.Forms.Button();
+            this.BTN_Kunde = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // BT_Butik
+            // BTN_Butik
             // 
-            this.BT_Butik.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BT_Butik.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.BT_Butik.ForeColor = System.Drawing.Color.Gainsboro;
-            this.BT_Butik.Location = new System.Drawing.Point(244, 270);
-            this.BT_Butik.Name = "BT_Butik";
-            this.BT_Butik.Size = new System.Drawing.Size(688, 369);
-            this.BT_Butik.TabIndex = 0;
-            this.BT_Butik.Text = "BUTIK";
-            this.BT_Butik.UseVisualStyleBackColor = true;
-            this.BT_Butik.Visible = false;
+            this.BTN_Butik.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTN_Butik.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.BTN_Butik.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BTN_Butik.Location = new System.Drawing.Point(163, 173);
+            this.BTN_Butik.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTN_Butik.Name = "BTN_Butik";
+            this.BTN_Butik.Size = new System.Drawing.Size(459, 236);
+            this.BTN_Butik.TabIndex = 0;
+            this.BTN_Butik.Text = "BUTIK";
+            this.BTN_Butik.UseVisualStyleBackColor = true;
+            this.BTN_Butik.Visible = false;
             // 
-            // BT_Kunde
+            // BTN_Kunde
             // 
-            this.BT_Kunde.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BT_Kunde.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.BT_Kunde.ForeColor = System.Drawing.Color.Gainsboro;
-            this.BT_Kunde.Location = new System.Drawing.Point(1176, 270);
-            this.BT_Kunde.Name = "BT_Kunde";
-            this.BT_Kunde.Size = new System.Drawing.Size(688, 369);
-            this.BT_Kunde.TabIndex = 1;
-            this.BT_Kunde.Text = "KUNDE";
-            this.BT_Kunde.UseVisualStyleBackColor = true;
+            this.BTN_Kunde.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTN_Kunde.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.BTN_Kunde.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BTN_Kunde.Location = new System.Drawing.Point(784, 173);
+            this.BTN_Kunde.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTN_Kunde.Name = "BTN_Kunde";
+            this.BTN_Kunde.Size = new System.Drawing.Size(459, 236);
+            this.BTN_Kunde.TabIndex = 1;
+            this.BTN_Kunde.Text = "KUNDE";
+            this.BTN_Kunde.UseVisualStyleBackColor = true;
             // 
             // BGFStartside
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(2067, 944);
-            this.Controls.Add(this.BT_Kunde);
-            this.Controls.Add(this.BT_Butik);
+            this.ClientSize = new System.Drawing.Size(1283, 604);
+            this.Controls.Add(this.BTN_Kunde);
+            this.Controls.Add(this.BTN_Butik);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "BGFStartside";
             this.Text = "BGFStartside";
             this.ResumeLayout(false);
@@ -73,7 +76,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button BT_Butik;
-        private System.Windows.Forms.Button BT_Kunde;
+        private System.Windows.Forms.Button BTN_Butik;
+        private System.Windows.Forms.Button BTN_Kunde;
     }
 }

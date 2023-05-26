@@ -41,18 +41,19 @@
             this.PANEL_FindOrder.Controls.Add(this.LB_ShowStock);
             this.PANEL_FindOrder.Dock = System.Windows.Forms.DockStyle.Top;
             this.PANEL_FindOrder.Location = new System.Drawing.Point(0, 0);
+            this.PANEL_FindOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PANEL_FindOrder.Name = "PANEL_FindOrder";
-            this.PANEL_FindOrder.Size = new System.Drawing.Size(1238, 100);
+            this.PANEL_FindOrder.Size = new System.Drawing.Size(1100, 80);
             this.PANEL_FindOrder.TabIndex = 31;
             // 
             // LB_ShowStock
             // 
             this.LB_ShowStock.AutoSize = true;
-            this.LB_ShowStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.LB_ShowStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.LB_ShowStock.ForeColor = System.Drawing.Color.Gainsboro;
-            this.LB_ShowStock.Location = new System.Drawing.Point(44, 28);
+            this.LB_ShowStock.Location = new System.Drawing.Point(526, 29);
             this.LB_ShowStock.Name = "LB_ShowStock";
-            this.LB_ShowStock.Size = new System.Drawing.Size(153, 37);
+            this.LB_ShowStock.Size = new System.Drawing.Size(137, 31);
             this.LB_ShowStock.TabIndex = 16;
             this.LB_ShowStock.Text = "Vis Lager";
             // 
@@ -60,21 +61,23 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 100);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 80);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1238, 676);
+            this.dataGridView1.Size = new System.Drawing.Size(1100, 541);
             this.dataGridView1.TabIndex = 32;
             // 
             // VisLager
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1238, 776);
+            this.ClientSize = new System.Drawing.Size(1100, 621);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.PANEL_FindOrder);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "VisLager";
             this.Text = "VisLager";
             this.PANEL_FindOrder.ResumeLayout(false);

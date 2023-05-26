@@ -16,7 +16,6 @@ namespace SemesterProjekt
         public GUIMain()
         {
             InitializeComponent();
-            
         }
 
         private void ShowSubMenu()
@@ -41,11 +40,10 @@ namespace SemesterProjekt
             else
                 subMenu.Visible = false;
         }
-       
 
         private void SideMenuPanel_Paint(object sender, PaintEventArgs e)
         {
-            
+            //Reset Click event, slet Metode.
         }
 
         private void Btn_Produkt_Click(object sender, EventArgs e)
@@ -68,6 +66,9 @@ namespace SemesterProjekt
             showSubMenu(StockSubMenuPanel);
         }
 
+        /// <summary>
+        /// Denne Metode loader de forskellige forms ind i panelFormsLoader, som er placeret i GUIMain.
+        /// </summary>
         private Form activeForm = null;
         private void openFormsLoader(Form loadedForm)
         {
@@ -86,18 +87,55 @@ namespace SemesterProjekt
         private void Btn_CreateProduct_Click(object sender, EventArgs e)
         {
             panelFormsLoader.Visible = true;
-            openFormsLoader(new OpretProdukt());
+            openFormsLoader(new OpretProduct());
         }
 
-        private void GUIMain_Load(object sender, EventArgs e)
+        private void Btn_ViewProduct_Click(object sender, EventArgs e)
         {
-
+            panelFormsLoader.Visible = true;
+            openFormsLoader(new VisProdukt());
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Btn_DeleteProduct_Click(object sender, EventArgs e)
         {
-            panelFormsLoader.Visible = false;
+            panelFormsLoader.Visible = true;
+            openFormsLoader(new SletProdukt());
         }
 
+        private void Btn_UpdateProduct_Click(object sender, EventArgs e)
+        {
+            panelFormsLoader.Visible = true;
+            openFormsLoader(new OpdaterProdukt());
+        }
+
+        private void Btn_CreateCustomer_Click(object sender, EventArgs e)
+        {
+            panelFormsLoader.Visible = true;
+            openFormsLoader(new OpretKunde());
+        }
+
+        private void Btn_ViewCustomer_Click(object sender, EventArgs e)
+        {
+            panelFormsLoader.Visible = true;
+            openFormsLoader(new SøgKunde());
+        }
+
+        private void Btn_UpdateCustomerInfo_Click(object sender, EventArgs e)
+        {
+            panelFormsLoader.Visible = true;
+            openFormsLoader(new OpdaterKunde());
+        }
+
+        private void Btn_SearchOrder_Click(object sender, EventArgs e)
+        {
+            panelFormsLoader.Visible = true;
+            openFormsLoader(new SøgOrdre());
+        }
+
+        private void Btn_ViewStock_Click(object sender, EventArgs e)
+        {
+            panelFormsLoader.Visible = true;
+            openFormsLoader(new VisLager());
+        }
     }
 }
