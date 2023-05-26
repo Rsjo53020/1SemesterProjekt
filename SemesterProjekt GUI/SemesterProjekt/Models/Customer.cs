@@ -43,7 +43,22 @@ namespace SemesterProjekt.Models
 
         }
 
-
+        public Customer(string firstName, string surName, string phoneNr, string mail,
+            string adress, string city, string postalCode, decimal discount, DateTime birthday,
+            int age, string visiontest)
+        {
+            this.FirstName = firstName;
+            this.SurName = surName;
+            this.PhoneNr = phoneNr;
+            this.Mail = mail;
+            this.Address = adress;
+            this.City = city;
+            this.PostalCode = postalCode;
+            this.Discount = discount;
+            this.Birthday = birthday;
+            this.Age = age;
+            this.VisionTest = visiontest;
+        }
 
 
 
