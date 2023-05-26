@@ -10,7 +10,7 @@ using System.Net.Mail;
 using System.Net.NetworkInformation;
 
 
-namespace SemesterProjekt.Models
+namespace SemesterProjekt.Database
 {
     public class Database
 
