@@ -16,7 +16,7 @@ namespace SemesterProjekt.Models
 
     {
         /// <summary>
-        /// 
+        /// Connection to datebase + open and close the connection
         /// </summary>
         /// <param name="sSQL"></param>
         public static void ConnectionToDatabase(string sSQL)
@@ -55,7 +55,7 @@ namespace SemesterProjekt.Models
 
 
 
-            
+
         }
 
         /// <summary>
@@ -63,7 +63,6 @@ namespace SemesterProjekt.Models
         /// </summary>
         public static string SqlGetCustomer(string phoneNr = "", string mail = "")
         {
-            ConnectionToDatabase();
 
             string sSQL = "";
             if (phoneNr != "")
@@ -76,22 +75,31 @@ namespace SemesterProjekt.Models
 
             }
 
-            SqlCommand command = new SqlCommand(sSQL, conn);
-            conn.Open(); //Open connection to Database 
-            command.ExecuteNonQuery();
-            conn.Close(); //Close connection to Database
+            ConnectionToDatabase(sSQL);
 
             return sSQL;
         }
 
-        public static void SqlDeleteCustomer(string phoneNr, string mail)
+        public static void SqlDeleteCustomer(Customer customer)
         {
+
+            string sSQL = $"DELETE * FROM Customer WHERE CustomerID = '{customer.CustomerID}';";
+
+            ConnectionToDatabase(sSQL);
+
 
         }
 
-        public static Customer SqlUpdateCustomer(Customer customer)
+        public static void SqlUpdateCustomer(Customer customer)
         {
-            return Customer;
+            string sSQL = sSQL = $"UPDATE Customer SET FirstName = ({customer.FirstName}, SurName = {customer.SurName}, " +
+                $"PhoneNr = {customer.PhoneNr},EMailAdress = {customer.Mail}, Adress = {customer.Address}, City = {customer.City}, " +
+                $"PostalCode = {customer.PostalCode}, Discount = {customer.Discount}, Birthday = {customer.Birthday}, Age = {customer.Age}, VisionTest {customer.VisionTest}) WHERE PhoneNr = {customer.CustomerID}"
+
+            ConnectionToDatabase(sSQL);
+
+
+           
         }
         public static void SqlCreateOrder(Order order)
         {
