@@ -67,6 +67,7 @@
             this.LB_ShowAdress = new System.Windows.Forms.Label();
             this.BTN_UpdateCustomer = new System.Windows.Forms.Button();
             this.BTN_DeleteCustomer = new System.Windows.Forms.Button();
+            this.BTN_OpretOrdre = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_OpdateSelectProduct_ShowCustomers)).BeginInit();
             this.SuspendLayout();
@@ -77,8 +78,9 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(869, 62);
+            this.panel1.Size = new System.Drawing.Size(978, 78);
             this.panel1.TabIndex = 1;
             // 
             // label1
@@ -87,20 +89,21 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(325, 21);
+            this.label1.Location = new System.Drawing.Point(366, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(210, 31);
+            this.label1.Size = new System.Drawing.Size(247, 37);
             this.label1.TabIndex = 17;
             this.label1.Text = "Opdater Kunde";
             // 
             // DGV_OpdateSelectProduct_ShowCustomers
             // 
             this.DGV_OpdateSelectProduct_ShowCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV_OpdateSelectProduct_ShowCustomers.Location = new System.Drawing.Point(12, 119);
+            this.DGV_OpdateSelectProduct_ShowCustomers.Location = new System.Drawing.Point(14, 149);
+            this.DGV_OpdateSelectProduct_ShowCustomers.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.DGV_OpdateSelectProduct_ShowCustomers.Name = "DGV_OpdateSelectProduct_ShowCustomers";
             this.DGV_OpdateSelectProduct_ShowCustomers.RowHeadersWidth = 51;
             this.DGV_OpdateSelectProduct_ShowCustomers.RowTemplate.Height = 24;
-            this.DGV_OpdateSelectProduct_ShowCustomers.Size = new System.Drawing.Size(706, 143);
+            this.DGV_OpdateSelectProduct_ShowCustomers.Size = new System.Drawing.Size(794, 179);
             this.DGV_OpdateSelectProduct_ShowCustomers.TabIndex = 19;
             // 
             // label3
@@ -109,9 +112,9 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label3.Location = new System.Drawing.Point(16, 67);
+            this.label3.Location = new System.Drawing.Point(18, 84);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 31);
+            this.label3.Size = new System.Drawing.Size(76, 37);
             this.label3.TabIndex = 20;
             this.label3.Text = "Tlf: ";
             // 
@@ -121,24 +124,26 @@
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label4.Location = new System.Drawing.Point(280, 67);
+            this.label4.Location = new System.Drawing.Point(315, 84);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(113, 31);
+            this.label4.Size = new System.Drawing.Size(132, 37);
             this.label4.TabIndex = 21;
             this.label4.Text = "E-Mail :";
             // 
             // TB_Tlf
             // 
-            this.TB_Tlf.Location = new System.Drawing.Point(78, 76);
+            this.TB_Tlf.Location = new System.Drawing.Point(88, 95);
+            this.TB_Tlf.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_Tlf.Name = "TB_Tlf";
-            this.TB_Tlf.Size = new System.Drawing.Size(171, 22);
+            this.TB_Tlf.Size = new System.Drawing.Size(192, 26);
             this.TB_Tlf.TabIndex = 22;
             // 
             // TB_EMail
             // 
-            this.TB_EMail.Location = new System.Drawing.Point(399, 76);
+            this.TB_EMail.Location = new System.Drawing.Point(449, 95);
+            this.TB_EMail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_EMail.Name = "TB_EMail";
-            this.TB_EMail.Size = new System.Drawing.Size(171, 22);
+            this.TB_EMail.Size = new System.Drawing.Size(192, 26);
             this.TB_EMail.TabIndex = 23;
             // 
             // BTN_Search
@@ -146,9 +151,10 @@
             this.BTN_Search.BackColor = System.Drawing.Color.White;
             this.BTN_Search.FlatAppearance.BorderSize = 0;
             this.BTN_Search.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BTN_Search.Location = new System.Drawing.Point(610, 76);
+            this.BTN_Search.Location = new System.Drawing.Point(686, 95);
+            this.BTN_Search.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BTN_Search.Name = "BTN_Search";
-            this.BTN_Search.Size = new System.Drawing.Size(108, 28);
+            this.BTN_Search.Size = new System.Drawing.Size(122, 35);
             this.BTN_Search.TabIndex = 24;
             this.BTN_Search.Text = "Søg";
             this.BTN_Search.UseVisualStyleBackColor = false;
@@ -159,17 +165,18 @@
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label5.Location = new System.Drawing.Point(16, 284);
+            this.label5.Location = new System.Drawing.Point(18, 355);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(170, 31);
+            this.label5.Size = new System.Drawing.Size(198, 37);
             this.label5.TabIndex = 25;
             this.label5.Text = "Oplysninger";
             // 
             // TB_Discount
             // 
-            this.TB_Discount.Location = new System.Drawing.Point(613, 886);
+            this.TB_Discount.Location = new System.Drawing.Point(690, 1108);
+            this.TB_Discount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_Discount.Name = "TB_Discount";
-            this.TB_Discount.Size = new System.Drawing.Size(394, 22);
+            this.TB_Discount.Size = new System.Drawing.Size(443, 26);
             this.TB_Discount.TabIndex = 76;
             // 
             // label11
@@ -177,17 +184,18 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.label11.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label11.Location = new System.Drawing.Point(380, 877);
+            this.label11.Location = new System.Drawing.Point(428, 1096);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(136, 31);
+            this.label11.Size = new System.Drawing.Size(160, 37);
             this.label11.TabIndex = 75;
             this.label11.Text = "Discount :";
             // 
             // TB_PostNr
             // 
-            this.TB_PostNr.Location = new System.Drawing.Point(613, 838);
+            this.TB_PostNr.Location = new System.Drawing.Point(690, 1048);
+            this.TB_PostNr.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_PostNr.Name = "TB_PostNr";
-            this.TB_PostNr.Size = new System.Drawing.Size(394, 22);
+            this.TB_PostNr.Size = new System.Drawing.Size(443, 26);
             this.TB_PostNr.TabIndex = 74;
             // 
             // label8
@@ -195,17 +203,18 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.label8.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label8.Location = new System.Drawing.Point(380, 829);
+            this.label8.Location = new System.Drawing.Point(428, 1036);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(120, 31);
+            this.label8.Size = new System.Drawing.Size(143, 37);
             this.label8.TabIndex = 73;
             this.label8.Text = "PostNr : ";
             // 
             // TB_Test
             // 
-            this.TB_Test.Location = new System.Drawing.Point(613, 791);
+            this.TB_Test.Location = new System.Drawing.Point(690, 989);
+            this.TB_Test.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_Test.Name = "TB_Test";
-            this.TB_Test.Size = new System.Drawing.Size(394, 22);
+            this.TB_Test.Size = new System.Drawing.Size(443, 26);
             this.TB_Test.TabIndex = 72;
             // 
             // label9
@@ -213,17 +222,18 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.label9.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label9.Location = new System.Drawing.Point(380, 782);
+            this.label9.Location = new System.Drawing.Point(428, 978);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(135, 31);
+            this.label9.Size = new System.Drawing.Size(156, 37);
             this.label9.TabIndex = 71;
             this.label9.Text = "Synstest :";
             // 
             // TB_Age
             // 
-            this.TB_Age.Location = new System.Drawing.Point(613, 740);
+            this.TB_Age.Location = new System.Drawing.Point(690, 925);
+            this.TB_Age.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_Age.Name = "TB_Age";
-            this.TB_Age.Size = new System.Drawing.Size(394, 22);
+            this.TB_Age.Size = new System.Drawing.Size(443, 26);
             this.TB_Age.TabIndex = 70;
             // 
             // label10
@@ -231,17 +241,18 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.label10.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label10.Location = new System.Drawing.Point(380, 731);
+            this.label10.Location = new System.Drawing.Point(428, 914);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(99, 31);
+            this.label10.Size = new System.Drawing.Size(119, 37);
             this.label10.TabIndex = 69;
             this.label10.Text = "Alder : ";
             // 
             // TB_PostalCode
             // 
-            this.TB_PostalCode.Location = new System.Drawing.Point(613, 695);
+            this.TB_PostalCode.Location = new System.Drawing.Point(690, 869);
+            this.TB_PostalCode.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_PostalCode.Name = "TB_PostalCode";
-            this.TB_PostalCode.Size = new System.Drawing.Size(394, 22);
+            this.TB_PostalCode.Size = new System.Drawing.Size(443, 26);
             this.TB_PostalCode.TabIndex = 68;
             // 
             // label7
@@ -249,17 +260,18 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.label7.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label7.Location = new System.Drawing.Point(380, 686);
+            this.label7.Location = new System.Drawing.Point(428, 858);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(120, 31);
+            this.label7.Size = new System.Drawing.Size(143, 37);
             this.label7.TabIndex = 67;
             this.label7.Text = "PostNr : ";
             // 
             // TB_City
             // 
-            this.TB_City.Location = new System.Drawing.Point(613, 648);
+            this.TB_City.Location = new System.Drawing.Point(690, 810);
+            this.TB_City.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_City.Name = "TB_City";
-            this.TB_City.Size = new System.Drawing.Size(394, 22);
+            this.TB_City.Size = new System.Drawing.Size(443, 26);
             this.TB_City.TabIndex = 66;
             // 
             // label6
@@ -267,17 +279,18 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.label6.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label6.Location = new System.Drawing.Point(380, 639);
+            this.label6.Location = new System.Drawing.Point(428, 799);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 31);
+            this.label6.Size = new System.Drawing.Size(71, 37);
             this.label6.TabIndex = 65;
             this.label6.Text = "By :";
             // 
             // TB_UpdatedAdress
             // 
-            this.TB_UpdatedAdress.Location = new System.Drawing.Point(441, 495);
+            this.TB_UpdatedAdress.Location = new System.Drawing.Point(496, 619);
+            this.TB_UpdatedAdress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_UpdatedAdress.Name = "TB_UpdatedAdress";
-            this.TB_UpdatedAdress.Size = new System.Drawing.Size(277, 22);
+            this.TB_UpdatedAdress.Size = new System.Drawing.Size(311, 26);
             this.TB_UpdatedAdress.TabIndex = 64;
             // 
             // label12
@@ -285,17 +298,18 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.label12.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label12.Location = new System.Drawing.Point(16, 495);
+            this.label12.Location = new System.Drawing.Point(18, 619);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(129, 31);
+            this.label12.Size = new System.Drawing.Size(152, 37);
             this.label12.TabIndex = 63;
             this.label12.Text = "Adresse :";
             // 
             // TB_UpdatedEmail
             // 
-            this.TB_UpdatedEmail.Location = new System.Drawing.Point(441, 455);
+            this.TB_UpdatedEmail.Location = new System.Drawing.Point(496, 569);
+            this.TB_UpdatedEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_UpdatedEmail.Name = "TB_UpdatedEmail";
-            this.TB_UpdatedEmail.Size = new System.Drawing.Size(277, 22);
+            this.TB_UpdatedEmail.Size = new System.Drawing.Size(311, 26);
             this.TB_UpdatedEmail.TabIndex = 62;
             // 
             // label13
@@ -303,17 +317,18 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.label13.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label13.Location = new System.Drawing.Point(16, 455);
+            this.label13.Location = new System.Drawing.Point(18, 569);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(105, 31);
+            this.label13.Size = new System.Drawing.Size(124, 37);
             this.label13.TabIndex = 61;
             this.label13.Text = "E-Mail :";
             // 
             // TB_UpdatedTlf
             // 
-            this.TB_UpdatedTlf.Location = new System.Drawing.Point(441, 415);
+            this.TB_UpdatedTlf.Location = new System.Drawing.Point(496, 519);
+            this.TB_UpdatedTlf.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_UpdatedTlf.Name = "TB_UpdatedTlf";
-            this.TB_UpdatedTlf.Size = new System.Drawing.Size(277, 22);
+            this.TB_UpdatedTlf.Size = new System.Drawing.Size(311, 26);
             this.TB_UpdatedTlf.TabIndex = 60;
             // 
             // label14
@@ -321,17 +336,18 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.label14.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label14.Location = new System.Drawing.Point(16, 415);
+            this.label14.Location = new System.Drawing.Point(18, 519);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(113, 31);
+            this.label14.Size = new System.Drawing.Size(135, 37);
             this.label14.TabIndex = 59;
             this.label14.Text = "Tlf +45 :";
             // 
             // TB_UpdatedLastName
             // 
-            this.TB_UpdatedLastName.Location = new System.Drawing.Point(441, 373);
+            this.TB_UpdatedLastName.Location = new System.Drawing.Point(496, 466);
+            this.TB_UpdatedLastName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_UpdatedLastName.Name = "TB_UpdatedLastName";
-            this.TB_UpdatedLastName.Size = new System.Drawing.Size(277, 22);
+            this.TB_UpdatedLastName.Size = new System.Drawing.Size(311, 26);
             this.TB_UpdatedLastName.TabIndex = 58;
             // 
             // label15
@@ -339,17 +355,18 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.label15.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label15.Location = new System.Drawing.Point(16, 373);
+            this.label15.Location = new System.Drawing.Point(18, 466);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(146, 31);
+            this.label15.Size = new System.Drawing.Size(171, 37);
             this.label15.TabIndex = 57;
             this.label15.Text = "Efternavn :";
             // 
             // TB_UpdatedName
             // 
-            this.TB_UpdatedName.Location = new System.Drawing.Point(441, 337);
+            this.TB_UpdatedName.Location = new System.Drawing.Point(496, 421);
+            this.TB_UpdatedName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_UpdatedName.Name = "TB_UpdatedName";
-            this.TB_UpdatedName.Size = new System.Drawing.Size(277, 22);
+            this.TB_UpdatedName.Size = new System.Drawing.Size(311, 26);
             this.TB_UpdatedName.TabIndex = 56;
             // 
             // label16
@@ -357,9 +374,9 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.label16.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label16.Location = new System.Drawing.Point(16, 328);
+            this.label16.Location = new System.Drawing.Point(18, 410);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(129, 31);
+            this.label16.Size = new System.Drawing.Size(153, 37);
             this.label16.TabIndex = 55;
             this.label16.Text = "Fornavn :";
             // 
@@ -369,9 +386,9 @@
             this.label17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.label17.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label17.Location = new System.Drawing.Point(435, 296);
+            this.label17.Location = new System.Drawing.Point(489, 370);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(283, 31);
+            this.label17.Size = new System.Drawing.Size(331, 37);
             this.label17.TabIndex = 77;
             this.label17.Text = "Opdater Oplysninger";
             // 
@@ -380,9 +397,9 @@
             this.LB_ShowName.AutoSize = true;
             this.LB_ShowName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.LB_ShowName.ForeColor = System.Drawing.Color.White;
-            this.LB_ShowName.Location = new System.Drawing.Point(180, 328);
+            this.LB_ShowName.Location = new System.Drawing.Point(202, 410);
             this.LB_ShowName.Name = "LB_ShowName";
-            this.LB_ShowName.Size = new System.Drawing.Size(202, 31);
+            this.LB_ShowName.Size = new System.Drawing.Size(240, 37);
             this.LB_ShowName.TabIndex = 78;
             this.LB_ShowName.Text = "LB_ShowName";
             // 
@@ -391,9 +408,9 @@
             this.LB_ShowLastName.AutoSize = true;
             this.LB_ShowLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.LB_ShowLastName.ForeColor = System.Drawing.Color.White;
-            this.LB_ShowLastName.Location = new System.Drawing.Point(180, 373);
+            this.LB_ShowLastName.Location = new System.Drawing.Point(202, 466);
             this.LB_ShowLastName.Name = "LB_ShowLastName";
-            this.LB_ShowLastName.Size = new System.Drawing.Size(254, 31);
+            this.LB_ShowLastName.Size = new System.Drawing.Size(301, 37);
             this.LB_ShowLastName.TabIndex = 79;
             this.LB_ShowLastName.Text = "LB_ShowLastName";
             // 
@@ -402,9 +419,9 @@
             this.LB_ShowTlf.AutoSize = true;
             this.LB_ShowTlf.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.LB_ShowTlf.ForeColor = System.Drawing.Color.White;
-            this.LB_ShowTlf.Location = new System.Drawing.Point(180, 415);
+            this.LB_ShowTlf.Location = new System.Drawing.Point(202, 519);
             this.LB_ShowTlf.Name = "LB_ShowTlf";
-            this.LB_ShowTlf.Size = new System.Drawing.Size(161, 31);
+            this.LB_ShowTlf.Size = new System.Drawing.Size(190, 37);
             this.LB_ShowTlf.TabIndex = 80;
             this.LB_ShowTlf.Text = "LB_ShowTlf";
             // 
@@ -413,9 +430,9 @@
             this.LB_ShowEmail.AutoSize = true;
             this.LB_ShowEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.LB_ShowEmail.ForeColor = System.Drawing.Color.White;
-            this.LB_ShowEmail.Location = new System.Drawing.Point(180, 455);
+            this.LB_ShowEmail.Location = new System.Drawing.Point(202, 569);
             this.LB_ShowEmail.Name = "LB_ShowEmail";
-            this.LB_ShowEmail.Size = new System.Drawing.Size(197, 31);
+            this.LB_ShowEmail.Size = new System.Drawing.Size(234, 37);
             this.LB_ShowEmail.TabIndex = 81;
             this.LB_ShowEmail.Text = "LB_ShowEmail";
             // 
@@ -424,9 +441,9 @@
             this.LB_ShowAdress.AutoSize = true;
             this.LB_ShowAdress.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.LB_ShowAdress.ForeColor = System.Drawing.Color.White;
-            this.LB_ShowAdress.Location = new System.Drawing.Point(180, 504);
+            this.LB_ShowAdress.Location = new System.Drawing.Point(202, 630);
             this.LB_ShowAdress.Name = "LB_ShowAdress";
-            this.LB_ShowAdress.Size = new System.Drawing.Size(215, 31);
+            this.LB_ShowAdress.Size = new System.Drawing.Size(254, 37);
             this.LB_ShowAdress.TabIndex = 82;
             this.LB_ShowAdress.Text = "LB_ShowAdress";
             // 
@@ -436,9 +453,10 @@
             this.BTN_UpdateCustomer.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.BTN_UpdateCustomer.FlatAppearance.BorderSize = 0;
             this.BTN_UpdateCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BTN_UpdateCustomer.Location = new System.Drawing.Point(0, 576);
+            this.BTN_UpdateCustomer.Location = new System.Drawing.Point(0, 720);
+            this.BTN_UpdateCustomer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BTN_UpdateCustomer.Name = "BTN_UpdateCustomer";
-            this.BTN_UpdateCustomer.Size = new System.Drawing.Size(869, 58);
+            this.BTN_UpdateCustomer.Size = new System.Drawing.Size(978, 72);
             this.BTN_UpdateCustomer.TabIndex = 83;
             this.BTN_UpdateCustomer.Text = "Opdater Kunde";
             this.BTN_UpdateCustomer.UseVisualStyleBackColor = false;
@@ -448,19 +466,32 @@
             this.BTN_DeleteCustomer.BackColor = System.Drawing.Color.White;
             this.BTN_DeleteCustomer.FlatAppearance.BorderSize = 0;
             this.BTN_DeleteCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BTN_DeleteCustomer.Location = new System.Drawing.Point(724, 220);
+            this.BTN_DeleteCustomer.Location = new System.Drawing.Point(814, 275);
+            this.BTN_DeleteCustomer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BTN_DeleteCustomer.Name = "BTN_DeleteCustomer";
-            this.BTN_DeleteCustomer.Size = new System.Drawing.Size(108, 42);
+            this.BTN_DeleteCustomer.Size = new System.Drawing.Size(122, 52);
             this.BTN_DeleteCustomer.TabIndex = 84;
             this.BTN_DeleteCustomer.Text = "Slet Kunde";
             this.BTN_DeleteCustomer.UseVisualStyleBackColor = false;
             // 
+            // BTN_OpretOrdre
+            // 
+            this.BTN_OpretOrdre.BackColor = System.Drawing.Color.White;
+            this.BTN_OpretOrdre.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTN_OpretOrdre.Location = new System.Drawing.Point(814, 215);
+            this.BTN_OpretOrdre.Name = "BTN_OpretOrdre";
+            this.BTN_OpretOrdre.Size = new System.Drawing.Size(122, 52);
+            this.BTN_OpretOrdre.TabIndex = 85;
+            this.BTN_OpretOrdre.Text = "Opret Ordre";
+            this.BTN_OpretOrdre.UseVisualStyleBackColor = false;
+            // 
             // OpdaterKunde
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(869, 634);
+            this.ClientSize = new System.Drawing.Size(978, 792);
+            this.Controls.Add(this.BTN_OpretOrdre);
             this.Controls.Add(this.BTN_DeleteCustomer);
             this.Controls.Add(this.BTN_UpdateCustomer);
             this.Controls.Add(this.LB_ShowAdress);
@@ -499,6 +530,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.DGV_OpdateSelectProduct_ShowCustomers);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "OpdaterKunde";
             this.Text = "OpdaterKunde";
             this.panel1.ResumeLayout(false);
@@ -550,5 +582,6 @@
         private System.Windows.Forms.Label LB_ShowAdress;
         private System.Windows.Forms.Button BTN_UpdateCustomer;
         private System.Windows.Forms.Button BTN_DeleteCustomer;
+        private System.Windows.Forms.Button BTN_OpretOrdre;
     }
 }
