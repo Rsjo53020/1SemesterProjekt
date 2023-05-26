@@ -36,8 +36,12 @@
             // 
             // BTN_Butik
             // 
-            this.BTN_Butik.BackColor = System.Drawing.Color.White;
+            this.BTN_Butik.BackColor = System.Drawing.Color.LightSteelBlue;
             this.BTN_Butik.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.BTN_Butik.FlatAppearance.BorderColor = System.Drawing.Color.LightSteelBlue;
+            this.BTN_Butik.FlatAppearance.BorderSize = 0;
+            this.BTN_Butik.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.BTN_Butik.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.BTN_Butik.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN_Butik.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.BTN_Butik.ForeColor = System.Drawing.Color.Black;
@@ -52,8 +56,12 @@
             // 
             // BTN_Kunde
             // 
-            this.BTN_Kunde.BackColor = System.Drawing.Color.White;
+            this.BTN_Kunde.BackColor = System.Drawing.Color.LightSteelBlue;
             this.BTN_Kunde.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.BTN_Kunde.FlatAppearance.BorderColor = System.Drawing.Color.LightSteelBlue;
+            this.BTN_Kunde.FlatAppearance.BorderSize = 0;
+            this.BTN_Kunde.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.BTN_Kunde.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.BTN_Kunde.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN_Kunde.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.BTN_Kunde.ForeColor = System.Drawing.Color.Black;
