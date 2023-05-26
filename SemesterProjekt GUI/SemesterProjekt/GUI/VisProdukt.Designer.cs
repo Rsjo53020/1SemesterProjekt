@@ -34,10 +34,10 @@
             this.TB_FindProductName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.Label2 = new System.Windows.Forms.Label();
-            this.BTN_FIND = new System.Windows.Forms.Button();
-            this.DGV_ShowProduct = new System.Windows.Forms.DataGridView();
+            this.BTN_FindProduct = new System.Windows.Forms.Button();
+            this.DGV_ShowFindProduct = new System.Windows.Forms.DataGridView();
             this.PANEL_FindOrder.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DGV_ShowProduct)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_ShowFindProduct)).BeginInit();
             this.SuspendLayout();
             // 
             // LB_ShowProduct
@@ -106,26 +106,26 @@
             this.Label2.TabIndex = 83;
             this.Label2.Text = "Produkt navn:";
             // 
-            // BTN_FIND
+            // BTN_FindProduct
             // 
-            this.BTN_FIND.Location = new System.Drawing.Point(1360, 207);
-            this.BTN_FIND.Name = "BTN_FIND";
-            this.BTN_FIND.Size = new System.Drawing.Size(348, 122);
-            this.BTN_FIND.TabIndex = 89;
-            this.BTN_FIND.Text = "SØG";
-            this.BTN_FIND.UseVisualStyleBackColor = true;
+            this.BTN_FindProduct.Location = new System.Drawing.Point(1360, 207);
+            this.BTN_FindProduct.Name = "BTN_FindProduct";
+            this.BTN_FindProduct.Size = new System.Drawing.Size(348, 122);
+            this.BTN_FindProduct.TabIndex = 89;
+            this.BTN_FindProduct.Text = "SØG";
+            this.BTN_FindProduct.UseVisualStyleBackColor = true;
             // 
-            // DGV_ShowProduct
+            // DGV_ShowFindProduct
             // 
-            this.DGV_ShowProduct.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.DGV_ShowProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV_ShowProduct.GridColor = System.Drawing.SystemColors.ButtonFace;
-            this.DGV_ShowProduct.Location = new System.Drawing.Point(48, 469);
-            this.DGV_ShowProduct.Name = "DGV_ShowProduct";
-            this.DGV_ShowProduct.RowHeadersWidth = 82;
-            this.DGV_ShowProduct.RowTemplate.Height = 33;
-            this.DGV_ShowProduct.Size = new System.Drawing.Size(1660, 438);
-            this.DGV_ShowProduct.TabIndex = 90;
+            this.DGV_ShowFindProduct.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.DGV_ShowFindProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV_ShowFindProduct.GridColor = System.Drawing.SystemColors.ButtonFace;
+            this.DGV_ShowFindProduct.Location = new System.Drawing.Point(48, 469);
+            this.DGV_ShowFindProduct.Name = "DGV_ShowFindProduct";
+            this.DGV_ShowFindProduct.RowHeadersWidth = 82;
+            this.DGV_ShowFindProduct.RowTemplate.Height = 33;
+            this.DGV_ShowFindProduct.Size = new System.Drawing.Size(1660, 438);
+            this.DGV_ShowFindProduct.TabIndex = 90;
             // 
             // VisProdukt
             // 
@@ -133,8 +133,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(1994, 948);
-            this.Controls.Add(this.DGV_ShowProduct);
-            this.Controls.Add(this.BTN_FIND);
+            this.Controls.Add(this.DGV_ShowFindProduct);
+            this.Controls.Add(this.BTN_FindProduct);
             this.Controls.Add(this.TB_FindKategory);
             this.Controls.Add(this.TB_FindProductName);
             this.Controls.Add(this.label4);
@@ -144,7 +144,7 @@
             this.Text = "VisProdukt";
             this.PANEL_FindOrder.ResumeLayout(false);
             this.PANEL_FindOrder.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DGV_ShowProduct)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_ShowFindProduct)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,7 +158,7 @@
         private System.Windows.Forms.TextBox TB_FindProductName;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label Label2;
-        private System.Windows.Forms.Button BTN_FIND;
-        private System.Windows.Forms.DataGridView DGV_ShowProduct;
+        private System.Windows.Forms.Button BTN_FindProduct;
+        private System.Windows.Forms.DataGridView DGV_ShowFindProduct;
     }
 }
