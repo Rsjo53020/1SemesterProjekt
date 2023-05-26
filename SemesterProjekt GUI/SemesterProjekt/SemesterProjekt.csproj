@@ -72,6 +72,12 @@
     <Compile Include="GUI\OpdaterKunde.Designer.cs">
       <DependentUpon>OpdaterKunde.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\OpdaterOrdre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\OpdaterOrdre.Designer.cs">
+      <DependentUpon>OpdaterOrdre.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\OpdaterProdukt.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,12 +101,6 @@
     </Compile>
     <Compile Include="GUI\SletProdukt.Designer.cs">
       <DependentUpon>SletProdukt.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\SøgKunde.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\SøgKunde.Designer.cs">
-      <DependentUpon>SøgKunde.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\SøgOrdre.cs">
       <SubType>Form</SubType>
@@ -153,6 +153,9 @@
     <EmbeddedResource Include="GUI\OpdaterKunde.resx">
       <DependentUpon>OpdaterKunde.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\OpdaterOrdre.resx">
+      <DependentUpon>OpdaterOrdre.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\OpdaterProdukt.resx">
       <DependentUpon>OpdaterProdukt.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,9 +167,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\SletProdukt.resx">
       <DependentUpon>SletProdukt.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\SøgKunde.resx">
-      <DependentUpon>SøgKunde.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\SøgOrdre.resx">
       <DependentUpon>SøgOrdre.cs</DependentUpon>
