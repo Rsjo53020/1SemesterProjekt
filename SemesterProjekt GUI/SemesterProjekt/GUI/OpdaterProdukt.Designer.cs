@@ -54,7 +54,7 @@
             this.LB_ShowProduct.AutoSize = true;
             this.LB_ShowProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.LB_ShowProduct.ForeColor = System.Drawing.Color.Gainsboro;
-            this.LB_ShowProduct.Location = new System.Drawing.Point(495, 32);
+            this.LB_ShowProduct.Location = new System.Drawing.Point(310, 25);
             this.LB_ShowProduct.Name = "LB_ShowProduct";
             this.LB_ShowProduct.Size = new System.Drawing.Size(302, 31);
             this.LB_ShowProduct.TabIndex = 16;
@@ -62,13 +62,15 @@
             // 
             // BTN_OpdateFindProdukt
             // 
+            this.BTN_OpdateFindProdukt.BackColor = System.Drawing.Color.White;
+            this.BTN_OpdateFindProdukt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_OpdateFindProdukt.Location = new System.Drawing.Point(42, 236);
             this.BTN_OpdateFindProdukt.Margin = new System.Windows.Forms.Padding(2);
             this.BTN_OpdateFindProdukt.Name = "BTN_OpdateFindProdukt";
             this.BTN_OpdateFindProdukt.Size = new System.Drawing.Size(154, 61);
             this.BTN_OpdateFindProdukt.TabIndex = 95;
             this.BTN_OpdateFindProdukt.Text = "Vis Produkt";
-            this.BTN_OpdateFindProdukt.UseVisualStyleBackColor = true;
+            this.BTN_OpdateFindProdukt.UseVisualStyleBackColor = false;
             // 
             // TB_OpdateFindKategory
             // 
@@ -115,30 +117,32 @@
             this.PANEL_FindOrder.Dock = System.Windows.Forms.DockStyle.Top;
             this.PANEL_FindOrder.Location = new System.Drawing.Point(0, 0);
             this.PANEL_FindOrder.Name = "PANEL_FindOrder";
-            this.PANEL_FindOrder.Size = new System.Drawing.Size(1283, 76);
+            this.PANEL_FindOrder.Size = new System.Drawing.Size(869, 76);
             this.PANEL_FindOrder.TabIndex = 90;
             // 
             // BTN_OpdateProduct
             // 
-            this.BTN_OpdateProduct.Location = new System.Drawing.Point(764, 456);
+            this.BTN_OpdateProduct.BackColor = System.Drawing.Color.White;
+            this.BTN_OpdateProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_OpdateProduct.Location = new System.Drawing.Point(581, 524);
             this.BTN_OpdateProduct.Margin = new System.Windows.Forms.Padding(2);
             this.BTN_OpdateProduct.Name = "BTN_OpdateProduct";
-            this.BTN_OpdateProduct.Size = new System.Drawing.Size(388, 61);
+            this.BTN_OpdateProduct.Size = new System.Drawing.Size(277, 54);
             this.BTN_OpdateProduct.TabIndex = 96;
             this.BTN_OpdateProduct.Text = "OPDATER PRODUKT";
-            this.BTN_OpdateProduct.UseVisualStyleBackColor = true;
+            this.BTN_OpdateProduct.UseVisualStyleBackColor = false;
             // 
             // DGV_OpdateSelectProduct
             // 
             this.DGV_OpdateSelectProduct.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.DGV_OpdateSelectProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV_OpdateSelectProduct.GridColor = System.Drawing.SystemColors.ButtonFace;
-            this.DGV_OpdateSelectProduct.Location = new System.Drawing.Point(764, 89);
+            this.DGV_OpdateSelectProduct.Location = new System.Drawing.Point(581, 89);
             this.DGV_OpdateSelectProduct.Margin = new System.Windows.Forms.Padding(2);
             this.DGV_OpdateSelectProduct.Name = "DGV_OpdateSelectProduct";
             this.DGV_OpdateSelectProduct.RowHeadersWidth = 82;
             this.DGV_OpdateSelectProduct.RowTemplate.Height = 33;
-            this.DGV_OpdateSelectProduct.Size = new System.Drawing.Size(388, 312);
+            this.DGV_OpdateSelectProduct.Size = new System.Drawing.Size(277, 235);
             this.DGV_OpdateSelectProduct.TabIndex = 97;
             // 
             // TB_OpdateSalesPrice
@@ -222,7 +226,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1283, 613);
+            this.ClientSize = new System.Drawing.Size(869, 634);
             this.Controls.Add(this.TB_OpdateSalesPrice);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.TB_OpdateVATSup);

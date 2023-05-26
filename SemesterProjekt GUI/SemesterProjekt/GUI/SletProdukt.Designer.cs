@@ -46,28 +46,29 @@
             this.DGV_DeleteSelectProduct.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.DGV_DeleteSelectProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV_DeleteSelectProduct.GridColor = System.Drawing.SystemColors.ButtonFace;
-            this.DGV_DeleteSelectProduct.Location = new System.Drawing.Point(41, 269);
+            this.DGV_DeleteSelectProduct.Location = new System.Drawing.Point(41, 336);
             this.DGV_DeleteSelectProduct.Margin = new System.Windows.Forms.Padding(2);
             this.DGV_DeleteSelectProduct.Name = "DGV_DeleteSelectProduct";
             this.DGV_DeleteSelectProduct.RowHeadersWidth = 82;
             this.DGV_DeleteSelectProduct.RowTemplate.Height = 33;
-            this.DGV_DeleteSelectProduct.Size = new System.Drawing.Size(751, 251);
+            this.DGV_DeleteSelectProduct.Size = new System.Drawing.Size(802, 184);
             this.DGV_DeleteSelectProduct.TabIndex = 119;
             // 
             // BTN_DeleteProduct
             // 
-            this.BTN_DeleteProduct.BackColor = System.Drawing.Color.Red;
-            this.BTN_DeleteProduct.Location = new System.Drawing.Point(823, 428);
+            this.BTN_DeleteProduct.BackColor = System.Drawing.Color.White;
+            this.BTN_DeleteProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_DeleteProduct.Location = new System.Drawing.Point(626, 531);
             this.BTN_DeleteProduct.Margin = new System.Windows.Forms.Padding(2);
             this.BTN_DeleteProduct.Name = "BTN_DeleteProduct";
             this.BTN_DeleteProduct.Size = new System.Drawing.Size(217, 92);
             this.BTN_DeleteProduct.TabIndex = 118;
-            this.BTN_DeleteProduct.Text = "OPDATER PRODUKT";
+            this.BTN_DeleteProduct.Text = "Slet Produkt";
             this.BTN_DeleteProduct.UseVisualStyleBackColor = false;
             // 
             // BTN_DeleteFindProdukt
             // 
-            this.BTN_DeleteFindProdukt.Location = new System.Drawing.Point(823, 118);
+            this.BTN_DeleteFindProdukt.Location = new System.Drawing.Point(626, 246);
             this.BTN_DeleteFindProdukt.Margin = new System.Windows.Forms.Padding(2);
             this.BTN_DeleteFindProdukt.Name = "BTN_DeleteFindProdukt";
             this.BTN_DeleteFindProdukt.Size = new System.Drawing.Size(217, 86);
@@ -120,7 +121,7 @@
             this.PANEL_FindOrder.Dock = System.Windows.Forms.DockStyle.Top;
             this.PANEL_FindOrder.Location = new System.Drawing.Point(0, 0);
             this.PANEL_FindOrder.Name = "PANEL_FindOrder";
-            this.PANEL_FindOrder.Size = new System.Drawing.Size(1067, 93);
+            this.PANEL_FindOrder.Size = new System.Drawing.Size(869, 93);
             this.PANEL_FindOrder.TabIndex = 112;
             // 
             // LB_ShowProduct
@@ -128,7 +129,7 @@
             this.LB_ShowProduct.AutoSize = true;
             this.LB_ShowProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.LB_ShowProduct.ForeColor = System.Drawing.Color.Gainsboro;
-            this.LB_ShowProduct.Location = new System.Drawing.Point(495, 32);
+            this.LB_ShowProduct.Location = new System.Drawing.Point(397, 39);
             this.LB_ShowProduct.Name = "LB_ShowProduct";
             this.LB_ShowProduct.Size = new System.Drawing.Size(235, 31);
             this.LB_ShowProduct.TabIndex = 16;
@@ -139,7 +140,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(869, 634);
             this.Controls.Add(this.DGV_DeleteSelectProduct);
             this.Controls.Add(this.BTN_DeleteProduct);
             this.Controls.Add(this.BTN_DeleteFindProdukt);
