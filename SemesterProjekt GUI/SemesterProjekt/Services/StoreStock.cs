@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SemesterProjekt.Models
+namespace SemesterProjekt.Services
 {
     public class StoreStock
     {
