@@ -49,7 +49,7 @@
             this.PANEL_FindOrder.Location = new System.Drawing.Point(0, 0);
             this.PANEL_FindOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PANEL_FindOrder.Name = "PANEL_FindOrder";
-            this.PANEL_FindOrder.Size = new System.Drawing.Size(1119, 80);
+            this.PANEL_FindOrder.Size = new System.Drawing.Size(1067, 80);
             this.PANEL_FindOrder.TabIndex = 31;
             // 
             // LB_FindOrder
@@ -124,7 +124,7 @@
             this.DGV_ShowOrder.Name = "DGV_ShowOrder";
             this.DGV_ShowOrder.RowHeadersWidth = 62;
             this.DGV_ShowOrder.RowTemplate.Height = 28;
-            this.DGV_ShowOrder.Size = new System.Drawing.Size(857, 313);
+            this.DGV_ShowOrder.Size = new System.Drawing.Size(811, 290);
             this.DGV_ShowOrder.TabIndex = 37;
             // 
             // BTN_DeleteOrder
@@ -143,7 +143,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1119, 539);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.BTN_DeleteOrder);
             this.Controls.Add(this.DGV_ShowOrder);
             this.Controls.Add(this.LB_Orders);

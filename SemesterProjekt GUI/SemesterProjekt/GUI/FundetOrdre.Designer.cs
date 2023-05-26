@@ -57,7 +57,7 @@
             this.PANEL_FindOrder.Location = new System.Drawing.Point(0, 0);
             this.PANEL_FindOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PANEL_FindOrder.Name = "PANEL_FindOrder";
-            this.PANEL_FindOrder.Size = new System.Drawing.Size(1268, 80);
+            this.PANEL_FindOrder.Size = new System.Drawing.Size(1067, 80);
             this.PANEL_FindOrder.TabIndex = 30;
             // 
             // LB_FoundOrder
@@ -65,7 +65,7 @@
             this.LB_FoundOrder.AutoSize = true;
             this.LB_FoundOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.LB_FoundOrder.ForeColor = System.Drawing.Color.Gainsboro;
-            this.LB_FoundOrder.Location = new System.Drawing.Point(545, 28);
+            this.LB_FoundOrder.Location = new System.Drawing.Point(481, 28);
             this.LB_FoundOrder.Name = "LB_FoundOrder";
             this.LB_FoundOrder.Size = new System.Drawing.Size(187, 31);
             this.LB_FoundOrder.TabIndex = 16;
@@ -84,11 +84,11 @@
             // TB_LineID
             // 
             this.TB_LineID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.TB_LineID.Location = new System.Drawing.Point(629, 106);
+            this.TB_LineID.Location = new System.Drawing.Point(638, 116);
             this.TB_LineID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TB_LineID.Multiline = true;
             this.TB_LineID.Name = "TB_LineID";
-            this.TB_LineID.Size = new System.Drawing.Size(513, 342);
+            this.TB_LineID.Size = new System.Drawing.Size(417, 285);
             this.TB_LineID.TabIndex = 28;
             // 
             // LB_LineID
@@ -145,7 +145,7 @@
             // TB_TotalPrice
             // 
             this.TB_TotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.TB_TotalPrice.Location = new System.Drawing.Point(911, 480);
+            this.TB_TotalPrice.Location = new System.Drawing.Point(823, 488);
             this.TB_TotalPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TB_TotalPrice.Name = "TB_TotalPrice";
             this.TB_TotalPrice.Size = new System.Drawing.Size(232, 37);
@@ -156,7 +156,7 @@
             this.LB_TotalPrice.AutoSize = true;
             this.LB_TotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.LB_TotalPrice.ForeColor = System.Drawing.Color.Gainsboro;
-            this.LB_TotalPrice.Location = new System.Drawing.Point(720, 485);
+            this.LB_TotalPrice.Location = new System.Drawing.Point(632, 493);
             this.LB_TotalPrice.Name = "LB_TotalPrice";
             this.LB_TotalPrice.Size = new System.Drawing.Size(137, 31);
             this.LB_TotalPrice.TabIndex = 21;
@@ -240,7 +240,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1268, 556);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.BTN_UpdateOrder);
             this.Controls.Add(this.BTN_PrintToTxt);
             this.Controls.Add(this.PANEL_FindOrder);

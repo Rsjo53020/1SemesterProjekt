@@ -47,18 +47,18 @@
             this.DGV_DeleteSelectProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV_DeleteSelectProduct.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.DGV_DeleteSelectProduct.Location = new System.Drawing.Point(41, 269);
-            this.DGV_DeleteSelectProduct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DGV_DeleteSelectProduct.Margin = new System.Windows.Forms.Padding(2);
             this.DGV_DeleteSelectProduct.Name = "DGV_DeleteSelectProduct";
             this.DGV_DeleteSelectProduct.RowHeadersWidth = 82;
             this.DGV_DeleteSelectProduct.RowTemplate.Height = 33;
-            this.DGV_DeleteSelectProduct.Size = new System.Drawing.Size(884, 316);
+            this.DGV_DeleteSelectProduct.Size = new System.Drawing.Size(751, 251);
             this.DGV_DeleteSelectProduct.TabIndex = 119;
             // 
             // BTN_DeleteProduct
             // 
             this.BTN_DeleteProduct.BackColor = System.Drawing.Color.Red;
-            this.BTN_DeleteProduct.Location = new System.Drawing.Point(1015, 493);
-            this.BTN_DeleteProduct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTN_DeleteProduct.Location = new System.Drawing.Point(823, 428);
+            this.BTN_DeleteProduct.Margin = new System.Windows.Forms.Padding(2);
             this.BTN_DeleteProduct.Name = "BTN_DeleteProduct";
             this.BTN_DeleteProduct.Size = new System.Drawing.Size(217, 92);
             this.BTN_DeleteProduct.TabIndex = 118;
@@ -67,8 +67,8 @@
             // 
             // BTN_DeleteFindProdukt
             // 
-            this.BTN_DeleteFindProdukt.Location = new System.Drawing.Point(1015, 123);
-            this.BTN_DeleteFindProdukt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTN_DeleteFindProdukt.Location = new System.Drawing.Point(823, 118);
+            this.BTN_DeleteFindProdukt.Margin = new System.Windows.Forms.Padding(2);
             this.BTN_DeleteFindProdukt.Name = "BTN_DeleteFindProdukt";
             this.BTN_DeleteFindProdukt.Size = new System.Drawing.Size(217, 86);
             this.BTN_DeleteFindProdukt.TabIndex = 117;
@@ -80,7 +80,7 @@
             this.TB_DeleteFindKategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.TB_DeleteFindKategory.Location = new System.Drawing.Point(403, 194);
             this.TB_DeleteFindKategory.Name = "TB_DeleteFindKategory";
-            this.TB_DeleteFindKategory.Size = new System.Drawing.Size(523, 37);
+            this.TB_DeleteFindKategory.Size = new System.Drawing.Size(389, 37);
             this.TB_DeleteFindKategory.TabIndex = 116;
             // 
             // TB_DeleteFindProductName
@@ -88,7 +88,7 @@
             this.TB_DeleteFindProductName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.TB_DeleteFindProductName.Location = new System.Drawing.Point(403, 118);
             this.TB_DeleteFindProductName.Name = "TB_DeleteFindProductName";
-            this.TB_DeleteFindProductName.Size = new System.Drawing.Size(523, 37);
+            this.TB_DeleteFindProductName.Size = new System.Drawing.Size(389, 37);
             this.TB_DeleteFindProductName.TabIndex = 115;
             // 
             // label4
@@ -120,7 +120,7 @@
             this.PANEL_FindOrder.Dock = System.Windows.Forms.DockStyle.Top;
             this.PANEL_FindOrder.Location = new System.Drawing.Point(0, 0);
             this.PANEL_FindOrder.Name = "PANEL_FindOrder";
-            this.PANEL_FindOrder.Size = new System.Drawing.Size(1249, 93);
+            this.PANEL_FindOrder.Size = new System.Drawing.Size(1067, 93);
             this.PANEL_FindOrder.TabIndex = 112;
             // 
             // LB_ShowProduct
@@ -139,7 +139,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1249, 606);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.DGV_DeleteSelectProduct);
             this.Controls.Add(this.BTN_DeleteProduct);
             this.Controls.Add(this.BTN_DeleteFindProdukt);
@@ -148,7 +148,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.Label2);
             this.Controls.Add(this.PANEL_FindOrder);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "SletProdukt";
             this.Text = "SletProdukt";
             ((System.ComponentModel.ISupportInitialize)(this.DGV_DeleteSelectProduct)).EndInit();

@@ -58,7 +58,7 @@
             this.PANEL_FindOrder.Dock = System.Windows.Forms.DockStyle.Top;
             this.PANEL_FindOrder.Location = new System.Drawing.Point(0, 0);
             this.PANEL_FindOrder.Name = "PANEL_FindOrder";
-            this.PANEL_FindOrder.Size = new System.Drawing.Size(1283, 93);
+            this.PANEL_FindOrder.Size = new System.Drawing.Size(1067, 93);
             this.PANEL_FindOrder.TabIndex = 33;
             this.PANEL_FindOrder.Paint += new System.Windows.Forms.PaintEventHandler(this.PANEL_FindOrder_Paint);
             // 
@@ -102,8 +102,8 @@
             // 
             // BTN_FindProduct
             // 
-            this.BTN_FindProduct.Location = new System.Drawing.Point(907, 132);
-            this.BTN_FindProduct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTN_FindProduct.Location = new System.Drawing.Point(813, 150);
+            this.BTN_FindProduct.Margin = new System.Windows.Forms.Padding(2);
             this.BTN_FindProduct.Name = "BTN_FindProduct";
             this.BTN_FindProduct.Size = new System.Drawing.Size(232, 78);
             this.BTN_FindProduct.TabIndex = 89;
@@ -114,13 +114,14 @@
             // 
             this.DGV_ShowFindProduct.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.DGV_ShowFindProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV_ShowFindProduct.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.DGV_ShowFindProduct.GridColor = System.Drawing.SystemColors.ButtonFace;
-            this.DGV_ShowFindProduct.Location = new System.Drawing.Point(32, 300);
-            this.DGV_ShowFindProduct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DGV_ShowFindProduct.Location = new System.Drawing.Point(0, 274);
+            this.DGV_ShowFindProduct.Margin = new System.Windows.Forms.Padding(2);
             this.DGV_ShowFindProduct.Name = "DGV_ShowFindProduct";
             this.DGV_ShowFindProduct.RowHeadersWidth = 82;
             this.DGV_ShowFindProduct.RowTemplate.Height = 33;
-            this.DGV_ShowFindProduct.Size = new System.Drawing.Size(1107, 280);
+            this.DGV_ShowFindProduct.Size = new System.Drawing.Size(1067, 280);
             this.DGV_ShowFindProduct.TabIndex = 90;
             // 
             // VisProdukt
@@ -128,7 +129,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1283, 607);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.DGV_ShowFindProduct);
             this.Controls.Add(this.BTN_FindProduct);
             this.Controls.Add(this.TB_FindKategory);
@@ -136,7 +137,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.Label2);
             this.Controls.Add(this.PANEL_FindOrder);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "VisProdukt";
             this.Text = "VisProdukt";
             this.PANEL_FindOrder.ResumeLayout(false);

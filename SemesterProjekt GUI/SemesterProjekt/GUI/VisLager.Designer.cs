@@ -43,7 +43,7 @@
             this.PANEL_FindOrder.Location = new System.Drawing.Point(0, 0);
             this.PANEL_FindOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PANEL_FindOrder.Name = "PANEL_FindOrder";
-            this.PANEL_FindOrder.Size = new System.Drawing.Size(1100, 80);
+            this.PANEL_FindOrder.Size = new System.Drawing.Size(1067, 80);
             this.PANEL_FindOrder.TabIndex = 31;
             // 
             // LB_ShowStock
@@ -66,7 +66,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1100, 541);
+            this.dataGridView1.Size = new System.Drawing.Size(1067, 474);
             this.dataGridView1.TabIndex = 32;
             // 
             // VisLager
@@ -74,7 +74,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1100, 621);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.PANEL_FindOrder);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

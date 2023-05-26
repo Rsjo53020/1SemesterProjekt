@@ -64,7 +64,7 @@
             this.PANEL_FindOrder.Location = new System.Drawing.Point(0, 0);
             this.PANEL_FindOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PANEL_FindOrder.Name = "PANEL_FindOrder";
-            this.PANEL_FindOrder.Size = new System.Drawing.Size(709, 80);
+            this.PANEL_FindOrder.Size = new System.Drawing.Size(1067, 80);
             this.PANEL_FindOrder.TabIndex = 31;
             // 
             // LB_FoundOrder
@@ -265,9 +265,9 @@
             this.BTN_CreateCustomer.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.BTN_CreateCustomer.FlatAppearance.BorderSize = 0;
             this.BTN_CreateCustomer.ForeColor = System.Drawing.Color.Black;
-            this.BTN_CreateCustomer.Location = new System.Drawing.Point(0, 600);
+            this.BTN_CreateCustomer.Location = new System.Drawing.Point(0, 479);
             this.BTN_CreateCustomer.Name = "BTN_CreateCustomer";
-            this.BTN_CreateCustomer.Size = new System.Drawing.Size(709, 75);
+            this.BTN_CreateCustomer.Size = new System.Drawing.Size(1067, 75);
             this.BTN_CreateCustomer.TabIndex = 52;
             this.BTN_CreateCustomer.Text = "OPRET KUNDE";
             this.BTN_CreateCustomer.UseVisualStyleBackColor = false;
@@ -295,7 +295,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(709, 675);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.TB_UpdatedDiscount);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.BTN_CreateCustomer);
