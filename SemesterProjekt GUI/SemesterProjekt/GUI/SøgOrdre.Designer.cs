@@ -119,12 +119,13 @@
             // DGV_ShowOrder
             // 
             this.DGV_ShowOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV_ShowOrder.Location = new System.Drawing.Point(45, 268);
+            this.DGV_ShowOrder.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.DGV_ShowOrder.Location = new System.Drawing.Point(0, 302);
             this.DGV_ShowOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DGV_ShowOrder.Name = "DGV_ShowOrder";
             this.DGV_ShowOrder.RowHeadersWidth = 62;
             this.DGV_ShowOrder.RowTemplate.Height = 28;
-            this.DGV_ShowOrder.Size = new System.Drawing.Size(811, 290);
+            this.DGV_ShowOrder.Size = new System.Drawing.Size(869, 332);
             this.DGV_ShowOrder.TabIndex = 37;
             // 
             // BTN_DeleteOrder

@@ -393,6 +393,7 @@
             this.BTN_SynsPunkt.Size = new System.Drawing.Size(247, 42);
             this.BTN_SynsPunkt.TabIndex = 0;
             this.BTN_SynsPunkt.Text = "SYNSPUNKT";
+            this.BTN_SynsPunkt.Click += new System.EventHandler(this.BTN_SynsPunkt_Click);
             // 
             // panelFormsLoader
             // 
