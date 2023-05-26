@@ -33,10 +33,16 @@ namespace SemesterProjekt.Models
 
         }
 
-        public static Customer SqlGetCustomer(string phoneNr, string mail)
+        public static Customer SqlGetCustomer(string phoneNr = "", string mail = "")
         {
-
-            string SQLstring = $"SELECT * FROM Customer WHERE PhoneNr ={SøgtVareNr};";
+            if (phoneNr != "")
+            {
+                string SQLstring = $"SELECT * FROM Customer WHERE PhoneNr = '{phoneNr}';";
+            }
+            else if (mail != "")
+            {
+                string SQLstring = $"SELECT * FROM Customer WHERE EmailAdress = '{mail}';";
+            }
             return Customer;
         }
 
