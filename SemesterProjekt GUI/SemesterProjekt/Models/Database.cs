@@ -52,10 +52,6 @@ namespace SemesterProjekt.Models
 
             ConnectionToDatabase(sSQL);
 
-
-
-
-
         }
 
         /// <summary>
@@ -89,36 +85,60 @@ namespace SemesterProjekt.Models
 
 
         }
-
+        /// <summary>
+        /// Update a customer 
+        /// </summary>
+        /// <param name="customer"></param>
         public static void SqlUpdateCustomer(Customer customer)
         {
             string sSQL = sSQL = $"UPDATE Customer SET FirstName = ({customer.FirstName}, SurName = {customer.SurName}, " +
                 $"PhoneNr = {customer.PhoneNr},EMailAdress = {customer.Mail}, Adress = {customer.Address}, City = {customer.City}, " +
-                $"PostalCode = {customer.PostalCode}, Discount = {customer.Discount}, Birthday = {customer.Birthday}, Age = {customer.Age}, VisionTest {customer.VisionTest}) WHERE PhoneNr = {customer.CustomerID}"
+                $"PostalCode = {customer.PostalCode}, Discount = {customer.Discount}, Birthday = {customer.Birthday}, Age = {customer.Age}, VisionTest {customer.VisionTest}) WHERE PhoneNr = {customer.CustomerID}";
 
             ConnectionToDatabase(sSQL);
 
 
            
         }
+        /// <summary>
+        /// Create a order - not important in version 1
+        /// </summary>
+        /// <param name="order"></param>
         public static void SqlCreateOrder(Order order)
         {
 
         }
-
-        public static Order SqlGetOrder(Customer.PhoneNr, Customer.Mail)
+        /// <summary>
+        /// Find order by date
+        /// </summary>
+        /// <param name="dateStart"></param>
+        /// <param name="dateEnd"></param>
+        /// <returns></returns>
+        public static Order SqlGetOrder(DateTime dateStart, DateTime dateEnd)
         {
-            return Order;
-        }
+            string sSQL = $"SELECT * FROM Orders WHERE OrderDate = {dateStart}, OrderDate = {dateEnd}";
 
+            ConnectionToDatabase(sSQL);
+
+            return sSQL;
+        }
+        /// <summary>
+        /// Delete a order - not important in version 1
+        /// </summary>
+        /// <param name=""></param>
+        /// <param name=""></param>
         public static void SqlDeleteOrder(Customer.PhoneNr, Customer.Mail)
         {
 
         }
-
-        public static Order SqlUpdateOrder(Order order)
+        /// <summary>
+        /// Update a order - not important in version 1
+        /// </summary>
+        /// <param name="order"></param>
+        /// <returns></returns>
+        public static void SqlUpdateOrder(Order order)
         {
-            return Order;
+           
         }
 
         public static void SqlCreateProduct(Product product)
