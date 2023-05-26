@@ -10,18 +10,18 @@ namespace SemesterProjekt.Models
 {
     public class Customer
     {
-        private int CustomerID { get; set; }
-        private string FirstName { get; set; }
-        private string SurName { get; set; }
-        private string PhoneNr { get; set; }
-        private string Mail { get; set; }
-        private string Address { get; set; }
-        private string City { get; set; }
-        private string PostalCode { get; set; }
-        private decimal Discount { get; set; }
-        private DateTime Birthday { get; set; }
-        private int Age { get; set; }
-        private string VisionTest { get; set; }
+        public int CustomerID { get; set; }
+        public string FirstName { get; set; }
+        public string SurName { get; set; }
+        public string PhoneNr { get; set; }
+        public string Mail { get; set; }
+        public string Address { get; set; }
+        public string City { get; set; }
+        public string PostalCode { get; set; }
+        public decimal Discount { get; set; }
+        public DateTime Birthday { get; set; }
+        public int Age { get; set; }
+        public string VisionTest { get; set; }
 
 
         public Customer(int customerID, string firstName, string surName, string phoneNr, string mail,
@@ -44,7 +44,7 @@ namespace SemesterProjekt.Models
         }
 
 
-      
+
 
 
 
@@ -58,7 +58,7 @@ namespace SemesterProjekt.Models
         public static void RegisterCustomer()
         {
 
-            
+
         }
         /// <summary>
         /// 

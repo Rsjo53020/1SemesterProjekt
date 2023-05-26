@@ -22,16 +22,15 @@ namespace SemesterProjekt.Models
         /// City(string), PostalCode(string),
         /// Discount(Desimal), Birthday(DateTime(YYYY-MM-DD)), Age(int), VisionTest(string)
         /// </summary>
-        public static void SqlCreateCustumer(Models.Customer customer)
+        public static void SqlCreateCustumer(Models.Customer customer)       
         {
             //kalder forbindelsen på simly.com
             SqlConnection conn = new SqlConnection(strconn);
 
-
-            string SQL = $"INSERT INTO Customer Values ({})
-                                        Values('jens', 'jensen', '87654321', 'test.jensen@test.test', 'jensenvej 22', 'københavn', '1526', 0.10, '1986-05-12', 37, '+2.5')";
-
+           
+            string SQL = $"INSERT INTO Customer Values ({customer.})
         }
+
 
         public static Customer SqlGetCustomer(string phoneNr, string mail)
         {
