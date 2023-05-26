@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SemesterProjekt.Models
 {
-    internal class Reports
+    public class Reports
     {
         private DateTime Date { get; set; }
 

@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace SemesterProjekt.Models
 {
-    internal class IntelligentRådgivning
+    public class IntelligentRådgivning
     {
         private string SearchPhrase { get; set; }
+
+        public static void FilterSearchresult()
+        {
+
+        }
     }
 
-    public static void FilterSearchresult()
-    {
 
-    }
 }

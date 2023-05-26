@@ -8,11 +8,11 @@ namespace SemesterProjekt.Models
 {
     public class StoreStock
     {
-
+        public static string ViewProductInfo()
+        {
+            return "";
+        }
     }
 
-    public static string ViewProductInfo()
-    {
-        return "";
-    }
+
 }
