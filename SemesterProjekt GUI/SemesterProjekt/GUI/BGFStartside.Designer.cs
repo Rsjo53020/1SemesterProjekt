@@ -34,7 +34,7 @@
             // 
             // BT_Butik
             // 
-            this.BT_Butik.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BT_Butik.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.BT_Butik.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.BT_Butik.ForeColor = System.Drawing.Color.Gainsboro;
             this.BT_Butik.Location = new System.Drawing.Point(244, 270);
@@ -42,12 +42,12 @@
             this.BT_Butik.Size = new System.Drawing.Size(688, 369);
             this.BT_Butik.TabIndex = 0;
             this.BT_Butik.Text = "BUTIK";
-            this.BT_Butik.UseVisualStyleBackColor = true;
+            this.BT_Butik.UseVisualStyleBackColor = false;
             this.BT_Butik.Visible = false;
             // 
             // BT_Kunde
             // 
-            this.BT_Kunde.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BT_Kunde.BackColor = System.Drawing.Color.DarkGreen;
             this.BT_Kunde.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.BT_Kunde.ForeColor = System.Drawing.Color.Gainsboro;
             this.BT_Kunde.Location = new System.Drawing.Point(1176, 270);
@@ -55,7 +55,7 @@
             this.BT_Kunde.Size = new System.Drawing.Size(688, 369);
             this.BT_Kunde.TabIndex = 1;
             this.BT_Kunde.Text = "KUNDE";
-            this.BT_Kunde.UseVisualStyleBackColor = true;
+            this.BT_Kunde.UseVisualStyleBackColor = false;
             // 
             // BGFStartside
             // 
