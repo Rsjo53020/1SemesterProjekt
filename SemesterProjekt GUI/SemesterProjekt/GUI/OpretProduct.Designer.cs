@@ -208,8 +208,8 @@
             // 
             this.BTN_CreateProduct.BackColor = System.Drawing.Color.White;
             this.BTN_CreateProduct.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.BTN_CreateProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTN_CreateProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_CreateProduct.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTN_CreateProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTN_CreateProduct.Location = new System.Drawing.Point(0, 556);
             this.BTN_CreateProduct.Name = "BTN_CreateProduct";
             this.BTN_CreateProduct.Size = new System.Drawing.Size(869, 78);

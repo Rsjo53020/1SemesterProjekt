@@ -112,7 +112,7 @@
             // BTN_SearchCustomer
             // 
             this.BTN_SearchCustomer.BackColor = System.Drawing.Color.White;
-            this.BTN_SearchCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_SearchCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN_SearchCustomer.Location = new System.Drawing.Point(624, 109);
             this.BTN_SearchCustomer.Name = "BTN_SearchCustomer";
             this.BTN_SearchCustomer.Size = new System.Drawing.Size(163, 63);

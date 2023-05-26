@@ -57,7 +57,7 @@
             // BTN_DeleteProduct
             // 
             this.BTN_DeleteProduct.BackColor = System.Drawing.Color.White;
-            this.BTN_DeleteProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_DeleteProduct.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN_DeleteProduct.Location = new System.Drawing.Point(626, 531);
             this.BTN_DeleteProduct.Margin = new System.Windows.Forms.Padding(2);
             this.BTN_DeleteProduct.Name = "BTN_DeleteProduct";
@@ -69,7 +69,7 @@
             // BTN_DeleteFindProdukt
             // 
             this.BTN_DeleteFindProdukt.BackColor = System.Drawing.Color.White;
-            this.BTN_DeleteFindProdukt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_DeleteFindProdukt.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN_DeleteFindProdukt.Location = new System.Drawing.Point(626, 246);
             this.BTN_DeleteFindProdukt.Margin = new System.Windows.Forms.Padding(2);
             this.BTN_DeleteFindProdukt.Name = "BTN_DeleteFindProdukt";

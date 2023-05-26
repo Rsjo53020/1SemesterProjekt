@@ -103,13 +103,13 @@
             // BTN_FindProduct
             // 
             this.BTN_FindProduct.BackColor = System.Drawing.Color.White;
-            this.BTN_FindProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_FindProduct.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN_FindProduct.Location = new System.Drawing.Point(557, 252);
             this.BTN_FindProduct.Margin = new System.Windows.Forms.Padding(2);
             this.BTN_FindProduct.Name = "BTN_FindProduct";
             this.BTN_FindProduct.Size = new System.Drawing.Size(232, 78);
             this.BTN_FindProduct.TabIndex = 89;
-            this.BTN_FindProduct.Text = "SØG";
+            this.BTN_FindProduct.Text = "Søg Produkt";
             this.BTN_FindProduct.UseVisualStyleBackColor = false;
             // 
             // DGV_ShowFindProduct

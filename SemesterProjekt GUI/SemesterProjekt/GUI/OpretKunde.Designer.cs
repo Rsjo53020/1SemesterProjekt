@@ -264,13 +264,13 @@
             this.BTN_CreateCustomer.BackColor = System.Drawing.Color.White;
             this.BTN_CreateCustomer.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.BTN_CreateCustomer.FlatAppearance.BorderSize = 0;
-            this.BTN_CreateCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_CreateCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN_CreateCustomer.ForeColor = System.Drawing.Color.Black;
             this.BTN_CreateCustomer.Location = new System.Drawing.Point(0, 576);
             this.BTN_CreateCustomer.Name = "BTN_CreateCustomer";
             this.BTN_CreateCustomer.Size = new System.Drawing.Size(869, 58);
             this.BTN_CreateCustomer.TabIndex = 52;
-            this.BTN_CreateCustomer.Text = "OPRET KUNDE";
+            this.BTN_CreateCustomer.Text = "Opret Kunde";
             this.BTN_CreateCustomer.UseVisualStyleBackColor = false;
             // 
             // TB_UpdatedDiscount

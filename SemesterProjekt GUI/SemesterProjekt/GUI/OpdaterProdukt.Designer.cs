@@ -63,7 +63,7 @@
             // BTN_OpdateFindProdukt
             // 
             this.BTN_OpdateFindProdukt.BackColor = System.Drawing.Color.White;
-            this.BTN_OpdateFindProdukt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_OpdateFindProdukt.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN_OpdateFindProdukt.Location = new System.Drawing.Point(42, 236);
             this.BTN_OpdateFindProdukt.Margin = new System.Windows.Forms.Padding(2);
             this.BTN_OpdateFindProdukt.Name = "BTN_OpdateFindProdukt";
@@ -123,13 +123,13 @@
             // BTN_OpdateProduct
             // 
             this.BTN_OpdateProduct.BackColor = System.Drawing.Color.White;
-            this.BTN_OpdateProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_OpdateProduct.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN_OpdateProduct.Location = new System.Drawing.Point(581, 524);
             this.BTN_OpdateProduct.Margin = new System.Windows.Forms.Padding(2);
             this.BTN_OpdateProduct.Name = "BTN_OpdateProduct";
             this.BTN_OpdateProduct.Size = new System.Drawing.Size(277, 54);
             this.BTN_OpdateProduct.TabIndex = 96;
-            this.BTN_OpdateProduct.Text = "OPDATER PRODUKT";
+            this.BTN_OpdateProduct.Text = "Opdater Produkt";
             this.BTN_OpdateProduct.UseVisualStyleBackColor = false;
             // 
             // DGV_OpdateSelectProduct
