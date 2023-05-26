@@ -37,7 +37,6 @@
             this.Btn_Ordre = new System.Windows.Forms.Button();
             this.CustomerSubMenuPanel = new System.Windows.Forms.Panel();
             this.Btn_UpdateCustomerInfo = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.Btn_ViewCustomer = new System.Windows.Forms.Button();
             this.Btn_CreateCustomer = new System.Windows.Forms.Button();
             this.Btn_Customer = new System.Windows.Forms.Button();
@@ -84,7 +83,7 @@
             this.StockSubMenuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
             this.StockSubMenuPanel.Controls.Add(this.Btn_ViewStock);
             this.StockSubMenuPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.StockSubMenuPanel.Location = new System.Drawing.Point(0, 789);
+            this.StockSubMenuPanel.Location = new System.Drawing.Point(0, 733);
             this.StockSubMenuPanel.Margin = new System.Windows.Forms.Padding(4);
             this.StockSubMenuPanel.Name = "StockSubMenuPanel";
             this.StockSubMenuPanel.Size = new System.Drawing.Size(335, 62);
@@ -116,7 +115,7 @@
             this.Btn_Stock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Stock.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.Btn_Stock.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Btn_Stock.Location = new System.Drawing.Point(0, 734);
+            this.Btn_Stock.Location = new System.Drawing.Point(0, 678);
             this.Btn_Stock.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Stock.Name = "Btn_Stock";
             this.Btn_Stock.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
@@ -132,7 +131,7 @@
             this.OrdersSubMenuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
             this.OrdersSubMenuPanel.Controls.Add(this.Btn_SearchOrder);
             this.OrdersSubMenuPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.OrdersSubMenuPanel.Location = new System.Drawing.Point(0, 681);
+            this.OrdersSubMenuPanel.Location = new System.Drawing.Point(0, 625);
             this.OrdersSubMenuPanel.Margin = new System.Windows.Forms.Padding(4);
             this.OrdersSubMenuPanel.Name = "OrdersSubMenuPanel";
             this.OrdersSubMenuPanel.Size = new System.Drawing.Size(335, 53);
@@ -164,7 +163,7 @@
             this.Btn_Ordre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Ordre.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.Btn_Ordre.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Btn_Ordre.Location = new System.Drawing.Point(0, 626);
+            this.Btn_Ordre.Location = new System.Drawing.Point(0, 570);
             this.Btn_Ordre.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Ordre.Name = "Btn_Ordre";
             this.Btn_Ordre.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
@@ -179,14 +178,13 @@
             // 
             this.CustomerSubMenuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
             this.CustomerSubMenuPanel.Controls.Add(this.Btn_UpdateCustomerInfo);
-            this.CustomerSubMenuPanel.Controls.Add(this.button4);
             this.CustomerSubMenuPanel.Controls.Add(this.Btn_ViewCustomer);
             this.CustomerSubMenuPanel.Controls.Add(this.Btn_CreateCustomer);
             this.CustomerSubMenuPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.CustomerSubMenuPanel.Location = new System.Drawing.Point(0, 411);
             this.CustomerSubMenuPanel.Margin = new System.Windows.Forms.Padding(4);
             this.CustomerSubMenuPanel.Name = "CustomerSubMenuPanel";
-            this.CustomerSubMenuPanel.Size = new System.Drawing.Size(335, 215);
+            this.CustomerSubMenuPanel.Size = new System.Drawing.Size(335, 159);
             this.CustomerSubMenuPanel.TabIndex = 4;
             // 
             // Btn_UpdateCustomerInfo
@@ -197,7 +195,7 @@
             this.Btn_UpdateCustomerInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_UpdateCustomerInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.Btn_UpdateCustomerInfo.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Btn_UpdateCustomerInfo.Location = new System.Drawing.Point(0, 147);
+            this.Btn_UpdateCustomerInfo.Location = new System.Drawing.Point(0, 98);
             this.Btn_UpdateCustomerInfo.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_UpdateCustomerInfo.Name = "Btn_UpdateCustomerInfo";
             this.Btn_UpdateCustomerInfo.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
@@ -207,24 +205,6 @@
             this.Btn_UpdateCustomerInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Btn_UpdateCustomerInfo.UseVisualStyleBackColor = false;
             this.Btn_UpdateCustomerInfo.Click += new System.EventHandler(this.Btn_UpdateCustomerInfo_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.button4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button4.Location = new System.Drawing.Point(0, 98);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(335, 49);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Slet Kunde";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = false;
             // 
             // Btn_ViewCustomer
             // 
@@ -413,6 +393,7 @@
             this.BTN_SynsPunkt.Size = new System.Drawing.Size(247, 42);
             this.BTN_SynsPunkt.TabIndex = 0;
             this.BTN_SynsPunkt.Text = "SYNSPUNKT";
+            this.BTN_SynsPunkt.Click += new System.EventHandler(this.BTN_SynsPunkt_Click);
             // 
             // panelFormsLoader
             // 
@@ -463,7 +444,6 @@
         private System.Windows.Forms.Button Btn_Ordre;
         private System.Windows.Forms.Panel CustomerSubMenuPanel;
         private System.Windows.Forms.Button Btn_UpdateCustomerInfo;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button Btn_ViewCustomer;
         private System.Windows.Forms.Button Btn_CreateCustomer;
         private System.Windows.Forms.Button Btn_Customer;

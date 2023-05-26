@@ -47,7 +47,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1067, 63);
+            this.panel1.Size = new System.Drawing.Size(869, 63);
             this.panel1.TabIndex = 0;
             // 
             // LB_FindOrder
@@ -102,11 +102,11 @@
             this.dataGridView1_SearchCustomer.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.dataGridView1_SearchCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1_SearchCustomer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1_SearchCustomer.Location = new System.Drawing.Point(0, 205);
+            this.dataGridView1_SearchCustomer.Location = new System.Drawing.Point(0, 214);
             this.dataGridView1_SearchCustomer.Name = "dataGridView1_SearchCustomer";
             this.dataGridView1_SearchCustomer.RowHeadersWidth = 51;
             this.dataGridView1_SearchCustomer.RowTemplate.Height = 24;
-            this.dataGridView1_SearchCustomer.Size = new System.Drawing.Size(1067, 349);
+            this.dataGridView1_SearchCustomer.Size = new System.Drawing.Size(869, 420);
             this.dataGridView1_SearchCustomer.TabIndex = 22;
             // 
             // BTN_SearchCustomer
@@ -125,7 +125,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(869, 634);
             this.Controls.Add(this.BTN_SearchCustomer);
             this.Controls.Add(this.dataGridView1_SearchCustomer);
             this.Controls.Add(this.TB_EMail);

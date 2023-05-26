@@ -137,5 +137,10 @@ namespace SemesterProjekt
             panelFormsLoader.Visible = true;
             openFormsLoader(new VisLager());
         }
+
+        private void BTN_SynsPunkt_Click(object sender, EventArgs e)
+        {
+            panelFormsLoader.Visible = false;
+        }
     }
 }

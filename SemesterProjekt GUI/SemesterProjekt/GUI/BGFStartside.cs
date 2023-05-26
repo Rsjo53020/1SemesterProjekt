@@ -17,6 +17,11 @@ namespace SemesterProjekt.GUI
             InitializeComponent();
         }
 
-      
+        private void BTN_Butik_Click(object sender, EventArgs e)
+        {
+            GUIMain gUIMain = new GUIMain();
+            gUIMain.Show();
+            this.Hide();
+        }
     }
 }

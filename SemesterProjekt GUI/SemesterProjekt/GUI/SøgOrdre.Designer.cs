@@ -49,7 +49,7 @@
             this.PANEL_FindOrder.Location = new System.Drawing.Point(0, 0);
             this.PANEL_FindOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PANEL_FindOrder.Name = "PANEL_FindOrder";
-            this.PANEL_FindOrder.Size = new System.Drawing.Size(1067, 80);
+            this.PANEL_FindOrder.Size = new System.Drawing.Size(869, 80);
             this.PANEL_FindOrder.TabIndex = 31;
             // 
             // LB_FindOrder
@@ -119,31 +119,34 @@
             // DGV_ShowOrder
             // 
             this.DGV_ShowOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV_ShowOrder.Location = new System.Drawing.Point(230, 217);
+            this.DGV_ShowOrder.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.DGV_ShowOrder.Location = new System.Drawing.Point(0, 302);
             this.DGV_ShowOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DGV_ShowOrder.Name = "DGV_ShowOrder";
             this.DGV_ShowOrder.RowHeadersWidth = 62;
             this.DGV_ShowOrder.RowTemplate.Height = 28;
-            this.DGV_ShowOrder.Size = new System.Drawing.Size(811, 290);
+            this.DGV_ShowOrder.Size = new System.Drawing.Size(869, 332);
             this.DGV_ShowOrder.TabIndex = 37;
             // 
             // BTN_DeleteOrder
             // 
+            this.BTN_DeleteOrder.BackColor = System.Drawing.Color.White;
+            this.BTN_DeleteOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_DeleteOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.BTN_DeleteOrder.Location = new System.Drawing.Point(753, 112);
+            this.BTN_DeleteOrder.Location = new System.Drawing.Point(599, 117);
             this.BTN_DeleteOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BTN_DeleteOrder.Name = "BTN_DeleteOrder";
-            this.BTN_DeleteOrder.Size = new System.Drawing.Size(288, 73);
+            this.BTN_DeleteOrder.Size = new System.Drawing.Size(257, 73);
             this.BTN_DeleteOrder.TabIndex = 38;
             this.BTN_DeleteOrder.Text = "Slet Ordre";
-            this.BTN_DeleteOrder.UseVisualStyleBackColor = true;
+            this.BTN_DeleteOrder.UseVisualStyleBackColor = false;
             // 
             // SøgOrdre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(869, 634);
             this.Controls.Add(this.BTN_DeleteOrder);
             this.Controls.Add(this.DGV_ShowOrder);
             this.Controls.Add(this.LB_Orders);
