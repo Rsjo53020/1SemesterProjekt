@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SemesterProjekt.Models
 {
-    internal class ProductLine
+    public class ProductLine
     {
         private int ProductAmount { get; set; }
         private decimal TotalPrice { get; set; }
