@@ -145,7 +145,7 @@
             // 
             this.BTN_Search.BackColor = System.Drawing.Color.White;
             this.BTN_Search.FlatAppearance.BorderSize = 0;
-            this.BTN_Search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_Search.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN_Search.Location = new System.Drawing.Point(610, 76);
             this.BTN_Search.Name = "BTN_Search";
             this.BTN_Search.Size = new System.Drawing.Size(108, 28);
@@ -435,7 +435,7 @@
             this.BTN_UpdateCustomer.BackColor = System.Drawing.Color.White;
             this.BTN_UpdateCustomer.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.BTN_UpdateCustomer.FlatAppearance.BorderSize = 0;
-            this.BTN_UpdateCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_UpdateCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN_UpdateCustomer.Location = new System.Drawing.Point(0, 576);
             this.BTN_UpdateCustomer.Name = "BTN_UpdateCustomer";
             this.BTN_UpdateCustomer.Size = new System.Drawing.Size(869, 58);
@@ -447,7 +447,7 @@
             // 
             this.BTN_DeleteCustomer.BackColor = System.Drawing.Color.White;
             this.BTN_DeleteCustomer.FlatAppearance.BorderSize = 0;
-            this.BTN_DeleteCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_DeleteCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN_DeleteCustomer.Location = new System.Drawing.Point(724, 220);
             this.BTN_DeleteCustomer.Name = "BTN_DeleteCustomer";
             this.BTN_DeleteCustomer.Size = new System.Drawing.Size(108, 42);

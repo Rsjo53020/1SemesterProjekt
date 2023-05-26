@@ -36,7 +36,7 @@
             this.LB_OrderDateStart = new System.Windows.Forms.Label();
             this.LB_Orders = new System.Windows.Forms.Label();
             this.DGV_ShowOrder = new System.Windows.Forms.DataGridView();
-            this.BTN_DeleteOrder = new System.Windows.Forms.Button();
+            this.BTN_SearchOrder = new System.Windows.Forms.Button();
             this.PANEL_FindOrder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_ShowOrder)).BeginInit();
             this.SuspendLayout();
@@ -128,18 +128,18 @@
             this.DGV_ShowOrder.Size = new System.Drawing.Size(869, 332);
             this.DGV_ShowOrder.TabIndex = 37;
             // 
-            // BTN_DeleteOrder
+            // BTN_SearchOrder
             // 
-            this.BTN_DeleteOrder.BackColor = System.Drawing.Color.White;
-            this.BTN_DeleteOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTN_DeleteOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.BTN_DeleteOrder.Location = new System.Drawing.Point(599, 117);
-            this.BTN_DeleteOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.BTN_DeleteOrder.Name = "BTN_DeleteOrder";
-            this.BTN_DeleteOrder.Size = new System.Drawing.Size(257, 73);
-            this.BTN_DeleteOrder.TabIndex = 38;
-            this.BTN_DeleteOrder.Text = "Slet Ordre";
-            this.BTN_DeleteOrder.UseVisualStyleBackColor = false;
+            this.BTN_SearchOrder.BackColor = System.Drawing.Color.White;
+            this.BTN_SearchOrder.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTN_SearchOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.BTN_SearchOrder.Location = new System.Drawing.Point(599, 117);
+            this.BTN_SearchOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BTN_SearchOrder.Name = "BTN_SearchOrder";
+            this.BTN_SearchOrder.Size = new System.Drawing.Size(257, 73);
+            this.BTN_SearchOrder.TabIndex = 38;
+            this.BTN_SearchOrder.Text = "Søg Ordre";
+            this.BTN_SearchOrder.UseVisualStyleBackColor = false;
             // 
             // SøgOrdre
             // 
@@ -147,7 +147,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(869, 634);
-            this.Controls.Add(this.BTN_DeleteOrder);
+            this.Controls.Add(this.BTN_SearchOrder);
             this.Controls.Add(this.DGV_ShowOrder);
             this.Controls.Add(this.LB_Orders);
             this.Controls.Add(this.DTP_StartDate);
@@ -176,6 +176,6 @@
         private System.Windows.Forms.Label LB_OrderDateStart;
         private System.Windows.Forms.Label LB_Orders;
         private System.Windows.Forms.DataGridView DGV_ShowOrder;
-        private System.Windows.Forms.Button BTN_DeleteOrder;
+        private System.Windows.Forms.Button BTN_SearchOrder;
     }
 }
