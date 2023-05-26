@@ -36,5 +36,12 @@ namespace SemesterProjekt.GUI
         {
 
         }
+
+        private void BTN_OpretOrdre_Click(object sender, EventArgs e)
+        {
+            Form OpdaterKunde = new Form();
+            OpdaterKunde.Show();
+            this.Close();
+        }
     }
 }
