@@ -24,23 +24,27 @@ namespace SemesterProjekt.Models
         private string VisionTest { get; set; }
 
 
-        public Customer(int customerID, string firstName, string lastName, string phoneNr, string mail,
+        public Customer(int customerID, string firstName, string surName, string phoneNr, string mail,
             string adress, string city, string postalCode, decimal discount, DateTime birthday,
             int age, string visiontest)
         {
             this.CustomerID = customerID;
             this.FirstName = firstName;
-            this.Address = lastName;
+            this.SurName = surName;
+            this.PhoneNr = phoneNr;
+            this.Mail = mail;
+            this.Address = adress;
+            this.City = city;
+            this.PostalCode = postalCode;
+            this.Discount = discount;
+            this.Birthday = birthday;
+            this.Age = age;
+            this.VisionTest = visiontest;
 
         }
 
 
-        public static string ConnectSQL()
-        {
-            string strconn = "Data Source=mssql4.unoeuro.com;Initial Catalog=cskafte_dk_db_skafte;User ID=cskafte_dk;Password=3tfep5Gc4wgAzxDH2rEy";
-
-            return strconn;
-        }
+      
 
 
 
@@ -56,10 +60,7 @@ namespace SemesterProjekt.Models
         public static void RegisterCustomer()
         {
 
-            string SQLstring = "insert into Customer(FirstName, SurName, PhoneNr, EMailAdress, Adress," +
-                " City, PostalCode, Discount, Birthday, Age, VisionTest) " +
-                "Values('jens', 'jensen', '87654321', 'test.jensen@test.test', 'jensenvej 22', 'københavn'," +
-                " '1526', 0.10, '1986-05-12', 37, '+2.5');";
+            
         }
         /// <summary>
         /// 
