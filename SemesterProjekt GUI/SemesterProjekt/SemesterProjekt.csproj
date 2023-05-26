@@ -127,13 +127,13 @@
       <DependentUpon>VisProdukt.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Customer.cs" />
-    <Compile Include="Models\Database.cs" />
-    <Compile Include="Models\IntelligentRådgivning.cs" />
+    <Compile Include="Database\Database.cs" />
+    <Compile Include="Services\IntelligentRådgivning.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProductLine.cs" />
     <Compile Include="Models\Reports.cs" />
-    <Compile Include="Models\StoreStock.cs" />
+    <Compile Include="Services\StoreStock.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -141,6 +141,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Services\Customer.cs" />
+    <Compile Include="Services\Orders.cs" />
+    <Compile Include="Services\Productline.cs" />
+    <Compile Include="Services\Produkt.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
