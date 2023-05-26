@@ -31,6 +31,8 @@ namespace SemesterProjekt.Models
 
         public static Customer SqlGetCustomer(string phoneNr, string mail)
         {
+
+            string SQLstring = $"SELECT * FROM Customer WHERE PhoneNr ={SøgtVareNr};";
             return Customer;
         }
 
