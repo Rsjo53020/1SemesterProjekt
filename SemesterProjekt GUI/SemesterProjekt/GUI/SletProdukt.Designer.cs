@@ -68,13 +68,15 @@
             // 
             // BTN_DeleteFindProdukt
             // 
+            this.BTN_DeleteFindProdukt.BackColor = System.Drawing.Color.White;
+            this.BTN_DeleteFindProdukt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_DeleteFindProdukt.Location = new System.Drawing.Point(626, 246);
             this.BTN_DeleteFindProdukt.Margin = new System.Windows.Forms.Padding(2);
             this.BTN_DeleteFindProdukt.Name = "BTN_DeleteFindProdukt";
             this.BTN_DeleteFindProdukt.Size = new System.Drawing.Size(217, 86);
             this.BTN_DeleteFindProdukt.TabIndex = 117;
             this.BTN_DeleteFindProdukt.Text = "Vis Produkt";
-            this.BTN_DeleteFindProdukt.UseVisualStyleBackColor = true;
+            this.BTN_DeleteFindProdukt.UseVisualStyleBackColor = false;
             // 
             // TB_DeleteFindKategory
             // 
