@@ -53,9 +53,7 @@ namespace SemesterProjekt.Models
             return Customer;
         }
         /// <summary>
-        /// (C)RUD; FirstName (string), SurName(string), PhoneNr(string), EMailAdress(string), Adress(string),
-        /// City(string), PostalCode(string),
-        /// Discount(Desimal), Birthday(DateTime(YYYY-MM-DD)), Age(int), VisionTest(string)
+        /// 
         /// </summary>
         public static void RegisterCustomer()
         {
