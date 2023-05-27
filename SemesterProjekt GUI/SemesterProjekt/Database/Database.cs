@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Net.Mail;
 using System.Net.NetworkInformation;
-
+using SemesterProjekt.Models;
 
 namespace SemesterProjekt.Database
 {
@@ -75,8 +75,11 @@ namespace SemesterProjekt.Database
 
             return sSQL;
         }
-
-        public static void SqlDeleteCustomer(Customer customer)
+        /// <summary>
+        /// CRU(D) on Customer: Delete a customer
+        /// </summary>
+        /// <param name="customer"></param>
+        public static void SqlDeleteCustomer(Models.Customer customer)
         {
 
             string sSQL = $"DELETE * FROM Customer WHERE CustomerID = '{customer.CustomerID}';";
@@ -86,22 +89,23 @@ namespace SemesterProjekt.Database
 
         }
         /// <summary>
-        /// Update a customer 
+        ///  CR(U)D on Customer: uppdate a customer  
         /// </summary>
         /// <param name="customer"></param>
-        public static void SqlUpdateCustomer(Customer customer)
+        public static void SqlUpdateCustomer(Models.Customer customer)
         {
             string sSQL = sSQL = $"UPDATE Customer SET FirstName = ({customer.FirstName}, SurName = {customer.SurName}, " +
                 $"PhoneNr = {customer.PhoneNr},EMailAdress = {customer.Mail}, Adress = {customer.Address}, City = {customer.City}, " +
-                $"PostalCode = {customer.PostalCode}, Discount = {customer.Discount}, Birthday = {customer.Birthday}, Age = {customer.Age}, VisionTest {customer.VisionTest}) WHERE PhoneNr = {customer.CustomerID}";
+                $"PostalCode = {customer.PostalCode}, Discount = {customer.Discount}, Birthday = {customer.Birthday}, " +
+                $"Age = {customer.Age}, VisionTest {customer.VisionTest}) WHERE CustomerID = {customer.CustomerID}";
 
             ConnectionToDatabase(sSQL);
 
 
-           
+
         }
         /// <summary>
-        /// Create a order - not important in version 1
+        ///(C)RUD on Order - not important in version 1
         /// </summary>
         /// <param name="order"></param>
         public static void SqlCreateOrder(Order order)
@@ -109,7 +113,7 @@ namespace SemesterProjekt.Database
 
         }
         /// <summary>
-        /// Find order by date
+        /// C(R)UD on Order: Find a order by date
         /// </summary>
         /// <param name="dateStart"></param>
         /// <param name="dateEnd"></param>
@@ -123,7 +127,7 @@ namespace SemesterProjekt.Database
             return sSQL;
         }
         /// <summary>
-        /// Delete a order - not important in version 1
+        /// CRU(D) on Order - Delete a product is not important in version 1
         /// </summary>
         /// <param name=""></param>
         /// <param name=""></param>
@@ -132,31 +136,74 @@ namespace SemesterProjekt.Database
 
         }
         /// <summary>
-        /// Update a order - not important in version 1
+        /// CR(U)D on Order - not important in version 1
         /// </summary>
         /// <param name="order"></param>
         /// <returns></returns>
         public static void SqlUpdateOrder(Order order)
         {
-           
-        }
 
+        }
+        /// <summary>
+        /// (C)RUD on Product: Create a produckt 
+        /// </summary>
+        /// <param name="product"></param>
         public static void SqlCreateProduct(Product product)
         {
+            string sSQL = $"INSERT INTO Product Values ({product.NameProduct}, {product.Discription}, " +
+                $"{product.Kategory}, {product.PurchasePrice}, {product.SalesPrice}, {product.VATSup}, " +
+                $"{product.EAN});";
+
+            ConnectionToDatabase(sSQL);
         }
-
-        public static Product SqlGetProduct(Product name = "", Product Category = "")
+        /// <summary>
+        /// C(R)UD on Product: takes two parameters to find a product
+        /// </summary>
+        public static string SqlGetProduct(string nameProdukt = "", string kategory = "")
         {
-            return Product;
+
+            string sSQL = "";
+            if (nameProdukt != "")
+            {
+                sSQL = $"SELECT * FROM Produkt WHERE NameProduct = '{nameProdukt}';";
+            }
+            else if (kategory != "")
+            {
+                sSQL = $"SELECT * FROM Product WHERE Kategaory = '{kategory}';";
+
+            }
+
+            ConnectionToDatabase(sSQL);
+
+            return sSQL; ;
         }
-
-        public static void SqlDeleteProduct(Product name = "", Product Category = "")
+        /// <summary>
+        /// CRU(D) on Product: Delete a Product
+        /// </summary>
+        /// <param name="product"></param>
+        public static void SqlDeleteProduct(Models.Product product)
         {
+
+            string sSQL = $"DELETE * FROM Product WHERE EAN = '{product.EAN}';";
+
+            ConnectionToDatabase(sSQL);
 
         }
-
-        public static Product SqlUpdateProduct(Product product)
+        /// <summary>
+        /// CR(U)D on Product: Update a Product
+        /// </summary>
+        /// <param name="product"></param>
+        /// <returns></returns>
+        public static Product SqlUpdateProduct(Models.Product product)
         {
+            string sSQL = sSQL = $"UPDATE Product SET SalesPrice = ({product.salesPrice}, NameProduct = {product.nameProduct}, " +
+                $"Discription = {product.discription}, Kategory = {product.kategory}, PurchasePrice = {product.purchasePrice}, VATSup = {product.VATSup}, " +
+                $"EAN = {product.EAN} WHERE EAN = {product.EAN}";
+
+            ConnectionToDatabase(sSQL);
+
+            Product = sSQL;
+
             return Product;
         }
     }
