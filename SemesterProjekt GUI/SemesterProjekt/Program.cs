@@ -71,7 +71,7 @@ namespace SemesterProjekt
                     type = "Solbriller";
                     break;
                 default:
-                    Console.WriteLine("Ugyldigt valg. Vælg venligst en gyldig stil.");
+                    Console.WriteLine("Ugyldigt valg. Vælg venligst en gyldig type.");
                     FindSuitableGlasses();
                     return;
             }
@@ -95,7 +95,7 @@ namespace SemesterProjekt
                     beUsedFor = "Læsebriller";
                     break;
                 default:
-                    Console.WriteLine("Ugyldigt valg. Vælg venligst en gyldig anvendelses.");
+                    Console.WriteLine("Ugyldigt valg. Vælg venligst en gyldig anvendelse.");
                     FindSuitableGlasses();
                     return;
             }
