@@ -12,24 +12,37 @@ namespace SemesterProjekt.Models
         private string Desciption { get; set; }
         private string Name { get; set; }
         private Decimal SalesPrice { get; set; }
-
-        public static Product GetProduct(string name)
-        {
-            return Product;
-        }
-        public static void CreateProduct()
-        {
-
-        }
-        public static void UpdateProduct()
-        {
-
-        }
-        public static void DeleteProduct()
-        {
-
-        }
+        private string Kategory { get; set; }
+        private int EAN { get; set; }
     }
+
+    /// <summary>
+    /// Constructor Class
+    /// </summary>
+    public Product(decimal purchasePrice, string desciption, string name, decimal salesPrice, string kategory, int ean)
+    {
+        this.PurchasePrice = purchasePrice;
+        this.Desciption = desciption;
+        this.Name = name;
+        this.SalesPrice = salesPrice;
+        this.Kategory = kategory;
+        this.EAN = ean;
+    }
+
+
+    /// <summary>
+    /// Constructor Database
+    /// </summary>
+    public Product(decimal purchasePrice, string desciption, string name, decimal salesPrice, string kategory)
+    {
+        this.PurchasePrice = purchasePrice;
+        this.Desciption = desciption;
+        this.Name = name;
+        this.SalesPrice = salesPrice;
+        this.Kategory = kategory;
+    }
+    
+
 
     public class Frame : Product
     {
@@ -58,3 +71,4 @@ namespace SemesterProjekt.Models
         public string LensSize { get; set; }
     }
 }
+
