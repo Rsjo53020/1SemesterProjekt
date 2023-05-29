@@ -68,6 +68,7 @@
             this.BTN_UpdateCustomer = new System.Windows.Forms.Button();
             this.BTN_DeleteCustomer = new System.Windows.Forms.Button();
             this.BTN_OpretOrdre = new System.Windows.Forms.Button();
+            this.LL_Forklaring = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_OpdateSelectProduct_ShowCustomers)).BeginInit();
             this.SuspendLayout();
@@ -485,12 +486,25 @@
             this.BTN_OpretOrdre.Text = "Opret Ordre";
             this.BTN_OpretOrdre.UseVisualStyleBackColor = false;
             // 
+            // LL_Forklaring
+            // 
+            this.LL_Forklaring.AutoSize = true;
+            this.LL_Forklaring.LinkColor = System.Drawing.Color.White;
+            this.LL_Forklaring.Location = new System.Drawing.Point(826, 172);
+            this.LL_Forklaring.Name = "LL_Forklaring";
+            this.LL_Forklaring.Size = new System.Drawing.Size(79, 20);
+            this.LL_Forklaring.TabIndex = 86;
+            this.LL_Forklaring.TabStop = true;
+            this.LL_Forklaring.Text = "Forklaring";
+            this.LL_Forklaring.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LL_Forklaring_LinkClicked);
+            // 
             // OpdaterKunde
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(978, 792);
+            this.Controls.Add(this.LL_Forklaring);
             this.Controls.Add(this.BTN_OpretOrdre);
             this.Controls.Add(this.BTN_DeleteCustomer);
             this.Controls.Add(this.BTN_UpdateCustomer);
@@ -583,5 +597,6 @@
         private System.Windows.Forms.Button BTN_UpdateCustomer;
         private System.Windows.Forms.Button BTN_DeleteCustomer;
         private System.Windows.Forms.Button BTN_OpretOrdre;
+        private System.Windows.Forms.LinkLabel LL_Forklaring;
     }
 }

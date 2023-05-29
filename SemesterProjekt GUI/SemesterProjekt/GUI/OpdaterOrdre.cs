@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,15 @@ namespace SemesterProjekt.GUI
         public OpdaterOrdre()
         {
             InitializeComponent();
+        }
+
+        private void LL_Forklaring_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // Path to file
+            string filePath = @"C:\Opdater Ordre.PDF";
+
+            // Open file with with standard program
+            Process.Start(filePath);
         }
     }
 }
