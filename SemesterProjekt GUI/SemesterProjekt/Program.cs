@@ -164,7 +164,7 @@ namespace SemesterProjekt
             Console.WriteLine($"Farve: {color}");
             Console.WriteLine("Mere information om de anbefalede briller...");
 
-            // You can also add more information about the recommended glasses or present a list of options to the customer.
+            // You can also add more information about the recommended glasses or present a list of alternative options to the customer.
 
             Console.WriteLine();
             Console.WriteLine("Vi håber, at du finder denne information nyttig. God dag!");
