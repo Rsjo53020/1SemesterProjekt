@@ -31,27 +31,27 @@
             this.PANEL_FindOrder = new System.Windows.Forms.Panel();
             this.LB_FoundOrder = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.TB_UpdatedFirstName = new System.Windows.Forms.TextBox();
-            this.TB_UpdatedLastName = new System.Windows.Forms.TextBox();
+            this.TB_FirstName = new System.Windows.Forms.TextBox();
+            this.TB_SurName = new System.Windows.Forms.TextBox();
             this.Label2 = new System.Windows.Forms.Label();
-            this.TB_UpdatedTlf = new System.Windows.Forms.TextBox();
+            this.TB_PhoneNr = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.TB_UpatedEMail = new System.Windows.Forms.TextBox();
+            this.TB_EMailAdress = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.TB_UpdatedAdress = new System.Windows.Forms.TextBox();
+            this.TB_Adress = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.TB_UpdatedCity = new System.Windows.Forms.TextBox();
+            this.TB_City = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.TB_UpdatedPostalCode = new System.Windows.Forms.TextBox();
+            this.TB_PostalCode = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.TB_UpdatedPostNr = new System.Windows.Forms.TextBox();
+            this.TB_Birthday = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.TB_UpdatedTest = new System.Windows.Forms.TextBox();
+            this.TB_VisionTest = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.TB_UpdatedAge = new System.Windows.Forms.TextBox();
+            this.TB_Age = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.BTN_CreateCustomer = new System.Windows.Forms.Button();
-            this.TB_UpdatedDiscount = new System.Windows.Forms.TextBox();
+            this.TB_Discount = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.PANEL_FindOrder.SuspendLayout();
             this.SuspendLayout();
@@ -90,19 +90,19 @@
             this.label1.TabIndex = 32;
             this.label1.Text = "Fornavn :";
             // 
-            // TB_UpdatedFirstName
+            // TB_FirstName
             // 
-            this.TB_UpdatedFirstName.Location = new System.Drawing.Point(276, 94);
-            this.TB_UpdatedFirstName.Name = "TB_UpdatedFirstName";
-            this.TB_UpdatedFirstName.Size = new System.Drawing.Size(394, 22);
-            this.TB_UpdatedFirstName.TabIndex = 33;
+            this.TB_FirstName.Location = new System.Drawing.Point(276, 94);
+            this.TB_FirstName.Name = "TB_FirstName";
+            this.TB_FirstName.Size = new System.Drawing.Size(394, 22);
+            this.TB_FirstName.TabIndex = 33;
             // 
-            // TB_UpdatedLastName
+            // TB_SurName
             // 
-            this.TB_UpdatedLastName.Location = new System.Drawing.Point(276, 138);
-            this.TB_UpdatedLastName.Name = "TB_UpdatedLastName";
-            this.TB_UpdatedLastName.Size = new System.Drawing.Size(394, 22);
-            this.TB_UpdatedLastName.TabIndex = 35;
+            this.TB_SurName.Location = new System.Drawing.Point(276, 138);
+            this.TB_SurName.Name = "TB_SurName";
+            this.TB_SurName.Size = new System.Drawing.Size(394, 22);
+            this.TB_SurName.TabIndex = 35;
             // 
             // Label2
             // 
@@ -115,12 +115,12 @@
             this.Label2.TabIndex = 34;
             this.Label2.Text = "Efternavn :";
             // 
-            // TB_UpdatedTlf
+            // TB_PhoneNr
             // 
-            this.TB_UpdatedTlf.Location = new System.Drawing.Point(276, 182);
-            this.TB_UpdatedTlf.Name = "TB_UpdatedTlf";
-            this.TB_UpdatedTlf.Size = new System.Drawing.Size(394, 22);
-            this.TB_UpdatedTlf.TabIndex = 37;
+            this.TB_PhoneNr.Location = new System.Drawing.Point(276, 182);
+            this.TB_PhoneNr.Name = "TB_PhoneNr";
+            this.TB_PhoneNr.Size = new System.Drawing.Size(394, 22);
+            this.TB_PhoneNr.TabIndex = 37;
             // 
             // label3
             // 
@@ -133,12 +133,12 @@
             this.label3.TabIndex = 36;
             this.label3.Text = "Tlf +45 :";
             // 
-            // TB_UpatedEMail
+            // TB_EMailAdress
             // 
-            this.TB_UpatedEMail.Location = new System.Drawing.Point(276, 223);
-            this.TB_UpatedEMail.Name = "TB_UpatedEMail";
-            this.TB_UpatedEMail.Size = new System.Drawing.Size(394, 22);
-            this.TB_UpatedEMail.TabIndex = 39;
+            this.TB_EMailAdress.Location = new System.Drawing.Point(276, 223);
+            this.TB_EMailAdress.Name = "TB_EMailAdress";
+            this.TB_EMailAdress.Size = new System.Drawing.Size(394, 22);
+            this.TB_EMailAdress.TabIndex = 39;
             // 
             // label4
             // 
@@ -151,12 +151,12 @@
             this.label4.TabIndex = 38;
             this.label4.Text = "E-Mail :";
             // 
-            // TB_UpdatedAdress
+            // TB_Adress
             // 
-            this.TB_UpdatedAdress.Location = new System.Drawing.Point(276, 268);
-            this.TB_UpdatedAdress.Name = "TB_UpdatedAdress";
-            this.TB_UpdatedAdress.Size = new System.Drawing.Size(394, 22);
-            this.TB_UpdatedAdress.TabIndex = 41;
+            this.TB_Adress.Location = new System.Drawing.Point(276, 268);
+            this.TB_Adress.Name = "TB_Adress";
+            this.TB_Adress.Size = new System.Drawing.Size(394, 22);
+            this.TB_Adress.TabIndex = 41;
             // 
             // label5
             // 
@@ -169,12 +169,12 @@
             this.label5.TabIndex = 40;
             this.label5.Text = "Adresse :";
             // 
-            // TB_UpdatedCity
+            // TB_City
             // 
-            this.TB_UpdatedCity.Location = new System.Drawing.Point(276, 310);
-            this.TB_UpdatedCity.Name = "TB_UpdatedCity";
-            this.TB_UpdatedCity.Size = new System.Drawing.Size(394, 22);
-            this.TB_UpdatedCity.TabIndex = 43;
+            this.TB_City.Location = new System.Drawing.Point(276, 310);
+            this.TB_City.Name = "TB_City";
+            this.TB_City.Size = new System.Drawing.Size(394, 22);
+            this.TB_City.TabIndex = 43;
             // 
             // label6
             // 
@@ -187,12 +187,12 @@
             this.label6.TabIndex = 42;
             this.label6.Text = "By :";
             // 
-            // TB_UpdatedPostalCode
+            // TB_PostalCode
             // 
-            this.TB_UpdatedPostalCode.Location = new System.Drawing.Point(276, 357);
-            this.TB_UpdatedPostalCode.Name = "TB_UpdatedPostalCode";
-            this.TB_UpdatedPostalCode.Size = new System.Drawing.Size(394, 22);
-            this.TB_UpdatedPostalCode.TabIndex = 45;
+            this.TB_PostalCode.Location = new System.Drawing.Point(276, 357);
+            this.TB_PostalCode.Name = "TB_PostalCode";
+            this.TB_PostalCode.Size = new System.Drawing.Size(394, 22);
+            this.TB_PostalCode.TabIndex = 45;
             // 
             // label7
             // 
@@ -205,12 +205,12 @@
             this.label7.TabIndex = 44;
             this.label7.Text = "PostNr : ";
             // 
-            // TB_UpdatedPostNr
+            // TB_Birthday
             // 
-            this.TB_UpdatedPostNr.Location = new System.Drawing.Point(276, 500);
-            this.TB_UpdatedPostNr.Name = "TB_UpdatedPostNr";
-            this.TB_UpdatedPostNr.Size = new System.Drawing.Size(394, 22);
-            this.TB_UpdatedPostNr.TabIndex = 51;
+            this.TB_Birthday.Location = new System.Drawing.Point(276, 500);
+            this.TB_Birthday.Name = "TB_Birthday";
+            this.TB_Birthday.Size = new System.Drawing.Size(394, 22);
+            this.TB_Birthday.TabIndex = 51;
             // 
             // label8
             // 
@@ -219,16 +219,16 @@
             this.label8.ForeColor = System.Drawing.Color.Gainsboro;
             this.label8.Location = new System.Drawing.Point(43, 491);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(120, 31);
+            this.label8.Size = new System.Drawing.Size(185, 31);
             this.label8.TabIndex = 50;
-            this.label8.Text = "PostNr : ";
+            this.label8.Text = "Fødselsdato : ";
             // 
-            // TB_UpdatedTest
+            // TB_VisionTest
             // 
-            this.TB_UpdatedTest.Location = new System.Drawing.Point(276, 453);
-            this.TB_UpdatedTest.Name = "TB_UpdatedTest";
-            this.TB_UpdatedTest.Size = new System.Drawing.Size(394, 22);
-            this.TB_UpdatedTest.TabIndex = 49;
+            this.TB_VisionTest.Location = new System.Drawing.Point(276, 453);
+            this.TB_VisionTest.Name = "TB_VisionTest";
+            this.TB_VisionTest.Size = new System.Drawing.Size(394, 22);
+            this.TB_VisionTest.TabIndex = 49;
             // 
             // label9
             // 
@@ -241,12 +241,12 @@
             this.label9.TabIndex = 48;
             this.label9.Text = "Synstest :";
             // 
-            // TB_UpdatedAge
+            // TB_Age
             // 
-            this.TB_UpdatedAge.Location = new System.Drawing.Point(276, 402);
-            this.TB_UpdatedAge.Name = "TB_UpdatedAge";
-            this.TB_UpdatedAge.Size = new System.Drawing.Size(394, 22);
-            this.TB_UpdatedAge.TabIndex = 47;
+            this.TB_Age.Location = new System.Drawing.Point(276, 402);
+            this.TB_Age.Name = "TB_Age";
+            this.TB_Age.Size = new System.Drawing.Size(394, 22);
+            this.TB_Age.TabIndex = 47;
             // 
             // label10
             // 
@@ -273,12 +273,12 @@
             this.BTN_CreateCustomer.Text = "Opret Kunde";
             this.BTN_CreateCustomer.UseVisualStyleBackColor = false;
             // 
-            // TB_UpdatedDiscount
+            // TB_Discount
             // 
-            this.TB_UpdatedDiscount.Location = new System.Drawing.Point(276, 548);
-            this.TB_UpdatedDiscount.Name = "TB_UpdatedDiscount";
-            this.TB_UpdatedDiscount.Size = new System.Drawing.Size(394, 22);
-            this.TB_UpdatedDiscount.TabIndex = 54;
+            this.TB_Discount.Location = new System.Drawing.Point(276, 548);
+            this.TB_Discount.Name = "TB_Discount";
+            this.TB_Discount.Size = new System.Drawing.Size(394, 22);
+            this.TB_Discount.TabIndex = 54;
             // 
             // label11
             // 
@@ -297,28 +297,28 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(869, 634);
-            this.Controls.Add(this.TB_UpdatedDiscount);
+            this.Controls.Add(this.TB_Discount);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.BTN_CreateCustomer);
-            this.Controls.Add(this.TB_UpdatedPostNr);
+            this.Controls.Add(this.TB_Birthday);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.TB_UpdatedTest);
+            this.Controls.Add(this.TB_VisionTest);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.TB_UpdatedAge);
+            this.Controls.Add(this.TB_Age);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.TB_UpdatedPostalCode);
+            this.Controls.Add(this.TB_PostalCode);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.TB_UpdatedCity);
+            this.Controls.Add(this.TB_City);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.TB_UpdatedAdress);
+            this.Controls.Add(this.TB_Adress);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.TB_UpatedEMail);
+            this.Controls.Add(this.TB_EMailAdress);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.TB_UpdatedTlf);
+            this.Controls.Add(this.TB_PhoneNr);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.TB_UpdatedLastName);
+            this.Controls.Add(this.TB_SurName);
             this.Controls.Add(this.Label2);
-            this.Controls.Add(this.TB_UpdatedFirstName);
+            this.Controls.Add(this.TB_FirstName);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.PANEL_FindOrder);
             this.Name = "OpretKunde";
@@ -335,27 +335,27 @@
         private System.Windows.Forms.Panel PANEL_FindOrder;
         private System.Windows.Forms.Label LB_FoundOrder;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox TB_UpdatedFirstName;
-        private System.Windows.Forms.TextBox TB_UpdatedLastName;
+        private System.Windows.Forms.TextBox TB_FirstName;
+        private System.Windows.Forms.TextBox TB_SurName;
         private System.Windows.Forms.Label Label2;
-        private System.Windows.Forms.TextBox TB_UpdatedTlf;
+        private System.Windows.Forms.TextBox TB_PhoneNr;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox TB_UpatedEMail;
+        private System.Windows.Forms.TextBox TB_EMailAdress;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox TB_UpdatedAdress;
+        private System.Windows.Forms.TextBox TB_Adress;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox TB_UpdatedCity;
+        private System.Windows.Forms.TextBox TB_City;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox TB_UpdatedPostalCode;
+        private System.Windows.Forms.TextBox TB_PostalCode;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox TB_UpdatedPostNr;
+        private System.Windows.Forms.TextBox TB_Birthday;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox TB_UpdatedTest;
+        private System.Windows.Forms.TextBox TB_VisionTest;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox TB_UpdatedAge;
+        private System.Windows.Forms.TextBox TB_Age;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button BTN_CreateCustomer;
-        private System.Windows.Forms.TextBox TB_UpdatedDiscount;
+        private System.Windows.Forms.TextBox TB_Discount;
         private System.Windows.Forms.Label label11;
     }
 }

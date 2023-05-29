@@ -53,7 +53,7 @@ namespace SemesterProjekt.Models
             string adress, string city, string postalCode, decimal discount, DateTime birthday,
             int age, string visiontest)
         {
-            this.FirstName = firstName;
+            this.FirstName = FirstName;
             this.SurName = surName;
             this.PhoneNr = phoneNr;
             this.Mail = mail;
