@@ -9,10 +9,10 @@ namespace SemesterProjekt.Services
 {
     public class Produkt
     {
-        public static Product GetProduct(string name)
+        public static List<Models.Product> GetProduct(string getNameProduct = "", string getKategory = "")
         {
-            Product product = new Frame();
-            return product;
+            List<Models.Product> ProductList = Database.Database.SqlGetProduct(getNameProduct, getKategory);
+            return ProductList;
         }
         public static void CreateProduct()
         {
