@@ -25,33 +25,6 @@ namespace SemesterProjekt.Models
         public string Style { get; set; }
     }
 
-    /// <summary>
-    /// Constructor Class
-    /// </summary>
-    public Product(decimal purchasePrice, string desciption, string name, decimal salesPrice, string kategory, int ean)
-    {
-        this.PurchasePrice = purchasePrice;
-        this.Desciption = desciption;
-        this.Name = name;
-        this.SalesPrice = salesPrice;
-        this.Kategory = kategory;
-        this.EAN = ean;
-    }
-
-
-    /// <summary>
-    /// Constructor Database
-    /// </summary>
-    public Product(decimal purchasePrice, string desciption, string name, decimal salesPrice, string kategory)
-    {
-        this.PurchasePrice = purchasePrice;
-        this.Desciption = desciption;
-        this.Name = name;
-        this.SalesPrice = salesPrice;
-        this.Kategory = kategory;
-    }
-
-
 
     public class Frame : Product
     {
