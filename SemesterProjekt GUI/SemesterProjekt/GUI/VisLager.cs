@@ -16,5 +16,12 @@ namespace SemesterProjekt.GUI
         {
             InitializeComponent();
         }
+
+        private void VisLager_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'storeStockTable.StoreStock' table. You can move, or remove it, as needed.
+            this.storeStockTableAdapter.Fill(this.storeStockTable.StoreStock);
+
+        }
     }
 }

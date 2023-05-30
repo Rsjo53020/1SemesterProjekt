@@ -21,5 +21,12 @@ namespace SemesterProjekt.GUI
         {
 
         }
+
+        private void SøgKunde_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'customerTable.Customer' table. You can move, or remove it, as needed.
+            this.customerTableAdapter.Fill(this.customerTable.Customer);
+
+        }
     }
 }

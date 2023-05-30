@@ -48,6 +48,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomerTable.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerTable.xsd</DependentUpon>
+    </Compile>
     <Compile Include="GUI\BGFStartside.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +145,21 @@
     </Compile>
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Database\Database.cs" />
+    <Compile Include="OrdersTable.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrdersTable.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProductTable.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductTable.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="Services\IntelligentRådgivning.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\Product.cs" />
@@ -158,9 +178,62 @@
     <Compile Include="Services\Orders.cs" />
     <Compile Include="Services\Productline.cs" />
     <Compile Include="Services\Produkt.cs" />
+    <Compile Include="StoreStockTable.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StoreStockTable.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="CustomerTable.xsc">
+      <DependentUpon>CustomerTable.xsd</DependentUpon>
+    </None>
+    <None Include="CustomerTable.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustomerTable.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CustomerTable.xss">
+      <DependentUpon>CustomerTable.xsd</DependentUpon>
+    </None>
+    <None Include="OrdersTable.xsc">
+      <DependentUpon>OrdersTable.xsd</DependentUpon>
+    </None>
+    <None Include="OrdersTable.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OrdersTable.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OrdersTable.xss">
+      <DependentUpon>OrdersTable.xsd</DependentUpon>
+    </None>
+    <None Include="ProductTable.xsc">
+      <DependentUpon>ProductTable.xsd</DependentUpon>
+    </None>
+    <None Include="ProductTable.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductTable.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProductTable.xss">
+      <DependentUpon>ProductTable.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="StoreStockTable.xsc">
+      <DependentUpon>StoreStockTable.xsd</DependentUpon>
+    </None>
+    <None Include="StoreStockTable.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StoreStockTable.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StoreStockTable.xss">
+      <DependentUpon>StoreStockTable.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

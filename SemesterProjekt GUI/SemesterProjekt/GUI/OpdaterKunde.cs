@@ -26,5 +26,12 @@ namespace SemesterProjekt.GUI
             // Open file with with standard program
             Process.Start(filePath);
         }
+
+        private void OpdaterKunde_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'customerTable.Customer' table. You can move, or remove it, as needed.
+            this.customerTableAdapter.Fill(this.customerTable.Customer);
+
+        }
     }
 }

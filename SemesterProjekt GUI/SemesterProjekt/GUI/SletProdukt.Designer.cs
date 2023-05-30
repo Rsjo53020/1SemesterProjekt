@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.DGV_DeleteSelectProduct = new System.Windows.Forms.DataGridView();
             this.BTN_DeleteProduct = new System.Windows.Forms.Button();
             this.BTN_DeleteFindProdukt = new System.Windows.Forms.Button();
@@ -37,31 +38,71 @@
             this.Label2 = new System.Windows.Forms.Label();
             this.PANEL_FindOrder = new System.Windows.Forms.Panel();
             this.LB_ShowProduct = new System.Windows.Forms.Label();
+            this.productTable = new SemesterProjekt.ProductTable();
+            this.productTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.productTableAdapter = new SemesterProjekt.ProductTableTableAdapters.ProductTableAdapter();
+            this.salesPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameProductDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.discriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kategoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.purchasePriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vATSupDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.eANDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.genderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lenghtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.widthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kindDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.styleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usedForDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_DeleteSelectProduct)).BeginInit();
             this.PANEL_FindOrder.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.productTable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productTableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // DGV_DeleteSelectProduct
             // 
+            this.DGV_DeleteSelectProduct.AutoGenerateColumns = false;
             this.DGV_DeleteSelectProduct.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.DGV_DeleteSelectProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV_DeleteSelectProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.salesPriceDataGridViewTextBoxColumn,
+            this.nameProductDataGridViewTextBoxColumn,
+            this.discriptionDataGridViewTextBoxColumn,
+            this.kategoryDataGridViewTextBoxColumn,
+            this.purchasePriceDataGridViewTextBoxColumn,
+            this.vATSupDataGridViewTextBoxColumn,
+            this.eANDataGridViewTextBoxColumn,
+            this.genderDataGridViewTextBoxColumn,
+            this.ageDataGridViewTextBoxColumn,
+            this.lenghtDataGridViewTextBoxColumn,
+            this.widthDataGridViewTextBoxColumn,
+            this.kindDataGridViewTextBoxColumn,
+            this.styleDataGridViewTextBoxColumn,
+            this.colorDataGridViewTextBoxColumn,
+            this.usedForDataGridViewTextBoxColumn});
+            this.DGV_DeleteSelectProduct.DataSource = this.productBindingSource;
             this.DGV_DeleteSelectProduct.GridColor = System.Drawing.SystemColors.ButtonFace;
-            this.DGV_DeleteSelectProduct.Location = new System.Drawing.Point(41, 336);
+            this.DGV_DeleteSelectProduct.Location = new System.Drawing.Point(31, 273);
             this.DGV_DeleteSelectProduct.Margin = new System.Windows.Forms.Padding(2);
             this.DGV_DeleteSelectProduct.Name = "DGV_DeleteSelectProduct";
             this.DGV_DeleteSelectProduct.RowHeadersWidth = 82;
             this.DGV_DeleteSelectProduct.RowTemplate.Height = 33;
-            this.DGV_DeleteSelectProduct.Size = new System.Drawing.Size(802, 184);
+            this.DGV_DeleteSelectProduct.Size = new System.Drawing.Size(602, 150);
             this.DGV_DeleteSelectProduct.TabIndex = 119;
             // 
             // BTN_DeleteProduct
             // 
             this.BTN_DeleteProduct.BackColor = System.Drawing.Color.White;
             this.BTN_DeleteProduct.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BTN_DeleteProduct.Location = new System.Drawing.Point(626, 531);
+            this.BTN_DeleteProduct.Location = new System.Drawing.Point(470, 431);
             this.BTN_DeleteProduct.Margin = new System.Windows.Forms.Padding(2);
             this.BTN_DeleteProduct.Name = "BTN_DeleteProduct";
-            this.BTN_DeleteProduct.Size = new System.Drawing.Size(217, 92);
+            this.BTN_DeleteProduct.Size = new System.Drawing.Size(163, 75);
             this.BTN_DeleteProduct.TabIndex = 118;
             this.BTN_DeleteProduct.Text = "Slet Produkt";
             this.BTN_DeleteProduct.UseVisualStyleBackColor = false;
@@ -70,10 +111,10 @@
             // 
             this.BTN_DeleteFindProdukt.BackColor = System.Drawing.Color.White;
             this.BTN_DeleteFindProdukt.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BTN_DeleteFindProdukt.Location = new System.Drawing.Point(626, 246);
+            this.BTN_DeleteFindProdukt.Location = new System.Drawing.Point(470, 200);
             this.BTN_DeleteFindProdukt.Margin = new System.Windows.Forms.Padding(2);
             this.BTN_DeleteFindProdukt.Name = "BTN_DeleteFindProdukt";
-            this.BTN_DeleteFindProdukt.Size = new System.Drawing.Size(217, 86);
+            this.BTN_DeleteFindProdukt.Size = new System.Drawing.Size(163, 70);
             this.BTN_DeleteFindProdukt.TabIndex = 117;
             this.BTN_DeleteFindProdukt.Text = "Vis Produkt";
             this.BTN_DeleteFindProdukt.UseVisualStyleBackColor = false;
@@ -81,17 +122,19 @@
             // TB_DeleteFindKategory
             // 
             this.TB_DeleteFindKategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.TB_DeleteFindKategory.Location = new System.Drawing.Point(403, 194);
+            this.TB_DeleteFindKategory.Location = new System.Drawing.Point(302, 158);
+            this.TB_DeleteFindKategory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TB_DeleteFindKategory.Name = "TB_DeleteFindKategory";
-            this.TB_DeleteFindKategory.Size = new System.Drawing.Size(389, 37);
+            this.TB_DeleteFindKategory.Size = new System.Drawing.Size(293, 31);
             this.TB_DeleteFindKategory.TabIndex = 116;
             // 
             // TB_DeleteFindProductName
             // 
             this.TB_DeleteFindProductName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.TB_DeleteFindProductName.Location = new System.Drawing.Point(403, 118);
+            this.TB_DeleteFindProductName.Location = new System.Drawing.Point(302, 96);
+            this.TB_DeleteFindProductName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TB_DeleteFindProductName.Name = "TB_DeleteFindProductName";
-            this.TB_DeleteFindProductName.Size = new System.Drawing.Size(389, 37);
+            this.TB_DeleteFindProductName.Size = new System.Drawing.Size(293, 31);
             this.TB_DeleteFindProductName.TabIndex = 115;
             // 
             // label4
@@ -99,9 +142,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.label4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label4.Location = new System.Drawing.Point(35, 198);
+            this.label4.Location = new System.Drawing.Point(26, 161);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 31);
+            this.label4.Size = new System.Drawing.Size(98, 25);
             this.label4.TabIndex = 114;
             this.label4.Text = "Kategori:";
             // 
@@ -110,9 +154,10 @@
             this.Label2.AutoSize = true;
             this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.Label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Label2.Location = new System.Drawing.Point(35, 123);
+            this.Label2.Location = new System.Drawing.Point(26, 100);
+            this.Label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(182, 31);
+            this.Label2.Size = new System.Drawing.Size(145, 25);
             this.Label2.TabIndex = 113;
             this.Label2.Text = "Produkt navn:";
             // 
@@ -122,8 +167,9 @@
             this.PANEL_FindOrder.Controls.Add(this.LB_ShowProduct);
             this.PANEL_FindOrder.Dock = System.Windows.Forms.DockStyle.Top;
             this.PANEL_FindOrder.Location = new System.Drawing.Point(0, 0);
+            this.PANEL_FindOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PANEL_FindOrder.Name = "PANEL_FindOrder";
-            this.PANEL_FindOrder.Size = new System.Drawing.Size(869, 93);
+            this.PANEL_FindOrder.Size = new System.Drawing.Size(652, 76);
             this.PANEL_FindOrder.TabIndex = 112;
             // 
             // LB_ShowProduct
@@ -131,18 +177,129 @@
             this.LB_ShowProduct.AutoSize = true;
             this.LB_ShowProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.LB_ShowProduct.ForeColor = System.Drawing.Color.Gainsboro;
-            this.LB_ShowProduct.Location = new System.Drawing.Point(397, 39);
+            this.LB_ShowProduct.Location = new System.Drawing.Point(298, 32);
+            this.LB_ShowProduct.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LB_ShowProduct.Name = "LB_ShowProduct";
-            this.LB_ShowProduct.Size = new System.Drawing.Size(235, 31);
+            this.LB_ShowProduct.Size = new System.Drawing.Size(191, 26);
             this.LB_ShowProduct.TabIndex = 16;
             this.LB_ShowProduct.Text = "SLET PRODUKT";
             // 
+            // productTable
+            // 
+            this.productTable.DataSetName = "ProductTable";
+            this.productTable.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // productTableBindingSource
+            // 
+            this.productTableBindingSource.DataSource = this.productTable;
+            this.productTableBindingSource.Position = 0;
+            // 
+            // productBindingSource
+            // 
+            this.productBindingSource.DataMember = "Product";
+            this.productBindingSource.DataSource = this.productTableBindingSource;
+            // 
+            // productTableAdapter
+            // 
+            this.productTableAdapter.ClearBeforeFill = true;
+            // 
+            // salesPriceDataGridViewTextBoxColumn
+            // 
+            this.salesPriceDataGridViewTextBoxColumn.DataPropertyName = "SalesPrice";
+            this.salesPriceDataGridViewTextBoxColumn.HeaderText = "SalesPrice";
+            this.salesPriceDataGridViewTextBoxColumn.Name = "salesPriceDataGridViewTextBoxColumn";
+            // 
+            // nameProductDataGridViewTextBoxColumn
+            // 
+            this.nameProductDataGridViewTextBoxColumn.DataPropertyName = "NameProduct";
+            this.nameProductDataGridViewTextBoxColumn.HeaderText = "NameProduct";
+            this.nameProductDataGridViewTextBoxColumn.Name = "nameProductDataGridViewTextBoxColumn";
+            // 
+            // discriptionDataGridViewTextBoxColumn
+            // 
+            this.discriptionDataGridViewTextBoxColumn.DataPropertyName = "Discription";
+            this.discriptionDataGridViewTextBoxColumn.HeaderText = "Discription";
+            this.discriptionDataGridViewTextBoxColumn.Name = "discriptionDataGridViewTextBoxColumn";
+            // 
+            // kategoryDataGridViewTextBoxColumn
+            // 
+            this.kategoryDataGridViewTextBoxColumn.DataPropertyName = "Kategory";
+            this.kategoryDataGridViewTextBoxColumn.HeaderText = "Kategory";
+            this.kategoryDataGridViewTextBoxColumn.Name = "kategoryDataGridViewTextBoxColumn";
+            // 
+            // purchasePriceDataGridViewTextBoxColumn
+            // 
+            this.purchasePriceDataGridViewTextBoxColumn.DataPropertyName = "PurchasePrice";
+            this.purchasePriceDataGridViewTextBoxColumn.HeaderText = "PurchasePrice";
+            this.purchasePriceDataGridViewTextBoxColumn.Name = "purchasePriceDataGridViewTextBoxColumn";
+            // 
+            // vATSupDataGridViewTextBoxColumn
+            // 
+            this.vATSupDataGridViewTextBoxColumn.DataPropertyName = "VATSup";
+            this.vATSupDataGridViewTextBoxColumn.HeaderText = "VATSup";
+            this.vATSupDataGridViewTextBoxColumn.Name = "vATSupDataGridViewTextBoxColumn";
+            // 
+            // eANDataGridViewTextBoxColumn
+            // 
+            this.eANDataGridViewTextBoxColumn.DataPropertyName = "EAN";
+            this.eANDataGridViewTextBoxColumn.HeaderText = "EAN";
+            this.eANDataGridViewTextBoxColumn.Name = "eANDataGridViewTextBoxColumn";
+            this.eANDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // genderDataGridViewTextBoxColumn
+            // 
+            this.genderDataGridViewTextBoxColumn.DataPropertyName = "Gender";
+            this.genderDataGridViewTextBoxColumn.HeaderText = "Gender";
+            this.genderDataGridViewTextBoxColumn.Name = "genderDataGridViewTextBoxColumn";
+            // 
+            // ageDataGridViewTextBoxColumn
+            // 
+            this.ageDataGridViewTextBoxColumn.DataPropertyName = "Age";
+            this.ageDataGridViewTextBoxColumn.HeaderText = "Age";
+            this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
+            // 
+            // lenghtDataGridViewTextBoxColumn
+            // 
+            this.lenghtDataGridViewTextBoxColumn.DataPropertyName = "Lenght";
+            this.lenghtDataGridViewTextBoxColumn.HeaderText = "Lenght";
+            this.lenghtDataGridViewTextBoxColumn.Name = "lenghtDataGridViewTextBoxColumn";
+            // 
+            // widthDataGridViewTextBoxColumn
+            // 
+            this.widthDataGridViewTextBoxColumn.DataPropertyName = "Width";
+            this.widthDataGridViewTextBoxColumn.HeaderText = "Width";
+            this.widthDataGridViewTextBoxColumn.Name = "widthDataGridViewTextBoxColumn";
+            // 
+            // kindDataGridViewTextBoxColumn
+            // 
+            this.kindDataGridViewTextBoxColumn.DataPropertyName = "Kind";
+            this.kindDataGridViewTextBoxColumn.HeaderText = "Kind";
+            this.kindDataGridViewTextBoxColumn.Name = "kindDataGridViewTextBoxColumn";
+            // 
+            // styleDataGridViewTextBoxColumn
+            // 
+            this.styleDataGridViewTextBoxColumn.DataPropertyName = "Style";
+            this.styleDataGridViewTextBoxColumn.HeaderText = "Style";
+            this.styleDataGridViewTextBoxColumn.Name = "styleDataGridViewTextBoxColumn";
+            // 
+            // colorDataGridViewTextBoxColumn
+            // 
+            this.colorDataGridViewTextBoxColumn.DataPropertyName = "Color";
+            this.colorDataGridViewTextBoxColumn.HeaderText = "Color";
+            this.colorDataGridViewTextBoxColumn.Name = "colorDataGridViewTextBoxColumn";
+            // 
+            // usedForDataGridViewTextBoxColumn
+            // 
+            this.usedForDataGridViewTextBoxColumn.DataPropertyName = "UsedFor";
+            this.usedForDataGridViewTextBoxColumn.HeaderText = "UsedFor";
+            this.usedForDataGridViewTextBoxColumn.Name = "usedForDataGridViewTextBoxColumn";
+            // 
             // SletProdukt
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(869, 634);
+            this.ClientSize = new System.Drawing.Size(652, 515);
             this.Controls.Add(this.DGV_DeleteSelectProduct);
             this.Controls.Add(this.BTN_DeleteProduct);
             this.Controls.Add(this.BTN_DeleteFindProdukt);
@@ -154,9 +311,13 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "SletProdukt";
             this.Text = "SletProdukt";
+            this.Load += new System.EventHandler(this.SletProdukt_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGV_DeleteSelectProduct)).EndInit();
             this.PANEL_FindOrder.ResumeLayout(false);
             this.PANEL_FindOrder.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.productTable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productTableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -172,5 +333,24 @@
         private System.Windows.Forms.Label Label2;
         private System.Windows.Forms.Panel PANEL_FindOrder;
         private System.Windows.Forms.Label LB_ShowProduct;
+        private System.Windows.Forms.BindingSource productTableBindingSource;
+        private ProductTable productTable;
+        private System.Windows.Forms.BindingSource productBindingSource;
+        private ProductTableTableAdapters.ProductTableAdapter productTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn salesPriceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameProductDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn discriptionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn kategoryDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn purchasePriceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn vATSupDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn eANDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn genderDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ageDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lenghtDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn widthDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn kindDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn styleDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colorDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn usedForDataGridViewTextBoxColumn;
     }
 }

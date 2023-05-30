@@ -26,5 +26,12 @@ namespace SemesterProjekt.GUI
             // Open file with with standard program
             Process.Start(filePath);
         }
+
+        private void SøgOrdre_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'ordersTable.Orders' table. You can move, or remove it, as needed.
+            this.ordersTableAdapter.Fill(this.ordersTable.Orders);
+
+        }
     }
 }
