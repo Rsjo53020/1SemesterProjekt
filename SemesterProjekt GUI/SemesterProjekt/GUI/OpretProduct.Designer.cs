@@ -218,6 +218,7 @@
             this.BTN_CreateProduct.TabIndex = 86;
             this.BTN_CreateProduct.Text = "Opret Produkt";
             this.BTN_CreateProduct.UseVisualStyleBackColor = false;
+            this.BTN_CreateProduct.Click += new System.EventHandler(this.BTN_CreateProduct_Click);
             // 
             // TB_Width
             // 
