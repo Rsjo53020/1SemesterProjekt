@@ -54,6 +54,12 @@
     <Compile Include="GUI\BGFStartside.Designer.cs">
       <DependentUpon>BGFStartside.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Kurv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Kurv.Designer.cs">
+      <DependentUpon>Kurv.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\FundetOrdre.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +166,9 @@
   <ItemGroup>
     <EmbeddedResource Include="GUI\BGFStartside.resx">
       <DependentUpon>BGFStartside.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Kurv.resx">
+      <DependentUpon>Kurv.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FundetOrdre.resx">
       <DependentUpon>FundetOrdre.cs</DependentUpon>
