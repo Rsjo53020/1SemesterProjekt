@@ -17,7 +17,7 @@ namespace SemesterProjekt.Services
             return customerList;
         }
 
-        public void RegisterCustomer(Models.Customer customer)
+        public static void RegisterCustomer(Models.Customer customer)
         {
             Database.Database.SqlCreateCustumer(customer);
         }
