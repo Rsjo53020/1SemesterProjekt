@@ -37,14 +37,14 @@ namespace SemesterProjekt.Models
         /// Constructor Frame Class
         /// </summary>
 
-        public Frame(decimal purchasePrice, string description, string name, decimal salesPrice, string category, int EAN,
+        public Frame(decimal purchasePrice, string description, string name, decimal salesPrice, string Kategory, int EAN,
             decimal length, decimal width, string type, string usedFor, string color, string style, string VATSup)
         {
             this.PurchasePrice = purchasePrice;
             this.Description = description;
             this.Name = name;
             this.SalesPrice = salesPrice;
-            this.Kategory = category;
+            this.Kategory = Kategory;
             this.EAN = EAN;
             this.Length = length;
             this.Width = width;
@@ -59,14 +59,14 @@ namespace SemesterProjekt.Models
         /// <summary>
         /// Constructor Frame Database
         /// </summary>
-        public Frame(decimal purchasePrice, string description, string name, decimal salesPrice, string category,
+        public Frame(decimal purchasePrice, string description, string name, decimal salesPrice, string Kategory,
             decimal length, decimal width, string type, string usedFor, string color, string style, string VATSup)
         {
             this.PurchasePrice = purchasePrice;
             this.Description = description;
             this.Name = name;
             this.SalesPrice = salesPrice;
-            this.Kategory = category;
+            this.Kategory = Kategory;
             this.Length = length;
             this.Width = width;
             this.Type = type;
@@ -87,7 +87,7 @@ namespace SemesterProjekt.Models
         /// <summary>
         /// Constructor  Binocular Class
         /// </summary>
-        public Binocular(decimal purchasePrice, string description, string name, decimal salesPrice, string category, int EAN,
+        public Binocular(decimal purchasePrice, string description, string name, decimal salesPrice, string Kategory, int EAN,
             decimal length, decimal width, string type, string usedFor, string color, string style, string VATSup,
             string binocularMaterial, string binocularColor, int binocularIntensity)
         {
@@ -95,7 +95,7 @@ namespace SemesterProjekt.Models
             this.Description = description;
             this.Name = name;
             this.SalesPrice = salesPrice;
-            this.Kategory = category;
+            this.Kategory = Kategory;
             this.EAN = EAN;
             this.Length = length;
             this.Width = width;
@@ -112,7 +112,7 @@ namespace SemesterProjekt.Models
         /// Constructor Binocular Database
         /// </summary>
 
-        public Binocular(decimal purchasePrice, string description, string name, decimal salesPrice, string category,
+        public Binocular(decimal purchasePrice, string description, string name, decimal salesPrice, string Kategory,
             decimal length, decimal width, string type, string usedFor, string color, string style, string VATSup,
             string binocularMaterial, string binocularColor, int binocularIntensity)
         {
@@ -120,7 +120,7 @@ namespace SemesterProjekt.Models
             this.Description = description;
             this.Name = name;
             this.SalesPrice = salesPrice;
-            this.Kategory = category;
+            this.Kategory = Kategory;
             this.Length = length;
             this.Width = width;
             this.Type = type;
@@ -145,14 +145,14 @@ namespace SemesterProjekt.Models
         /// Constructor SpectacleLens Class
         /// </summary>
 
-        public SpectacleLens(decimal purchasePrice, string description, string name, decimal salesPrice, string category, int EAN,
+        public SpectacleLens(decimal purchasePrice, string description, string name, decimal salesPrice, string Kategory, int EAN,
                 decimal length, decimal width, string type, string usedFor, string color, string style, string VATSup, string LensIntensity, string LensSize)
         {
             this.PurchasePrice = purchasePrice;
             this.Description = description;
             this.Name = name;
             this.SalesPrice = salesPrice;
-            this.Kategory = category;
+            this.Kategory = Kategory;
             this.EAN = EAN;
             this.Length = length;
             this.Width = width;
@@ -168,14 +168,14 @@ namespace SemesterProjekt.Models
         /// <summary>
         /// Constructor SpectacleLens Database
         /// </summary>
-        public SpectacleLens(decimal purchasePrice, string description, string name, decimal salesPrice, string category,
+        public SpectacleLens(decimal purchasePrice, string description, string name, decimal salesPrice, string Kategory,
                decimal length, decimal width, string type, string usedFor, string color, string style, string VATSup, string LensIntensity, string LensSize)
         {
             this.PurchasePrice = purchasePrice;
             this.Description = description;
             this.Name = name;
             this.SalesPrice = salesPrice;
-            this.Kategory = category;
+            this.Kategory = Kategory;
             this.Length = length;
             this.Width = width;
             this.Type = type;
@@ -199,14 +199,14 @@ namespace SemesterProjekt.Models
             /// Constructor ContactLens Class   
             /// </summary>
 
-            public ContactLens(decimal purchasePrice, string description, string name, decimal salesPrice, string category, int EAN,
+            public ContactLens(decimal purchasePrice, string description, string name, decimal salesPrice, string Kategory, int EAN,
                 decimal length, decimal width, string type, string usedFor, string color, string style, string VATSup, string lensIntensity, string lensSize)
             {
                 this.PurchasePrice = purchasePrice;
                 this.Description = description;
                 this.Name = name;
                 this.SalesPrice = salesPrice;
-                this.Kategory = category;
+                this.Kategory = Kategory;
                 this.EAN = EAN;
                 this.Length = length;
                 this.Width = width;
@@ -222,14 +222,14 @@ namespace SemesterProjekt.Models
             /// <summary>
             /// Constructor ContactLens Database    
             /// </summary>
-            public ContactLens(decimal purchasePrice, string description, string name, decimal salesPrice, string category,
+            public ContactLens(decimal purchasePrice, string description, string name, decimal salesPrice, string Kategory,
                 decimal length, decimal width, string type, string usedFor, string color, string style, string VATSup, string lensIntensity, string lensSize)
             {
                 this.PurchasePrice = purchasePrice;
                 this.Description = description;
                 this.Name = name;
                 this.SalesPrice = salesPrice;
-                this.Kategory = category;
+                this.Kategory = Kategory;
                 this.Length = length;
                 this.Width = width;
                 this.Type = type;
