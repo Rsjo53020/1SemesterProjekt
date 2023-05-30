@@ -61,15 +61,15 @@ namespace SemesterProjekt.Models
         /// Constructor Frame Database
         /// </summary>
         public Frame(decimal salesPrice, string nameProduct, string description, string Kategory, decimal purchasePrice,
-            int vATSup, int ean, string gender, int age, decimal length, decimal width, string kind, string usedFor, string style, string color)
+            int VATSup, int EAN, string gender, int age, decimal length, decimal width, string kind, string usedFor, string style, string color)
         {
             this.SalesPrice = salesPrice;
             this.NameProduct = nameProduct;
             this.Description = description;
             this.Kategory = Kategory;
             this.PurchasePrice = purchasePrice;
-            this.VATSup = vATSup;
-            this.EAN = ean;
+            this.VATSup = VATSup;
+            this.EAN = EAN;
             this.Gender = gender;
             this.Age = age;
             this.Length = length;
