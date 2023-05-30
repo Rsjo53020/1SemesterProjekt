@@ -8,9 +8,12 @@ namespace SemesterProjekt.Services
 {
     public class Customer
     {
-        public static Customer FindCostumer(int PhoneNr, string Mail)
+        
+        public static Customer FindCostumer(string PhoneNr = "", string Mail = "")
         {
+            Database.Database.SqlGetCustomer(PhoneNr, Mail);
             Customer customer = new Customer();
+            customer = Database.Database.SqlGetCustomer(PhoneNr, Mail);
             return customer;
         }
 
