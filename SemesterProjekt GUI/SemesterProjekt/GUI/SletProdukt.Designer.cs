@@ -205,10 +205,10 @@
             // 
             this.BTN_DeleteProduct.BackColor = System.Drawing.Color.White;
             this.BTN_DeleteProduct.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BTN_DeleteProduct.Location = new System.Drawing.Point(302, 211);
+            this.BTN_DeleteProduct.Location = new System.Drawing.Point(303, 213);
             this.BTN_DeleteProduct.Margin = new System.Windows.Forms.Padding(2);
             this.BTN_DeleteProduct.Name = "BTN_DeleteProduct";
-            this.BTN_DeleteProduct.Size = new System.Drawing.Size(163, 75);
+            this.BTN_DeleteProduct.Size = new System.Drawing.Size(163, 70);
             this.BTN_DeleteProduct.TabIndex = 118;
             this.BTN_DeleteProduct.Text = "Slet Produkt";
             this.BTN_DeleteProduct.UseVisualStyleBackColor = false;
