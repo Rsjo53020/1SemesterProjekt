@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SemesterProjekt.Services
 {
-    internal class Produkt
+    public class Produkt
     {
         public static Product GetProduct(string name)
         {
