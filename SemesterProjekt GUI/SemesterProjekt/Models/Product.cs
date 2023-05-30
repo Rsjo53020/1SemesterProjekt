@@ -25,7 +25,6 @@ namespace SemesterProjekt.Models
         public string Style { get; set; }
     }
 
-
     public class Frame : Product
     {
         public string FrameMaterial { get; set; }
