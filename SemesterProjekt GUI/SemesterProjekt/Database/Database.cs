@@ -245,6 +245,7 @@ namespace SemesterProjekt.Database
                 Frame frame = new Frame(
                     (Decimal)reader["PurchasePrice"],
                     reader["Description"].ToString(),
+                    reader["NameProduct"].ToString(),
                     (Decimal)reader["SalesPrice"],
                     (Decimal)reader["TotalPrice"],
                     (int)reader["EAN"],
