@@ -37,11 +37,11 @@ namespace SemesterProjekt.Models
         /// Constructor Frame Class
         /// </summary>
 
-        public Frame(decimal SalesPrice, string NameProduct, string description, string Kategory, decimal purchasePrice,
+        public Frame(decimal salesPrice, string nameProduct, string description, string Kategory, decimal purchasePrice,
            int vATSup, string gender, int age, decimal length, decimal width, string kind, string usedFor, string style, string color)
         {
-            this.SalesPrice = SalesPrice;
-            this.NameProduct = NameProduct;
+            this.SalesPrice = salesPrice;
+            this.NameProduct = nameProduct;
             this.Description = description;
             this.Kategory = Kategory;
             this.PurchasePrice = purchasePrice;
@@ -60,11 +60,11 @@ namespace SemesterProjekt.Models
         /// <summary>
         /// Constructor Frame Database
         /// </summary>
-        public Frame(decimal SalesPrice, string NameProduct, string description, string Kategory, decimal purchasePrice,
+        public Frame(decimal salesPrice, string nameProduct, string description, string Kategory, decimal purchasePrice,
             int vATSup, int ean, string gender, int age, decimal length, decimal width, string kind, string usedFor, string style, string color)
         {
-            this.SalesPrice = SalesPrice;
-            this.NameProduct = NameProduct;
+            this.SalesPrice = salesPrice;
+            this.NameProduct = nameProduct;
             this.Description = description;
             this.Kategory = Kategory;
             this.PurchasePrice = purchasePrice;
