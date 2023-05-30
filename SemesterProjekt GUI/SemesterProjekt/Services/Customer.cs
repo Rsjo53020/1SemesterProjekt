@@ -12,26 +12,24 @@ namespace SemesterProjekt.Services
         public static List<Models.Customer> FindCostumer(string PhoneNr = "", string Mail = "")
         {
 
-            List<Models.Customer> customers = Database.Database.SqlGetCustomer(PhoneNr, Mail);
+            List<Models.Customer> customerList = Database.Database.SqlGetCustomer(PhoneNr, Mail);
 
-            return customers;
+            return customerList;
         }
 
-        public void RegisterCustomer(string FirstName, string SurName, string PhoneNr, string Mail, string Address, string City, string PostalCode, decimal Discount, DateTime Birthday, int Age, string VisionTest)
+        public void RegisterCustomer(Models.Customer customer)
         {
-            Models.Customer customer = new Models.Customer(FirstName, SurName, PhoneNr, Mail, Address, City, PostalCode, Discount, Birthday, Age, VisionTest);
             Database.Database.SqlCreateCustumer(customer);
         }
 
-        public void DeleteCustomer(int CustomerID)
+        public void DeleteCustomer(Models.Customer customer)
         {
-            Database.Database.SqlDeleteCustomer(CustomerID);
+            Database.Database.SqlDeleteCustomer(customer);
         }
 
-        public void UpdateCustomer(int CustomerID, string FirstName, string SurName, string PhoneNr, string Mail, string Address, string City, string PostalCode, decimal Discount, DateTime Birthday, int Age, string VisionTest)
+        public void UpdateCustomer(Models.Customer customer)
         {
-            Models.Customer customer = new Models.Customer(CustomerID, FirstName, SurName, PhoneNr, Mail, Address, City, PostalCode, Discount, Birthday, Age, VisionTest);
-            List<Models.Customer> UpdatedCustomer = Database.Database.SqlUpdateCustomer(customer);
+            Database.Database.SqlUpdateCustomer(customer);
         }
     }
 }
