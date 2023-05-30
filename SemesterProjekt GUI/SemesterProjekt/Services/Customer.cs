@@ -10,7 +10,8 @@ namespace SemesterProjekt.Services
     {
         public static Customer FindCostumer(int PhoneNr, string Mail)
         {
-            return Customer;
+            Customer customer = new Customer();
+            return customer;
         }
 
         public static void RegisterCustomer()
