@@ -19,7 +19,7 @@ namespace SemesterProjekt.Services
 
         public static void RegisterCustomer()
         {
-
+         
         }
 
         public static void DeleteCustomer()
