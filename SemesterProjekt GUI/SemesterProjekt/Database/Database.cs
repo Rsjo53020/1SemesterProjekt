@@ -288,14 +288,14 @@ namespace SemesterProjekt.Database
         /// <returns></returns>
         public static Product SqlUpdateProduct(Models.Frame product)
         {
-            string sSQL = sSQL = $"UPDATE Product SET SalesPrice = ({product.salesPrice}, NameProduct = {product.nameProduct}, " +
-                $"Discription = {product.description}, Kategory = {product.kategory}, PurchasePrice = {product.purchasePrice}, VATSup = {product.VATSup}, " +
-                $"EAN = {product.EAN}, Gender = {product.gender}, Gender = {product.age}, Length = {product.length}, Width = {product.width}, " +
-                $"Kind = {product.kind}, UstedFor = {product.usedFor}, Style = {product.style}, Color = {product.color}, WHERE EAN = {product.EAN}";
+            string sSQL = sSQL = $"UPDATE Product SET SalesPrice = ({product.SalesPrice}, NameProduct = {product.NameProduct}, " +
+                $"Discription = {product.Description}, Kategory = {product.Kategory}, PurchasePrice = {product.PurchasePrice}, VATSup = {product.VATSup}, " +
+                $"EAN = {product.EAN}, Gender = {product.Gender}, Gender = {product.Age}, Length = {product.Length}, Width = {product.Width}, " +
+                $"Kind = {product.Kind}, UstedFor = {product.UsedFor}, Style = {product.Style}, Color = {product.Color}, WHERE EAN = {product.EAN}";
 
             ConnectionToDatabase(sSQL);
 
-            Product = sSQL;
+          
 
             return Product;
         }
