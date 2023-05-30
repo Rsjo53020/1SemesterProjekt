@@ -207,7 +207,7 @@ namespace SemesterProjekt.Database
         /// (C)RUD on Product: Create a produckt 
         /// </summary>
         /// <param name="product"></param>
-        public static void SqlCreateProduct(Frame product)
+        public static void SqlCreateProduct(Models.Frame product)
         {
             string sSQL = $"INSERT INTO Product Values ({product.NameProduct}, {product.Description}, " +
                 $"{product.Kategory}, {product.PurchasePrice}, {product.SalesPrice}, {product.VATSup}, " +
@@ -275,7 +275,7 @@ namespace SemesterProjekt.Database
         /// CRU(D) on Product: Delete a Product
         /// </summary>
         /// <param name="product"></param>
-        public static void SqlDeleteProduct(Models.Product product)
+        public static void SqlDeleteProduct(Models.Frame product)
         {
 
             string sSQL = $"DELETE * FROM Product WHERE EAN = '{product.EAN}';";
