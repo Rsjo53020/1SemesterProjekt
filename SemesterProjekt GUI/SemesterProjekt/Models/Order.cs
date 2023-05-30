@@ -32,13 +32,13 @@ namespace SemesterProjekt.Models
         /// <summary>
         /// Constructor Database
         /// </summary>
-        public Order(DateTime orderDate, string orderStatus, decimal totalPrice, int VAT, string costumerID, int LineID)
+        public Order(int OrdreID, DateTime orderDate, string orderStatus, decimal totalPrice, int VAT, string costumerID, int LineID)
         {
+            this.OrderID = OrdreID;
             this.LineID = LineID;
             this.OrderDate = orderDate;
             this.OrderStatus = orderStatus;
             this.CostumerID = costumerID;
-            this.LineID = LineID;
             this.VAT = VAT;
             this.TotalPrice = totalPrice;
         }

@@ -98,8 +98,6 @@ namespace SemesterProjekt.Database
                     );
 
                 customerlist.Add(customer);
-
-
             }
             reader.Close();
             conn.Close(); //Close connection to Database
