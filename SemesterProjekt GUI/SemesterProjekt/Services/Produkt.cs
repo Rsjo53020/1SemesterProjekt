@@ -14,17 +14,18 @@ namespace SemesterProjekt.Services
             List<Models.Product> ProductList = Database.Database.SqlGetProduct(getNameProduct, getKategory);
             return ProductList;
         }
-        public static void CreateProduct()
+        public static void CreateProduct(Models.Frame product)
         {
+            Database.Database.SqlCreateProduct(product);
 
         }
-        public static void UpdateProduct()
+        public static void UpdateProduct(Models.Frame product)
         {
-
+            Database.Database.SqlUpdateProduct(product);
         }
-        public static void DeleteProduct()
+        public static void DeleteProduct(Models.Frame product)
         {
-
+            Database.Database.SqlDeleteProduct(product);
         }
     }
 }
