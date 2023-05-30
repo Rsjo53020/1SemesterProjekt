@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace SemesterProjekt.Services
 {
-    internal class Orders
+    public class Orders
     {
         public static List<Models.Order> FindOrder(DateTime StartDate, DateTime EndDate)
         {
-            List<Models.Order> orderslist = Database.Database.SqlGetCustomer(StartDate, EndDate);
+            List<Models.Order> orderList = Database.Database.SqlGetOrder(StartDate, EndDate); 
 
-            return orderslist;
+            return orderList;
         }
 
-        public void DeleteOrder(int Order)
+        public static void DeleteOrder(Models.Order order)
         {
-            Database.Database.SqlDeleteOrder(Order);
+         
         }
     }
 }
