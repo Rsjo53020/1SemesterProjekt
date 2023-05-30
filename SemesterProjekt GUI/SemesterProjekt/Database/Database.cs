@@ -286,7 +286,7 @@ namespace SemesterProjekt.Database
         /// </summary>
         /// <param name="product"></param>
         /// <returns></returns>
-        public static Product SqlUpdateProduct(Models.Frame product)
+        public static void SqlUpdateProduct(Models.Frame product)
         {
             string sSQL = sSQL = $"UPDATE Product SET SalesPrice = ({product.SalesPrice}, NameProduct = {product.NameProduct}, " +
                 $"Discription = {product.Description}, Kategory = {product.Kategory}, PurchasePrice = {product.PurchasePrice}, VATSup = {product.VATSup}, " +
@@ -295,9 +295,6 @@ namespace SemesterProjekt.Database
 
             ConnectionToDatabase(sSQL);
 
-          
-
-            return Product;
         }
     }
 
