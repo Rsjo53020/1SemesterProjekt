@@ -37,44 +37,47 @@ namespace SemesterProjekt.Models
         /// Constructor Frame Class
         /// </summary>
 
-        public Frame(decimal purchasePrice, string description, string NameProduct, decimal salesPrice, string Kategory,
-            decimal length, decimal width, string kind, string usedFor, string color, string style, int VATSup)
+        public Frame(decimal salesPrice, string nameProduct, string description, string Kategory, decimal purchasePrice,
+           int vATSup, string gender, int age, decimal length, decimal width, string kind, string usedFor, string style, string color)
         {
-            this.PurchasePrice = purchasePrice;
+            this.SalesPrice = salesPrice;
+            this.NameProduct = nameProduct;
             this.Description = description;
-            this.NameProduct = NameProduct;
-            this.SalesPrice = SalesPrice;
             this.Kategory = Kategory;
-            this.EAN = EAN;
+            this.PurchasePrice = purchasePrice;
+            this.VATSup = vATSup;
+            this.Gender = gender;
+            this.Age = age;
             this.Length = length;
             this.Width = width;
             this.Kind = kind;
             this.UsedFor = usedFor;
-            this.Color = color;
             this.Style = style;
-            this.VATSup = VATSup;
+            this.Color = color;
         }
 
 
         /// <summary>
         /// Constructor Frame Database
         /// </summary>
-        public Frame(decimal SalesPrice, string NameProduct, decimal purchasePrice, string description, string Kategory,
-            decimal length, decimal width, string kind, string usedFor, string color, string style, int VATSup, int EAN)
+        public Frame(decimal salesPrice, string nameProduct, string description, string Kategory, decimal purchasePrice,
+            int vATSup, int ean, string gender, int age, decimal length, decimal width, string kind, string usedFor, string style, string color)
         {
-            this.PurchasePrice = purchasePrice;
+            this.SalesPrice = salesPrice;
+            this.NameProduct = nameProduct;
             this.Description = description;
-            this.NameProduct = NameProduct;
-            this.SalesPrice = SalesPrice;
             this.Kategory = Kategory;
+            this.PurchasePrice = purchasePrice;
+            this.VATSup = vATSup;
+            this.EAN = ean;
+            this.Gender = gender;
+            this.Age = age;
             this.Length = length;
             this.Width = width;
             this.Kind = kind;
             this.UsedFor = usedFor;
-            this.Color = color;
             this.Style = style;
-            this.VATSup = VATSup;
-            this.EAN = EAN;
+            this.Color = color;
         }
 
     }
