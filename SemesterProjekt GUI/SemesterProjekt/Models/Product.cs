@@ -15,7 +15,7 @@ namespace SemesterProjekt.Models
         public string Description { get; set; }
         public string Name { get; set; }
         public decimal SalesPrice { get; set; }
-        public string Category { get; set; }
+        public string Kategory { get; set; }
         public int EAN { get; set; }
         public string Gender { get; set; }
         public int Age { get; set; }
@@ -25,29 +25,26 @@ namespace SemesterProjekt.Models
         public string UsedFor { get; set; }
         public string Color { get; set; }
         public string Style { get; set; }
-        public string Material { get; set; }
-        public string FrameColor { get; set; }
+        public string VATSup { get; set; }
+
     }
 
     public class Frame : Product
     {
         public string FrameMaterial { get; set; }
-        public double FrameLength { get; set; }
-        public double FrameWidth { get; set; }
 
         /// <summary>
         /// Constructor Frame Class
         /// </summary>
 
         public Frame(decimal purchasePrice, string description, string name, decimal salesPrice, string category, int EAN,
-            decimal length, decimal width, string type, string usedFor, string color, string style, string material, string frameColor,
-            double frameLength, double frameWidth)
+            decimal length, decimal width, string type, string usedFor, string color, string style, string VATSup)
         {
             this.PurchasePrice = purchasePrice;
             this.Description = description;
             this.Name = name;
             this.SalesPrice = salesPrice;
-            this.Category = category;
+            this.Kategory = category;
             this.EAN = EAN;
             this.Length = length;
             this.Width = width;
@@ -55,36 +52,28 @@ namespace SemesterProjekt.Models
             this.UsedFor = usedFor;
             this.Color = color;
             this.Style = style;
-            this.Material = material;
-            this.FrameColor = frameColor;
-            this.FrameLength = frameLength;
-            this.FrameWidth = frameWidth;
+            this.VATSup = VATSup;
         }
 
 
         /// <summary>
-        /// Constructor Frame Databse
+        /// Constructor Frame Database
         /// </summary>
         public Frame(decimal purchasePrice, string description, string name, decimal salesPrice, string category,
-            decimal length, decimal width, string type, string usedFor, string color, string style, string material, string frameColor,
-            double frameLength, double frameWidth)
+            decimal length, decimal width, string type, string usedFor, string color, string style, string VATSup)
         {
             this.PurchasePrice = purchasePrice;
             this.Description = description;
             this.Name = name;
             this.SalesPrice = salesPrice;
-            this.Category = category;
-            this.EAN = EAN;
+            this.Kategory = category;
             this.Length = length;
             this.Width = width;
             this.Type = type;
             this.UsedFor = usedFor;
             this.Color = color;
             this.Style = style;
-            this.Material = material;
-            this.FrameColor = frameColor;
-            this.FrameLength = frameLength;
-            this.FrameWidth = frameWidth;
+            this.VATSup = VATSup;
         }
 
     }
@@ -99,14 +88,14 @@ namespace SemesterProjekt.Models
         /// Constructor  Binocular Class
         /// </summary>
         public Binocular(decimal purchasePrice, string description, string name, decimal salesPrice, string category, int EAN,
-            decimal length, decimal width, string type, string usedFor, string color, string style, string material, string frameColor,
+            decimal length, decimal width, string type, string usedFor, string color, string style, string VATSup,
             string binocularMaterial, string binocularColor, int binocularIntensity)
         {
             this.PurchasePrice = purchasePrice;
             this.Description = description;
             this.Name = name;
             this.SalesPrice = salesPrice;
-            this.Category = category;
+            this.Kategory = category;
             this.EAN = EAN;
             this.Length = length;
             this.Width = width;
@@ -114,8 +103,7 @@ namespace SemesterProjekt.Models
             this.UsedFor = usedFor;
             this.Color = color;
             this.Style = style;
-            this.Material = material;
-            this.FrameColor = frameColor;
+            this.VATSup = VATSup;
             this.BinocularMaterial = binocularMaterial;
             this.BinocularColor = binocularColor;
             this.BinocularIntensity = binocularIntensity;
@@ -125,22 +113,21 @@ namespace SemesterProjekt.Models
         /// </summary>
 
         public Binocular(decimal purchasePrice, string description, string name, decimal salesPrice, string category,
-            decimal length, decimal width, string type, string usedFor, string color, string style, string material, string frameColor,
+            decimal length, decimal width, string type, string usedFor, string color, string style, string VATSup,
             string binocularMaterial, string binocularColor, int binocularIntensity)
         {
             this.PurchasePrice = purchasePrice;
             this.Description = description;
             this.Name = name;
             this.SalesPrice = salesPrice;
-            this.Category = category;
+            this.Kategory = category;
             this.Length = length;
             this.Width = width;
             this.Type = type;
             this.UsedFor = usedFor;
             this.Color = color;
             this.Style = style;
-            this.Material = material;
-            this.FrameColor = frameColor;
+            this.VATSup = VATSup;
             this.BinocularMaterial = binocularMaterial;
             this.BinocularColor = binocularColor;
             this.BinocularIntensity = binocularIntensity;
@@ -159,13 +146,13 @@ namespace SemesterProjekt.Models
         /// </summary>
 
         public SpectacleLens(decimal purchasePrice, string description, string name, decimal salesPrice, string category, int EAN,
-                decimal length, decimal width, string type, string usedFor, string color, string style, string material, string frameColor, string LensIntensity, string LensSize)
+                decimal length, decimal width, string type, string usedFor, string color, string style, string VATSup, string LensIntensity, string LensSize)
         {
             this.PurchasePrice = purchasePrice;
             this.Description = description;
             this.Name = name;
             this.SalesPrice = salesPrice;
-            this.Category = category;
+            this.Kategory = category;
             this.EAN = EAN;
             this.Length = length;
             this.Width = width;
@@ -173,8 +160,7 @@ namespace SemesterProjekt.Models
             this.UsedFor = usedFor;
             this.Color = color;
             this.Style = style;
-            this.Material = material;
-            this.FrameColor = frameColor;
+            this.VATSup = VATSup;
             this.LensIntensity = LensIntensity;
             this.LensSize = LensSize;
         }
@@ -183,21 +169,20 @@ namespace SemesterProjekt.Models
         /// Constructor SpectacleLens Database
         /// </summary>
         public SpectacleLens(decimal purchasePrice, string description, string name, decimal salesPrice, string category,
-               decimal length, decimal width, string type, string usedFor, string color, string style, string material, string frameColor, string LensIntensity, string LensSize)
+               decimal length, decimal width, string type, string usedFor, string color, string style, string VATSup, string LensIntensity, string LensSize)
         {
             this.PurchasePrice = purchasePrice;
             this.Description = description;
             this.Name = name;
             this.SalesPrice = salesPrice;
-            this.Category = category;
+            this.Kategory = category;
             this.Length = length;
             this.Width = width;
             this.Type = type;
             this.UsedFor = usedFor;
             this.Color = color;
             this.Style = style;
-            this.Material = material;
-            this.FrameColor = frameColor;
+            this.VATSup = VATSup;
             this.LensIntensity = LensIntensity;
             this.LensSize = LensSize;
         }
@@ -215,13 +200,13 @@ namespace SemesterProjekt.Models
             /// </summary>
 
             public ContactLens(decimal purchasePrice, string description, string name, decimal salesPrice, string category, int EAN,
-                decimal length, decimal width, string type, string usedFor, string color, string style, string material, string frameColor, string lensIntensity, string lensSize)
+                decimal length, decimal width, string type, string usedFor, string color, string style, string VATSup, string lensIntensity, string lensSize)
             {
                 this.PurchasePrice = purchasePrice;
                 this.Description = description;
                 this.Name = name;
                 this.SalesPrice = salesPrice;
-                this.Category = category;
+                this.Kategory = category;
                 this.EAN = EAN;
                 this.Length = length;
                 this.Width = width;
@@ -229,8 +214,7 @@ namespace SemesterProjekt.Models
                 this.UsedFor = usedFor;
                 this.Color = color;
                 this.Style = style;
-                this.Material = material;
-                this.FrameColor = frameColor;
+                this.VATSup = VATSup;
                 this.LensIntensity = lensIntensity;
                 this.LensSize = lensSize;
             }
@@ -239,21 +223,20 @@ namespace SemesterProjekt.Models
             /// Constructor ContactLens Database    
             /// </summary>
             public ContactLens(decimal purchasePrice, string description, string name, decimal salesPrice, string category,
-                decimal length, decimal width, string type, string usedFor, string color, string style, string material, string frameColor, string lensIntensity, string lensSize)
+                decimal length, decimal width, string type, string usedFor, string color, string style, string VATSup, string lensIntensity, string lensSize)
             {
                 this.PurchasePrice = purchasePrice;
                 this.Description = description;
                 this.Name = name;
                 this.SalesPrice = salesPrice;
-                this.Category = category;
+                this.Kategory = category;
                 this.Length = length;
                 this.Width = width;
                 this.Type = type;
                 this.UsedFor = usedFor;
                 this.Color = color;
                 this.Style = style;
-                this.Material = material;
-                this.FrameColor = frameColor;
+                this.VATSup = VATSup;
                 this.LensIntensity = lensIntensity;
                 this.LensSize = lensSize;
             }
