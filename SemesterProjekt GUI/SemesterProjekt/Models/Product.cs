@@ -60,7 +60,7 @@ namespace SemesterProjekt.Models
         /// Constructor Frame Database
         /// </summary>
         public Frame(decimal purchasePrice, string description, string name, decimal salesPrice, string category,
-            decimal length, decimal width, string type, string usedFor, string color, string style, string VATSup) 
+            decimal length, decimal width, string type, string usedFor, string color, string style, string VATSup)
         {
             this.PurchasePrice = purchasePrice;
             this.Description = description;
@@ -200,7 +200,7 @@ namespace SemesterProjekt.Models
             /// </summary>
 
             public ContactLens(decimal purchasePrice, string description, string name, decimal salesPrice, string category, int EAN,
-                decimal length, decimal width, string type, string usedFor, string color, string style, string VATSup,  string lensIntensity, string lensSize)
+                decimal length, decimal width, string type, string usedFor, string color, string style, string VATSup, string lensIntensity, string lensSize)
             {
                 this.PurchasePrice = purchasePrice;
                 this.Description = description;
