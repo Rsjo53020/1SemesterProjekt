@@ -9,6 +9,8 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Net.Mail;
 using System.Net.NetworkInformation;
 using SemesterProjekt.Models;
+using System.Drawing;
+using System.Xml.Linq;
 
 namespace SemesterProjekt.Database
 {
@@ -170,7 +172,6 @@ namespace SemesterProjekt.Database
                     (int)reader["CustomerID"],
                     (int)reader["LineID"]
                     );
-                OrderList.Add(order);
 
                 OrderList.Add(order);
 
@@ -217,7 +218,7 @@ namespace SemesterProjekt.Database
         /// <summary>
         /// C(R)UD on Product: takes two parameters to find a product
         /// </summary>
-        public static string SqlGetProduct(string nameProdukt = "", string kategory = "")
+        public static List<Models.Product> SqlGetProduct(string nameProdukt = "", string kategory = "")
         {
 
             string sSQL = "";
@@ -231,9 +232,39 @@ namespace SemesterProjekt.Database
 
             }
 
-            ConnectionToDatabase(sSQL);
+            //call connection to database
+            SqlConnection conn = new SqlConnection(strconn);
+            SqlCommand command = new SqlCommand(sSQL, conn);
 
-            return sSQL; ;
+            conn.Open(); //Open connection to Database
+            SqlDataReader reader = command.ExecuteReader();
+            List<Models.Product> ProductList = new List<Models.Product>();
+
+            while (reader.Read())
+            {
+                Frame frame = new Frame(
+                    (Decimal)reader["PurchasePrice"],
+                    reader["Description"].ToString(),
+                    (Decimal)reader["SalesPrice"],
+                    (Decimal)reader["TotalPrice"],
+                    (int)reader["EAN"],
+                    (Decimal)reader["Length"],
+                    (Decimal)reader["Width"],
+                    reader["Type"].ToString(),
+                    reader["UsedFor"].ToString(),
+                    reader["Color"].ToString(),
+                    reader["Style"].ToString(),
+                    (int)reader["VATSup"]
+                    );
+
+                ProductList.Add(frame);
+
+
+            }
+            reader.Close();
+            conn.Close(); //Close connection to Database
+
+            return ProductList;
         }
         /// <summary>
         /// CRU(D) on Product: Delete a Product
