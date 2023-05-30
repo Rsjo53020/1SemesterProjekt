@@ -57,7 +57,7 @@ namespace SemesterProjekt.Database
         /// <summary>
         /// C(R)UD on Customer: takes two parameters to find a customer
         /// </summary>
-        public static string SqlGetCustomer(string phoneNr = "", string mail = "")
+        public static Customer SqlGetCustomer(string phoneNr = "", string mail = "")
         {
 
             string sSQL = "";
@@ -73,7 +73,7 @@ namespace SemesterProjekt.Database
 
             ConnectionToDatabase(sSQL);
 
-            return sSQL;
+            return Customer;
         }
         /// <summary>
         /// CRU(D) on Customer: Delete a customer
@@ -108,7 +108,7 @@ namespace SemesterProjekt.Database
         ///(C)RUD on Order - not important in version 1
         /// </summary>
         /// <param name="order"></param>
-        public static void SqlCreateOrder(Order order)
+        public static void SqlCreateOrder()
         {
 
         }
@@ -118,7 +118,7 @@ namespace SemesterProjekt.Database
         /// <param name="dateStart"></param>
         /// <param name="dateEnd"></param>
         /// <returns></returns>
-        public static Order SqlGetOrder(DateTime dateStart, DateTime dateEnd)
+        public static string SqlGetOrder(DateTime dateStart, DateTime dateEnd)
         {
             string sSQL = $"SELECT * FROM Orders WHERE OrderDate = {dateStart}, OrderDate = {dateEnd}";
 
@@ -131,7 +131,7 @@ namespace SemesterProjekt.Database
         /// </summary>
         /// <param name=""></param>
         /// <param name=""></param>
-        public static void SqlDeleteOrder(Customer.PhoneNr, Customer.Mail)
+        public static void SqlDeleteOrder()
         {
 
         }
@@ -140,7 +140,7 @@ namespace SemesterProjekt.Database
         /// </summary>
         /// <param name="order"></param>
         /// <returns></returns>
-        public static void SqlUpdateOrder(Order order)
+        public static void SqlUpdateOrder()
         {
 
         }
@@ -148,11 +148,13 @@ namespace SemesterProjekt.Database
         /// (C)RUD on Product: Create a produckt 
         /// </summary>
         /// <param name="product"></param>
-        public static void SqlCreateProduct(Product product)
+        public static void SqlCreateProduct(Frame product)
         {
-            string sSQL = $"INSERT INTO Product Values ({product.NameProduct}, {product.Discription}, " +
-                $"{product.Kategory}, {product.PurchasePrice}, {product.SalesPrice}, {product.VATSup}, " +
-                $"{product.EAN});";
+            string sSQL = $"INSERT INTO Product Values ({product.Name}, {product.Description}, " +
+                $"{product.Category}, {product.PurchasePrice}, {product.SalesPrice}, {product.VATSup}, " +
+                $"{product.EAN}), {product.Length}), {product.Width}), {product.Type}, {product.Color}), {product.Style}));";
+
+            
 
             ConnectionToDatabase(sSQL);
         }
