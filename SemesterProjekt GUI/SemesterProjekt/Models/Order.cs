@@ -19,7 +19,7 @@ namespace SemesterProjekt.Models
         /// <summary>
         /// Constructor Class
         /// </summary>
-        public Order(DateTime orderDate, string orderStatus, string costumerID, int LineID, int VAT, decimal totalPrice)
+        public Order(DateTime orderDate, string orderStatus, decimal totalPrice, int VAT, string costumerID)
         {
             this.OrderDate = orderDate;
             this.OrderStatus = orderStatus;
@@ -32,9 +32,9 @@ namespace SemesterProjekt.Models
         /// <summary>
         /// Constructor Database
         /// </summary>
-        public Order(int orderID, DateTime orderDate, string orderStatus, string costumerID, int LineID, int VAT, decimal totalPrice)
+        public Order(DateTime orderDate, string orderStatus, decimal totalPrice, int VAT, string costumerID, int LineID)
         {
-            this.OrderID = orderID;
+            this.LineID = LineID;
             this.OrderDate = orderDate;
             this.OrderStatus = orderStatus;
             this.CostumerID = costumerID;
