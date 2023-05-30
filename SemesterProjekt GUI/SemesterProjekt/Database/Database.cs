@@ -149,7 +149,7 @@ namespace SemesterProjekt.Database
         /// <param name="dateStart"></param>
         /// <param name="dateEnd"></param>
         /// <returns></returns>
-        public List<Models.Order> SqlGetOrder(DateTime dateStart, DateTime dateEnd)
+        public static List<Models.Order> SqlGetOrder(DateTime dateStart, DateTime dateEnd)
         {
             string sSQL = $"SELECT * FROM Orders WHERE OrderDate = {dateStart}, OrderDate = {dateEnd}";
 
