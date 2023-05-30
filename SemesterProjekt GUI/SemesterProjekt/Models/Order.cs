@@ -24,7 +24,6 @@ namespace SemesterProjekt.Models
             this.OrderDate = orderDate;
             this.OrderStatus = orderStatus;
             this.CostumerID = costumerID;
-            this.LineID = LineID;
             this.VAT = VAT;
             this.TotalPrice = totalPrice;
         }
@@ -32,10 +31,10 @@ namespace SemesterProjekt.Models
         /// <summary>
         /// Constructor Database
         /// </summary>
-        public Order(int OrdreID, DateTime orderDate, string orderStatus, decimal totalPrice, int VAT, int costumerID, int LineID)
+        public Order(int ordreID, DateTime orderDate, string orderStatus, decimal totalPrice, int VAT, int costumerID, int lineID)
         {
-            this.OrderID = OrdreID;
-            this.LineID = LineID;
+            this.OrderID = ordreID;
+            this.LineID = lineID;
             this.OrderDate = orderDate;
             this.OrderStatus = orderStatus;
             this.CostumerID = costumerID;
