@@ -31,21 +31,21 @@ namespace SemesterProjekt.Models
 
     public class Frame : Product
     {
-        public string FrameMaterial { get; set; }
+        
 
         /// <summary>
         /// Constructor Frame Class
         /// </summary>
 
-        public Frame(decimal salesPrice, string nameProduct, string description, string Kategory, decimal purchasePrice,
-           int vATSup, string gender, int age, decimal length, decimal width, string kind, string usedFor, string style, string color)
+        public Frame(decimal salesPrice, string nameProduct, string description, string kategory, decimal purchasePrice,
+           int VATSup, string gender, int age, decimal length, decimal width, string kind, string usedFor, string style, string color)
         {
             this.SalesPrice = salesPrice;
             this.NameProduct = nameProduct;
             this.Description = description;
-            this.Kategory = Kategory;
+            this.Kategory = kategory;
             this.PurchasePrice = purchasePrice;
-            this.VATSup = vATSup;
+            this.VATSup = VATSup;
             this.Gender = gender;
             this.Age = age;
             this.Length = length;
