@@ -209,9 +209,9 @@ namespace SemesterProjekt.Database
         /// <param name="product"></param>
         public static void SqlCreateProduct(Frame product)
         {
-            string sSQL = $"INSERT INTO Product Values ({product.Name}, {product.Description}, " +
+            string sSQL = $"INSERT INTO Product Values ({product.NameProduct}, {product.Description}, " +
                 $"{product.Kategory}, {product.PurchasePrice}, {product.SalesPrice}, {product.VATSup}, " +
-                $"{product.EAN}), {product.Length}), {product.Width}), {product.Type}, {product.Color}), {product.Style}));";
+                $"{product.EAN}), {product.Length}), {product.Width}), {product.Kind}, {product.Color}), {product.Style}));";
 
 
 
@@ -245,21 +245,21 @@ namespace SemesterProjekt.Database
             while (reader.Read())
             {
                 Frame frame = new Frame(
-                    (Decimal)reader["PurchasePrice"],
-                    reader["Description"].ToString(),
-                    reader["NameProduct"].ToString(),
                     (Decimal)reader["SalesPrice"],
-                    (int)reader["EAN"],
-                    (Decimal)reader["Length"],
-                    (Decimal)reader["Width"],
-                    reader["UsedFor"].ToString(),
-                    reader["Color"].ToString(),
-                    reader["Style"].ToString(),
-                    (int)reader["VATSup"],
+                    reader["NameProduct"].ToString(),
+                    reader["Description"].ToString(),
                     reader["Kategory"].ToString(),
+                    (Decimal)reader["PurchasePrice"],
+                    (int)reader["VATSup"],
+                    (int)reader["EAN"],
                     reader["Gender"].ToString(),
                     (int)reader["Age"],
-                    reader["Kind"].ToString()
+                    (Decimal)reader["Length"],
+                    (Decimal)reader["Width"],
+                    reader["Kind"].ToString(),
+                    reader["UsedFor"].ToString(),
+                    reader["Style"].ToString(),
+                    reader["Color"].ToString()
                     );
 
                 ProductList.Add(frame);
