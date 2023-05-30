@@ -8,7 +8,7 @@ namespace SemesterProjekt.Services
 {
     public class Customer
     {
-        
+
         public static List<Models.Customer> FindCostumer(string PhoneNr = "", string Mail = "")
         {
 
@@ -17,18 +17,22 @@ namespace SemesterProjekt.Services
             return customers;
         }
 
-        public static void RegisterCustomer()
+        public void RegisterCustomer(string FirstName, string SurName, string PhoneNr, string Mail, string Address, string City, string PostalCode, decimal Discount, DateTime Birthday, int Age, string VisionTest)
         {
-         
+            Models.Customer customer = new Models.Customer(FirstName, SurName, PhoneNr, Mail, Address, City, PostalCode, Discount, Birthday, Age, VisionTest);
+            Database.Database.SqlCreateCustumer(customer);
         }
 
-        public static void DeleteCustomer()
+        public void DeleteCustomer(int CustomerID)
         {
-
+            Database.Database.SqlDeleteCustomer(CustomerID);
         }
-        public static void UpdateCustomer()
-        {
 
+        public void UpdateCustomer(int CustomerID, string FirstName, string SurName, string PhoneNr, string Mail, string Address, string City, string PostalCode, decimal Discount, DateTime Birthday, int Age, string VisionTest)
+        {
+            Models.Customer customer = new Models.Customer(CustomerID, FirstName, SurName, PhoneNr, Mail, Address, City, PostalCode, Discount, Birthday, Age, VisionTest);
+            List<Models.Customer> UpdatedCustomer = Database.Database.SqlUpdateCustomer(customer);
         }
     }
 }
+

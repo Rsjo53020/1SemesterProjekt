@@ -16,5 +16,10 @@ namespace SemesterProjekt.GUI
         {
             InitializeComponent();
         }
+
+        private void BTN_CreateCustomer_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

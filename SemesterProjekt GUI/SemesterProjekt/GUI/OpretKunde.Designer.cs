@@ -272,6 +272,7 @@
             this.BTN_CreateCustomer.TabIndex = 52;
             this.BTN_CreateCustomer.Text = "Opret Kunde";
             this.BTN_CreateCustomer.UseVisualStyleBackColor = false;
+            this.BTN_CreateCustomer.Click += new System.EventHandler(this.BTN_CreateCustomer_Click);
             // 
             // TB_Discount
             // 
