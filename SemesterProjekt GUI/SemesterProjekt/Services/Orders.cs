@@ -10,10 +10,9 @@ namespace SemesterProjekt.Services
     {
         public static List<Models.Order> FindOrder(DateTime StartDate, DateTime EndDate)
         {
-            List<Models.Order> orders = new List<Models.Order>();
-            List<Models.Order> orderslist = Database.Database.SqlGetCustomer(DateTime StartDate, DateTime EndDate);
+            List<Models.Order> orderslist = Database.Database.SqlGetCustomer(StartDate, EndDate);
 
-            return orders;
+            return orderslist;
         }
 
         public void DeleteOrder(int Order)
