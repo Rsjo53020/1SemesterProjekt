@@ -101,8 +101,9 @@ namespace SemesterProjekt.Database
 
 
             }
+            reader.Close();
             conn.Close(); //Close connection to Database
-
+            
             return customerlist;
         }
         /// <summary>
