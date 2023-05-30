@@ -60,15 +60,15 @@ namespace SemesterProjekt
             Console.WriteLine("1. Almindelige brille");
             Console.WriteLine("2. Solbriller");
             int typeSelection = Convert.ToInt32(Console.ReadLine());
-            string type = "";
+            string kind = "";
 
             switch (typeSelection)
             {
                 case 1:
-                    type = "Almindelige brille";
+                    kind = "Almindelige brille";
                     break;
                 case 2:
-                    type = "Solbriller";
+                    kind = "Solbriller";
                     break;
                 default:
                     Console.WriteLine("Ugyldigt valg. Vælg venligst en gyldig type.");
@@ -158,7 +158,7 @@ namespace SemesterProjekt
             Console.WriteLine($"{gender}");
             Console.WriteLine($"{lengthOfGlasses}");
             Console.WriteLine($"{widthOfGlasses}");
-            Console.WriteLine($"{type}");
+            Console.WriteLine($"{kind}");
             Console.WriteLine($"{beUsedFor}");
             Console.WriteLine($"Stil: {style}");
             Console.WriteLine($"Farve: {color}");
