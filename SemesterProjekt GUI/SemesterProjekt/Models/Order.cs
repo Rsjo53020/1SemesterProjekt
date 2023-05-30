@@ -12,30 +12,34 @@ namespace SemesterProjekt.Models
         private DateTime OrderDate { get; set; }
         private string OrderStatus { get; set; }
         private string CostumerID { get; set; }
-        private int ProductLine { get; set; }
+        private int LineID { get; set; }
         private Decimal TotalPrice { get; set; }
-
+        private int VAT { get; set; }
 
         /// <summary>
         /// Constructor Class
         /// </summary>
-        public Order(int orderID, DateTime orderDate, string orderStatus, string costumerID, int productLine, decimal totalPrice)
+        public Order(DateTime orderDate, string orderStatus, decimal totalPrice, int VAT, string costumerID)
         {
-            this.OrderID = orderID;
             this.OrderDate = orderDate;
             this.OrderStatus = orderStatus;
             this.CostumerID = costumerID;
-            this.ProductLine = productLine;
+            this.LineID = LineID;
+            this.VAT = VAT;
             this.TotalPrice = totalPrice;
         }
 
         /// <summary>
         /// Constructor Database
         /// </summary>
-        public Order(DateTime orderDate, string orderStatus, decimal totalPrice)
+        public Order(DateTime orderDate, string orderStatus, decimal totalPrice, int VAT, string costumerID, int LineID)
         {
+            this.LineID = LineID;
             this.OrderDate = orderDate;
             this.OrderStatus = orderStatus;
+            this.CostumerID = costumerID;
+            this.LineID = LineID;
+            this.VAT = VAT;
             this.TotalPrice = totalPrice;
         }
     }
