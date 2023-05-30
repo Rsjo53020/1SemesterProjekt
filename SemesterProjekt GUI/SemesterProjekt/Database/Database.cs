@@ -220,17 +220,17 @@ namespace SemesterProjekt.Database
         /// <summary>
         /// C(R)UD on Product: takes two parameters to find a product
         /// </summary>
-        public static List<Models.Product> SqlGetProduct(string nameProdukt = "", string kategory = "")
+        public static List<Models.Product> SqlGetProduct(string getNameProdukt = "", string getKategory = "")
         {
 
             string sSQL = "";
-            if (nameProdukt != "")
+            if (getNameProdukt != "")
             {
-                sSQL = $"SELECT * FROM Produkt WHERE NameProduct = '{nameProdukt}';";
+                sSQL = $"SELECT * FROM Produkt WHERE NameProduct = '{getNameProdukt}';";
             }
-            else if (kategory != "")
+            else if (getKategory != "")
             {
-                sSQL = $"SELECT * FROM Product WHERE Kategaory = '{kategory}';";
+                sSQL = $"SELECT * FROM Product WHERE Kategaory = '{getKategory}';";
 
             }
 
@@ -249,15 +249,17 @@ namespace SemesterProjekt.Database
                     reader["Description"].ToString(),
                     reader["NameProduct"].ToString(),
                     (Decimal)reader["SalesPrice"],
-                    (Decimal)reader["TotalPrice"],
                     (int)reader["EAN"],
                     (Decimal)reader["Length"],
                     (Decimal)reader["Width"],
-                    reader["Type"].ToString(),
                     reader["UsedFor"].ToString(),
                     reader["Color"].ToString(),
                     reader["Style"].ToString(),
-                    (int)reader["VATSup"]
+                    (int)reader["VATSup"],
+                    reader["Kategory"].ToString(),
+                    reader["Gender"].ToString(),
+                    (int)reader["Age"],
+                    reader["Kind"].ToString()
                     );
 
                 ProductList.Add(frame);
