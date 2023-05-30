@@ -48,9 +48,10 @@ namespace SemesterProjekt.Database
         /// </summary>
         public static void SqlCreateCustumer(Models.Customer customer)
         {
-            string sSQL = $"INSERT INTO Customer Values ({customer.FirstName}, {customer.SurName}, " +
-                $"{customer.PhoneNr}, {customer.Mail}, {customer.Address}, {customer.City}, " +
-                $"{customer.PostalCode}, {customer.Discount}, {customer.Birthday}, {customer.Age}, {customer.VisionTest});";
+            string sSQL = $"INSERT INTO Customer Values ('{customer.FirstName}', '{customer.SurName}', " +
+                $"'{customer.PhoneNr}', '{customer.Mail}', '{customer.Address}', '{customer.City}', " +
+                $"'{customer.PostalCode}', {customer.Discount}, {customer.Birthday}, {customer.Age}, " +
+                $"'{customer.VisionTest}');";
 
             ConnectionToDatabase(sSQL);
 
