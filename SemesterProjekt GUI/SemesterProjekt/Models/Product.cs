@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,12 +9,20 @@ namespace SemesterProjekt.Models
 {
     public abstract class Product
     {
-        private decimal PurchasePrice { get; set; }
-        private string Desciption { get; set; }
-        private string Name { get; set; }
-        private Decimal SalesPrice { get; set; }
-        private string Kategory { get; set; }
-        private int EAN { get; set; }
+        public decimal PurchasePrice { get; set; }
+        public string Desciption { get; set; }
+        public string Name { get; set; }
+        public Decimal SalesPrice { get; set; }
+        public string Kategory { get; set; }
+        public int EAN { get; set; }
+        public string Gender { get; set; }
+        public int Age { get; set; }
+        public decimal Lenght { get; set; }
+        public decimal Widh { get; set; }
+        public string Type { get; set; }
+        public string usedFor { get; set; }
+        public string Color { get; set; }
+        public string Style { get; set; }
     }
 
     /// <summary>
@@ -41,7 +50,7 @@ namespace SemesterProjekt.Models
         this.SalesPrice = salesPrice;
         this.Kategory = kategory;
     }
-    
+
 
 
     public class Frame : Product
