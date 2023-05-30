@@ -210,7 +210,7 @@ namespace SemesterProjekt.Database
         public static void SqlCreateProduct(Frame product)
         {
             string sSQL = $"INSERT INTO Product Values ({product.Name}, {product.Description}, " +
-                $"{product.Category}, {product.PurchasePrice}, {product.SalesPrice}, {product.VATSup}, " +
+                $"{product.Kategory}, {product.PurchasePrice}, {product.SalesPrice}, {product.VATSup}, " +
                 $"{product.EAN}), {product.Length}), {product.Width}), {product.Type}, {product.Color}), {product.Style}));";
 
 
@@ -287,8 +287,8 @@ namespace SemesterProjekt.Database
         /// <returns></returns>
         public static Product SqlUpdateProduct(Models.Product product)
         {
-            string sSQL = sSQL = $"UPDATE Product SET SalesPrice = ({product.salesPrice}, NameProduct = {product.nameProduct}, " +
-                $"Discription = {product.discription}, Kategory = {product.kategory}, PurchasePrice = {product.purchasePrice}, VATSup = {product.VATSup}, " +
+            string sSQL = sSQL = $"UPDATE Product SET SalesPrice = ({product.SalesPrice}, NameProduct = {product.Name}, " +
+                $"Discription = {product.Description}, Kategory = {product.Kategory}, PurchasePrice = {product.PurchasePrice}, VATSup = {product.VATSup}, " +
                 $"EAN = {product.EAN} WHERE EAN = {product.EAN}";
 
             ConnectionToDatabase(sSQL);
