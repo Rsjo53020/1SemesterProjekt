@@ -103,7 +103,7 @@ namespace SemesterProjekt.Database
             }
             reader.Close();
             conn.Close(); //Close connection to Database
-            
+
             return customerlist;
         }
         /// <summary>
@@ -149,13 +149,40 @@ namespace SemesterProjekt.Database
         /// <param name="dateStart"></param>
         /// <param name="dateEnd"></param>
         /// <returns></returns>
-        public static string SqlGetOrder(DateTime dateStart, DateTime dateEnd)
+        public static List<Models.Order> SqlGetOrder(DateTime dateStart, DateTime dateEnd)
         {
             string sSQL = $"SELECT * FROM Orders WHERE OrderDate = {dateStart}, OrderDate = {dateEnd}";
 
-            ConnectionToDatabase(sSQL);
+            //call connection to database
+            SqlConnection conn = new SqlConnection(strconn);
+            SqlCommand command = new SqlCommand(sSQL, conn);
 
-            return sSQL;
+            conn.Open(); //Open connection to Database
+            SqlDataReader reader = command.ExecuteReader();
+            List<Models.Order> OrderList = new List<Models.Order>();
+
+            while (reader.Read())
+            {
+                Order order = new Order(
+                    (int)reader["OrderID"],
+                    (DateTime)reader["OrderDate"],
+                    reader["OrderStatus"].ToString(),
+                    (Decimal)reader["TotalPrice"],
+                    (int)reader["VAT"],
+                    (int)reader["CustomerID"],
+                    (int)reader["LineID"]
+                    );
+                OrderList.Add(order);
+
+                OrderList.Add(order);
+
+
+            }
+            reader.Close();
+            conn.Close(); //Close connection to Database
+
+            return OrderList;
+
         }
         /// <summary>
         /// CRU(D) on Order - Delete a product is not important in version 1
