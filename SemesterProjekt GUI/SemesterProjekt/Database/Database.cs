@@ -161,7 +161,7 @@ namespace SemesterProjekt.Database
 
             conn.Open(); //Open connection to Database
             SqlDataReader reader = command.ExecuteReader();
-            
+
 
             while (reader.Read())
             {
@@ -220,17 +220,17 @@ namespace SemesterProjekt.Database
         /// <summary>
         /// C(R)UD on Product: takes two parameters to find a product
         /// </summary>
-        public static List<Models.Product> SqlGetProduct(string nameProdukt = "", string kategory = "")
+        public static List<Models.Product> SqlGetProduct(string getNameProdukt = "", string getKategory = "")
         {
 
             string sSQL = "";
-            if (nameProdukt != "")
+            if (getNameProdukt != "")
             {
-                sSQL = $"SELECT * FROM Produkt WHERE NameProduct = '{nameProdukt}';";
+                sSQL = $"SELECT * FROM Produkt WHERE NameProduct = '{getNameProdukt}';";
             }
-            else if (kategory != "")
+            else if (getKategory != "")
             {
-                sSQL = $"SELECT * FROM Product WHERE Kategaory = '{kategory}';";
+                sSQL = $"SELECT * FROM Product WHERE Kategaory = '{getKategory}';";
 
             }
 
@@ -249,15 +249,17 @@ namespace SemesterProjekt.Database
                     reader["Description"].ToString(),
                     reader["NameProduct"].ToString(),
                     (Decimal)reader["SalesPrice"],
-                    (Decimal)reader["TotalPrice"],
                     (int)reader["EAN"],
                     (Decimal)reader["Length"],
                     (Decimal)reader["Width"],
-                    reader["Type"].ToString(),
                     reader["UsedFor"].ToString(),
                     reader["Color"].ToString(),
                     reader["Style"].ToString(),
-                    (int)reader["VATSup"]
+                    (int)reader["VATSup"],
+                    reader["Kategory"].ToString(),
+                    reader["Gender"].ToString(),
+                    (int)reader["Age"],
+                    reader["Kind"].ToString()
                     );
 
                 ProductList.Add(frame);
@@ -286,17 +288,15 @@ namespace SemesterProjekt.Database
         /// </summary>
         /// <param name="product"></param>
         /// <returns></returns>
-        public static Product SqlUpdateProduct(Models.Product product)
+        public static void SqlUpdateProduct(Models.Frame product)
         {
-            string sSQL = sSQL = $"UPDATE Product SET SalesPrice = ({product.SalesPrice}, NameProduct = {product.Name}, " +
+            string sSQL = sSQL = $"UPDATE Product SET SalesPrice = ({product.SalesPrice}, NameProduct = {product.NameProduct}, " +
                 $"Discription = {product.Description}, Kategory = {product.Kategory}, PurchasePrice = {product.PurchasePrice}, VATSup = {product.VATSup}, " +
-                $"EAN = {product.EAN} WHERE EAN = {product.EAN}";
+                $"EAN = {product.EAN}, Gender = {product.Gender}, Gender = {product.Age}, Length = {product.Length}, Width = {product.Width}, " +
+                $"Kind = {product.Kind}, UstedFor = {product.UsedFor}, Style = {product.Style}, Color = {product.Color}, WHERE EAN = {product.EAN}";
 
             ConnectionToDatabase(sSQL);
 
-            Product = sSQL;
-
-            return Product;
         }
     }
 

@@ -31,21 +31,21 @@ namespace SemesterProjekt.Models
 
     public class Frame : Product
     {
-        public string FrameMaterial { get; set; }
+        
 
         /// <summary>
         /// Constructor Frame Class
         /// </summary>
 
-        public Frame(decimal salesPrice, string nameProduct, string description, string Kategory, decimal purchasePrice,
-           int vATSup, string gender, int age, decimal length, decimal width, string kind, string usedFor, string style, string color)
+        public Frame(decimal salesPrice, string nameProduct, string description, string kategory, decimal purchasePrice,
+           int VATSup, string gender, int age, decimal length, decimal width, string kind, string usedFor, string style, string color)
         {
             this.SalesPrice = salesPrice;
             this.NameProduct = nameProduct;
             this.Description = description;
-            this.Kategory = Kategory;
+            this.Kategory = kategory;
             this.PurchasePrice = purchasePrice;
-            this.VATSup = vATSup;
+            this.VATSup = VATSup;
             this.Gender = gender;
             this.Age = age;
             this.Length = length;
@@ -61,15 +61,15 @@ namespace SemesterProjekt.Models
         /// Constructor Frame Database
         /// </summary>
         public Frame(decimal salesPrice, string nameProduct, string description, string Kategory, decimal purchasePrice,
-            int vATSup, int ean, string gender, int age, decimal length, decimal width, string kind, string usedFor, string style, string color)
+            int VATSup, int EAN, string gender, int age, decimal length, decimal width, string kind, string usedFor, string style, string color)
         {
             this.SalesPrice = salesPrice;
             this.NameProduct = nameProduct;
             this.Description = description;
             this.Kategory = Kategory;
             this.PurchasePrice = purchasePrice;
-            this.VATSup = vATSup;
-            this.EAN = ean;
+            this.VATSup = VATSup;
+            this.EAN = EAN;
             this.Gender = gender;
             this.Age = age;
             this.Length = length;
@@ -91,19 +91,19 @@ namespace SemesterProjekt.Models
         /// <summary>
         /// Constructor  Binocular Class
         /// </summary>
-        public Binocular(decimal purchasePrice, string description, string NameProduct, decimal salesPrice, string Kategory, int EAN,
-            decimal length, decimal width, string type, string usedFor, string color, string style, int VATSup,
+        public Binocular(decimal purchasePrice, string description, string nameProduct, decimal salesPrice, string Kategory, int EAN,
+            decimal length, decimal width, string kind, string usedFor, string color, string style, int VATSup,
             string binocularMaterial, string binocularColor, int binocularIntensity)
         {
             this.PurchasePrice = purchasePrice;
             this.Description = description;
-            this.Name = NameProduct;
+            this.NameProduct = nameProduct;
             this.SalesPrice = salesPrice;
             this.Kategory = Kategory;
             this.EAN = EAN;
             this.Length = length;
             this.Width = width;
-            this.Type = type;
+            this.Kind = kind;
             this.UsedFor = usedFor;
             this.Color = color;
             this.Style = style;
@@ -117,7 +117,7 @@ namespace SemesterProjekt.Models
         /// </summary>
 
         public Binocular(decimal purchasePrice, string description, string name, decimal salesPrice, string Kategory,
-            decimal length, decimal width, string type, string usedFor, string color, string style, int VATSup,
+            decimal length, decimal width, string kind, string usedFor, string color, string style, int VATSup,
             string binocularMaterial, string binocularColor, int binocularIntensity)
         {
             this.PurchasePrice = purchasePrice;
@@ -127,7 +127,7 @@ namespace SemesterProjekt.Models
             this.Kategory = Kategory;
             this.Length = length;
             this.Width = width;
-            this.Type = type;
+            this.Kind = kind;
             this.UsedFor = usedFor;
             this.Color = color;
             this.Style = style;
@@ -150,7 +150,7 @@ namespace SemesterProjekt.Models
         /// </summary>
 
         public SpectacleLens(decimal purchasePrice, string description, string NameProduct, decimal salesPrice, string Kategory, int EAN,
-                decimal length, decimal width, string type, string usedFor, string color, string style, int VATSup, string LensIntensity, string LensSize)
+                decimal length, decimal width, string kind, string usedFor, string color, string style, int VATSup, string LensIntensity, string LensSize)
         {
             this.PurchasePrice = purchasePrice;
             this.Description = description;
@@ -160,7 +160,7 @@ namespace SemesterProjekt.Models
             this.EAN = EAN;
             this.Length = length;
             this.Width = width;
-            this.Type = type;
+            this.Kind = kind;
             this.UsedFor = usedFor;
             this.Color = color;
             this.Style = style;
@@ -173,7 +173,7 @@ namespace SemesterProjekt.Models
         /// Constructor SpectacleLens Database
         /// </summary>
         public SpectacleLens(decimal purchasePrice, string description, string NameProduct, decimal salesPrice, string Kategory,
-               decimal length, decimal width, string type, string usedFor, string color, string style, int VATSup, string LensIntensity, string LensSize)
+               decimal length, decimal width, string kind, string usedFor, string color, string style, int VATSup, string LensIntensity, string LensSize)
         {
             this.PurchasePrice = purchasePrice;
             this.Description = description;
@@ -182,7 +182,7 @@ namespace SemesterProjekt.Models
             this.Kategory = Kategory;
             this.Length = length;
             this.Width = width;
-            this.Type = type;
+            this.Kind = kind;
             this.UsedFor = usedFor;
             this.Color = color;
             this.Style = style;
@@ -204,7 +204,7 @@ namespace SemesterProjekt.Models
             /// </summary>
 
             public ContactLens(decimal purchasePrice, string description, string NameProduct, decimal salesPrice, string Kategory, int EAN,
-                decimal length, decimal width, string type, string usedFor, string color, string style, int VATSup, string lensIntensity, string lensSize)
+                decimal length, decimal width, string kind, string usedFor, string color, string style, int VATSup, string lensIntensity, string lensSize)
             {
                 this.PurchasePrice = purchasePrice;
                 this.Description = description;
@@ -214,7 +214,7 @@ namespace SemesterProjekt.Models
                 this.EAN = EAN;
                 this.Length = length;
                 this.Width = width;
-                this.Type = type;
+                this.Kind = kind;
                 this.UsedFor = usedFor;
                 this.Color = color;
                 this.Style = style;
@@ -227,7 +227,7 @@ namespace SemesterProjekt.Models
             /// Constructor ContactLens Database    
             /// </summary>
             public ContactLens(decimal purchasePrice, string description, string NameProduct, decimal salesPrice, string Kategory,
-                decimal length, decimal width, string type, string usedFor, string color, string style, int VATSup, string lensIntensity, string lensSize)
+                decimal length, decimal width, string kind, string usedFor, string color, string style, int VATSup, string lensIntensity, string lensSize)
             {
                 this.PurchasePrice = purchasePrice;
                 this.Description = description;
@@ -236,7 +236,7 @@ namespace SemesterProjekt.Models
                 this.Kategory = Kategory;
                 this.Length = length;
                 this.Width = width;
-                this.Type = type;
+                this.Kind = kind;
                 this.UsedFor = usedFor;
                 this.Color = color;
                 this.Style = style;
