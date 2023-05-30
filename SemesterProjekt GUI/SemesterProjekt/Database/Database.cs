@@ -15,14 +15,14 @@ namespace SemesterProjekt.Database
     public class Database
 
     {
+        public static string strconn = "Data Source=mssql4.unoeuro.com;Initial Catalog=cskafte_dk_db_skafte;User ID=cskafte_dk;Password=3tfep5Gc4wgAzxDH2rEy";
+
         /// <summary>
         /// Connection to datebase + open and close the connection
         /// </summary>
         /// <param name="sSQL"></param>
         public static void ConnectionToDatabase(string sSQL)
         {
-            string strconn = "Data Source=mssql4.unoeuro.com;Initial Catalog=cskafte_dk_db_skafte;User ID=cskafte_dk;Password=3tfep5Gc4wgAzxDH2rEy";
-
             //call connection to database
             SqlConnection conn = new SqlConnection(strconn);
             SqlCommand command = new SqlCommand(sSQL, conn);
@@ -57,8 +57,9 @@ namespace SemesterProjekt.Database
         /// <summary>
         /// C(R)UD on Customer: takes two parameters to find a customer
         /// </summary>
-        public static Customer SqlGetCustomer(string phoneNr = "", string mail = "")
+        public static List<Models.Customer> SqlGetCustomer(string phoneNr = "", string mail = "")
         {
+
 
             string sSQL = "";
             if (phoneNr != "")
@@ -71,9 +72,38 @@ namespace SemesterProjekt.Database
 
             }
 
-            ConnectionToDatabase(sSQL);
+            //call connection to database
+            SqlConnection conn = new SqlConnection(strconn);
+            SqlCommand command = new SqlCommand(sSQL, conn);
 
-            return Customer;
+            conn.Open(); //Open connection to Database
+            SqlDataReader reader = command.ExecuteReader();
+            List<Models.Customer> customerlist = new List<Models.Customer>();
+
+            while (reader.Read())
+            {
+                Customer customer = new Customer(
+                    (int)reader["CustomerID"],
+                    reader["FirstName"].ToString(),
+                    reader["SurName"].ToString(),
+                    reader["PhoneNr"].ToString(),
+                    reader["EMailAdress"].ToString(),
+                    reader["Adress"].ToString(),
+                    reader["City"].ToString(),
+                    reader["PostalCode"].ToString(),
+                    (Decimal)reader["Discount"],
+                    (DateTime)reader["Bithday"],
+                    (int)reader["Age"],
+                    reader["VisionTest"].ToString()
+                    );
+
+                customerlist.Add(customer);
+
+
+            }
+            conn.Close(); //Close connection to Database
+
+            return customerlist;
         }
         /// <summary>
         /// CRU(D) on Customer: Delete a customer
@@ -154,7 +184,7 @@ namespace SemesterProjekt.Database
                 $"{product.Category}, {product.PurchasePrice}, {product.SalesPrice}, {product.VATSup}, " +
                 $"{product.EAN}), {product.Length}), {product.Width}), {product.Type}, {product.Color}), {product.Style}));";
 
-            
+
 
             ConnectionToDatabase(sSQL);
         }

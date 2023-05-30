@@ -9,12 +9,12 @@ namespace SemesterProjekt.Services
     public class Customer
     {
         
-        public static Customer FindCostumer(string PhoneNr = "", string Mail = "")
+        public static List<Models.Customer> FindCostumer(string PhoneNr = "", string Mail = "")
         {
-            Database.Database.SqlGetCustomer(PhoneNr, Mail);
-            Customer customer = new Customer();
-            customer = Database.Database.SqlGetCustomer(PhoneNr, Mail);
-            return customer;
+
+            List<Models.Customer> customers = Database.Database.SqlGetCustomer(PhoneNr, Mail);
+
+            return customers;
         }
 
         public static void RegisterCustomer()
