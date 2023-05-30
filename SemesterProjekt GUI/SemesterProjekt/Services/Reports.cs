@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace SemesterProjekt.Services
 {
-    internal class Productline
+    internal class Reports
     {
-        public string CreateProductLine()
+        public string CustomerOrdersByTime(DateTime StartDato, DateTime SlutDato)
         {
-            return "";
+            return " ";
         }
-        public void DeleteProductLine()
+
+        public void FormatReportToTxt()
         {
 
         }
     }
+}

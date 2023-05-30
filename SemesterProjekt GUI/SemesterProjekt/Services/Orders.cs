@@ -8,5 +8,19 @@ namespace SemesterProjekt.Services
 {
     internal class Orders
     {
+        public void FindOrder(Models.Customer customer)
+        {
+            return customer;
+        }
+
+        public void PlaceOrder()
+        {
+
+        }
+
+        public void DeleteOrder()
+        {
+
+        }
     }
 }

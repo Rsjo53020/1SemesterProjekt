@@ -133,6 +133,7 @@
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProductLine.cs" />
     <Compile Include="Models\Reports.cs" />
+    <Compile Include="Services\Reports.cs" />
     <Compile Include="Services\StoreStock.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

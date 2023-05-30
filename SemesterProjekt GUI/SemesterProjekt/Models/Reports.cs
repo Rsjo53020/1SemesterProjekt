@@ -9,15 +9,12 @@ namespace SemesterProjekt.Models
     public class Reports
     {
         private DateTime Date { get; set; }
-
-        public string CustomerOrdersByTime(DateTime StartDato, DateTime SlutDato)
+        /// <summary>
+        /// Constructor 
+        /// </summary>
+        public Reports(DateTime date)
         {
-            return " ";
-        }
-
-        public void FormatReportToTxt()
-        {
-
+            this.Date = date;
         }
     }
 }

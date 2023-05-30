@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SemesterProjekt.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,21 @@ namespace SemesterProjekt.Services
 {
     internal class Produkt
     {
+        public static Product GetProduct(string name)
+        {
+            return Product;
+        }
+        public static void CreateProduct()
+        {
+
+        }
+        public static void UpdateProduct()
+        {
+
+        }
+        public static void DeleteProduct()
+        {
+
+        }
     }
 }
