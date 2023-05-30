@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace SemesterProjekt.Services
 {
-    internal class Customer
+    public class Customer
     {
         public static Customer FindCostumer(int PhoneNr, string Mail)
         {
-            return Customer;
+            Customer customer = new Customer();
+            return customer;
         }
 
         public static void RegisterCustomer()

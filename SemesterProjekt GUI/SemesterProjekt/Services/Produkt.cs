@@ -11,7 +11,8 @@ namespace SemesterProjekt.Services
     {
         public static Product GetProduct(string name)
         {
-            return Product;
+            Product product = new Frame();
+            return product;
         }
         public static void CreateProduct()
         {
