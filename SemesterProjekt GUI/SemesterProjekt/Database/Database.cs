@@ -210,9 +210,11 @@ namespace SemesterProjekt.Database
         /// <param name="product"></param>
         public static void SqlCreateProduct(Models.Frame product)
         {
-            string sSQL = $"INSERT INTO Product Values ({product.NameProduct}, {product.Description}, " +
-                $"{product.Kategory}, {product.PurchasePrice}, {product.SalesPrice}, {product.VATSup}, " +
-                $"{product.EAN}), {product.Length}), {product.Width}), {product.Kind}, {product.Color}), {product.Style}));";
+            string sSQL = $"INSERT INTO Product Values ({product.SalesPrice}," +
+                $" '{product.NameProduct}', '{product.Description}', '{product.Kategory}'," +
+                $" {product.PurchasePrice}, {product.VATSup}, '{product.Gender}', {product.Age}," +
+                $" {product.Length}, {product.Width}, '{product.Kind}', '{product.Style}'," +
+                $" '{product.Color}', '{product.UsedFor}');";
 
 
 

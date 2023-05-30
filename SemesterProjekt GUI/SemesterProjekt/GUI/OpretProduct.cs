@@ -24,7 +24,7 @@ namespace SemesterProjekt.GUI
                 TB_NameProduct.Text,
                 TB_Discription.Text,
                 TB_Kategory.Text,
-                Convert.ToDecimal(TB_PurchasePrice),
+                Convert.ToDecimal(TB_PurchasePrice.Text),
                 Convert.ToInt32(TB_VATSup.Text),
                 TB_Gender.Text,
                 Convert.ToInt32(TB_Age.Text),
