@@ -149,9 +149,11 @@ namespace SemesterProjekt.Database
         /// <param name="dateStart"></param>
         /// <param name="dateEnd"></param>
         /// <returns></returns>
-        public static List<Models.Order> SqlGetOrder(DateTime dateStart, DateTime dateEnd)
+        public List<Models.Order> SqlGetOrder(DateTime dateStart, DateTime dateEnd)
         {
             string sSQL = $"SELECT * FROM Orders WHERE OrderDate = {dateStart}, OrderDate = {dateEnd}";
+
+            List<Models.Order> OrderList = new List<Models.Order>();
 
             //call connection to database
             SqlConnection conn = new SqlConnection(strconn);
@@ -159,7 +161,7 @@ namespace SemesterProjekt.Database
 
             conn.Open(); //Open connection to Database
             SqlDataReader reader = command.ExecuteReader();
-            List<Models.Order> OrderList = new List<Models.Order>();
+            
 
             while (reader.Read())
             {

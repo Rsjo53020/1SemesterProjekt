@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SemesterProjekt.Models
 {
-    internal class Order
+    public class Order
     {
         private int OrderID { get; set; }
         private DateTime OrderDate { get; set; }
