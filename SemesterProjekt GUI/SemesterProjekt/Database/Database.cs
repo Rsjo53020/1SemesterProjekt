@@ -50,8 +50,8 @@ namespace SemesterProjekt.Database
         {
             string sSQL = $"INSERT INTO Customer Values ('{customer.FirstName}', '{customer.SurName}', " +
                 $"'{customer.PhoneNr}', '{customer.Mail}', '{customer.Address}', '{customer.City}', " +
-                $"'{customer.PostalCode}', {customer.Discount}, {customer.Birthday.ToString("dd/MM/yyyy")}, {customer.Age}, " +
-                $"'{customer.VisionTest}');";
+                $"'{customer.PostalCode}', {customer.Discount}, '{customer.Birthday.ToString("yyyy-MM-dd")}', {customer.Age}, " +
+                $"'{customer.VisionTest}', null);";
 
             ConnectionToDatabase(sSQL);
 
