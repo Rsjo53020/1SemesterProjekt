@@ -36,10 +36,6 @@
             this.TB_SearchPhoneNr = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.DGV_Customers = new System.Windows.Forms.DataGridView();
-            this.BTN_SearchCustomer = new System.Windows.Forms.Button();
-            this.customerTable = new SemesterProjekt.CustomerTable();
-            this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.customerTableAdapter = new SemesterProjekt.CustomerTableTableAdapters.CustomerTableAdapter();
             this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.surNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phoneNrDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,10 +49,14 @@
             this.visionTestDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.orderIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.customerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.customerTable = new SemesterProjekt.CustomerTable();
+            this.BTN_SearchCustomer = new System.Windows.Forms.Button();
+            this.customerTableAdapter = new SemesterProjekt.CustomerTableTableAdapters.CustomerTableAdapter();
             this.PANEL_FindOrder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Customers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customerTable)).BeginInit();
             this.SuspendLayout();
             // 
             // PANEL_FindOrder
@@ -65,7 +65,7 @@
             this.PANEL_FindOrder.Controls.Add(this.LB_ShowProduct);
             this.PANEL_FindOrder.Dock = System.Windows.Forms.DockStyle.Top;
             this.PANEL_FindOrder.Location = new System.Drawing.Point(0, 0);
-            this.PANEL_FindOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PANEL_FindOrder.Margin = new System.Windows.Forms.Padding(2);
             this.PANEL_FindOrder.Name = "PANEL_FindOrder";
             this.PANEL_FindOrder.Size = new System.Drawing.Size(800, 62);
             this.PANEL_FindOrder.TabIndex = 91;
@@ -86,7 +86,7 @@
             // TB_SearchEMailAdress
             // 
             this.TB_SearchEMailAdress.Location = new System.Drawing.Point(236, 113);
-            this.TB_SearchEMailAdress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TB_SearchEMailAdress.Margin = new System.Windows.Forms.Padding(2);
             this.TB_SearchEMailAdress.Name = "TB_SearchEMailAdress";
             this.TB_SearchEMailAdress.Size = new System.Drawing.Size(296, 20);
             this.TB_SearchEMailAdress.TabIndex = 95;
@@ -106,7 +106,7 @@
             // TB_SearchPhoneNr
             // 
             this.TB_SearchPhoneNr.Location = new System.Drawing.Point(236, 80);
-            this.TB_SearchPhoneNr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TB_SearchPhoneNr.Margin = new System.Windows.Forms.Padding(2);
             this.TB_SearchPhoneNr.Name = "TB_SearchPhoneNr";
             this.TB_SearchPhoneNr.Size = new System.Drawing.Size(296, 20);
             this.TB_SearchPhoneNr.TabIndex = 93;
@@ -126,6 +126,7 @@
             // DGV_Customers
             // 
             this.DGV_Customers.AutoGenerateColumns = false;
+            this.DGV_Customers.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.DGV_Customers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV_Customers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.firstNameDataGridViewTextBoxColumn,
@@ -142,36 +143,11 @@
             this.orderIDDataGridViewTextBoxColumn,
             this.customerIDDataGridViewTextBoxColumn});
             this.DGV_Customers.DataSource = this.customerBindingSource;
-            this.DGV_Customers.Location = new System.Drawing.Point(66, 159);
+            this.DGV_Customers.Location = new System.Drawing.Point(0, 159);
             this.DGV_Customers.Name = "DGV_Customers";
             this.DGV_Customers.RowHeadersWidth = 62;
-            this.DGV_Customers.Size = new System.Drawing.Size(699, 261);
+            this.DGV_Customers.Size = new System.Drawing.Size(800, 290);
             this.DGV_Customers.TabIndex = 96;
-            // 
-            // BTN_SearchCustomer
-            // 
-            this.BTN_SearchCustomer.BackColor = System.Drawing.Color.White;
-            this.BTN_SearchCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTN_SearchCustomer.Location = new System.Drawing.Point(548, 86);
-            this.BTN_SearchCustomer.Name = "BTN_SearchCustomer";
-            this.BTN_SearchCustomer.Size = new System.Drawing.Size(120, 47);
-            this.BTN_SearchCustomer.TabIndex = 97;
-            this.BTN_SearchCustomer.Text = "Søg ";
-            this.BTN_SearchCustomer.UseVisualStyleBackColor = false;
-            // 
-            // customerTable
-            // 
-            this.customerTable.DataSetName = "CustomerTable";
-            this.customerTable.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // customerBindingSource
-            // 
-            this.customerBindingSource.DataMember = "Customer";
-            this.customerBindingSource.DataSource = this.customerTable;
-            // 
-            // customerTableAdapter
-            // 
-            this.customerTableAdapter.ClearBeforeFill = true;
             // 
             // firstNameDataGridViewTextBoxColumn
             // 
@@ -252,6 +228,31 @@
             this.customerIDDataGridViewTextBoxColumn.Name = "customerIDDataGridViewTextBoxColumn";
             this.customerIDDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // customerBindingSource
+            // 
+            this.customerBindingSource.DataMember = "Customer";
+            this.customerBindingSource.DataSource = this.customerTable;
+            // 
+            // customerTable
+            // 
+            this.customerTable.DataSetName = "CustomerTable";
+            this.customerTable.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // BTN_SearchCustomer
+            // 
+            this.BTN_SearchCustomer.BackColor = System.Drawing.Color.White;
+            this.BTN_SearchCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_SearchCustomer.Location = new System.Drawing.Point(548, 86);
+            this.BTN_SearchCustomer.Name = "BTN_SearchCustomer";
+            this.BTN_SearchCustomer.Size = new System.Drawing.Size(120, 47);
+            this.BTN_SearchCustomer.TabIndex = 97;
+            this.BTN_SearchCustomer.Text = "Søg ";
+            this.BTN_SearchCustomer.UseVisualStyleBackColor = false;
+            // 
+            // customerTableAdapter
+            // 
+            this.customerTableAdapter.ClearBeforeFill = true;
+            // 
             // SøgKunde
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -271,8 +272,8 @@
             this.PANEL_FindOrder.ResumeLayout(false);
             this.PANEL_FindOrder.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Customers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customerTable)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

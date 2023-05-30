@@ -36,13 +36,6 @@
             this.DTP_StartDate = new System.Windows.Forms.DateTimePicker();
             this.LB_OrderDateStart = new System.Windows.Forms.Label();
             this.DGV_ShowOrder = new System.Windows.Forms.DataGridView();
-            this.BTN_SearchOrder = new System.Windows.Forms.Button();
-            this.BTN_DeleteOrder = new System.Windows.Forms.Button();
-            this.BTN_UpdateOrder = new System.Windows.Forms.Button();
-            this.LL_Forklaring = new System.Windows.Forms.LinkLabel();
-            this.ordersTable = new SemesterProjekt.OrdersTable();
-            this.ordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ordersTableAdapter = new SemesterProjekt.OrdersTableTableAdapters.OrdersTableAdapter();
             this.orderDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.orderStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalpriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,10 +43,17 @@
             this.customerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lineIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.orderIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ordersTable = new SemesterProjekt.OrdersTable();
+            this.BTN_SearchOrder = new System.Windows.Forms.Button();
+            this.BTN_DeleteOrder = new System.Windows.Forms.Button();
+            this.BTN_UpdateOrder = new System.Windows.Forms.Button();
+            this.LL_Forklaring = new System.Windows.Forms.LinkLabel();
+            this.ordersTableAdapter = new SemesterProjekt.OrdersTableTableAdapters.OrdersTableAdapter();
             this.PANEL_FindOrder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_ShowOrder)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersTable)).BeginInit();
             this.SuspendLayout();
             // 
             // PANEL_FindOrder
@@ -126,6 +126,7 @@
             // DGV_ShowOrder
             // 
             this.DGV_ShowOrder.AutoGenerateColumns = false;
+            this.DGV_ShowOrder.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.DGV_ShowOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV_ShowOrder.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.orderDateDataGridViewTextBoxColumn,
@@ -144,6 +145,59 @@
             this.DGV_ShowOrder.RowTemplate.Height = 28;
             this.DGV_ShowOrder.Size = new System.Drawing.Size(652, 270);
             this.DGV_ShowOrder.TabIndex = 37;
+            // 
+            // orderDateDataGridViewTextBoxColumn
+            // 
+            this.orderDateDataGridViewTextBoxColumn.DataPropertyName = "OrderDate";
+            this.orderDateDataGridViewTextBoxColumn.HeaderText = "OrderDate";
+            this.orderDateDataGridViewTextBoxColumn.Name = "orderDateDataGridViewTextBoxColumn";
+            // 
+            // orderStatusDataGridViewTextBoxColumn
+            // 
+            this.orderStatusDataGridViewTextBoxColumn.DataPropertyName = "OrderStatus";
+            this.orderStatusDataGridViewTextBoxColumn.HeaderText = "OrderStatus";
+            this.orderStatusDataGridViewTextBoxColumn.Name = "orderStatusDataGridViewTextBoxColumn";
+            // 
+            // totalpriceDataGridViewTextBoxColumn
+            // 
+            this.totalpriceDataGridViewTextBoxColumn.DataPropertyName = "Totalprice";
+            this.totalpriceDataGridViewTextBoxColumn.HeaderText = "Totalprice";
+            this.totalpriceDataGridViewTextBoxColumn.Name = "totalpriceDataGridViewTextBoxColumn";
+            // 
+            // vATDataGridViewTextBoxColumn
+            // 
+            this.vATDataGridViewTextBoxColumn.DataPropertyName = "VAT";
+            this.vATDataGridViewTextBoxColumn.HeaderText = "VAT";
+            this.vATDataGridViewTextBoxColumn.Name = "vATDataGridViewTextBoxColumn";
+            // 
+            // customerIDDataGridViewTextBoxColumn
+            // 
+            this.customerIDDataGridViewTextBoxColumn.DataPropertyName = "CustomerID";
+            this.customerIDDataGridViewTextBoxColumn.HeaderText = "CustomerID";
+            this.customerIDDataGridViewTextBoxColumn.Name = "customerIDDataGridViewTextBoxColumn";
+            // 
+            // lineIDDataGridViewTextBoxColumn
+            // 
+            this.lineIDDataGridViewTextBoxColumn.DataPropertyName = "LineID";
+            this.lineIDDataGridViewTextBoxColumn.HeaderText = "LineID";
+            this.lineIDDataGridViewTextBoxColumn.Name = "lineIDDataGridViewTextBoxColumn";
+            // 
+            // orderIDDataGridViewTextBoxColumn
+            // 
+            this.orderIDDataGridViewTextBoxColumn.DataPropertyName = "OrderID";
+            this.orderIDDataGridViewTextBoxColumn.HeaderText = "OrderID";
+            this.orderIDDataGridViewTextBoxColumn.Name = "orderIDDataGridViewTextBoxColumn";
+            this.orderIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ordersBindingSource
+            // 
+            this.ordersBindingSource.DataMember = "Orders";
+            this.ordersBindingSource.DataSource = this.ordersTable;
+            // 
+            // ordersTable
+            // 
+            this.ordersTable.DataSetName = "OrdersTable";
+            this.ordersTable.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // BTN_SearchOrder
             // 
@@ -197,62 +251,9 @@
             this.LL_Forklaring.Text = "Forklaring";
             this.LL_Forklaring.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LL_Forklaring_LinkClicked);
             // 
-            // ordersTable
-            // 
-            this.ordersTable.DataSetName = "OrdersTable";
-            this.ordersTable.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ordersBindingSource
-            // 
-            this.ordersBindingSource.DataMember = "Orders";
-            this.ordersBindingSource.DataSource = this.ordersTable;
-            // 
             // ordersTableAdapter
             // 
             this.ordersTableAdapter.ClearBeforeFill = true;
-            // 
-            // orderDateDataGridViewTextBoxColumn
-            // 
-            this.orderDateDataGridViewTextBoxColumn.DataPropertyName = "OrderDate";
-            this.orderDateDataGridViewTextBoxColumn.HeaderText = "OrderDate";
-            this.orderDateDataGridViewTextBoxColumn.Name = "orderDateDataGridViewTextBoxColumn";
-            // 
-            // orderStatusDataGridViewTextBoxColumn
-            // 
-            this.orderStatusDataGridViewTextBoxColumn.DataPropertyName = "OrderStatus";
-            this.orderStatusDataGridViewTextBoxColumn.HeaderText = "OrderStatus";
-            this.orderStatusDataGridViewTextBoxColumn.Name = "orderStatusDataGridViewTextBoxColumn";
-            // 
-            // totalpriceDataGridViewTextBoxColumn
-            // 
-            this.totalpriceDataGridViewTextBoxColumn.DataPropertyName = "Totalprice";
-            this.totalpriceDataGridViewTextBoxColumn.HeaderText = "Totalprice";
-            this.totalpriceDataGridViewTextBoxColumn.Name = "totalpriceDataGridViewTextBoxColumn";
-            // 
-            // vATDataGridViewTextBoxColumn
-            // 
-            this.vATDataGridViewTextBoxColumn.DataPropertyName = "VAT";
-            this.vATDataGridViewTextBoxColumn.HeaderText = "VAT";
-            this.vATDataGridViewTextBoxColumn.Name = "vATDataGridViewTextBoxColumn";
-            // 
-            // customerIDDataGridViewTextBoxColumn
-            // 
-            this.customerIDDataGridViewTextBoxColumn.DataPropertyName = "CustomerID";
-            this.customerIDDataGridViewTextBoxColumn.HeaderText = "CustomerID";
-            this.customerIDDataGridViewTextBoxColumn.Name = "customerIDDataGridViewTextBoxColumn";
-            // 
-            // lineIDDataGridViewTextBoxColumn
-            // 
-            this.lineIDDataGridViewTextBoxColumn.DataPropertyName = "LineID";
-            this.lineIDDataGridViewTextBoxColumn.HeaderText = "LineID";
-            this.lineIDDataGridViewTextBoxColumn.Name = "lineIDDataGridViewTextBoxColumn";
-            // 
-            // orderIDDataGridViewTextBoxColumn
-            // 
-            this.orderIDDataGridViewTextBoxColumn.DataPropertyName = "OrderID";
-            this.orderIDDataGridViewTextBoxColumn.HeaderText = "OrderID";
-            this.orderIDDataGridViewTextBoxColumn.Name = "orderIDDataGridViewTextBoxColumn";
-            this.orderIDDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // SøgOrdre
             // 
@@ -277,8 +278,8 @@
             this.PANEL_FindOrder.ResumeLayout(false);
             this.PANEL_FindOrder.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_ShowOrder)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersTable)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

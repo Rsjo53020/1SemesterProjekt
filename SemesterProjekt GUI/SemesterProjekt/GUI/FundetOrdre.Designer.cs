@@ -252,6 +252,7 @@
             // DGV_FoundOrders
             // 
             this.DGV_FoundOrders.AutoGenerateColumns = false;
+            this.DGV_FoundOrders.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.DGV_FoundOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV_FoundOrders.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.orderDateDataGridViewTextBoxColumn,

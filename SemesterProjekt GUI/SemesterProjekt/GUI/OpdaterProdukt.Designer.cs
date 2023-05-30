@@ -38,18 +38,6 @@
             this.PANEL_FindOrder = new System.Windows.Forms.Panel();
             this.BTN_OpdateProduct = new System.Windows.Forms.Button();
             this.DGV_OpdateSelectProduct = new System.Windows.Forms.DataGridView();
-            this.TB_OpdateSalesPrice = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.TB_OpdateVATSup = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.TB_OpdatePurchasePrice = new System.Windows.Forms.TextBox();
-            this.TB_OpdateDiscription = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.productTable = new SemesterProjekt.ProductTable();
-            this.productTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.productTableAdapter = new SemesterProjekt.ProductTableTableAdapters.ProductTableAdapter();
             this.salesPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameProductDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.discriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,11 +53,23 @@
             this.styleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usedForDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.productTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.productTable = new SemesterProjekt.ProductTable();
+            this.TB_OpdateSalesPrice = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.TB_OpdateVATSup = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.TB_OpdatePurchasePrice = new System.Windows.Forms.TextBox();
+            this.TB_OpdateDiscription = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.productTableAdapter = new SemesterProjekt.ProductTableTableAdapters.ProductTableAdapter();
             this.PANEL_FindOrder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_OpdateSelectProduct)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productTable)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productTableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productTableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productTable)).BeginInit();
             this.SuspendLayout();
             // 
             // LB_ShowProduct
@@ -100,7 +100,7 @@
             // 
             this.TB_OpdateFindKategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.TB_OpdateFindKategory.Location = new System.Drawing.Point(176, 134);
-            this.TB_OpdateFindKategory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TB_OpdateFindKategory.Margin = new System.Windows.Forms.Padding(2);
             this.TB_OpdateFindKategory.Name = "TB_OpdateFindKategory";
             this.TB_OpdateFindKategory.Size = new System.Drawing.Size(122, 31);
             this.TB_OpdateFindKategory.TabIndex = 94;
@@ -109,7 +109,7 @@
             // 
             this.TB_OpdateFindProductName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.TB_OpdateFindProductName.Location = new System.Drawing.Point(176, 72);
-            this.TB_OpdateFindProductName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TB_OpdateFindProductName.Margin = new System.Windows.Forms.Padding(2);
             this.TB_OpdateFindProductName.Name = "TB_OpdateFindProductName";
             this.TB_OpdateFindProductName.Size = new System.Drawing.Size(122, 31);
             this.TB_OpdateFindProductName.TabIndex = 93;
@@ -144,7 +144,7 @@
             this.PANEL_FindOrder.Controls.Add(this.LB_ShowProduct);
             this.PANEL_FindOrder.Dock = System.Windows.Forms.DockStyle.Top;
             this.PANEL_FindOrder.Location = new System.Drawing.Point(0, 0);
-            this.PANEL_FindOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PANEL_FindOrder.Margin = new System.Windows.Forms.Padding(2);
             this.PANEL_FindOrder.Name = "PANEL_FindOrder";
             this.PANEL_FindOrder.Size = new System.Drawing.Size(652, 62);
             this.PANEL_FindOrder.TabIndex = 90;
@@ -164,7 +164,7 @@
             // DGV_OpdateSelectProduct
             // 
             this.DGV_OpdateSelectProduct.AutoGenerateColumns = false;
-            this.DGV_OpdateSelectProduct.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.DGV_OpdateSelectProduct.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.DGV_OpdateSelectProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV_OpdateSelectProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.salesPriceDataGridViewTextBoxColumn,
@@ -191,109 +191,6 @@
             this.DGV_OpdateSelectProduct.RowTemplate.Height = 33;
             this.DGV_OpdateSelectProduct.Size = new System.Drawing.Size(341, 191);
             this.DGV_OpdateSelectProduct.TabIndex = 97;
-            // 
-            // TB_OpdateSalesPrice
-            // 
-            this.TB_OpdateSalesPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.TB_OpdateSalesPrice.Location = new System.Drawing.Point(303, 391);
-            this.TB_OpdateSalesPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.TB_OpdateSalesPrice.Name = "TB_OpdateSalesPrice";
-            this.TB_OpdateSalesPrice.Size = new System.Drawing.Size(122, 31);
-            this.TB_OpdateSalesPrice.TabIndex = 111;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.label8.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label8.Location = new System.Drawing.Point(27, 394);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(134, 25);
-            this.label8.TabIndex = 110;
-            this.label8.Text = "Indkøbspris :";
-            // 
-            // TB_OpdateVATSup
-            // 
-            this.TB_OpdateVATSup.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.TB_OpdateVATSup.Location = new System.Drawing.Point(303, 440);
-            this.TB_OpdateVATSup.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.TB_OpdateVATSup.Name = "TB_OpdateVATSup";
-            this.TB_OpdateVATSup.Size = new System.Drawing.Size(122, 31);
-            this.TB_OpdateVATSup.TabIndex = 109;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.label7.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label7.Location = new System.Drawing.Point(27, 444);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(170, 25);
-            this.label7.TabIndex = 108;
-            this.label7.Text = "CVR leverandør:";
-            // 
-            // TB_OpdatePurchasePrice
-            // 
-            this.TB_OpdatePurchasePrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.TB_OpdatePurchasePrice.Location = new System.Drawing.Point(303, 340);
-            this.TB_OpdatePurchasePrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.TB_OpdatePurchasePrice.Name = "TB_OpdatePurchasePrice";
-            this.TB_OpdatePurchasePrice.Size = new System.Drawing.Size(122, 31);
-            this.TB_OpdatePurchasePrice.TabIndex = 107;
-            // 
-            // TB_OpdateDiscription
-            // 
-            this.TB_OpdateDiscription.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.TB_OpdateDiscription.Location = new System.Drawing.Point(303, 291);
-            this.TB_OpdateDiscription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.TB_OpdateDiscription.Name = "TB_OpdateDiscription";
-            this.TB_OpdateDiscription.Size = new System.Drawing.Size(122, 31);
-            this.TB_OpdateDiscription.TabIndex = 104;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.label3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label3.Location = new System.Drawing.Point(27, 295);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(203, 25);
-            this.label3.TabIndex = 101;
-            this.label3.Text = "Produkt Beskrivelse";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.label9.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label9.Location = new System.Drawing.Point(27, 344);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(122, 25);
-            this.label9.TabIndex = 103;
-            this.label9.Text = "Indkøbspris";
-            // 
-            // productTable
-            // 
-            this.productTable.DataSetName = "ProductTable";
-            this.productTable.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // productTableBindingSource
-            // 
-            this.productTableBindingSource.DataSource = this.productTable;
-            this.productTableBindingSource.Position = 0;
-            // 
-            // productBindingSource
-            // 
-            this.productBindingSource.DataMember = "Product";
-            this.productBindingSource.DataSource = this.productTableBindingSource;
-            // 
-            // productTableAdapter
-            // 
-            this.productTableAdapter.ClearBeforeFill = true;
             // 
             // salesPriceDataGridViewTextBoxColumn
             // 
@@ -386,6 +283,109 @@
             this.usedForDataGridViewTextBoxColumn.HeaderText = "UsedFor";
             this.usedForDataGridViewTextBoxColumn.Name = "usedForDataGridViewTextBoxColumn";
             // 
+            // productBindingSource
+            // 
+            this.productBindingSource.DataMember = "Product";
+            this.productBindingSource.DataSource = this.productTableBindingSource;
+            // 
+            // productTableBindingSource
+            // 
+            this.productTableBindingSource.DataSource = this.productTable;
+            this.productTableBindingSource.Position = 0;
+            // 
+            // productTable
+            // 
+            this.productTable.DataSetName = "ProductTable";
+            this.productTable.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // TB_OpdateSalesPrice
+            // 
+            this.TB_OpdateSalesPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.TB_OpdateSalesPrice.Location = new System.Drawing.Point(303, 391);
+            this.TB_OpdateSalesPrice.Margin = new System.Windows.Forms.Padding(2);
+            this.TB_OpdateSalesPrice.Name = "TB_OpdateSalesPrice";
+            this.TB_OpdateSalesPrice.Size = new System.Drawing.Size(122, 31);
+            this.TB_OpdateSalesPrice.TabIndex = 111;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label8.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label8.Location = new System.Drawing.Point(27, 394);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(134, 25);
+            this.label8.TabIndex = 110;
+            this.label8.Text = "Indkøbspris :";
+            // 
+            // TB_OpdateVATSup
+            // 
+            this.TB_OpdateVATSup.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.TB_OpdateVATSup.Location = new System.Drawing.Point(303, 440);
+            this.TB_OpdateVATSup.Margin = new System.Windows.Forms.Padding(2);
+            this.TB_OpdateVATSup.Name = "TB_OpdateVATSup";
+            this.TB_OpdateVATSup.Size = new System.Drawing.Size(122, 31);
+            this.TB_OpdateVATSup.TabIndex = 109;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label7.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label7.Location = new System.Drawing.Point(27, 444);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(170, 25);
+            this.label7.TabIndex = 108;
+            this.label7.Text = "CVR leverandør:";
+            // 
+            // TB_OpdatePurchasePrice
+            // 
+            this.TB_OpdatePurchasePrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.TB_OpdatePurchasePrice.Location = new System.Drawing.Point(303, 340);
+            this.TB_OpdatePurchasePrice.Margin = new System.Windows.Forms.Padding(2);
+            this.TB_OpdatePurchasePrice.Name = "TB_OpdatePurchasePrice";
+            this.TB_OpdatePurchasePrice.Size = new System.Drawing.Size(122, 31);
+            this.TB_OpdatePurchasePrice.TabIndex = 107;
+            // 
+            // TB_OpdateDiscription
+            // 
+            this.TB_OpdateDiscription.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.TB_OpdateDiscription.Location = new System.Drawing.Point(303, 291);
+            this.TB_OpdateDiscription.Margin = new System.Windows.Forms.Padding(2);
+            this.TB_OpdateDiscription.Name = "TB_OpdateDiscription";
+            this.TB_OpdateDiscription.Size = new System.Drawing.Size(122, 31);
+            this.TB_OpdateDiscription.TabIndex = 104;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label3.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label3.Location = new System.Drawing.Point(27, 295);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(203, 25);
+            this.label3.TabIndex = 101;
+            this.label3.Text = "Produkt Beskrivelse";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label9.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label9.Location = new System.Drawing.Point(27, 344);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(122, 25);
+            this.label9.TabIndex = 103;
+            this.label9.Text = "Indkøbspris";
+            // 
+            // productTableAdapter
+            // 
+            this.productTableAdapter.ClearBeforeFill = true;
+            // 
             // OpdaterProdukt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -415,9 +415,9 @@
             this.PANEL_FindOrder.ResumeLayout(false);
             this.PANEL_FindOrder.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_OpdateSelectProduct)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productTable)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productTableBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productTableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productTable)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

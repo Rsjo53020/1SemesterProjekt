@@ -37,9 +37,6 @@
             this.Label2 = new System.Windows.Forms.Label();
             this.BTN_FindProduct = new System.Windows.Forms.Button();
             this.DGV_ShowFindProduct = new System.Windows.Forms.DataGridView();
-            this.productTable = new SemesterProjekt.ProductTable();
-            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.productTableAdapter = new SemesterProjekt.ProductTableTableAdapters.ProductTableAdapter();
             this.salesPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameProductDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.discriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,10 +52,13 @@
             this.styleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usedForDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.productTable = new SemesterProjekt.ProductTable();
+            this.productTableAdapter = new SemesterProjekt.ProductTableTableAdapters.ProductTableAdapter();
             this.PANEL_FindOrder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_ShowFindProduct)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productTable)).BeginInit();
             this.SuspendLayout();
             // 
             // LB_ShowProduct
@@ -79,7 +79,7 @@
             this.PANEL_FindOrder.Controls.Add(this.LB_ShowProduct);
             this.PANEL_FindOrder.Dock = System.Windows.Forms.DockStyle.Top;
             this.PANEL_FindOrder.Location = new System.Drawing.Point(0, 0);
-            this.PANEL_FindOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PANEL_FindOrder.Margin = new System.Windows.Forms.Padding(2);
             this.PANEL_FindOrder.Name = "PANEL_FindOrder";
             this.PANEL_FindOrder.Size = new System.Drawing.Size(652, 76);
             this.PANEL_FindOrder.TabIndex = 33;
@@ -89,7 +89,7 @@
             // 
             this.TB_FindKategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.TB_FindKategory.Location = new System.Drawing.Point(296, 157);
-            this.TB_FindKategory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TB_FindKategory.Margin = new System.Windows.Forms.Padding(2);
             this.TB_FindKategory.Name = "TB_FindKategory";
             this.TB_FindKategory.Size = new System.Drawing.Size(296, 31);
             this.TB_FindKategory.TabIndex = 88;
@@ -98,7 +98,7 @@
             // 
             this.TB_FindProductName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.TB_FindProductName.Location = new System.Drawing.Point(296, 95);
-            this.TB_FindProductName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TB_FindProductName.Margin = new System.Windows.Forms.Padding(2);
             this.TB_FindProductName.Name = "TB_FindProductName";
             this.TB_FindProductName.Size = new System.Drawing.Size(296, 31);
             this.TB_FindProductName.TabIndex = 87;
@@ -142,7 +142,7 @@
             // DGV_ShowFindProduct
             // 
             this.DGV_ShowFindProduct.AutoGenerateColumns = false;
-            this.DGV_ShowFindProduct.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.DGV_ShowFindProduct.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.DGV_ShowFindProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV_ShowFindProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.salesPriceDataGridViewTextBoxColumn,
@@ -170,20 +170,6 @@
             this.DGV_ShowFindProduct.RowTemplate.Height = 33;
             this.DGV_ShowFindProduct.Size = new System.Drawing.Size(652, 228);
             this.DGV_ShowFindProduct.TabIndex = 90;
-            // 
-            // productTable
-            // 
-            this.productTable.DataSetName = "ProductTable";
-            this.productTable.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // productBindingSource
-            // 
-            this.productBindingSource.DataMember = "Product";
-            this.productBindingSource.DataSource = this.productTable;
-            // 
-            // productTableAdapter
-            // 
-            this.productTableAdapter.ClearBeforeFill = true;
             // 
             // salesPriceDataGridViewTextBoxColumn
             // 
@@ -276,6 +262,20 @@
             this.usedForDataGridViewTextBoxColumn.HeaderText = "UsedFor";
             this.usedForDataGridViewTextBoxColumn.Name = "usedForDataGridViewTextBoxColumn";
             // 
+            // productBindingSource
+            // 
+            this.productBindingSource.DataMember = "Product";
+            this.productBindingSource.DataSource = this.productTable;
+            // 
+            // productTable
+            // 
+            this.productTable.DataSetName = "ProductTable";
+            this.productTable.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // productTableAdapter
+            // 
+            this.productTableAdapter.ClearBeforeFill = true;
+            // 
             // VisProdukt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -296,8 +296,8 @@
             this.PANEL_FindOrder.ResumeLayout(false);
             this.PANEL_FindOrder.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_ShowFindProduct)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productTable)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
