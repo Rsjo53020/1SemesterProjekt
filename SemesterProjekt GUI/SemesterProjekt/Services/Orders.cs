@@ -8,9 +8,12 @@ namespace SemesterProjekt.Services
 {
     internal class Orders
     {
-        public void FindOrder(Models.Customer customer)
+        public static List<Models.Order> FindOrder(DateTime StartDate, DateTime EndDate)
         {
-            return customer;
+            List<Models.Order> orders = new List<Models.Order>();
+            List<Models.Order> customers = Database.Database.SqlGetCustomer(StartDate);
+
+            return customers;
         }
 
         public void PlaceOrder()
