@@ -22,6 +22,7 @@ namespace SemesterProjekt.GUI
             GUIMain gUIMain = new GUIMain();
             gUIMain.Show();
             this.Hide();
+            
         }
     }
 }
