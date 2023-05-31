@@ -274,7 +274,7 @@ namespace SemesterProjekt.Database
             }
             else if (getKategory != "")
             {
-                sSQL = $"SELECT * FROM Product WHERE Kategaory = '{getKategory}';";
+                sSQL = $"SELECT * FROM Product WHERE Kategory = '{getKategory}';";
 
             }
 
