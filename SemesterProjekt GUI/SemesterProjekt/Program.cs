@@ -13,10 +13,7 @@ namespace SemesterProjekt
         static void Main(string[] args)
         {
             Application.Run(new BGFStartside());
-
-
         }
-
     }
 
 }

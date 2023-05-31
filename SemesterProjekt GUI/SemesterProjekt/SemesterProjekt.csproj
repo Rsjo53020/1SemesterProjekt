@@ -235,7 +235,9 @@
       <DependentUpon>StoreStockTable.xsd</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="GUI\BGFStartside.resx">
       <DependentUpon>BGFStartside.cs</DependentUpon>
