@@ -49,5 +49,12 @@ namespace SemesterProjekt.GUI
         {
             Services.Orders.GetCustomerPurchaseOrdersBetweenDates(orders, DateStart, DateEnd);
         }
+
+        private void BTN_UpdateOrder_Click(object sender, EventArgs e)
+        {
+            FundetOrdre FundetOrdre = new FundetOrdre();
+            FundetOrdre.Show();
+            this.Hide();
+        }
     }
 }
