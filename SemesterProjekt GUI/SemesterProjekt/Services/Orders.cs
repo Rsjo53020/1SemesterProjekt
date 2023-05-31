@@ -36,7 +36,7 @@ namespace SemesterProjekt.Services
 
             foreach (Order order in orders)
             {
-                Console.WriteLine($"{order.CostumerID}   {order.OrderStatus.PadRight(25)} {order.OrderDate.ToShortDateString()}    {order.TotalPrice}");
+                Console.WriteLine($"{order.CostumerID}   {Services.Customer.fin} {order.OrderDate.ToShortDateString()}    {order.TotalPrice}");
             }
 
             decimal totalSales = orders.Sum(order => order.TotalPrice);
