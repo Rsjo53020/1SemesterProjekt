@@ -335,7 +335,7 @@
             this.MaximumSize = new System.Drawing.Size(950, 597);
             this.MinimumSize = new System.Drawing.Size(950, 597);
             this.Name = "GUIMain";
-            this.Text = "GUIMain";
+            this.Text = "SYNSPUNKT MENU";
             this.SideMenuPanel.ResumeLayout(false);
             this.StockSubMenuPanel.ResumeLayout(false);
             this.OrdersSubMenuPanel.ResumeLayout(false);
