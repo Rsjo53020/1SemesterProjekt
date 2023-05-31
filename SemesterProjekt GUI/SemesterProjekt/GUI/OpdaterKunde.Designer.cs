@@ -121,9 +121,9 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(609, 51);
+            this.panel1.Size = new System.Drawing.Size(914, 78);
             this.panel1.TabIndex = 1;
             // 
             // label1
@@ -132,10 +132,9 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(211, 26);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(316, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(226, 25);
+            this.label1.Size = new System.Drawing.Size(335, 37);
             this.label1.TabIndex = 17;
             this.label1.Text = "RET OPLYSNINGER";
             // 
@@ -159,92 +158,118 @@
             this.orderIDDataGridViewTextBoxColumn,
             this.customerIDDataGridViewTextBoxColumn});
             this.DGV_OpdateSelectProduct_ShowCustomers.DataSource = this.customerBindingSource;
-            this.DGV_OpdateSelectProduct_ShowCustomers.Location = new System.Drawing.Point(20, 96);
-            this.DGV_OpdateSelectProduct_ShowCustomers.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.DGV_OpdateSelectProduct_ShowCustomers.Location = new System.Drawing.Point(30, 148);
+            this.DGV_OpdateSelectProduct_ShowCustomers.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.DGV_OpdateSelectProduct_ShowCustomers.Name = "DGV_OpdateSelectProduct_ShowCustomers";
             this.DGV_OpdateSelectProduct_ShowCustomers.RowHeadersWidth = 51;
             this.DGV_OpdateSelectProduct_ShowCustomers.RowTemplate.Height = 24;
-            this.DGV_OpdateSelectProduct_ShowCustomers.Size = new System.Drawing.Size(566, 146);
+            this.DGV_OpdateSelectProduct_ShowCustomers.Size = new System.Drawing.Size(849, 225);
             this.DGV_OpdateSelectProduct_ShowCustomers.TabIndex = 19;
             // 
             // firstNameDataGridViewTextBoxColumn
             // 
             this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
             this.firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
+            this.firstNameDataGridViewTextBoxColumn.Width = 150;
             // 
             // surNameDataGridViewTextBoxColumn
             // 
             this.surNameDataGridViewTextBoxColumn.DataPropertyName = "SurName";
             this.surNameDataGridViewTextBoxColumn.HeaderText = "SurName";
+            this.surNameDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.surNameDataGridViewTextBoxColumn.Name = "surNameDataGridViewTextBoxColumn";
+            this.surNameDataGridViewTextBoxColumn.Width = 150;
             // 
             // phoneNrDataGridViewTextBoxColumn
             // 
             this.phoneNrDataGridViewTextBoxColumn.DataPropertyName = "PhoneNr";
             this.phoneNrDataGridViewTextBoxColumn.HeaderText = "PhoneNr";
+            this.phoneNrDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.phoneNrDataGridViewTextBoxColumn.Name = "phoneNrDataGridViewTextBoxColumn";
+            this.phoneNrDataGridViewTextBoxColumn.Width = 150;
             // 
             // eMailAdressDataGridViewTextBoxColumn
             // 
             this.eMailAdressDataGridViewTextBoxColumn.DataPropertyName = "EMailAdress";
             this.eMailAdressDataGridViewTextBoxColumn.HeaderText = "EMailAdress";
+            this.eMailAdressDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.eMailAdressDataGridViewTextBoxColumn.Name = "eMailAdressDataGridViewTextBoxColumn";
+            this.eMailAdressDataGridViewTextBoxColumn.Width = 150;
             // 
             // adressDataGridViewTextBoxColumn
             // 
             this.adressDataGridViewTextBoxColumn.DataPropertyName = "Adress";
             this.adressDataGridViewTextBoxColumn.HeaderText = "Adress";
+            this.adressDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.adressDataGridViewTextBoxColumn.Name = "adressDataGridViewTextBoxColumn";
+            this.adressDataGridViewTextBoxColumn.Width = 150;
             // 
             // cityDataGridViewTextBoxColumn
             // 
             this.cityDataGridViewTextBoxColumn.DataPropertyName = "City";
             this.cityDataGridViewTextBoxColumn.HeaderText = "City";
+            this.cityDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.cityDataGridViewTextBoxColumn.Name = "cityDataGridViewTextBoxColumn";
+            this.cityDataGridViewTextBoxColumn.Width = 150;
             // 
             // postalCodeDataGridViewTextBoxColumn
             // 
             this.postalCodeDataGridViewTextBoxColumn.DataPropertyName = "PostalCode";
             this.postalCodeDataGridViewTextBoxColumn.HeaderText = "PostalCode";
+            this.postalCodeDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.postalCodeDataGridViewTextBoxColumn.Name = "postalCodeDataGridViewTextBoxColumn";
+            this.postalCodeDataGridViewTextBoxColumn.Width = 150;
             // 
             // discountDataGridViewTextBoxColumn
             // 
             this.discountDataGridViewTextBoxColumn.DataPropertyName = "Discount";
             this.discountDataGridViewTextBoxColumn.HeaderText = "Discount";
+            this.discountDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.discountDataGridViewTextBoxColumn.Name = "discountDataGridViewTextBoxColumn";
+            this.discountDataGridViewTextBoxColumn.Width = 150;
             // 
             // birthdayDataGridViewTextBoxColumn
             // 
             this.birthdayDataGridViewTextBoxColumn.DataPropertyName = "Birthday";
             this.birthdayDataGridViewTextBoxColumn.HeaderText = "Birthday";
+            this.birthdayDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.birthdayDataGridViewTextBoxColumn.Name = "birthdayDataGridViewTextBoxColumn";
+            this.birthdayDataGridViewTextBoxColumn.Width = 150;
             // 
             // ageDataGridViewTextBoxColumn
             // 
             this.ageDataGridViewTextBoxColumn.DataPropertyName = "Age";
             this.ageDataGridViewTextBoxColumn.HeaderText = "Age";
+            this.ageDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
+            this.ageDataGridViewTextBoxColumn.Width = 150;
             // 
             // visionTestDataGridViewTextBoxColumn
             // 
             this.visionTestDataGridViewTextBoxColumn.DataPropertyName = "VisionTest";
             this.visionTestDataGridViewTextBoxColumn.HeaderText = "VisionTest";
+            this.visionTestDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.visionTestDataGridViewTextBoxColumn.Name = "visionTestDataGridViewTextBoxColumn";
+            this.visionTestDataGridViewTextBoxColumn.Width = 150;
             // 
             // orderIDDataGridViewTextBoxColumn
             // 
             this.orderIDDataGridViewTextBoxColumn.DataPropertyName = "OrderID";
             this.orderIDDataGridViewTextBoxColumn.HeaderText = "OrderID";
+            this.orderIDDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.orderIDDataGridViewTextBoxColumn.Name = "orderIDDataGridViewTextBoxColumn";
+            this.orderIDDataGridViewTextBoxColumn.Width = 150;
             // 
             // customerIDDataGridViewTextBoxColumn
             // 
             this.customerIDDataGridViewTextBoxColumn.DataPropertyName = "CustomerID";
             this.customerIDDataGridViewTextBoxColumn.HeaderText = "CustomerID";
+            this.customerIDDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.customerIDDataGridViewTextBoxColumn.Name = "customerIDDataGridViewTextBoxColumn";
             this.customerIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.customerIDDataGridViewTextBoxColumn.Width = 150;
             // 
             // customerBindingSource
             // 
@@ -258,10 +283,10 @@
             // 
             // TB_Discount
             // 
-            this.TB_Discount.Location = new System.Drawing.Point(460, 720);
-            this.TB_Discount.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.TB_Discount.Location = new System.Drawing.Point(690, 1108);
+            this.TB_Discount.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TB_Discount.Name = "TB_Discount";
-            this.TB_Discount.Size = new System.Drawing.Size(297, 20);
+            this.TB_Discount.Size = new System.Drawing.Size(444, 26);
             this.TB_Discount.TabIndex = 76;
             // 
             // label11
@@ -269,19 +294,18 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.label11.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label11.Location = new System.Drawing.Point(285, 712);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(428, 1095);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(108, 25);
+            this.label11.Size = new System.Drawing.Size(160, 37);
             this.label11.TabIndex = 75;
             this.label11.Text = "Discount :";
             // 
             // TB_PostNr
             // 
-            this.TB_PostNr.Location = new System.Drawing.Point(460, 681);
-            this.TB_PostNr.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.TB_PostNr.Location = new System.Drawing.Point(690, 1048);
+            this.TB_PostNr.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TB_PostNr.Name = "TB_PostNr";
-            this.TB_PostNr.Size = new System.Drawing.Size(297, 20);
+            this.TB_PostNr.Size = new System.Drawing.Size(444, 26);
             this.TB_PostNr.TabIndex = 74;
             // 
             // label8
@@ -289,19 +313,18 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.label8.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label8.Location = new System.Drawing.Point(285, 673);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(428, 1035);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(95, 25);
+            this.label8.Size = new System.Drawing.Size(143, 37);
             this.label8.TabIndex = 73;
             this.label8.Text = "PostNr : ";
             // 
             // TB_Test
             // 
-            this.TB_Test.Location = new System.Drawing.Point(460, 643);
-            this.TB_Test.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.TB_Test.Location = new System.Drawing.Point(690, 989);
+            this.TB_Test.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TB_Test.Name = "TB_Test";
-            this.TB_Test.Size = new System.Drawing.Size(297, 20);
+            this.TB_Test.Size = new System.Drawing.Size(444, 26);
             this.TB_Test.TabIndex = 72;
             // 
             // label9
@@ -309,19 +332,18 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.label9.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label9.Location = new System.Drawing.Point(285, 636);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(428, 978);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(107, 25);
+            this.label9.Size = new System.Drawing.Size(156, 37);
             this.label9.TabIndex = 71;
             this.label9.Text = "Synstest :";
             // 
             // TB_Age
             // 
-            this.TB_Age.Location = new System.Drawing.Point(460, 601);
-            this.TB_Age.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.TB_Age.Location = new System.Drawing.Point(690, 925);
+            this.TB_Age.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TB_Age.Name = "TB_Age";
-            this.TB_Age.Size = new System.Drawing.Size(297, 20);
+            this.TB_Age.Size = new System.Drawing.Size(444, 26);
             this.TB_Age.TabIndex = 70;
             // 
             // label10
@@ -329,19 +351,18 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.label10.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label10.Location = new System.Drawing.Point(285, 594);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(428, 914);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(80, 25);
+            this.label10.Size = new System.Drawing.Size(119, 37);
             this.label10.TabIndex = 69;
             this.label10.Text = "Alder : ";
             // 
             // TB_PostalCode
             // 
-            this.TB_PostalCode.Location = new System.Drawing.Point(460, 565);
-            this.TB_PostalCode.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.TB_PostalCode.Location = new System.Drawing.Point(690, 869);
+            this.TB_PostalCode.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TB_PostalCode.Name = "TB_PostalCode";
-            this.TB_PostalCode.Size = new System.Drawing.Size(297, 20);
+            this.TB_PostalCode.Size = new System.Drawing.Size(444, 26);
             this.TB_PostalCode.TabIndex = 68;
             // 
             // label7
@@ -349,10 +370,9 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.label7.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label7.Location = new System.Drawing.Point(285, 558);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(428, 858);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(95, 25);
+            this.label7.Size = new System.Drawing.Size(143, 37);
             this.label7.TabIndex = 67;
             this.label7.Text = "PostNr : ";
             // 
@@ -365,28 +385,29 @@
             this.BTN_SearchCustomer.BackColor = System.Drawing.Color.White;
             this.BTN_SearchCustomer.FlatAppearance.BorderSize = 0;
             this.BTN_SearchCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BTN_SearchCustomer.Location = new System.Drawing.Point(505, 62);
-            this.BTN_SearchCustomer.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.BTN_SearchCustomer.Location = new System.Drawing.Point(758, 95);
+            this.BTN_SearchCustomer.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BTN_SearchCustomer.Name = "BTN_SearchCustomer";
-            this.BTN_SearchCustomer.Size = new System.Drawing.Size(81, 28);
+            this.BTN_SearchCustomer.Size = new System.Drawing.Size(122, 43);
             this.BTN_SearchCustomer.TabIndex = 119;
             this.BTN_SearchCustomer.Text = "Søg Kunde";
             this.BTN_SearchCustomer.UseVisualStyleBackColor = false;
+            this.BTN_SearchCustomer.Click += new System.EventHandler(this.BTN_SearchCustomer_Click);
             // 
             // TB_SearchEMailCustomer
             // 
-            this.TB_SearchEMailCustomer.Location = new System.Drawing.Point(363, 67);
-            this.TB_SearchEMailCustomer.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.TB_SearchEMailCustomer.Location = new System.Drawing.Point(544, 103);
+            this.TB_SearchEMailCustomer.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TB_SearchEMailCustomer.Name = "TB_SearchEMailCustomer";
-            this.TB_SearchEMailCustomer.Size = new System.Drawing.Size(129, 20);
+            this.TB_SearchEMailCustomer.Size = new System.Drawing.Size(192, 26);
             this.TB_SearchEMailCustomer.TabIndex = 118;
             // 
             // TB_SearchTlfCustomer
             // 
-            this.TB_SearchTlfCustomer.Location = new System.Drawing.Point(128, 67);
-            this.TB_SearchTlfCustomer.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.TB_SearchTlfCustomer.Location = new System.Drawing.Point(192, 103);
+            this.TB_SearchTlfCustomer.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TB_SearchTlfCustomer.Name = "TB_SearchTlfCustomer";
-            this.TB_SearchTlfCustomer.Size = new System.Drawing.Size(129, 20);
+            this.TB_SearchTlfCustomer.Size = new System.Drawing.Size(192, 26);
             this.TB_SearchTlfCustomer.TabIndex = 117;
             // 
             // label4
@@ -394,10 +415,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label4.Location = new System.Drawing.Point(261, 68);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(392, 105);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 17);
+            this.label4.Size = new System.Drawing.Size(142, 25);
             this.label4.TabIndex = 116;
             this.label4.Text = "Kunde E-Mail :";
             // 
@@ -406,10 +426,9 @@
             this.Label2.AutoSize = true;
             this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.Label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Label2.Location = new System.Drawing.Point(17, 68);
-            this.Label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label2.Location = new System.Drawing.Point(26, 105);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(105, 17);
+            this.Label2.Size = new System.Drawing.Size(147, 25);
             this.Label2.TabIndex = 115;
             this.Label2.Text = "Kunde Tlf +45 :";
             // 
@@ -417,10 +436,9 @@
             // 
             this.LL_UpdateProductForklaring.AutoSize = true;
             this.LL_UpdateProductForklaring.LinkColor = System.Drawing.Color.White;
-            this.LL_UpdateProductForklaring.Location = new System.Drawing.Point(26, 451);
-            this.LL_UpdateProductForklaring.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LL_UpdateProductForklaring.Location = new System.Drawing.Point(39, 694);
             this.LL_UpdateProductForklaring.Name = "LL_UpdateProductForklaring";
-            this.LL_UpdateProductForklaring.Size = new System.Drawing.Size(53, 13);
+            this.LL_UpdateProductForklaring.Size = new System.Drawing.Size(79, 20);
             this.LL_UpdateProductForklaring.TabIndex = 185;
             this.LL_UpdateProductForklaring.TabStop = true;
             this.LL_UpdateProductForklaring.Text = "Forklaring";
@@ -430,10 +448,10 @@
             this.BTN_UpdateCustomer.BackColor = System.Drawing.Color.White;
             this.BTN_UpdateCustomer.FlatAppearance.BorderSize = 0;
             this.BTN_UpdateCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BTN_UpdateCustomer.Location = new System.Drawing.Point(491, 452);
-            this.BTN_UpdateCustomer.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.BTN_UpdateCustomer.Location = new System.Drawing.Point(736, 695);
+            this.BTN_UpdateCustomer.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BTN_UpdateCustomer.Name = "BTN_UpdateCustomer";
-            this.BTN_UpdateCustomer.Size = new System.Drawing.Size(95, 29);
+            this.BTN_UpdateCustomer.Size = new System.Drawing.Size(142, 45);
             this.BTN_UpdateCustomer.TabIndex = 184;
             this.BTN_UpdateCustomer.Text = "Opdater Kunde";
             this.BTN_UpdateCustomer.UseVisualStyleBackColor = false;
@@ -441,66 +459,66 @@
             // 
             // TB_UpdatedVistionTestCustomer
             // 
-            this.TB_UpdatedVistionTestCustomer.Location = new System.Drawing.Point(162, 423);
-            this.TB_UpdatedVistionTestCustomer.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.TB_UpdatedVistionTestCustomer.Location = new System.Drawing.Point(243, 651);
+            this.TB_UpdatedVistionTestCustomer.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TB_UpdatedVistionTestCustomer.Name = "TB_UpdatedVistionTestCustomer";
-            this.TB_UpdatedVistionTestCustomer.Size = new System.Drawing.Size(424, 20);
+            this.TB_UpdatedVistionTestCustomer.Size = new System.Drawing.Size(634, 26);
             this.TB_UpdatedVistionTestCustomer.TabIndex = 180;
             // 
             // TB_UpdatedAgeCustomer
             // 
-            this.TB_UpdatedAgeCustomer.Location = new System.Drawing.Point(162, 407);
-            this.TB_UpdatedAgeCustomer.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.TB_UpdatedAgeCustomer.Location = new System.Drawing.Point(243, 626);
+            this.TB_UpdatedAgeCustomer.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TB_UpdatedAgeCustomer.Name = "TB_UpdatedAgeCustomer";
-            this.TB_UpdatedAgeCustomer.Size = new System.Drawing.Size(424, 20);
+            this.TB_UpdatedAgeCustomer.Size = new System.Drawing.Size(634, 26);
             this.TB_UpdatedAgeCustomer.TabIndex = 179;
             // 
             // TB_UpdatedBirthdayCustomer
             // 
-            this.TB_UpdatedBirthdayCustomer.Location = new System.Drawing.Point(162, 390);
-            this.TB_UpdatedBirthdayCustomer.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.TB_UpdatedBirthdayCustomer.Location = new System.Drawing.Point(243, 600);
+            this.TB_UpdatedBirthdayCustomer.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TB_UpdatedBirthdayCustomer.Name = "TB_UpdatedBirthdayCustomer";
-            this.TB_UpdatedBirthdayCustomer.Size = new System.Drawing.Size(424, 20);
+            this.TB_UpdatedBirthdayCustomer.Size = new System.Drawing.Size(634, 26);
             this.TB_UpdatedBirthdayCustomer.TabIndex = 178;
             // 
             // TB_UpdatedDiscountCustomer
             // 
-            this.TB_UpdatedDiscountCustomer.Location = new System.Drawing.Point(162, 373);
-            this.TB_UpdatedDiscountCustomer.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.TB_UpdatedDiscountCustomer.Location = new System.Drawing.Point(243, 574);
+            this.TB_UpdatedDiscountCustomer.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TB_UpdatedDiscountCustomer.Name = "TB_UpdatedDiscountCustomer";
-            this.TB_UpdatedDiscountCustomer.Size = new System.Drawing.Size(424, 20);
+            this.TB_UpdatedDiscountCustomer.Size = new System.Drawing.Size(634, 26);
             this.TB_UpdatedDiscountCustomer.TabIndex = 177;
             // 
             // TB_UpdatedPostalCodeCustomer
             // 
-            this.TB_UpdatedPostalCodeCustomer.Location = new System.Drawing.Point(162, 356);
-            this.TB_UpdatedPostalCodeCustomer.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.TB_UpdatedPostalCodeCustomer.Location = new System.Drawing.Point(243, 548);
+            this.TB_UpdatedPostalCodeCustomer.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TB_UpdatedPostalCodeCustomer.Name = "TB_UpdatedPostalCodeCustomer";
-            this.TB_UpdatedPostalCodeCustomer.Size = new System.Drawing.Size(424, 20);
+            this.TB_UpdatedPostalCodeCustomer.Size = new System.Drawing.Size(634, 26);
             this.TB_UpdatedPostalCodeCustomer.TabIndex = 176;
             // 
             // TB_UpdatedAdressCustomer
             // 
-            this.TB_UpdatedAdressCustomer.Location = new System.Drawing.Point(162, 339);
-            this.TB_UpdatedAdressCustomer.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.TB_UpdatedAdressCustomer.Location = new System.Drawing.Point(243, 522);
+            this.TB_UpdatedAdressCustomer.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TB_UpdatedAdressCustomer.Name = "TB_UpdatedAdressCustomer";
-            this.TB_UpdatedAdressCustomer.Size = new System.Drawing.Size(424, 20);
+            this.TB_UpdatedAdressCustomer.Size = new System.Drawing.Size(634, 26);
             this.TB_UpdatedAdressCustomer.TabIndex = 175;
             // 
             // TB_UpdatedEMailCustomer
             // 
-            this.TB_UpdatedEMailCustomer.Location = new System.Drawing.Point(162, 322);
-            this.TB_UpdatedEMailCustomer.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.TB_UpdatedEMailCustomer.Location = new System.Drawing.Point(243, 495);
+            this.TB_UpdatedEMailCustomer.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TB_UpdatedEMailCustomer.Name = "TB_UpdatedEMailCustomer";
-            this.TB_UpdatedEMailCustomer.Size = new System.Drawing.Size(424, 20);
+            this.TB_UpdatedEMailCustomer.Size = new System.Drawing.Size(634, 26);
             this.TB_UpdatedEMailCustomer.TabIndex = 174;
             // 
             // TB_UpdatedPhoneNrCustomer
             // 
-            this.TB_UpdatedPhoneNrCustomer.Location = new System.Drawing.Point(162, 305);
-            this.TB_UpdatedPhoneNrCustomer.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.TB_UpdatedPhoneNrCustomer.Location = new System.Drawing.Point(243, 469);
+            this.TB_UpdatedPhoneNrCustomer.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TB_UpdatedPhoneNrCustomer.Name = "TB_UpdatedPhoneNrCustomer";
-            this.TB_UpdatedPhoneNrCustomer.Size = new System.Drawing.Size(424, 20);
+            this.TB_UpdatedPhoneNrCustomer.Size = new System.Drawing.Size(634, 26);
             this.TB_UpdatedPhoneNrCustomer.TabIndex = 173;
             // 
             // label5
@@ -508,10 +526,9 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label5.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label5.Location = new System.Drawing.Point(24, 423);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(36, 651);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 17);
+            this.label5.Size = new System.Drawing.Size(104, 25);
             this.label5.TabIndex = 167;
             this.label5.Text = "Syns test :";
             // 
@@ -520,10 +537,9 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label14.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label14.Location = new System.Drawing.Point(23, 407);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Location = new System.Drawing.Point(34, 626);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(49, 17);
+            this.label14.Size = new System.Drawing.Size(69, 25);
             this.label14.TabIndex = 166;
             this.label14.Text = "Alder :";
             // 
@@ -532,10 +548,9 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label13.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label13.Location = new System.Drawing.Point(24, 390);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Location = new System.Drawing.Point(36, 600);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(93, 17);
+            this.label13.Size = new System.Drawing.Size(130, 25);
             this.label13.TabIndex = 165;
             this.label13.Text = "Fødselsdato :";
             // 
@@ -544,10 +559,9 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label12.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label12.Location = new System.Drawing.Point(24, 373);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Location = new System.Drawing.Point(36, 574);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(71, 17);
+            this.label12.Size = new System.Drawing.Size(99, 25);
             this.label12.TabIndex = 164;
             this.label12.Text = "Discount :";
             // 
@@ -556,10 +570,9 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label17.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label17.Location = new System.Drawing.Point(24, 356);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Location = new System.Drawing.Point(36, 548);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(55, 17);
+            this.label17.Size = new System.Drawing.Size(77, 25);
             this.label17.TabIndex = 163;
             this.label17.Text = "PostNr:";
             // 
@@ -568,10 +581,9 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label18.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label18.Location = new System.Drawing.Point(23, 422);
-            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.Location = new System.Drawing.Point(34, 649);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(0, 17);
+            this.label18.Size = new System.Drawing.Size(0, 25);
             this.label18.TabIndex = 162;
             // 
             // label19
@@ -579,10 +591,9 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label19.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label19.Location = new System.Drawing.Point(24, 339);
-            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label19.Location = new System.Drawing.Point(36, 522);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(32, 17);
+            this.label19.Size = new System.Drawing.Size(46, 25);
             this.label19.TabIndex = 161;
             this.label19.Text = "By :";
             // 
@@ -591,10 +602,10 @@
             this.BTN_DeleteCustomer.BackColor = System.Drawing.Color.White;
             this.BTN_DeleteCustomer.FlatAppearance.BorderSize = 0;
             this.BTN_DeleteCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BTN_DeleteCustomer.Location = new System.Drawing.Point(406, 451);
-            this.BTN_DeleteCustomer.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.BTN_DeleteCustomer.Location = new System.Drawing.Point(609, 694);
+            this.BTN_DeleteCustomer.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BTN_DeleteCustomer.Name = "BTN_DeleteCustomer";
-            this.BTN_DeleteCustomer.Size = new System.Drawing.Size(81, 30);
+            this.BTN_DeleteCustomer.Size = new System.Drawing.Size(122, 46);
             this.BTN_DeleteCustomer.TabIndex = 160;
             this.BTN_DeleteCustomer.Text = "Slet Kunde";
             this.BTN_DeleteCustomer.UseVisualStyleBackColor = false;
@@ -605,18 +616,18 @@
             // 
             // TB_TB_UpdatedSurNameCustomer
             // 
-            this.TB_TB_UpdatedSurNameCustomer.Location = new System.Drawing.Point(162, 288);
-            this.TB_TB_UpdatedSurNameCustomer.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.TB_TB_UpdatedSurNameCustomer.Location = new System.Drawing.Point(243, 443);
+            this.TB_TB_UpdatedSurNameCustomer.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TB_TB_UpdatedSurNameCustomer.Name = "TB_TB_UpdatedSurNameCustomer";
-            this.TB_TB_UpdatedSurNameCustomer.Size = new System.Drawing.Size(424, 20);
+            this.TB_TB_UpdatedSurNameCustomer.Size = new System.Drawing.Size(634, 26);
             this.TB_TB_UpdatedSurNameCustomer.TabIndex = 172;
             // 
             // TB_UpdatedFirstNameCustomer
             // 
-            this.TB_UpdatedFirstNameCustomer.Location = new System.Drawing.Point(162, 270);
-            this.TB_UpdatedFirstNameCustomer.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.TB_UpdatedFirstNameCustomer.Location = new System.Drawing.Point(243, 415);
+            this.TB_UpdatedFirstNameCustomer.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.TB_UpdatedFirstNameCustomer.Name = "TB_UpdatedFirstNameCustomer";
-            this.TB_UpdatedFirstNameCustomer.Size = new System.Drawing.Size(424, 20);
+            this.TB_UpdatedFirstNameCustomer.Size = new System.Drawing.Size(634, 26);
             this.TB_UpdatedFirstNameCustomer.TabIndex = 171;
             // 
             // label20
@@ -624,10 +635,9 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label20.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label20.Location = new System.Drawing.Point(24, 288);
-            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Location = new System.Drawing.Point(36, 443);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(60, 17);
+            this.label20.Size = new System.Drawing.Size(84, 25);
             this.label20.TabIndex = 159;
             this.label20.Text = "Tlf + 45:";
             // 
@@ -636,10 +646,9 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label21.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label21.Location = new System.Drawing.Point(24, 305);
-            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label21.Location = new System.Drawing.Point(36, 469);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(55, 17);
+            this.label21.Size = new System.Drawing.Size(79, 25);
             this.label21.TabIndex = 158;
             this.label21.Text = "E-Mail :";
             // 
@@ -648,10 +657,9 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label22.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label22.Location = new System.Drawing.Point(23, 270);
-            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label22.Location = new System.Drawing.Point(34, 415);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(113, 17);
+            this.label22.Size = new System.Drawing.Size(158, 25);
             this.label22.TabIndex = 157;
             this.label22.Text = "Kunde Fornavn :";
             // 
@@ -659,106 +667,136 @@
             // 
             this.salesPriceDataGridViewTextBoxColumn.DataPropertyName = "SalesPrice";
             this.salesPriceDataGridViewTextBoxColumn.HeaderText = "SalesPrice";
+            this.salesPriceDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.salesPriceDataGridViewTextBoxColumn.Name = "salesPriceDataGridViewTextBoxColumn";
             this.salesPriceDataGridViewTextBoxColumn.ReadOnly = true;
+            this.salesPriceDataGridViewTextBoxColumn.Width = 150;
             // 
             // nameProductDataGridViewTextBoxColumn
             // 
             this.nameProductDataGridViewTextBoxColumn.DataPropertyName = "NameProduct";
             this.nameProductDataGridViewTextBoxColumn.HeaderText = "NameProduct";
+            this.nameProductDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.nameProductDataGridViewTextBoxColumn.Name = "nameProductDataGridViewTextBoxColumn";
             this.nameProductDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nameProductDataGridViewTextBoxColumn.Width = 150;
             // 
             // discriptionDataGridViewTextBoxColumn
             // 
             this.discriptionDataGridViewTextBoxColumn.DataPropertyName = "Discription";
             this.discriptionDataGridViewTextBoxColumn.HeaderText = "Discription";
+            this.discriptionDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.discriptionDataGridViewTextBoxColumn.Name = "discriptionDataGridViewTextBoxColumn";
             this.discriptionDataGridViewTextBoxColumn.ReadOnly = true;
+            this.discriptionDataGridViewTextBoxColumn.Width = 150;
             // 
             // kategoryDataGridViewTextBoxColumn
             // 
             this.kategoryDataGridViewTextBoxColumn.DataPropertyName = "Kategory";
             this.kategoryDataGridViewTextBoxColumn.HeaderText = "Kategory";
+            this.kategoryDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.kategoryDataGridViewTextBoxColumn.Name = "kategoryDataGridViewTextBoxColumn";
             this.kategoryDataGridViewTextBoxColumn.ReadOnly = true;
+            this.kategoryDataGridViewTextBoxColumn.Width = 150;
             // 
             // purchasePriceDataGridViewTextBoxColumn
             // 
             this.purchasePriceDataGridViewTextBoxColumn.DataPropertyName = "PurchasePrice";
             this.purchasePriceDataGridViewTextBoxColumn.HeaderText = "PurchasePrice";
+            this.purchasePriceDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.purchasePriceDataGridViewTextBoxColumn.Name = "purchasePriceDataGridViewTextBoxColumn";
             this.purchasePriceDataGridViewTextBoxColumn.ReadOnly = true;
+            this.purchasePriceDataGridViewTextBoxColumn.Width = 150;
             // 
             // vATSupDataGridViewTextBoxColumn
             // 
             this.vATSupDataGridViewTextBoxColumn.DataPropertyName = "VATSup";
             this.vATSupDataGridViewTextBoxColumn.HeaderText = "VATSup";
+            this.vATSupDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.vATSupDataGridViewTextBoxColumn.Name = "vATSupDataGridViewTextBoxColumn";
             this.vATSupDataGridViewTextBoxColumn.ReadOnly = true;
+            this.vATSupDataGridViewTextBoxColumn.Width = 150;
             // 
             // eANDataGridViewTextBoxColumn
             // 
             this.eANDataGridViewTextBoxColumn.DataPropertyName = "EAN";
             this.eANDataGridViewTextBoxColumn.HeaderText = "EAN";
+            this.eANDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.eANDataGridViewTextBoxColumn.Name = "eANDataGridViewTextBoxColumn";
             this.eANDataGridViewTextBoxColumn.ReadOnly = true;
+            this.eANDataGridViewTextBoxColumn.Width = 150;
             // 
             // genderDataGridViewTextBoxColumn
             // 
             this.genderDataGridViewTextBoxColumn.DataPropertyName = "Gender";
             this.genderDataGridViewTextBoxColumn.HeaderText = "Gender";
+            this.genderDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.genderDataGridViewTextBoxColumn.Name = "genderDataGridViewTextBoxColumn";
             this.genderDataGridViewTextBoxColumn.ReadOnly = true;
+            this.genderDataGridViewTextBoxColumn.Width = 150;
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "Age";
             this.dataGridViewTextBoxColumn1.HeaderText = "Age";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 150;
             // 
             // lenghtDataGridViewTextBoxColumn
             // 
             this.lenghtDataGridViewTextBoxColumn.DataPropertyName = "Lenght";
             this.lenghtDataGridViewTextBoxColumn.HeaderText = "Lenght";
+            this.lenghtDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.lenghtDataGridViewTextBoxColumn.Name = "lenghtDataGridViewTextBoxColumn";
             this.lenghtDataGridViewTextBoxColumn.ReadOnly = true;
+            this.lenghtDataGridViewTextBoxColumn.Width = 150;
             // 
             // widthDataGridViewTextBoxColumn
             // 
             this.widthDataGridViewTextBoxColumn.DataPropertyName = "Width";
             this.widthDataGridViewTextBoxColumn.HeaderText = "Width";
+            this.widthDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.widthDataGridViewTextBoxColumn.Name = "widthDataGridViewTextBoxColumn";
             this.widthDataGridViewTextBoxColumn.ReadOnly = true;
+            this.widthDataGridViewTextBoxColumn.Width = 150;
             // 
             // kindDataGridViewTextBoxColumn
             // 
             this.kindDataGridViewTextBoxColumn.DataPropertyName = "Kind";
             this.kindDataGridViewTextBoxColumn.HeaderText = "Kind";
+            this.kindDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.kindDataGridViewTextBoxColumn.Name = "kindDataGridViewTextBoxColumn";
             this.kindDataGridViewTextBoxColumn.ReadOnly = true;
+            this.kindDataGridViewTextBoxColumn.Width = 150;
             // 
             // styleDataGridViewTextBoxColumn
             // 
             this.styleDataGridViewTextBoxColumn.DataPropertyName = "Style";
             this.styleDataGridViewTextBoxColumn.HeaderText = "Style";
+            this.styleDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.styleDataGridViewTextBoxColumn.Name = "styleDataGridViewTextBoxColumn";
             this.styleDataGridViewTextBoxColumn.ReadOnly = true;
+            this.styleDataGridViewTextBoxColumn.Width = 150;
             // 
             // colorDataGridViewTextBoxColumn
             // 
             this.colorDataGridViewTextBoxColumn.DataPropertyName = "Color";
             this.colorDataGridViewTextBoxColumn.HeaderText = "Color";
+            this.colorDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.colorDataGridViewTextBoxColumn.Name = "colorDataGridViewTextBoxColumn";
             this.colorDataGridViewTextBoxColumn.ReadOnly = true;
+            this.colorDataGridViewTextBoxColumn.Width = 150;
             // 
             // usedForDataGridViewTextBoxColumn
             // 
             this.usedForDataGridViewTextBoxColumn.DataPropertyName = "UsedFor";
             this.usedForDataGridViewTextBoxColumn.HeaderText = "UsedFor";
+            this.usedForDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.usedForDataGridViewTextBoxColumn.Name = "usedForDataGridViewTextBoxColumn";
             this.usedForDataGridViewTextBoxColumn.ReadOnly = true;
+            this.usedForDataGridViewTextBoxColumn.Width = 150;
             // 
             // productBindingSource
             // 
@@ -780,19 +818,18 @@
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label23.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label23.Location = new System.Drawing.Point(24, 322);
-            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label23.Location = new System.Drawing.Point(36, 495);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(68, 17);
+            this.label23.Size = new System.Drawing.Size(96, 25);
             this.label23.TabIndex = 156;
             this.label23.Text = "Adresse :";
             // 
             // OpdaterKunde
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(609, 513);
+            this.ClientSize = new System.Drawing.Size(914, 789);
             this.Controls.Add(this.LL_UpdateProductForklaring);
             this.Controls.Add(this.BTN_UpdateCustomer);
             this.Controls.Add(this.TB_UpdatedVistionTestCustomer);
@@ -834,7 +871,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.DGV_OpdateSelectProduct_ShowCustomers);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "OpdaterKunde";
             this.Text = "OpdaterKunde";
             this.Load += new System.EventHandler(this.OpdaterKunde_Load);
