@@ -105,7 +105,7 @@ namespace SemesterProjekt
         private void Btn_UpdateProduct_Click(object sender, EventArgs e)
         {
             panelFormsLoader.Visible = true;
-            openFormsLoader(new OpdaterProdukt());
+            openFormsLoader(new ÆndreProdukt());
         }
 
         private void Btn_CreateCustomer_Click(object sender, EventArgs e)

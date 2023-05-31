@@ -33,5 +33,10 @@ namespace SemesterProjekt.GUI
             this.customerTableAdapter.Fill(this.customerTable.Customer);
 
         }
+
+        private void BTN_UpdateProduct_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
