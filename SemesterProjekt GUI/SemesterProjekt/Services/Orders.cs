@@ -10,19 +10,23 @@ namespace SemesterProjekt.Services
 {
     public class Orders
     {
+        /// <summary>
+        /// Method returns a List of customers from a Start date and End date, using SQL satement from Database
+        /// </summary>
         public static List<Models.Order> FindOrder(DateTime StartDate, DateTime EndDate)
         {
             List<Models.Order> orderList = Database.Database.SqlGetOrder(StartDate, EndDate);
-            
             return orderList;
-
         }
 
         public static void DeleteOrder(Models.Order order)
         {
-
         }
 
+        /// <summary>
+        /// Method print all orders from a customer, 
+        /// using a list of customers and two Dates.
+        /// </summary>
         public static void GetCustomerPurchaseOrdersBetweenDates(List<Models.Order> orders, DateTime startDate, DateTime endDate)
         {
             // Sortér ordrer efter dato

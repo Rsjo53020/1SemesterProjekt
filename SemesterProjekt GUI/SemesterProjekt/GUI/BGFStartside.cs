@@ -17,21 +17,23 @@ namespace SemesterProjekt.GUI
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Method opens "GUIMain" and hides "BGFStartside"
+        /// </summary>
         private void BTN_Butik_Click(object sender, EventArgs e)
         {
-            GUIMain gUIMain = new GUIMain();
-            gUIMain.Show();
+            GUIMain GUIMain = new GUIMain();
+            GUIMain.Show();
             this.Hide();
-
         }
 
+        /// <summary>
+        /// Method Opens "AICustomer" Solution
+        /// </summary>
         private void BTN_Kunde_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("C:\\Users\\Alexa\\Desktop\\1semesterProjekt\\SemesterProjekt GUI\\AICustomer\\bin\\Debug\\AICustomer.exe");
             this.Hide();
         }
-
-
-        
     }
 }

@@ -18,18 +18,6 @@ namespace SemesterProjekt.GUI
             InitializeComponent();
         }
 
-        private void LB_ShowProduct_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void SøgKunde_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'customerTable.Customer' table. You can move, or remove it, as needed.
-            this.customerTableAdapter.Fill(this.customerTable.Customer);
-
-        }
-
         private void BTN_SearchCustomer_Click(object sender, EventArgs e)
         {
             string searchedPhoneNumber = "";
@@ -50,7 +38,6 @@ namespace SemesterProjekt.GUI
 
             }
 
-            
             customers = Services.Customer.FindCostumer(searchedPhoneNumber, searchedEMailAdress);
         }
     }

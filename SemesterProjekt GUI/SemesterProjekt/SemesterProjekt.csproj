@@ -59,16 +59,16 @@
     <Compile Include="GUI\BGFStartside.Designer.cs">
       <DependentUpon>BGFStartside.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Kurv.cs">
+    <Compile Include="%28Unused GUI%29\Kurv.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Kurv.Designer.cs">
+    <Compile Include="%28Unused GUI%29\Kurv.Designer.cs">
       <DependentUpon>Kurv.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\FundetOrdre.cs">
+    <Compile Include="%28Unused GUI%29\FundetOrdre.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\FundetOrdre.Designer.cs">
+    <Compile Include="%28Unused GUI%29\FundetOrdre.Designer.cs">
       <DependentUpon>FundetOrdre.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\GUIMain.cs">
@@ -107,10 +107,10 @@
     <Compile Include="GUI\SletProdukt.Designer.cs">
       <DependentUpon>SletProdukt.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Spørgeskema.cs">
+    <Compile Include="%28Unused GUI%29\Spørgeskema.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Spørgeskema.Designer.cs">
+    <Compile Include="%28Unused GUI%29\Spørgeskema.Designer.cs">
       <DependentUpon>Spørgeskema.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\SøgKunde.cs">
@@ -239,10 +239,10 @@
     <EmbeddedResource Include="GUI\BGFStartside.resx">
       <DependentUpon>BGFStartside.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Kurv.resx">
+    <EmbeddedResource Include="%28Unused GUI%29\Kurv.resx">
       <DependentUpon>Kurv.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\FundetOrdre.resx">
+    <EmbeddedResource Include="%28Unused GUI%29\FundetOrdre.resx">
       <DependentUpon>FundetOrdre.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUIMain.resx">
@@ -263,7 +263,7 @@
     <EmbeddedResource Include="GUI\SletProdukt.resx">
       <DependentUpon>SletProdukt.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Spørgeskema.resx">
+    <EmbeddedResource Include="%28Unused GUI%29\Spørgeskema.resx">
       <DependentUpon>Spørgeskema.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\SøgKunde.resx">

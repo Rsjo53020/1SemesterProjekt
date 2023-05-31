@@ -14,8 +14,8 @@ namespace SemesterProjekt.Models
         public string FirstName { get; set; }
         public string SurName { get; set; }
         public string PhoneNr { get; set; }
-        public string Mail { get; set; }
-        public string Address { get; set; }
+        public string EMailAdress { get; set; }
+        public string Adress { get; set; }
         public string City { get; set; }
         public string PostalCode { get; set; }
         public decimal Discount { get; set; }
@@ -27,7 +27,7 @@ namespace SemesterProjekt.Models
         /// <summary>
         /// Constructor Class
         /// </summary>
-        public Customer(int customerID, string firstName, string surName, string phoneNr, string mail,
+        public Customer(int customerID, string firstName, string surName, string phoneNr, string eMailAdress,
             string adress, string city, string postalCode, decimal discount, DateTime birthday,
             int age, string visiontest)
         {
@@ -35,8 +35,8 @@ namespace SemesterProjekt.Models
             this.FirstName = firstName;
             this.SurName = surName;
             this.PhoneNr = phoneNr;
-            this.Mail = mail;
-            this.Address = adress;
+            this.EMailAdress = eMailAdress;
+            this.Adress = adress;
             this.City = city;
             this.PostalCode = postalCode;
             this.Discount = discount;
@@ -49,15 +49,15 @@ namespace SemesterProjekt.Models
         /// <summary>
         /// Constructor Database
         /// </summary>
-        public Customer(string firstName, string surName, string phoneNr, string mail,
+        public Customer(string firstName, string surName, string phoneNr, string eMailAdress,
             string adress, string city, string postalCode, decimal discount, DateTime birthday,
             int age, string visiontest)
         {
             this.FirstName = firstName;
             this.SurName = surName;
             this.PhoneNr = phoneNr;
-            this.Mail = mail;
-            this.Address = adress;
+            this.EMailAdress = eMailAdress;
+            this.Adress = adress;
             this.City = city;
             this.PostalCode = postalCode;
             this.Discount = discount;

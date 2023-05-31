@@ -17,60 +17,48 @@ namespace SemesterProjekt.GUI
         {
             InitializeComponent();
         }
+
         List<Models.Customer> customers = new List<Models.Customer>();
 
+        /// <summary>
+        /// Method Opens .pdf explanation of UI
+        /// </summary>
         private void LL_Forklaring_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            // Path to file
             string filePath = @"C:\1semesterProjekt/SemesterProjekt GUI/Søg kunde.pdf";
-
-            // Open file with with standard program
             Process.Start(filePath);
         }
 
-        private void OpdaterKunde_Load(object sender, EventArgs e)
+        /// <summary>
+        /// Method sets the Customers DataGridView datasource to SQL method 
+        /// And searches for Customer PhoneNr and EMailAdress
+        /// </summary>
+        private void BTN_SearchCustomer_Click(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'customerTable.Customer' table. You can move, or remove it, as needed.
-            this.customerTableAdapter.Fill(this.customerTable.Customer);
+            var DataSource = Database.Database.SqlGetCustomer(TB_SearchTlfCustomer.Text, TB_SearchEMailCustomer.Text);
+            DGV_Customer.DataSource = DataSource;
+        }
 
+        /// <summary>
+        /// Method sets Textbox values according to selected items in Customer DataGridView
+        /// </summary>
+        private void DGV_Customer_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DGV_Customer.CurrentRow.Selected = true;
+            DGV_Customer.ReadOnly = true;
+            TB_CustomerFirstName.Text = DGV_Customer.Rows[e.RowIndex].Cells["FirstName"].Value.ToString();
+            TB_CustomerPhoneNr.Text = DGV_Customer.Rows[e.RowIndex].Cells["PhoneNr"].Value.ToString();
+            TB_CustomerEMailAdress.Text = DGV_Customer.Rows[e.RowIndex].Cells["EMailAdress"].Value.ToString();
+            TB_CustomerAdress.Text = DGV_Customer.Rows[e.RowIndex].Cells["Adress"].Value.ToString();
+            TB_CustomerCity.Text = DGV_Customer.Rows[e.RowIndex].Cells["City"].Value.ToString();
+            TB_CustomerPostalCode.Text = DGV_Customer.Rows[e.RowIndex].Cells["PostalCode"].Value.ToString();
+            TB_CustomerDiscount.Text = DGV_Customer.Rows[e.RowIndex].Cells["Discount"].Value.ToString();
+            TB_CustomerBirthday.Text = DGV_Customer.Rows[e.RowIndex].Cells["Birthday"].Value.ToString();
+            TB_CustomerAge.Text = DGV_Customer.Rows[e.RowIndex].Cells["Age"].Value.ToString();
+            TB_CustomerVisionTest.Text = DGV_Customer.Rows[e.RowIndex].Cells["VisionTest"].Value.ToString();
         }
 
         private void BTN_UpdateProduct_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BTN_SearchCustomer_Click(object sender, EventArgs e)
-        {
-            string searchedPhoneNumber = "";
-            string searchedEMailAdress = "";
-            if (TB_SearchTlfCustomer.Text != "")
-            {
-                searchedPhoneNumber = TB_SearchTlfCustomer.Text;
-
-                if (TB_SearchTlfCustomer.Text.Contains("+45") & TB_SearchTlfCustomer.Text.Length > 9)
-                {
-                    searchedPhoneNumber = TB_SearchTlfCustomer.Text.Substring(3);
-                    searchedPhoneNumber = searchedPhoneNumber.Replace(" ", "");
-                }
-            }
-            else if (TB_SearchEMailCustomer.Text != "")
-            {
-                if (TB_SearchEMailCustomer.Text.Contains("@"))
-                {
-                    searchedEMailAdress = TB_SearchEMailCustomer.Text;
-                }
-                else
-                    MessageBox.Show("Email skal indeholde '@'");
-
-
-            }
-
-
-            customers = Services.Customer.FindCostumer(searchedPhoneNumber, searchedEMailAdress);
-        }
-
-        private void DGV_OpdateSelectProduct_ShowCustomers_CellClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

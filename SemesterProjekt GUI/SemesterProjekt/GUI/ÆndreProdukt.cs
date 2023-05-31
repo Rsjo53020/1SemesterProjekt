@@ -17,6 +17,9 @@ namespace SemesterProjekt.GUI
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Method Sets the Textbox text values according to the selected item in Product DatagridView
+        /// </summary>
         private void DGV_Product_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             DGV_Product.CurrentRow.Selected = true;
@@ -37,14 +40,13 @@ namespace SemesterProjekt.GUI
             TB_UpdatedUsedFor.Text = DGV_Product.Rows[e.RowIndex].Cells["UsedFor"].Value.ToString();
         }
 
+        /// <summary>
+        /// Method sets DatagridView datasource to SQL method. And searches for NameProduct and Category
+        /// </summary>
         private void BTN_SearchProdukt_Click(object sender, EventArgs e)
         {
             var DataSource = Database.Database.SqlGetProduct(TB_SearchNameProduct.Text, TB_SearchKategory.Text);
             DGV_Product.DataSource = DataSource;
-        }
-
-        private void DGV_Product_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
         }
 
         private void OpdaterProdukt_Load(object sender, EventArgs e)
@@ -136,6 +138,5 @@ namespace SemesterProjekt.GUI
         {
 
         }
-
     }
 }

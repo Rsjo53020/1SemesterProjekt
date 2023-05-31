@@ -39,7 +39,6 @@
             this.storeStockBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.storeStockTable = new SemesterProjekt.StoreStockTable();
             this.storeStockTableAdapter = new SemesterProjekt.StoreStockTableTableAdapters.StoreStockTableAdapter();
-            this.BTN_CreateTXTFile = new System.Windows.Forms.Button();
             this.PANEL_FindOrder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.storeStockBindingSource)).BeginInit();
@@ -52,9 +51,9 @@
             this.PANEL_FindOrder.Controls.Add(this.LB_ShowStock);
             this.PANEL_FindOrder.Dock = System.Windows.Forms.DockStyle.Top;
             this.PANEL_FindOrder.Location = new System.Drawing.Point(0, 0);
-            this.PANEL_FindOrder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PANEL_FindOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PANEL_FindOrder.Name = "PANEL_FindOrder";
-            this.PANEL_FindOrder.Size = new System.Drawing.Size(1080, 125);
+            this.PANEL_FindOrder.Size = new System.Drawing.Size(720, 80);
             this.PANEL_FindOrder.TabIndex = 31;
             // 
             // LB_ShowStock
@@ -62,10 +61,9 @@
             this.LB_ShowStock.AutoSize = true;
             this.LB_ShowStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.LB_ShowStock.ForeColor = System.Drawing.Color.Gainsboro;
-            this.LB_ShowStock.Location = new System.Drawing.Point(336, 37);
-            this.LB_ShowStock.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LB_ShowStock.Location = new System.Drawing.Point(224, 23);
             this.LB_ShowStock.Name = "LB_ShowStock";
-            this.LB_ShowStock.Size = new System.Drawing.Size(466, 48);
+            this.LB_ShowStock.Size = new System.Drawing.Size(310, 31);
             this.LB_ShowStock.TabIndex = 16;
             this.LB_ShowStock.Text = "LAGER BEHOLDNING";
             // 
@@ -81,46 +79,46 @@
             this.storeStockIDDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.storeStockBindingSource;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 125);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 80);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1080, 885);
+            this.dataGridView1.Size = new System.Drawing.Size(720, 566);
             this.dataGridView1.TabIndex = 32;
             // 
             // vATDataGridViewTextBoxColumn
             // 
             this.vATDataGridViewTextBoxColumn.DataPropertyName = "VAT";
             this.vATDataGridViewTextBoxColumn.HeaderText = "VAT";
-            this.vATDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.vATDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.vATDataGridViewTextBoxColumn.Name = "vATDataGridViewTextBoxColumn";
-            this.vATDataGridViewTextBoxColumn.Width = 200;
+            this.vATDataGridViewTextBoxColumn.Width = 125;
             // 
             // amountOfProductDataGridViewTextBoxColumn
             // 
             this.amountOfProductDataGridViewTextBoxColumn.DataPropertyName = "AmountOfProduct";
             this.amountOfProductDataGridViewTextBoxColumn.HeaderText = "AmountOfProduct";
-            this.amountOfProductDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.amountOfProductDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.amountOfProductDataGridViewTextBoxColumn.Name = "amountOfProductDataGridViewTextBoxColumn";
-            this.amountOfProductDataGridViewTextBoxColumn.Width = 200;
+            this.amountOfProductDataGridViewTextBoxColumn.Width = 125;
             // 
             // eANDataGridViewTextBoxColumn
             // 
             this.eANDataGridViewTextBoxColumn.DataPropertyName = "EAN";
             this.eANDataGridViewTextBoxColumn.HeaderText = "EAN";
-            this.eANDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.eANDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.eANDataGridViewTextBoxColumn.Name = "eANDataGridViewTextBoxColumn";
-            this.eANDataGridViewTextBoxColumn.Width = 200;
+            this.eANDataGridViewTextBoxColumn.Width = 125;
             // 
             // storeStockIDDataGridViewTextBoxColumn
             // 
             this.storeStockIDDataGridViewTextBoxColumn.DataPropertyName = "StoreStockID";
             this.storeStockIDDataGridViewTextBoxColumn.HeaderText = "StoreStockID";
-            this.storeStockIDDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.storeStockIDDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.storeStockIDDataGridViewTextBoxColumn.Name = "storeStockIDDataGridViewTextBoxColumn";
             this.storeStockIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.storeStockIDDataGridViewTextBoxColumn.Width = 200;
+            this.storeStockIDDataGridViewTextBoxColumn.Width = 125;
             // 
             // storeStockBindingSource
             // 
@@ -136,33 +134,17 @@
             // 
             this.storeStockTableAdapter.ClearBeforeFill = true;
             // 
-            // BTN_CreateTXTFile
-            // 
-            this.BTN_CreateTXTFile.BackColor = System.Drawing.Color.White;
-            this.BTN_CreateTXTFile.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BTN_CreateTXTFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.BTN_CreateTXTFile.Location = new System.Drawing.Point(888, 894);
-            this.BTN_CreateTXTFile.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.BTN_CreateTXTFile.Name = "BTN_CreateTXTFile";
-            this.BTN_CreateTXTFile.Size = new System.Drawing.Size(162, 58);
-            this.BTN_CreateTXTFile.TabIndex = 107;
-            this.BTN_CreateTXTFile.Text = "Udskriv";
-            this.BTN_CreateTXTFile.UseVisualStyleBackColor = false;
-            this.BTN_CreateTXTFile.Click += new System.EventHandler(this.BTN_CreateTXTFile_Click);
-            // 
             // VisLager
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1080, 1010);
-            this.Controls.Add(this.BTN_CreateTXTFile);
+            this.ClientSize = new System.Drawing.Size(720, 646);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.PANEL_FindOrder);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "VisLager";
             this.Text = "VisLager";
-            this.Load += new System.EventHandler(this.VisLager_Load);
             this.PANEL_FindOrder.ResumeLayout(false);
             this.PANEL_FindOrder.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -184,6 +166,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn amountOfProductDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn eANDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn storeStockIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button BTN_CreateTXTFile;
     }
 }

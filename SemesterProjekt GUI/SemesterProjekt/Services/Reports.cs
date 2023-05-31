@@ -15,7 +15,6 @@ namespace SemesterProjekt.Services
 
         public void FormatReportToTxt()
         {
-
         }
     }
 }

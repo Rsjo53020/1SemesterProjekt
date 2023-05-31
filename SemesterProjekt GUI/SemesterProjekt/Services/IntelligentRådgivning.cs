@@ -12,7 +12,6 @@ namespace SemesterProjekt.Services
 
         public static void FilterSearchresult()
         {
-
         }
     }
 

@@ -50,7 +50,7 @@ namespace SemesterProjekt.Database
         public static void SqlCreateCustumer(Models.Customer customer)
         {
             string sSQL = $"INSERT INTO Customer Values ('{customer.FirstName}', '{customer.SurName}', " +
-                $"'{customer.PhoneNr}', '{customer.Mail}', '{customer.Address}', '{customer.City}', " +
+                $"'{customer.PhoneNr}', '{customer.EMailAdress}', '{customer.Adress}', '{customer.City}', " +
                 $"'{customer.PostalCode}', {customer.Discount}, '{customer.Birthday.ToString("yyyy-MM-dd")}', {customer.Age}, " +
                 $"'{customer.VisionTest}', null);";
 
@@ -166,7 +166,7 @@ namespace SemesterProjekt.Database
         public static void SqlUpdateCustomer(Models.Customer customer)
         {
             string sSQL = $"UPDATE Customer SET FirstName = ('{customer.FirstName}', '{customer.SurName}', " +
-                $"'{customer.PhoneNr}', '{customer.Mail}', '{customer.Address}', '{customer.City}', " +
+                $"'{customer.PhoneNr}', '{customer.EMailAdress}', '{customer.Adress}', '{customer.City}', " +
                 $"'{customer.PostalCode}', {customer.Discount}, '{customer.Birthday.ToString("yyyy-MM-dd")}', {customer.Age}, " +
                 $"'{customer.VisionTest}', null);";
 

@@ -21,20 +21,13 @@ namespace SemesterProjekt.GUI
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Method Shows .Pdf explanation of UI
+        /// </summary>
         private void LL_Forklaring_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            // Path to file
             string filePath = @"C:\SemesterProjekt GUI/Søg ordre.pdf";
-
-            // Open file with with standard program
             Process.Start(filePath);
-        }
-
-        private void SøgOrdre_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'ordersTable.Orders' table. You can move, or remove it, as needed.
-            this.ordersTableAdapter.Fill(this.ordersTable.Orders);
-
         }
 
         private void BTN_SearchOrder_Click(object sender, EventArgs e)
@@ -45,11 +38,18 @@ namespace SemesterProjekt.GUI
             DateEnd = DTP_EndDate.Value;
         }
 
+        /// <summary>
+        /// Method Calls Service.Orders and Creates a Textfile from a list and two Dates
+        /// </summary>
         private void BTN_CreateTXTFile_Click(object sender, EventArgs e)
         {
             Services.Orders.GetCustomerPurchaseOrdersBetweenDates(orders, DateStart, DateEnd);
         }
 
+
+        /// <summary>
+        /// Method shows GUI "FundetOrdre" and hides GUI "SøgOrdre
+        /// </summary>
         private void BTN_UpdateOrder_Click(object sender, EventArgs e)
         {
             FundetOrdre FundetOrdre = new FundetOrdre();

@@ -13,6 +13,4 @@ namespace SemesterProjekt.Services
             return "";
         }
     }
-
-
 }
