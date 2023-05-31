@@ -56,7 +56,8 @@ namespace SemesterProjekt.Services
 
                 foreach (Order order in orders)
                 {
-                    writer.WriteLine($"{order.CostumerID}                       {order.OrderStatus.PadRight(25)} {order.OrderDate.ToShortDateString()}    {order.TotalPrice}");
+                    Models.Customer customer = Services.Customer.FindCustomerFromCustomerID(order.CostumerID);
+                    writer.WriteLine($"{order.CostumerID}                       {customer.FirstName}  {customer.SurName} {order.OrderDate.ToShortDateString()}    {order.TotalPrice}");
                 }
 
                 writer.WriteLine("----------------------------------------------");
