@@ -69,5 +69,10 @@ namespace SemesterProjekt.GUI
 
             customers = Services.Customer.FindCostumer(searchedPhoneNumber, searchedEMailAdress);
         }
+
+        private void DGV_OpdateSelectProduct_ShowCustomers_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
