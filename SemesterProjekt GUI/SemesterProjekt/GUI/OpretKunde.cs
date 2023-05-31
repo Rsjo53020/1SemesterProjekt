@@ -7,6 +7,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -25,20 +26,32 @@ namespace SemesterProjekt.GUI
         /// <param name="e"></param>
         private void BTN_CreateCustomer_Click(object sender, EventArgs e)
         {
+            string firstname = TB_FirstName.Text;
+            string surname = TB_SurName.Text;
+            string phonenumber = TB_PhoneNr.Text;
+            string emailadress = TB_EMailAdress.Text;
+            string adress = TB_Adress.Text;
+            string city = TB_City.Text;
+            string postalcode = TB_PostalCode.Text;
+            decimal discount = Convert.ToDecimal(Regex.Replace(TB_Discount.Text, @"[^0-9,]", ""));
+            DateTime birthday = Convert.ToDateTime(TB_Birthday.Text);
+            int age = Convert.ToInt32(Regex.Replace(TB_Age.Text, @"\D", ""));
+            string visiontest = TB_VisionTest.Text;
+            
             try
             {
                 Models.Customer customer = new Models.Customer(
-                TB_FirstName.Text,
-                TB_SurName.Text,
-                TB_PhoneNr.Text,
-                TB_EMailAdress.Text,
-                TB_Adress.Text,
-                TB_City.Text,
-                TB_PostalCode.Text,
-                Convert.ToDecimal(TB_Discount.Text),
-                Convert.ToDateTime(TB_Birthday.Text),
-                Convert.ToInt32(TB_Age.Text),
-                TB_VisionTest.Text
+                firstname,
+                surname,
+                phonenumber,
+                emailadress,
+                adress,
+                city,
+                postalcode,
+                discount,
+                birthday,
+                age,
+                visiontest                
                 );
 
                 Services.Customer.RegisterCustomer(customer);
