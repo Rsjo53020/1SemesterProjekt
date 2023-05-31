@@ -17,6 +17,7 @@ namespace SemesterProjekt.GUI
         {
             InitializeComponent();
         }
+        List<Models.Customer> customers = new List<Models.Customer>();
 
         private void LL_Forklaring_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -37,6 +38,30 @@ namespace SemesterProjekt.GUI
         private void BTN_UpdateProduct_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void BTN_SearchCustomer_Click(object sender, EventArgs e)
+        {
+            string searchedPhoneNumber = "";
+            string searchedEMailAdress = "";
+            if (TB_SearchTlfCustomer.Text != "")
+            {
+                searchedPhoneNumber = TB_SearchTlfCustomer.Text;
+
+                if (TB_SearchTlfCustomer.Text.Contains("+45") & TB_SearchTlfCustomer.Text.Length > 9)
+                {
+                    searchedPhoneNumber = TB_SearchTlfCustomer.Text.Substring(3);
+                    searchedPhoneNumber = searchedPhoneNumber.Replace(" ", "");
+                }
+            }
+            else if (TB_SearchEMailCustomer.Text != "")
+            {
+                searchedEMailAdress = TB_SearchEMailCustomer.Text;
+
+            }
+
+
+            customers = Services.Customer.FindCostumer(searchedPhoneNumber, searchedEMailAdress);
         }
     }
 }

@@ -32,13 +32,26 @@ namespace SemesterProjekt.GUI
 
         private void BTN_SearchCustomer_Click(object sender, EventArgs e)
         {
-            string searchedPhoneNumer = TB_SearchPhoneNr.Text;
-            string searchedEMailAdress = TB_SearchEMailAdress.Text;
-            if (TB_SearchPhoneNr.Text.Contains("+45") & TB_SearchPhoneNr.Text.Length > 9) 
+            string searchedPhoneNumber = "";
+            string searchedEMailAdress = "";
+            if (TB_SearchPhoneNr.Text != "")
             {
-                searchedPhoneNumer = searchedPhoneNumer.Substring(3);
+                searchedPhoneNumber = TB_SearchPhoneNr.Text;
+
+                if (TB_SearchPhoneNr.Text.Contains("+45") & TB_SearchPhoneNr.Text.Length > 9)
+                {
+                    searchedPhoneNumber = TB_SearchPhoneNr.Text.Substring(3);
+                    searchedPhoneNumber.Replace(" ","");
+                }
             }
-            customers = Services.Customer.FindCostumer(searchedPhoneNumer, searchedEMailAdress);
+            else if (TB_SearchEMailAdress.Text != "")
+            {
+                searchedEMailAdress = TB_SearchEMailAdress.Text;
+
+            }
+
+            
+            customers = Services.Customer.FindCostumer(searchedPhoneNumber, searchedEMailAdress);
         }
     }
 }
