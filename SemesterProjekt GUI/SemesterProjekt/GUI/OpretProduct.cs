@@ -19,24 +19,31 @@ namespace SemesterProjekt.GUI
 
         private void BTN_CreateProduct_Click(object sender, EventArgs e)
         {
-            Models.Frame product = new Models.Frame(
-                Convert.ToDecimal(TB_SalesPrice.Text),
-                TB_NameProduct.Text,
-                TB_Discription.Text,
-                TB_Kategory.Text,
-                Convert.ToDecimal(TB_PurchasePrice.Text),
-                Convert.ToInt32(TB_VATSup.Text),
-                TB_Gender.Text,
-                Convert.ToInt32(TB_Age.Text),
-                Convert.ToDecimal(TB_Length.Text),
-                Convert.ToDecimal(TB_Width.Text),
-                TB_Kind.Text,
-                TB_UsedFor.Text,
-                TB_Style.Text,
-                TB_Color.Text
-                );
+            try
+            {
+                Models.Frame product = new Models.Frame(
+                    Convert.ToDecimal(TB_SalesPrice.Text),
+                    TB_NameProduct.Text,
+                    TB_Discription.Text,
+                    TB_Kategory.Text,
+                    Convert.ToDecimal(TB_PurchasePrice.Text),
+                    Convert.ToInt32(TB_VATSup.Text),
+                    TB_Gender.Text,
+                    Convert.ToInt32(TB_Age.Text),
+                    Convert.ToDecimal(TB_Length.Text),
+                    Convert.ToDecimal(TB_Width.Text),
+                    TB_Kind.Text,
+                    TB_UsedFor.Text,
+                    TB_Style.Text,
+                    TB_Color.Text
+                    );
 
-            Services.Produkt.CreateProduct( product );
+                Services.Produkt.CreateProduct(product);
+            }
+            catch
+            {
+                MessageBox.Show("fejl i indtastning!");
+            }
 
 
 
