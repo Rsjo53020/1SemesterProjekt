@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SemesterProjekt;
-
+using System.Runtime.CompilerServices;
 
 namespace AICustomer
 {
@@ -15,7 +15,7 @@ namespace AICustomer
         static void Main(string[] args)
         {
             FindSuitableGlasses();
-            
+
         }
         static void FindSuitableGlasses()
         {
@@ -168,11 +168,6 @@ namespace AICustomer
 
             Console.WriteLine();
             Console.WriteLine("Vi håber, at du finder denne information nyttig. God dag!");
-
-        }
-
-        public static void CreateAIProduct()
-        {
 
         }
     }
