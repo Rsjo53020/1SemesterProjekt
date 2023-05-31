@@ -51,9 +51,9 @@
             this.PANEL_FindOrder.Controls.Add(this.LB_ShowStock);
             this.PANEL_FindOrder.Dock = System.Windows.Forms.DockStyle.Top;
             this.PANEL_FindOrder.Location = new System.Drawing.Point(0, 0);
-            this.PANEL_FindOrder.Margin = new System.Windows.Forms.Padding(2);
+            this.PANEL_FindOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PANEL_FindOrder.Name = "PANEL_FindOrder";
-            this.PANEL_FindOrder.Size = new System.Drawing.Size(540, 65);
+            this.PANEL_FindOrder.Size = new System.Drawing.Size(720, 80);
             this.PANEL_FindOrder.TabIndex = 31;
             // 
             // LB_ShowStock
@@ -61,10 +61,9 @@
             this.LB_ShowStock.AutoSize = true;
             this.LB_ShowStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.LB_ShowStock.ForeColor = System.Drawing.Color.Gainsboro;
-            this.LB_ShowStock.Location = new System.Drawing.Point(168, 19);
-            this.LB_ShowStock.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LB_ShowStock.Location = new System.Drawing.Point(224, 23);
             this.LB_ShowStock.Name = "LB_ShowStock";
-            this.LB_ShowStock.Size = new System.Drawing.Size(242, 25);
+            this.LB_ShowStock.Size = new System.Drawing.Size(310, 31);
             this.LB_ShowStock.TabIndex = 16;
             this.LB_ShowStock.Text = "LAGER BEHOLDNING";
             // 
@@ -80,38 +79,46 @@
             this.storeStockIDDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.storeStockBindingSource;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 65);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 80);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(540, 460);
+            this.dataGridView1.Size = new System.Drawing.Size(720, 566);
             this.dataGridView1.TabIndex = 32;
             // 
             // vATDataGridViewTextBoxColumn
             // 
             this.vATDataGridViewTextBoxColumn.DataPropertyName = "VAT";
             this.vATDataGridViewTextBoxColumn.HeaderText = "VAT";
+            this.vATDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.vATDataGridViewTextBoxColumn.Name = "vATDataGridViewTextBoxColumn";
+            this.vATDataGridViewTextBoxColumn.Width = 125;
             // 
             // amountOfProductDataGridViewTextBoxColumn
             // 
             this.amountOfProductDataGridViewTextBoxColumn.DataPropertyName = "AmountOfProduct";
             this.amountOfProductDataGridViewTextBoxColumn.HeaderText = "AmountOfProduct";
+            this.amountOfProductDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.amountOfProductDataGridViewTextBoxColumn.Name = "amountOfProductDataGridViewTextBoxColumn";
+            this.amountOfProductDataGridViewTextBoxColumn.Width = 125;
             // 
             // eANDataGridViewTextBoxColumn
             // 
             this.eANDataGridViewTextBoxColumn.DataPropertyName = "EAN";
             this.eANDataGridViewTextBoxColumn.HeaderText = "EAN";
+            this.eANDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.eANDataGridViewTextBoxColumn.Name = "eANDataGridViewTextBoxColumn";
+            this.eANDataGridViewTextBoxColumn.Width = 125;
             // 
             // storeStockIDDataGridViewTextBoxColumn
             // 
             this.storeStockIDDataGridViewTextBoxColumn.DataPropertyName = "StoreStockID";
             this.storeStockIDDataGridViewTextBoxColumn.HeaderText = "StoreStockID";
+            this.storeStockIDDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.storeStockIDDataGridViewTextBoxColumn.Name = "storeStockIDDataGridViewTextBoxColumn";
             this.storeStockIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.storeStockIDDataGridViewTextBoxColumn.Width = 125;
             // 
             // storeStockBindingSource
             // 
@@ -129,16 +136,15 @@
             // 
             // VisLager
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(540, 525);
+            this.ClientSize = new System.Drawing.Size(720, 646);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.PANEL_FindOrder);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "VisLager";
             this.Text = "VisLager";
-            this.Load += new System.EventHandler(this.VisLager_Load);
             this.PANEL_FindOrder.ResumeLayout(false);
             this.PANEL_FindOrder.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

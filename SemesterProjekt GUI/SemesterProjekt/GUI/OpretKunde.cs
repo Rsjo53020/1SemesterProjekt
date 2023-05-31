@@ -19,11 +19,10 @@ namespace SemesterProjekt.GUI
         {
             InitializeComponent();
         }
+
         /// <summary>
         /// Convert textboxes to Models.Customer(constructor) and parse to service layer
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void BTN_CreateCustomer_Click(object sender, EventArgs e)
         {
             string firstname = TB_FirstName.Text;
