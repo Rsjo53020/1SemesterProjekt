@@ -219,6 +219,8 @@
     <None Include="ProductTable.xss">
       <DependentUpon>ProductTable.xsd</DependentUpon>
     </None>
+    <None Include="Properties\DataSources\SemesterProjekt.Models.Frame.datasource" />
+    <None Include="Properties\DataSources\SemesterProjekt.Models.Product.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
