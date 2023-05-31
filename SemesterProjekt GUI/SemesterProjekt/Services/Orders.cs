@@ -33,10 +33,12 @@ namespace SemesterProjekt.Services
             Console.WriteLine($"Fra dato: {startDate.ToShortDateString()} Til dato: {endDate.ToShortDateString()}");
             Console.WriteLine("Kundenummer   OrderStatus                     Dato        Køb");
             Console.WriteLine("----------------------------------------------");
-
+            
             foreach (Order order in orders)
             {
-                Console.WriteLine($"{order.CostumerID}   {Services.Customer.fin} {order.OrderDate.ToShortDateString()}    {order.TotalPrice}");
+                Models.Customer customer = Services.Customer.FindCustomerFromCustomerID(order.CostumerID);
+          
+                Console.WriteLine($"{order.CostumerID}   {customer.FirstName}  {customer.SurName} {order.OrderDate.ToShortDateString()}    {order.TotalPrice}");
             }
 
             decimal totalSales = orders.Sum(order => order.TotalPrice);
@@ -49,12 +51,12 @@ namespace SemesterProjekt.Services
             {
                 writer.WriteLine("SALGSSTATISTIK 2023");
                 writer.WriteLine($"Fra dato: {startDate.ToShortDateString()} Til dato: {endDate.ToShortDateString()}");
-                writer.WriteLine("Kundenummer   OrderStatus                     Dato        Køb");
+                writer.WriteLine("Kundenummer                   OrderStatus                     Dato        Køb");
                 writer.WriteLine("----------------------------------------------");
 
                 foreach (Order order in orders)
                 {
-                    writer.WriteLine($"{order.CostumerID}   {order.OrderStatus.PadRight(25)} {order.OrderDate.ToShortDateString()}    {order.TotalPrice}");
+                    writer.WriteLine($"{order.CostumerID}                       {order.OrderStatus.PadRight(25)} {order.OrderDate.ToShortDateString()}    {order.TotalPrice}");
                 }
 
                 writer.WriteLine("----------------------------------------------");
