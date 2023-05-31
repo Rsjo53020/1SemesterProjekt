@@ -17,16 +17,39 @@ namespace SemesterProjekt.GUI
             InitializeComponent();
         }
 
-        private void OpdaterProdukt_Load(object sender, EventArgs e)
+        private void DGV_Product_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            // TODO: This line of code loads data into the 'productTable.Product' table. You can move, or remove it, as needed.
-            this.productTableAdapter.Fill(this.productTable.Product);
-
+            DGV_Product.CurrentRow.Selected = true;
+            DGV_Product.ReadOnly = true;
+            TB_UpdatedSalesPrice.Text = DGV_Product.Rows[e.RowIndex].Cells["SalesPrice"].Value.ToString();
+            TB_UpdatedNameProduct.Text = DGV_Product.Rows[e.RowIndex].Cells["NameProduct"].Value.ToString();
+            TB_UpdatedDiscription.Text = DGV_Product.Rows[e.RowIndex].Cells["Description"].Value.ToString();
+            TB_UpdatedKategory.Text = DGV_Product.Rows[e.RowIndex].Cells["Kategory"].Value.ToString();
+            TB_PurchasePrice.Text = DGV_Product.Rows[e.RowIndex].Cells["PurchasePrice"].Value.ToString();
+            TB_UpdatedVATSup.Text = DGV_Product.Rows[e.RowIndex].Cells["VATSup"].Value.ToString();
+            TB_UpdatedGender.Text = DGV_Product.Rows[e.RowIndex].Cells["Gender"].Value.ToString();
+            TB_UpdatedAge.Text = DGV_Product.Rows[e.RowIndex].Cells["Age"].Value.ToString();
+            TB_UpdatedLenght.Text = DGV_Product.Rows[e.RowIndex].Cells["Length"].Value.ToString();
+            TB_UpdatedWidth.Text = DGV_Product.Rows[e.RowIndex].Cells["Width"].Value.ToString();
+            TB_UpdatedKind.Text = DGV_Product.Rows[e.RowIndex].Cells["Kind"].Value.ToString();
+            TB_UpdatedStyle.Text = DGV_Product.Rows[e.RowIndex].Cells["Style"].Value.ToString();
+            TB_UpdatedColor.Text = DGV_Product.Rows[e.RowIndex].Cells["Color"].Value.ToString();
+            TB_UpdatedUsedFor.Text = DGV_Product.Rows[e.RowIndex].Cells["UsedFor"].Value.ToString();
         }
 
         private void BTN_SearchProdukt_Click(object sender, EventArgs e)
         {
-            
+            var DataSource = Database.Database.SqlGetProduct(TB_SearchNameProduct.Text, TB_SearchKategory.Text);
+            DGV_Product.DataSource = DataSource;
+        }
+
+        private void DGV_Product_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+        }
+
+        private void OpdaterProdukt_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void BTN_SletProdukt_Click(object sender, EventArgs e)
@@ -113,5 +136,6 @@ namespace SemesterProjekt.GUI
         {
 
         }
+
     }
 }
