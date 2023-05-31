@@ -12,9 +12,15 @@ namespace SemesterProjekt.GUI
 {
     public partial class VisLager : Form
     {
+        List<Models.Frame> stockList;
         public VisLager()
         {
             InitializeComponent();
+        }
+
+        private void BTN_CreateTXTFile_Click(object sender, EventArgs e)
+        {
+            Services.Produkt.GetStockStatus(stockList);
         }
     }
 }

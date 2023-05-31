@@ -48,31 +48,34 @@ namespace SemesterProjekt.Services
             Database.Database.SqlDeleteProduct(product);
         }
 
-        public static void GetAllProductFromDataBase(List<Models.Frame> stockList)
+        public static void GetStockStatus(List<Models.Frame> stockList)
         {
             // Sortér ordrer efter dato
             stockList = stockList.OrderBy(Frame => Frame.EAN).ToList();
 
-            Console.WriteLine("Alle produkter fra databasen i sorteret rækkefølge");
-            
+            Console.WriteLine("Lager status i sorteret rækkefølge");
+           
             foreach (Frame frames in stockList)
             {
-
-                Console.WriteLine($"{frames.EAN}   {frames.Kind}  ");
+                Console.WriteLine($"{frames.EAN} {frames.NameProduct} {frames.SalesPrice} {frames.Description} {frames.Kategory}" +
+                    $"{frames.PurchasePrice} {frames.VATSup} {frames.Gender} {frames.Age} {frames.Length} {frames.Width} {frames.Kind}" +
+                    $"{frames.Style} {frames.Color} {frames.UsedFor}");
             }
 
             // Skriv til tekstfil
             string filePath = "LagerStatus.txt";
             using (StreamWriter writer = new StreamWriter(filePath))
             {
-                writer.Write("Alle produkter fra databasen i sorteret rækkefølge");
+                writer.Write("Lager status i sorteret rækkefølge");
                 writer.WriteLine();
                 writer.WriteLine("Kundenummer           Navn                     Dato        Køb");
                 writer.WriteLine();
 
                 foreach (Frame frames in stockList)
                 {
-                    writer.WriteLine($"{frames.EAN}   {frames.Kind}  ");
+                    writer.WriteLine($"{frames.EAN} {frames.NameProduct} {frames.SalesPrice} {frames.Description} {frames.Kategory}" +
+                    $"{frames.PurchasePrice} {frames.VATSup} {frames.Gender} {frames.Age} {frames.Length} {frames.Width} {frames.Kind}" +
+                    $"{frames.Style} {frames.Color} {frames.UsedFor}");
                 }
 
                 writer.WriteLine("-------------------------------------------------------------------------------");
@@ -85,7 +88,5 @@ namespace SemesterProjekt.Services
 
 
 
-    }
-}
     }
 }
