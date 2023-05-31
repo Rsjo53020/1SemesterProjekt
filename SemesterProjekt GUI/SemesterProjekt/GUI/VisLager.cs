@@ -22,5 +22,12 @@ namespace SemesterProjekt.GUI
         {
             Services.Produkt.GetStockStatus(stockList);
         }
+
+        private void VisLager_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'cskafte_dk_db_skafteDataSet.StoreStock' table. You can move, or remove it, as needed.
+            this.storeStockTableAdapter1.Fill(this.cskafte_dk_db_skafteDataSet.StoreStock);
+
+        }
     }
 }
