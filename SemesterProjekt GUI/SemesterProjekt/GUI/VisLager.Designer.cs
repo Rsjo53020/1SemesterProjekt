@@ -32,19 +32,6 @@
             this.PANEL_FindOrder = new System.Windows.Forms.Panel();
             this.LB_ShowStock = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.productBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.cskafte_dk_db_skafteDataSet2 = new SemesterProjekt.cskafte_dk_db_skafteDataSet2();
-            this.storeStockBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.cskafte_dk_db_skafteDataSet = new SemesterProjekt.cskafte_dk_db_skafteDataSet();
-            this.storeStockBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.storeStockTable = new SemesterProjekt.StoreStockTable();
-            this.storeStockTableAdapter = new SemesterProjekt.StoreStockTableTableAdapters.StoreStockTableAdapter();
-            this.BTN_CreateTXTFile = new System.Windows.Forms.Button();
-            this.storeStockTableAdapter1 = new SemesterProjekt.cskafte_dk_db_skafteDataSetTableAdapters.StoreStockTableAdapter();
-            this.cskafte_dk_db_skafteDataSet1 = new SemesterProjekt.cskafte_dk_db_skafteDataSet1();
-            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.productTableAdapter = new SemesterProjekt.cskafte_dk_db_skafteDataSet1TableAdapters.ProductTableAdapter();
-            this.productTableAdapter1 = new SemesterProjekt.cskafte_dk_db_skafteDataSet2TableAdapters.ProductTableAdapter();
             this.eANDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SalesPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NameProduct = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,16 +47,29 @@
             this.Style = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Color = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UsedFor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cskafte_dk_db_skafteDataSet1 = new SemesterProjekt.cskafte_dk_db_skafteDataSet1();
+            this.productBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.cskafte_dk_db_skafteDataSet2 = new SemesterProjekt.cskafte_dk_db_skafteDataSet2();
+            this.storeStockBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.cskafte_dk_db_skafteDataSet = new SemesterProjekt.cskafte_dk_db_skafteDataSet();
+            this.storeStockBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.storeStockTable = new SemesterProjekt.StoreStockTable();
+            this.storeStockTableAdapter = new SemesterProjekt.StoreStockTableTableAdapters.StoreStockTableAdapter();
+            this.BTN_CreateTXTFile = new System.Windows.Forms.Button();
+            this.storeStockTableAdapter1 = new SemesterProjekt.cskafte_dk_db_skafteDataSetTableAdapters.StoreStockTableAdapter();
+            this.productTableAdapter = new SemesterProjekt.cskafte_dk_db_skafteDataSet1TableAdapters.ProductTableAdapter();
+            this.productTableAdapter1 = new SemesterProjekt.cskafte_dk_db_skafteDataSet2TableAdapters.ProductTableAdapter();
             this.PANEL_FindOrder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cskafte_dk_db_skafteDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cskafte_dk_db_skafteDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.storeStockBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cskafte_dk_db_skafteDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.storeStockBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.storeStockTable)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cskafte_dk_db_skafteDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // PANEL_FindOrder
@@ -80,7 +80,7 @@
             this.PANEL_FindOrder.Location = new System.Drawing.Point(0, 0);
             this.PANEL_FindOrder.Margin = new System.Windows.Forms.Padding(2);
             this.PANEL_FindOrder.Name = "PANEL_FindOrder";
-            this.PANEL_FindOrder.Size = new System.Drawing.Size(540, 65);
+            this.PANEL_FindOrder.Size = new System.Drawing.Size(585, 65);
             this.PANEL_FindOrder.TabIndex = 31;
             // 
             // LB_ShowStock
@@ -97,6 +97,10 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -121,80 +125,11 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 65);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(540, 460);
+            this.dataGridView1.Size = new System.Drawing.Size(585, 460);
             this.dataGridView1.TabIndex = 32;
-            // 
-            // productBindingSource1
-            // 
-            this.productBindingSource1.DataMember = "Product";
-            this.productBindingSource1.DataSource = this.cskafte_dk_db_skafteDataSet2;
-            // 
-            // cskafte_dk_db_skafteDataSet2
-            // 
-            this.cskafte_dk_db_skafteDataSet2.DataSetName = "cskafte_dk_db_skafteDataSet2";
-            this.cskafte_dk_db_skafteDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // storeStockBindingSource1
-            // 
-            this.storeStockBindingSource1.DataMember = "StoreStock";
-            this.storeStockBindingSource1.DataSource = this.cskafte_dk_db_skafteDataSet;
-            // 
-            // cskafte_dk_db_skafteDataSet
-            // 
-            this.cskafte_dk_db_skafteDataSet.DataSetName = "cskafte_dk_db_skafteDataSet";
-            this.cskafte_dk_db_skafteDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // storeStockBindingSource
-            // 
-            this.storeStockBindingSource.DataMember = "StoreStock";
-            this.storeStockBindingSource.DataSource = this.storeStockTable;
-            // 
-            // storeStockTable
-            // 
-            this.storeStockTable.DataSetName = "StoreStockTable";
-            this.storeStockTable.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // storeStockTableAdapter
-            // 
-            this.storeStockTableAdapter.ClearBeforeFill = true;
-            // 
-            // BTN_CreateTXTFile
-            // 
-            this.BTN_CreateTXTFile.BackColor = System.Drawing.Color.White;
-            this.BTN_CreateTXTFile.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BTN_CreateTXTFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.BTN_CreateTXTFile.Location = new System.Drawing.Point(432, 461);
-            this.BTN_CreateTXTFile.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.BTN_CreateTXTFile.Name = "BTN_CreateTXTFile";
-            this.BTN_CreateTXTFile.Size = new System.Drawing.Size(81, 30);
-            this.BTN_CreateTXTFile.TabIndex = 107;
-            this.BTN_CreateTXTFile.Text = "Udskriv";
-            this.BTN_CreateTXTFile.UseVisualStyleBackColor = false;
-            this.BTN_CreateTXTFile.Click += new System.EventHandler(this.BTN_CreateTXTFile_Click);
-            // 
-            // storeStockTableAdapter1
-            // 
-            this.storeStockTableAdapter1.ClearBeforeFill = true;
-            // 
-            // cskafte_dk_db_skafteDataSet1
-            // 
-            this.cskafte_dk_db_skafteDataSet1.DataSetName = "cskafte_dk_db_skafteDataSet1";
-            this.cskafte_dk_db_skafteDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // productBindingSource
-            // 
-            this.productBindingSource.DataMember = "Product";
-            this.productBindingSource.DataSource = this.cskafte_dk_db_skafteDataSet1;
-            // 
-            // productTableAdapter
-            // 
-            this.productTableAdapter.ClearBeforeFill = true;
-            // 
-            // productTableAdapter1
-            // 
-            this.productTableAdapter1.ClearBeforeFill = true;
             // 
             // eANDataGridViewTextBoxColumn
             // 
@@ -289,12 +224,82 @@
             this.UsedFor.HeaderText = "UsedFor";
             this.UsedFor.Name = "UsedFor";
             // 
+            // productBindingSource
+            // 
+            this.productBindingSource.DataMember = "Product";
+            this.productBindingSource.DataSource = this.cskafte_dk_db_skafteDataSet1;
+            // 
+            // cskafte_dk_db_skafteDataSet1
+            // 
+            this.cskafte_dk_db_skafteDataSet1.DataSetName = "cskafte_dk_db_skafteDataSet1";
+            this.cskafte_dk_db_skafteDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // productBindingSource1
+            // 
+            this.productBindingSource1.DataMember = "Product";
+            this.productBindingSource1.DataSource = this.cskafte_dk_db_skafteDataSet2;
+            // 
+            // cskafte_dk_db_skafteDataSet2
+            // 
+            this.cskafte_dk_db_skafteDataSet2.DataSetName = "cskafte_dk_db_skafteDataSet2";
+            this.cskafte_dk_db_skafteDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // storeStockBindingSource1
+            // 
+            this.storeStockBindingSource1.DataMember = "StoreStock";
+            this.storeStockBindingSource1.DataSource = this.cskafte_dk_db_skafteDataSet;
+            // 
+            // cskafte_dk_db_skafteDataSet
+            // 
+            this.cskafte_dk_db_skafteDataSet.DataSetName = "cskafte_dk_db_skafteDataSet";
+            this.cskafte_dk_db_skafteDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // storeStockBindingSource
+            // 
+            this.storeStockBindingSource.DataMember = "StoreStock";
+            this.storeStockBindingSource.DataSource = this.storeStockTable;
+            // 
+            // storeStockTable
+            // 
+            this.storeStockTable.DataSetName = "StoreStockTable";
+            this.storeStockTable.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // storeStockTableAdapter
+            // 
+            this.storeStockTableAdapter.ClearBeforeFill = true;
+            // 
+            // BTN_CreateTXTFile
+            // 
+            this.BTN_CreateTXTFile.BackColor = System.Drawing.Color.White;
+            this.BTN_CreateTXTFile.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTN_CreateTXTFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.BTN_CreateTXTFile.Location = new System.Drawing.Point(493, 469);
+            this.BTN_CreateTXTFile.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.BTN_CreateTXTFile.Name = "BTN_CreateTXTFile";
+            this.BTN_CreateTXTFile.Size = new System.Drawing.Size(81, 30);
+            this.BTN_CreateTXTFile.TabIndex = 107;
+            this.BTN_CreateTXTFile.Text = "Udskriv";
+            this.BTN_CreateTXTFile.UseVisualStyleBackColor = false;
+            this.BTN_CreateTXTFile.Click += new System.EventHandler(this.BTN_CreateTXTFile_Click);
+            // 
+            // storeStockTableAdapter1
+            // 
+            this.storeStockTableAdapter1.ClearBeforeFill = true;
+            // 
+            // productTableAdapter
+            // 
+            this.productTableAdapter.ClearBeforeFill = true;
+            // 
+            // productTableAdapter1
+            // 
+            this.productTableAdapter1.ClearBeforeFill = true;
+            // 
             // VisLager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(540, 525);
+            this.ClientSize = new System.Drawing.Size(585, 525);
             this.Controls.Add(this.BTN_CreateTXTFile);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.PANEL_FindOrder);
@@ -305,14 +310,14 @@
             this.PANEL_FindOrder.ResumeLayout(false);
             this.PANEL_FindOrder.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cskafte_dk_db_skafteDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cskafte_dk_db_skafteDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.storeStockBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cskafte_dk_db_skafteDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.storeStockBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.storeStockTable)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cskafte_dk_db_skafteDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
