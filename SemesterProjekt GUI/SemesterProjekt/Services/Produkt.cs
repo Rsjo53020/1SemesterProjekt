@@ -27,5 +27,10 @@ namespace SemesterProjekt.Services
         {
             Database.Database.SqlDeleteProduct(product);
         }
+
+        public static void GetAllProductFromDataBase()
+        {
+            
+        }
     }
 }

@@ -49,22 +49,29 @@ namespace SemesterProjekt.Services
             string filePath = "salgsstatistik.txt";
             using (StreamWriter writer = new StreamWriter(filePath))
             {
-                writer.WriteLine("SALGSSTATISTIK 2023");
-                writer.WriteLine($"Fra dato: {startDate.ToShortDateString()} Til dato: {endDate.ToShortDateString()}");
-                writer.WriteLine("Kundenummer                   OrderStatus                     Dato        Køb");
-                writer.WriteLine("----------------------------------------------");
+                writer.Write("SALGSSTATISTIK 2023");
+                writer.Write($"                  Fra dato: {startDate.ToShortDateString()} Til dato: {endDate.ToShortDateString()}");
+                writer.WriteLine();
+                writer.WriteLine();
+                writer.WriteLine("Kundenummer           Navn                     Dato        Køb");
+                writer.WriteLine();
 
                 foreach (Order order in orders)
                 {
                     Models.Customer customer = Services.Customer.FindCustomerFromCustomerID(order.CostumerID);
-                    writer.WriteLine($"{order.CostumerID}                       {customer.FirstName}  {customer.SurName} {order.OrderDate.ToShortDateString()}    {order.TotalPrice}");
+                    writer.WriteLine($"{order.CostumerID}                     {customer.FirstName}  {customer.SurName}             {order.OrderDate.ToShortDateString()}    {order.TotalPrice}");
                 }
 
-                writer.WriteLine("----------------------------------------------");
-                writer.WriteLine($"Summen af alle salg i perioden: {totalSales}");
+                writer.WriteLine("-------------------------------------------------------------------------------");
+                writer.WriteLine();
+                writer.WriteLine($"                             Summen af alle salg i perioden: {totalSales}");
             }
 
             Console.WriteLine($"Udskriften er gemt i filen: {filePath}");
         }
+
+
+
+
     }
 }

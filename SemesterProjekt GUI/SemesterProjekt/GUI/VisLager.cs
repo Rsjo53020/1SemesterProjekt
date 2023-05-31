@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SemesterProjekt.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace SemesterProjekt.GUI
 {
     public partial class VisLager : Form
     {
+        List<Models.Frame> stockList = new List<Models.Frame>();
         public VisLager()
         {
             InitializeComponent();
@@ -22,6 +24,11 @@ namespace SemesterProjekt.GUI
             // TODO: This line of code loads data into the 'storeStockTable.StoreStock' table. You can move, or remove it, as needed.
             this.storeStockTableAdapter.Fill(this.storeStockTable.StoreStock);
 
+        }
+
+        private void BTN_CreateTXTFile_Click(object sender, EventArgs e)
+        {
+            Services.Produkt.GetAllProductFromDataBase(stockList);
         }
     }
 }

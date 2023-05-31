@@ -314,6 +314,49 @@ namespace SemesterProjekt.Database
             conn.Close(); //Close connection to Database
 
             return ProductList;
+            
+        }
+        public static List<Models.Product> GetAllProductFromDatabase(Models.Frame product)
+        {
+            string sSQL = $"SELECT * FROM Product";
+
+            //call connection to database
+            SqlConnection conn = new SqlConnection(strconn);
+            SqlCommand command = new SqlCommand(sSQL, conn);
+
+            conn.Open(); //Open connection to Database
+            SqlDataReader reader = command.ExecuteReader();
+            List<Models.Product> ProductList = new List<Models.Product>();
+
+            while (reader.Read())
+            {
+                Frame frame = new Frame(
+                    (Decimal)reader["SalesPrice"],
+                    reader["NameProduct"].ToString(),
+                    reader["Discription"].ToString(),
+                    reader["Kategory"].ToString(),
+                    (Decimal)reader["PurchasePrice"],
+                    (int)reader["VATSup"],
+                    (int)reader["EAN"],
+                    reader["Gender"].ToString(),
+                    (int)reader["Age"],
+                    (Decimal)reader["Lenght"],
+                    (Decimal)reader["Width"],
+                    reader["Kind"].ToString(),
+                    reader["UsedFor"].ToString(),
+                    reader["Style"].ToString(),
+                    reader["Color"].ToString()
+                    );
+
+                ProductList.Add(frame);
+
+
+            }
+            reader.Close();
+            conn.Close(); //Close connection to Database
+
+            return ProductList;
+
         }
         /// <summary>
         /// CRU(D) on Product: Delete a Product
