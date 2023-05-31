@@ -22,7 +22,16 @@ namespace SemesterProjekt.GUI
             GUIMain gUIMain = new GUIMain();
             gUIMain.Show();
             this.Hide();
-            
+
         }
+
+        private void BTN_Kunde_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("C:\\Users\\Alexa\\Desktop\\1semesterProjekt\\SemesterProjekt GUI\\AICustomer\\bin\\Debug\\AICustomer.exe");
+            this.Hide();
+        }
+
+
+        
     }
 }
