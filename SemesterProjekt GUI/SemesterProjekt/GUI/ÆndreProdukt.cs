@@ -12,6 +12,7 @@ namespace SemesterProjekt.GUI
 {
     public partial class ÆndreProdukt : Form
     {
+        List<Models.Product> FramesList = new List<Models.Product>();
         public ÆndreProdukt()
         {
             InitializeComponent();
@@ -26,14 +27,10 @@ namespace SemesterProjekt.GUI
 
         private void BTN_SearchProdukt_Click(object sender, EventArgs e)
         {
-            DGV_OpdateSelectProduct.DataSource = Database.Database.SqlGetProduct(TB_SearchNameProduct.Text, TB_SearchKategory.Text);
-            TB_UpdatedSalesPrice.Text = DGV_OpdateSelectProduct.Rows[0].ToString();
-            TB_UpdatedNameProduct.Text = DGV_OpdateSelectProduct.Rows[1].ToString();
-            TB_UpdatedDiscription.Text = DGV_OpdateSelectProduct.Rows[2].ToString();
-            TB_UpdatedKategory.Text = DGV_OpdateSelectProduct.Rows[3].ToString();
 
-
-
+            FramesList = Database.Database.SqlGetProduct(TB_SearchNameProduct.Text, TB_SearchKategory.Text);
+            DGV_OpdateSelectProduct.DataSource = FramesList;
+            TB_UpdatedSalesPrice.Text = DGV_OpdateSelectProduct.SelectedColumns[0].ToString();
         }
 
         private void BTN_SletProdukt_Click(object sender, EventArgs e)
