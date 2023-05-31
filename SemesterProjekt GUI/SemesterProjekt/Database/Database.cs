@@ -96,7 +96,7 @@ namespace SemesterProjekt.Database
                     reader["City"].ToString(),
                     reader["PostalCode"].ToString(),
                     (Decimal)reader["Discount"],
-                    (DateTime)reader["Bithday"],
+                    (DateTime)reader["Birthday"],
                     (int)reader["Age"],
                     reader["VisionTest"].ToString()
                     );
@@ -133,7 +133,7 @@ namespace SemesterProjekt.Database
                     reader["City"].ToString(),
                     reader["PostalCode"].ToString(),
                     (Decimal)reader["Discount"],
-                    (DateTime)reader["Bithday"],
+                    (DateTime)reader["Birthday"],
                     (int)reader["Age"],
                     reader["VisionTest"].ToString()
                     );
