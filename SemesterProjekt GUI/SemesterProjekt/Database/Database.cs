@@ -230,7 +230,7 @@ namespace SemesterProjekt.Database
             string sSQL = "";
             if (getNameProdukt != "")
             {
-                sSQL = $"SELECT * FROM Produkt WHERE NameProduct = '{getNameProdukt}';";
+                sSQL = $"SELECT * FROM Product WHERE NameProduct = '{getNameProdukt}';";
             }
             else if (getKategory != "")
             {
@@ -251,14 +251,14 @@ namespace SemesterProjekt.Database
                 Frame frame = new Frame(
                     (Decimal)reader["SalesPrice"],
                     reader["NameProduct"].ToString(),
-                    reader["Description"].ToString(),
+                    reader["Discription"].ToString(),
                     reader["Kategory"].ToString(),
                     (Decimal)reader["PurchasePrice"],
                     (int)reader["VATSup"],
                     (int)reader["EAN"],
                     reader["Gender"].ToString(),
                     (int)reader["Age"],
-                    (Decimal)reader["Length"],
+                    (Decimal)reader["Lenght"],
                     (Decimal)reader["Width"],
                     reader["Kind"].ToString(),
                     reader["UsedFor"].ToString(),
