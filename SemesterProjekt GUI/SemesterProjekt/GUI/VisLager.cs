@@ -25,6 +25,10 @@ namespace SemesterProjekt.GUI
 
         private void VisLager_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'cskafte_dk_db_skafteDataSet2.Product' table. You can move, or remove it, as needed.
+            this.productTableAdapter1.Fill(this.cskafte_dk_db_skafteDataSet2.Product);
+            // TODO: This line of code loads data into the 'cskafte_dk_db_skafteDataSet1.Product' table. You can move, or remove it, as needed.
+            this.productTableAdapter.Fill(this.cskafte_dk_db_skafteDataSet1.Product);
             // TODO: This line of code loads data into the 'cskafte_dk_db_skafteDataSet.StoreStock' table. You can move, or remove it, as needed.
             this.storeStockTableAdapter1.Fill(this.cskafte_dk_db_skafteDataSet.StoreStock);
 

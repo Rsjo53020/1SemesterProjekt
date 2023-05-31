@@ -53,6 +53,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>cskafte_dk_db_skafteDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="cskafte_dk_db_skafteDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cskafte_dk_db_skafteDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cskafte_dk_db_skafteDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cskafte_dk_db_skafteDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="CustomerTable.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -195,6 +205,28 @@
     </None>
     <None Include="cskafte_dk_db_skafteDataSet.xss">
       <DependentUpon>cskafte_dk_db_skafteDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="cskafte_dk_db_skafteDataSet1.xsc">
+      <DependentUpon>cskafte_dk_db_skafteDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="cskafte_dk_db_skafteDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cskafte_dk_db_skafteDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cskafte_dk_db_skafteDataSet1.xss">
+      <DependentUpon>cskafte_dk_db_skafteDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="cskafte_dk_db_skafteDataSet2.xsc">
+      <DependentUpon>cskafte_dk_db_skafteDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="cskafte_dk_db_skafteDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cskafte_dk_db_skafteDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cskafte_dk_db_skafteDataSet2.xss">
+      <DependentUpon>cskafte_dk_db_skafteDataSet2.xsd</DependentUpon>
     </None>
     <None Include="CustomerTable.xsc">
       <DependentUpon>CustomerTable.xsd</DependentUpon>
