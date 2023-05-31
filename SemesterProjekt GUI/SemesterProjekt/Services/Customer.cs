@@ -10,7 +10,7 @@ namespace SemesterProjekt.Services
     {
 
         /// <summary>
-        /// return a list of customers from a SQL satement from Database.
+        /// Method returns a list of customers from a SQL satement from Database.
         /// </summary>
 
         public static List<Models.Customer> FindCostumer(string PhoneNr = "", string Mail = "")
@@ -21,20 +21,36 @@ namespace SemesterProjekt.Services
             return customerList;
         }
 
+        /// <summary>
+        /// Method Creates a Customer, containing a full Customer from Models. 
+        /// using SQL Statement from Database
+        /// </summary>
         public static void RegisterCustomer(Models.Customer customer)
         {
             Database.Database.SqlCreateCustumer(customer);
         }
 
+        /// <summary>
+        /// Method Deletes a Customer, containing a full Customer from Models. 
+        /// using SQL Statement from Database
+        /// </summary>
         public void DeleteCustomer(Models.Customer customer)
         {
             Database.Database.SqlDeleteCustomer(customer);
         }
 
+        /// <summary>
+        /// Method Updates a Customer, containing a full Customer from Models. 
+        /// using SQL Statement from Database
+        /// </summary>
         public void UpdateCustomer(Models.Customer customer)
         {
             Database.Database.SqlUpdateCustomer(customer);
         }
+
+        /// <summary>
+        /// Method Finds a customer from CustomerID using a SQL satement from Database and returns the Sustomer
+        /// </summary>
         public static Models.Customer FindCustomerFromCustomerID (int CustomerID) 
         {
             Models.Customer customer = Database.Database.SqlFindCustomerFromCustomerID(CustomerID);
