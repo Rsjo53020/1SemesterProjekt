@@ -43,13 +43,13 @@
             this.ordersTableAdapter = new SemesterProjekt.OrdersTableTableAdapters.OrdersTableAdapter();
             this.label9 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.BTN_CreateTXTFile = new System.Windows.Forms.Button();
             this.orderDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.orderStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vATDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lineIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.orderIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.orderBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.BTN_CreateTXTFile = new System.Windows.Forms.Button();
             this.PANEL_FindOrder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_ShowOrder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).BeginInit();
@@ -210,6 +210,20 @@
             this.label1.TabIndex = 105;
             this.label1.Text = "Ordre Dato Slut :";
             // 
+            // BTN_CreateTXTFile
+            // 
+            this.BTN_CreateTXTFile.BackColor = System.Drawing.Color.White;
+            this.BTN_CreateTXTFile.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTN_CreateTXTFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.BTN_CreateTXTFile.Location = new System.Drawing.Point(729, 553);
+            this.BTN_CreateTXTFile.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.BTN_CreateTXTFile.Name = "BTN_CreateTXTFile";
+            this.BTN_CreateTXTFile.Size = new System.Drawing.Size(108, 37);
+            this.BTN_CreateTXTFile.TabIndex = 106;
+            this.BTN_CreateTXTFile.Text = "Udskriv";
+            this.BTN_CreateTXTFile.UseVisualStyleBackColor = false;
+            this.BTN_CreateTXTFile.Click += new System.EventHandler(this.BTN_CreateTXTFile_Click);
+            // 
             // orderDateDataGridViewTextBoxColumn
             // 
             this.orderDateDataGridViewTextBoxColumn.DataPropertyName = "OrderDate";
@@ -254,20 +268,6 @@
             // orderBindingSource
             // 
             this.orderBindingSource.DataSource = typeof(SemesterProjekt.Models.Order);
-            // 
-            // BTN_CreateTXTFile
-            // 
-            this.BTN_CreateTXTFile.BackColor = System.Drawing.Color.White;
-            this.BTN_CreateTXTFile.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BTN_CreateTXTFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.BTN_CreateTXTFile.Location = new System.Drawing.Point(723, 564);
-            this.BTN_CreateTXTFile.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
-            this.BTN_CreateTXTFile.Name = "BTN_CreateTXTFile";
-            this.BTN_CreateTXTFile.Size = new System.Drawing.Size(108, 37);
-            this.BTN_CreateTXTFile.TabIndex = 106;
-            this.BTN_CreateTXTFile.Text = "Udskriv";
-            this.BTN_CreateTXTFile.UseVisualStyleBackColor = false;
-            this.BTN_CreateTXTFile.Click += new System.EventHandler(this.BTN_CreateTXTFile_Click);
             // 
             // SøgOrdre
             // 

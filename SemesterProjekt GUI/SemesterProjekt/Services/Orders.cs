@@ -25,9 +25,6 @@ namespace SemesterProjekt.Services
 
         public static void GetCustomerPurchaseOrdersBetweenDates(List<Models.Order> orders, DateTime startDate, DateTime endDate)
         {
-            
-            List<Models.Customer> customers = Services.Customer.FindCostumer();
-
             // Sortér ordrer efter dato
             orders = orders.OrderBy(Order => Order.OrderDate).ToList();
             
