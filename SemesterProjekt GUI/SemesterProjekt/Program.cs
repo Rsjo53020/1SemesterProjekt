@@ -10,6 +10,9 @@ namespace SemesterProjekt
 {
     public class Program
     {
+        /// <summary>
+        /// Method Opens GUI "BGFStartside"
+        /// </summary>
         static void Main(string[] args)
         {
             Application.Run(new BGFStartside());

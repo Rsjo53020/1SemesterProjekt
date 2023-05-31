@@ -138,6 +138,5 @@ namespace SemesterProjekt.GUI
         {
 
         }
-
     }
 }

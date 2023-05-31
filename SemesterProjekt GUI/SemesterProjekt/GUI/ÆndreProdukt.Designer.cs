@@ -146,6 +146,7 @@
             this.DGV_Product.RowTemplate.Height = 33;
             this.DGV_Product.Size = new System.Drawing.Size(716, 176);
             this.DGV_Product.TabIndex = 97;
+            this.DGV_Product.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Product_CellClick);
             // 
             // productBindingSource
             // 
