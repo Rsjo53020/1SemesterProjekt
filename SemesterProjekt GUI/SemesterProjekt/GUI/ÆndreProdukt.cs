@@ -31,7 +31,6 @@ namespace SemesterProjekt.GUI
             FramesList = Database.Database.SqlGetProduct(TB_SearchNameProduct.Text, TB_SearchKategory.Text);
             DGV_OpdateSelectProduct.DataSource = FramesList;
             TB_UpdatedSalesPrice.Text = DGV_OpdateSelectProduct.SelectedRows[0].DataBoundItem.ToString();
-
         }
 
         private void BTN_SletProdukt_Click(object sender, EventArgs e)
