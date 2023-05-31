@@ -14,7 +14,6 @@ namespace SemesterProjekt.Services
         }
         public void DeleteProductLine()
         {
-
         }
     }
 }
