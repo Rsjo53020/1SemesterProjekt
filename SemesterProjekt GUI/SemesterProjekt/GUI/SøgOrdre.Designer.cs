@@ -34,13 +34,6 @@
             this.DTP_EndDate = new System.Windows.Forms.DateTimePicker();
             this.DTP_StartDate = new System.Windows.Forms.DateTimePicker();
             this.DGV_ShowOrder = new System.Windows.Forms.DataGridView();
-            this.orderDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.orderStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.totalpriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vATDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.customerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lineIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.orderIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ordersTable = new SemesterProjekt.OrdersTable();
             this.BTN_SearchOrder = new System.Windows.Forms.Button();
@@ -50,10 +43,18 @@
             this.ordersTableAdapter = new SemesterProjekt.OrdersTableTableAdapters.OrdersTableAdapter();
             this.label9 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.BTN_CreateTXTFile = new System.Windows.Forms.Button();
+            this.orderDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.orderStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vATDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lineIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.orderIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.orderBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.PANEL_FindOrder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_ShowOrder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersTable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orderBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // PANEL_FindOrder
@@ -62,9 +63,9 @@
             this.PANEL_FindOrder.Controls.Add(this.LB_FindOrder);
             this.PANEL_FindOrder.Dock = System.Windows.Forms.DockStyle.Top;
             this.PANEL_FindOrder.Location = new System.Drawing.Point(0, 0);
-            this.PANEL_FindOrder.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.PANEL_FindOrder.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.PANEL_FindOrder.Name = "PANEL_FindOrder";
-            this.PANEL_FindOrder.Size = new System.Drawing.Size(652, 65);
+            this.PANEL_FindOrder.Size = new System.Drawing.Size(869, 80);
             this.PANEL_FindOrder.TabIndex = 31;
             // 
             // LB_FindOrder
@@ -72,10 +73,9 @@
             this.LB_FindOrder.AutoSize = true;
             this.LB_FindOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.LB_FindOrder.ForeColor = System.Drawing.Color.Gainsboro;
-            this.LB_FindOrder.Location = new System.Drawing.Point(263, 23);
-            this.LB_FindOrder.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LB_FindOrder.Location = new System.Drawing.Point(351, 28);
             this.LB_FindOrder.Name = "LB_FindOrder";
-            this.LB_FindOrder.Size = new System.Drawing.Size(148, 25);
+            this.LB_FindOrder.Size = new System.Drawing.Size(189, 31);
             this.LB_FindOrder.TabIndex = 16;
             this.LB_FindOrder.Text = "SØG ORDRE";
             // 
@@ -83,20 +83,22 @@
             // 
             this.DTP_EndDate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.DTP_EndDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.DTP_EndDate.Location = new System.Drawing.Point(169, 124);
-            this.DTP_EndDate.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.DTP_EndDate.Location = new System.Drawing.Point(225, 153);
+            this.DTP_EndDate.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.DTP_EndDate.Name = "DTP_EndDate";
-            this.DTP_EndDate.Size = new System.Drawing.Size(213, 23);
+            this.DTP_EndDate.Size = new System.Drawing.Size(283, 26);
             this.DTP_EndDate.TabIndex = 33;
             // 
             // DTP_StartDate
             // 
             this.DTP_StartDate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.DTP_StartDate.CustomFormat = "dd:MM:yyyy";
             this.DTP_StartDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.DTP_StartDate.Location = new System.Drawing.Point(169, 92);
-            this.DTP_StartDate.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.DTP_StartDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DTP_StartDate.Location = new System.Drawing.Point(225, 113);
+            this.DTP_StartDate.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.DTP_StartDate.Name = "DTP_StartDate";
-            this.DTP_StartDate.Size = new System.Drawing.Size(213, 23);
+            this.DTP_StartDate.Size = new System.Drawing.Size(283, 26);
             this.DTP_StartDate.TabIndex = 35;
             // 
             // DGV_ShowOrder
@@ -107,63 +109,18 @@
             this.DGV_ShowOrder.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.orderDateDataGridViewTextBoxColumn,
             this.orderStatusDataGridViewTextBoxColumn,
-            this.totalpriceDataGridViewTextBoxColumn,
             this.vATDataGridViewTextBoxColumn,
-            this.customerIDDataGridViewTextBoxColumn,
             this.lineIDDataGridViewTextBoxColumn,
             this.orderIDDataGridViewTextBoxColumn});
-            this.DGV_ShowOrder.DataSource = this.ordersBindingSource;
+            this.DGV_ShowOrder.DataSource = this.orderBindingSource;
             this.DGV_ShowOrder.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.DGV_ShowOrder.Location = new System.Drawing.Point(0, 168);
-            this.DGV_ShowOrder.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.DGV_ShowOrder.Location = new System.Drawing.Point(0, 207);
+            this.DGV_ShowOrder.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.DGV_ShowOrder.Name = "DGV_ShowOrder";
             this.DGV_ShowOrder.RowHeadersWidth = 62;
             this.DGV_ShowOrder.RowTemplate.Height = 28;
-            this.DGV_ShowOrder.Size = new System.Drawing.Size(652, 347);
+            this.DGV_ShowOrder.Size = new System.Drawing.Size(869, 427);
             this.DGV_ShowOrder.TabIndex = 37;
-            // 
-            // orderDateDataGridViewTextBoxColumn
-            // 
-            this.orderDateDataGridViewTextBoxColumn.DataPropertyName = "OrderDate";
-            this.orderDateDataGridViewTextBoxColumn.HeaderText = "OrderDate";
-            this.orderDateDataGridViewTextBoxColumn.Name = "orderDateDataGridViewTextBoxColumn";
-            // 
-            // orderStatusDataGridViewTextBoxColumn
-            // 
-            this.orderStatusDataGridViewTextBoxColumn.DataPropertyName = "OrderStatus";
-            this.orderStatusDataGridViewTextBoxColumn.HeaderText = "OrderStatus";
-            this.orderStatusDataGridViewTextBoxColumn.Name = "orderStatusDataGridViewTextBoxColumn";
-            // 
-            // totalpriceDataGridViewTextBoxColumn
-            // 
-            this.totalpriceDataGridViewTextBoxColumn.DataPropertyName = "Totalprice";
-            this.totalpriceDataGridViewTextBoxColumn.HeaderText = "Totalprice";
-            this.totalpriceDataGridViewTextBoxColumn.Name = "totalpriceDataGridViewTextBoxColumn";
-            // 
-            // vATDataGridViewTextBoxColumn
-            // 
-            this.vATDataGridViewTextBoxColumn.DataPropertyName = "VAT";
-            this.vATDataGridViewTextBoxColumn.HeaderText = "VAT";
-            this.vATDataGridViewTextBoxColumn.Name = "vATDataGridViewTextBoxColumn";
-            // 
-            // customerIDDataGridViewTextBoxColumn
-            // 
-            this.customerIDDataGridViewTextBoxColumn.DataPropertyName = "CustomerID";
-            this.customerIDDataGridViewTextBoxColumn.HeaderText = "CustomerID";
-            this.customerIDDataGridViewTextBoxColumn.Name = "customerIDDataGridViewTextBoxColumn";
-            // 
-            // lineIDDataGridViewTextBoxColumn
-            // 
-            this.lineIDDataGridViewTextBoxColumn.DataPropertyName = "LineID";
-            this.lineIDDataGridViewTextBoxColumn.HeaderText = "LineID";
-            this.lineIDDataGridViewTextBoxColumn.Name = "lineIDDataGridViewTextBoxColumn";
-            // 
-            // orderIDDataGridViewTextBoxColumn
-            // 
-            this.orderIDDataGridViewTextBoxColumn.DataPropertyName = "OrderID";
-            this.orderIDDataGridViewTextBoxColumn.HeaderText = "OrderID";
-            this.orderIDDataGridViewTextBoxColumn.Name = "orderIDDataGridViewTextBoxColumn";
-            this.orderIDDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // ordersBindingSource
             // 
@@ -180,23 +137,24 @@
             this.BTN_SearchOrder.BackColor = System.Drawing.Color.White;
             this.BTN_SearchOrder.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN_SearchOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.BTN_SearchOrder.Location = new System.Drawing.Point(395, 117);
-            this.BTN_SearchOrder.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.BTN_SearchOrder.Location = new System.Drawing.Point(527, 144);
+            this.BTN_SearchOrder.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.BTN_SearchOrder.Name = "BTN_SearchOrder";
-            this.BTN_SearchOrder.Size = new System.Drawing.Size(81, 30);
+            this.BTN_SearchOrder.Size = new System.Drawing.Size(108, 37);
             this.BTN_SearchOrder.TabIndex = 38;
             this.BTN_SearchOrder.Text = "Søg ";
             this.BTN_SearchOrder.UseVisualStyleBackColor = false;
+            this.BTN_SearchOrder.Click += new System.EventHandler(this.BTN_SearchOrder_Click);
             // 
             // BTN_DeleteOrder
             // 
             this.BTN_DeleteOrder.BackColor = System.Drawing.Color.White;
             this.BTN_DeleteOrder.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN_DeleteOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.BTN_DeleteOrder.Location = new System.Drawing.Point(565, 117);
-            this.BTN_DeleteOrder.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.BTN_DeleteOrder.Location = new System.Drawing.Point(753, 144);
+            this.BTN_DeleteOrder.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.BTN_DeleteOrder.Name = "BTN_DeleteOrder";
-            this.BTN_DeleteOrder.Size = new System.Drawing.Size(82, 30);
+            this.BTN_DeleteOrder.Size = new System.Drawing.Size(109, 37);
             this.BTN_DeleteOrder.TabIndex = 39;
             this.BTN_DeleteOrder.Text = "Slet ";
             this.BTN_DeleteOrder.UseVisualStyleBackColor = false;
@@ -206,10 +164,10 @@
             this.BTN_UpdateOrder.BackColor = System.Drawing.Color.White;
             this.BTN_UpdateOrder.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN_UpdateOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.BTN_UpdateOrder.Location = new System.Drawing.Point(480, 117);
-            this.BTN_UpdateOrder.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.BTN_UpdateOrder.Location = new System.Drawing.Point(640, 144);
+            this.BTN_UpdateOrder.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.BTN_UpdateOrder.Name = "BTN_UpdateOrder";
-            this.BTN_UpdateOrder.Size = new System.Drawing.Size(81, 30);
+            this.BTN_UpdateOrder.Size = new System.Drawing.Size(108, 37);
             this.BTN_UpdateOrder.TabIndex = 40;
             this.BTN_UpdateOrder.Text = "Opdater ";
             this.BTN_UpdateOrder.UseVisualStyleBackColor = false;
@@ -218,10 +176,9 @@
             // 
             this.LL_Forklaring.AutoSize = true;
             this.LL_Forklaring.LinkColor = System.Drawing.Color.White;
-            this.LL_Forklaring.Location = new System.Drawing.Point(24, 458);
-            this.LL_Forklaring.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LL_Forklaring.Location = new System.Drawing.Point(32, 564);
             this.LL_Forklaring.Name = "LL_Forklaring";
-            this.LL_Forklaring.Size = new System.Drawing.Size(53, 13);
+            this.LL_Forklaring.Size = new System.Drawing.Size(67, 16);
             this.LL_Forklaring.TabIndex = 87;
             this.LL_Forklaring.TabStop = true;
             this.LL_Forklaring.Text = "Forklaring";
@@ -236,10 +193,9 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label9.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label9.Location = new System.Drawing.Point(10, 92);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(13, 113);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(121, 17);
+            this.label9.Size = new System.Drawing.Size(144, 20);
             this.label9.TabIndex = 104;
             this.label9.Text = "Ordre Dato Start :";
             // 
@@ -248,19 +204,78 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(10, 124);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(13, 153);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 17);
+            this.label1.Size = new System.Drawing.Size(137, 20);
             this.label1.TabIndex = 105;
             this.label1.Text = "Ordre Dato Slut :";
             // 
+            // BTN_CreateTXTFile
+            // 
+            this.BTN_CreateTXTFile.BackColor = System.Drawing.Color.White;
+            this.BTN_CreateTXTFile.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTN_CreateTXTFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.BTN_CreateTXTFile.Location = new System.Drawing.Point(729, 553);
+            this.BTN_CreateTXTFile.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.BTN_CreateTXTFile.Name = "BTN_CreateTXTFile";
+            this.BTN_CreateTXTFile.Size = new System.Drawing.Size(108, 37);
+            this.BTN_CreateTXTFile.TabIndex = 106;
+            this.BTN_CreateTXTFile.Text = "Udskriv";
+            this.BTN_CreateTXTFile.UseVisualStyleBackColor = false;
+            this.BTN_CreateTXTFile.Click += new System.EventHandler(this.BTN_CreateTXTFile_Click);
+            // 
+            // orderDateDataGridViewTextBoxColumn
+            // 
+            this.orderDateDataGridViewTextBoxColumn.DataPropertyName = "OrderDate";
+            this.orderDateDataGridViewTextBoxColumn.HeaderText = "OrderDate";
+            this.orderDateDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.orderDateDataGridViewTextBoxColumn.Name = "orderDateDataGridViewTextBoxColumn";
+            this.orderDateDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // orderStatusDataGridViewTextBoxColumn
+            // 
+            this.orderStatusDataGridViewTextBoxColumn.DataPropertyName = "OrderStatus";
+            this.orderStatusDataGridViewTextBoxColumn.HeaderText = "OrderStatus";
+            this.orderStatusDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.orderStatusDataGridViewTextBoxColumn.Name = "orderStatusDataGridViewTextBoxColumn";
+            this.orderStatusDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // vATDataGridViewTextBoxColumn
+            // 
+            this.vATDataGridViewTextBoxColumn.DataPropertyName = "VAT";
+            this.vATDataGridViewTextBoxColumn.HeaderText = "VAT";
+            this.vATDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.vATDataGridViewTextBoxColumn.Name = "vATDataGridViewTextBoxColumn";
+            this.vATDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // lineIDDataGridViewTextBoxColumn
+            // 
+            this.lineIDDataGridViewTextBoxColumn.DataPropertyName = "LineID";
+            this.lineIDDataGridViewTextBoxColumn.HeaderText = "LineID";
+            this.lineIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.lineIDDataGridViewTextBoxColumn.Name = "lineIDDataGridViewTextBoxColumn";
+            this.lineIDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // orderIDDataGridViewTextBoxColumn
+            // 
+            this.orderIDDataGridViewTextBoxColumn.DataPropertyName = "OrderID";
+            this.orderIDDataGridViewTextBoxColumn.HeaderText = "OrderID";
+            this.orderIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.orderIDDataGridViewTextBoxColumn.Name = "orderIDDataGridViewTextBoxColumn";
+            this.orderIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.orderIDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // orderBindingSource
+            // 
+            this.orderBindingSource.DataSource = typeof(SemesterProjekt.Models.Order);
+            // 
             // SøgOrdre
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(652, 515);
+            this.ClientSize = new System.Drawing.Size(869, 634);
+            this.Controls.Add(this.BTN_CreateTXTFile);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.LL_Forklaring);
@@ -271,7 +286,7 @@
             this.Controls.Add(this.DTP_StartDate);
             this.Controls.Add(this.DTP_EndDate);
             this.Controls.Add(this.PANEL_FindOrder);
-            this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.Name = "SøgOrdre";
             this.Text = "SøgOrdre";
             this.Load += new System.EventHandler(this.SøgOrdre_Load);
@@ -280,6 +295,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.DGV_ShowOrder)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersTable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orderBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -301,12 +317,12 @@
         private OrdersTableTableAdapters.OrdersTableAdapter ordersTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn orderDateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn orderStatusDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn totalpriceDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn vATDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn customerIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn lineIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn orderIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.BindingSource orderBindingSource;
+        private System.Windows.Forms.Button BTN_CreateTXTFile;
     }
 }

@@ -11,6 +11,7 @@ using System.Net.NetworkInformation;
 using SemesterProjekt.Models;
 using System.Drawing;
 using System.Xml.Linq;
+using System.Windows.Forms;
 
 namespace SemesterProjekt.Database
 {
@@ -190,8 +191,9 @@ namespace SemesterProjekt.Database
         /// <returns></returns>
         public static List<Models.Order> SqlGetOrder(DateTime dateStart, DateTime dateEnd)
         {
-            string sSQL = $"SELECT * FROM Orders WHERE OrderDate = '{dateStart.ToString("yyyy-MM-dd")}'," +
-                $" OrderDate = '{dateEnd.ToString("yyyy-MM-dd")}'";
+            string sSQL = $"SELECT * FROM Orders WHERE OrderDate between '{dateStart.ToString("yyyy-MM-dd")}' AND" +
+                $" '{dateEnd.ToString("yyyy-MM-dd")}';";
+
 
             List<Models.Order> OrderList = new List<Models.Order>();
 

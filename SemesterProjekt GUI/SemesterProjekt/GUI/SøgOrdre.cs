@@ -13,6 +13,9 @@ namespace SemesterProjekt.GUI
 {
     public partial class SøgOrdre : Form
     {
+        List<Models.Order> orders = new List<Models.Order>();
+        DateTime DateStart;
+        DateTime DateEnd;
         public SøgOrdre()
         {
             InitializeComponent();
@@ -32,6 +35,19 @@ namespace SemesterProjekt.GUI
             // TODO: This line of code loads data into the 'ordersTable.Orders' table. You can move, or remove it, as needed.
             this.ordersTableAdapter.Fill(this.ordersTable.Orders);
 
+        }
+
+        private void BTN_SearchOrder_Click(object sender, EventArgs e)
+        {
+            orders = Services.Orders.FindOrder(DTP_StartDate.Value, DTP_EndDate.Value);
+            DGV_ShowOrder.DataSource = orders;
+            DateStart = DTP_StartDate.Value;
+            DateEnd = DTP_EndDate.Value;
+        }
+
+        private void BTN_CreateTXTFile_Click(object sender, EventArgs e)
+        {
+            Services.Orders.GetCustomerPurchaseOrdersBetweenDates(orders, DateStart, DateEnd);
         }
     }
 }
