@@ -108,6 +108,44 @@ namespace SemesterProjekt.Database
 
             return customerlist;
         }
+
+        public static Models.Customer SqlFindCustomerFromCustomerID(int customerID)
+        {
+            string  sSQL = $"SELECT * FROM Customer WHERE CustomerID = {customerID};";
+            
+            //call connection to database
+            SqlConnection conn = new SqlConnection(strconn);
+            SqlCommand command = new SqlCommand(sSQL, conn);
+
+            conn.Open(); //Open connection to Database
+            SqlDataReader reader = command.ExecuteReader();
+
+            Models.Customer customer = null;
+            while (reader.Read())
+            {
+                 customer = new Customer(
+                    (int)reader["CustomerID"],
+                    reader["FirstName"].ToString(),
+                    reader["SurName"].ToString(),
+                    reader["PhoneNr"].ToString(),
+                    reader["EMailAdress"].ToString(),
+                    reader["Adress"].ToString(),
+                    reader["City"].ToString(),
+                    reader["PostalCode"].ToString(),
+                    (Decimal)reader["Discount"],
+                    (DateTime)reader["Bithday"],
+                    (int)reader["Age"],
+                    reader["VisionTest"].ToString()
+                    );
+
+              
+               
+            }
+            reader.Close();
+            conn.Close(); //Close connection to Database
+
+            return customer;
+        }
         /// <summary>
         /// CRU(D) on Customer: Delete a customer
         /// </summary>
