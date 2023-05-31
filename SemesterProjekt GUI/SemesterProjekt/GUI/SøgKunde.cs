@@ -12,6 +12,7 @@ namespace SemesterProjekt.GUI
 {
     public partial class SøgKunde : Form
     {
+        List<Models.Customer> customers = new List<Models.Customer>();
         public SøgKunde()
         {
             InitializeComponent();
@@ -27,6 +28,17 @@ namespace SemesterProjekt.GUI
             // TODO: This line of code loads data into the 'customerTable.Customer' table. You can move, or remove it, as needed.
             this.customerTableAdapter.Fill(this.customerTable.Customer);
 
+        }
+
+        private void BTN_SearchCustomer_Click(object sender, EventArgs e)
+        {
+            string searchedPhoneNumer = TB_SearchPhoneNr.Text;
+            string searchedEMailAdress = TB_SearchEMailAdress.Text;
+            if (TB_SearchPhoneNr.Text.Contains("+45") & TB_SearchPhoneNr.Text.Length > 9) 
+            {
+                searchedPhoneNumer = searchedPhoneNumer.Substring(3);
+            }
+            customers = Services.Customer.FindCostumer(searchedPhoneNumer, searchedEMailAdress);
         }
     }
 }
