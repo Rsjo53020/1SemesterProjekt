@@ -50,7 +50,7 @@ namespace SemesterProjekt.Services
 
         public static void GetStockStatus(List<Models.Frame> stockList)
         {
-            // Sortér ordrer efter dato
+            // Sort orders by date
             stockList = stockList.OrderBy(Frame => Frame.EAN).ToList();
 
             Console.WriteLine("Lager status i sorteret rækkefølge");
@@ -62,7 +62,7 @@ namespace SemesterProjekt.Services
                     $"{frames.Style} {frames.Color} {frames.UsedFor}");
             }
 
-            // Skriv til tekstfil
+            // Write to text file
             string filePath = "LagerStatus.txt";
             using (StreamWriter writer = new StreamWriter(filePath))
             {
