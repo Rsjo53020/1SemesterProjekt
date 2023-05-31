@@ -17,33 +17,31 @@ namespace SemesterProjekt.GUI
         {
             InitializeComponent();
         }
+
         List<Models.Customer> customers = new List<Models.Customer>();
 
+        /// <summary>
+        /// Method Opens .pdf explanation of UI
+        /// </summary>
         private void LL_Forklaring_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            // Path to file
             string filePath = @"C:\1semesterProjekt/SemesterProjekt GUI/Søg kunde.pdf";
-
-            // Open file with with standard program
             Process.Start(filePath);
         }
 
-        private void OpdaterKunde_Load(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void BTN_UpdateProduct_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        /// <summary>
+        /// Method sets the Customers DataGridView datasource to SQL method 
+        /// And searches for Customer PhoneNr and EMailAdress
+        /// </summary>
         private void BTN_SearchCustomer_Click(object sender, EventArgs e)
         {
             var DataSource = Database.Database.SqlGetCustomer(TB_SearchTlfCustomer.Text, TB_SearchEMailCustomer.Text);
             DGV_Customer.DataSource = DataSource;
         }
 
+        /// <summary>
+        /// Method sets Textbox values according to selected items in Customer DataGridView
+        /// </summary>
         private void DGV_Customer_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             DGV_Customer.CurrentRow.Selected = true;
@@ -58,6 +56,11 @@ namespace SemesterProjekt.GUI
             TB_CustomerBirthday.Text = DGV_Customer.Rows[e.RowIndex].Cells["Birthday"].Value.ToString();
             TB_CustomerAge.Text = DGV_Customer.Rows[e.RowIndex].Cells["Age"].Value.ToString();
             TB_CustomerVisionTest.Text = DGV_Customer.Rows[e.RowIndex].Cells["VisionTest"].Value.ToString();
+        }
+
+        private void BTN_UpdateProduct_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

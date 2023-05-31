@@ -31,8 +31,6 @@ namespace SemesterProjekt.Models
 
     public class Frame : Product
     {
-        
-
         /// <summary>
         /// Constructor Frame Class
         /// </summary>

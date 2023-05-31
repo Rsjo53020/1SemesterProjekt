@@ -303,7 +303,7 @@
             // 
             this.LL_UpdateProductForklaring.AutoSize = true;
             this.LL_UpdateProductForklaring.LinkColor = System.Drawing.Color.White;
-            this.LL_UpdateProductForklaring.Location = new System.Drawing.Point(35, 555);
+            this.LL_UpdateProductForklaring.Location = new System.Drawing.Point(36, 576);
             this.LL_UpdateProductForklaring.Name = "LL_UpdateProductForklaring";
             this.LL_UpdateProductForklaring.Size = new System.Drawing.Size(67, 16);
             this.LL_UpdateProductForklaring.TabIndex = 185;
@@ -741,7 +741,6 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "OpdaterKunde";
             this.Text = "OpdaterKunde";
-            this.Load += new System.EventHandler(this.OpdaterKunde_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Customer)).EndInit();
