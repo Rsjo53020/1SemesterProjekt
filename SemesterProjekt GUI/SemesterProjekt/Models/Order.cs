@@ -8,13 +8,13 @@ namespace SemesterProjekt.Models
 {
     public class Order
     {
-        private int OrderID { get; set; }
-        private DateTime OrderDate { get; set; }
-        private string OrderStatus { get; set; }
-        private int CostumerID { get; set; }
-        private int LineID { get; set; }
-        private Decimal TotalPrice { get; set; }
-        private int VAT { get; set; }
+        public int OrderID { get; set; }
+        public DateTime OrderDate { get; set; }
+        public string OrderStatus { get; set; }
+        public int CostumerID { get; set; }
+        public int LineID { get; set; }
+        public Decimal TotalPrice { get; set; }
+        public int VAT { get; set; }
 
         /// <summary>
         /// Constructor Class
