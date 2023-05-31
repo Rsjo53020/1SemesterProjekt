@@ -31,7 +31,7 @@ namespace SemesterProjekt.Services
         {
             Database.Database.SqlUpdateCustomer(customer);
         }
-        public Models.Customer FindCustomerFromCustomerID (int CustomerID) 
+        public static Models.Customer FindCustomerFromCustomerID (int CustomerID) 
         {
             Models.Customer customer = Database.Database.SqlFindCustomerFromCustomerID(CustomerID);
 
