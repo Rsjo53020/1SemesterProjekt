@@ -41,22 +41,17 @@ namespace SemesterProjekt.GUI
 
                 Services.Produkt.CreateProduct(product);
             }
-            catch
-            {
-                MessageBox.Show("fejl i indtastning!");
-            }
-
                catch (IOException ex)
             {
-                Console.WriteLine($"Der opstod en fejl under filhåndteringen: {ex.Message}");
+                MessageBox.Show($"Der opstod en fejl under filhåndteringen: {ex.Message}");
             }
             catch (FormatException ex)
             {
-                Console.WriteLine($"Formatfejl: {ex.Message}");
+                MessageBox.Show($"Formatfejl: {ex.Message}");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"En fejl opstod: {ex.Message}");
+                MessageBox.Show($"En fejl opstod: {ex.Message}");
             }
 
 

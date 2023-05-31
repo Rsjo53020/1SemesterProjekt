@@ -26,6 +26,13 @@ namespace SemesterProjekt.GUI
 
         private void BTN_SearchProdukt_Click(object sender, EventArgs e)
         {
+            DGV_OpdateSelectProduct.DataSource = Database.Database.SqlGetProduct(TB_SearchNameProduct.Text, TB_SearchKategory.Text);
+            TB_UpdatedSalesPrice.Text = DGV_OpdateSelectProduct.Rows[0].ToString();
+            TB_UpdatedNameProduct.Text = DGV_OpdateSelectProduct.Rows[1].ToString();
+            TB_UpdatedDiscription.Text = DGV_OpdateSelectProduct.Rows[2].ToString();
+            TB_UpdatedKategory.Text = DGV_OpdateSelectProduct.Rows[3].ToString();
+
+
 
         }
 
@@ -105,6 +112,11 @@ namespace SemesterProjekt.GUI
         }
 
         private void TB_OpdateFindKategory_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
