@@ -155,6 +155,7 @@ namespace AICustomer
             // You can have a database of glasses with different properties (style, color, size, etc.)
             // and find the glasses that best match the customer's preferences.
 
+
             Console.WriteLine($"{gender}");
             Console.WriteLine($"{lengthOfGlasses}");
             Console.WriteLine($"{widthOfGlasses}");
@@ -163,6 +164,10 @@ namespace AICustomer
             Console.WriteLine($"Stil: {style}");
             Console.WriteLine($"Farve: {color}");
             Console.WriteLine("Mere information om de anbefalede briller...");
+
+            //var queryCustomersAI = from cust in customers
+            //                           where cust.City == "London"
+            //                           select cust;
 
             // You can also add more information about the recommended glasses or present a list of alternative options to the customer.
 
