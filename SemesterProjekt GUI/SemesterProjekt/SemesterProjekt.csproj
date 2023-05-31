@@ -136,10 +136,10 @@
     <Compile Include="GUI\VisLager.Designer.cs">
       <DependentUpon>VisLager.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\VisProdukt.cs">
+    <Compile Include="%28Unused GUI%29\VisProdukt.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\VisProdukt.Designer.cs">
+    <Compile Include="%28Unused GUI%29\VisProdukt.Designer.cs">
       <DependentUpon>VisProdukt.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Customer.cs" />
@@ -291,7 +291,7 @@
     <EmbeddedResource Include="GUI\VisLager.resx">
       <DependentUpon>VisLager.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\VisProdukt.resx">
+    <EmbeddedResource Include="%28Unused GUI%29\VisProdukt.resx">
       <DependentUpon>VisProdukt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
