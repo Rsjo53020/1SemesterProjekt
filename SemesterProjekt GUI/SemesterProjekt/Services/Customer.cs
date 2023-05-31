@@ -9,6 +9,10 @@ namespace SemesterProjekt.Services
     public class Customer
     {
 
+        /// <summary>
+        /// return a list of customers from a SQL satement from Database.
+        /// </summary>
+
         public static List<Models.Customer> FindCostumer(string PhoneNr = "", string Mail = "")
         {
 
