@@ -48,6 +48,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cskafte_dk_db_skafteDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cskafte_dk_db_skafteDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="CustomerTable.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -180,6 +185,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="cskafte_dk_db_skafteDataSet.xsc">
+      <DependentUpon>cskafte_dk_db_skafteDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="cskafte_dk_db_skafteDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cskafte_dk_db_skafteDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cskafte_dk_db_skafteDataSet.xss">
+      <DependentUpon>cskafte_dk_db_skafteDataSet.xsd</DependentUpon>
+    </None>
     <None Include="CustomerTable.xsc">
       <DependentUpon>CustomerTable.xsd</DependentUpon>
     </None>
