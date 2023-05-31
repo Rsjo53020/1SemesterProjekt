@@ -69,8 +69,8 @@ namespace SemesterProjekt
         /// <summary>
         /// Denne Metode loader de forskellige forms ind i panelFormsLoader, som er placeret i GUIMain.
         /// </summary>
-        private Form activeForm = null;
-        private void openFormsLoader(Form loadedForm)
+        public Form activeForm = null;
+        public void openFormsLoader(Form loadedForm)
         {
             if (activeForm != null)
                 activeForm.Close();

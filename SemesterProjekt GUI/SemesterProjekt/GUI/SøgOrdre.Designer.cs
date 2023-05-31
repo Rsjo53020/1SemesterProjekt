@@ -171,6 +171,7 @@
             this.BTN_UpdateOrder.TabIndex = 40;
             this.BTN_UpdateOrder.Text = "Opdater ";
             this.BTN_UpdateOrder.UseVisualStyleBackColor = false;
+            this.BTN_UpdateOrder.Click += new System.EventHandler(this.BTN_UpdateOrder_Click);
             // 
             // LL_Forklaring
             // 
