@@ -48,7 +48,7 @@ namespace SemesterProjekt.Services
             Database.Database.SqlDeleteProduct(product);
         }
 
-        public static void GetStockStatus(List<Models.Frame> stockList)
+        public static void GetStockStatus(List<Models.Product> stockList)
         {
             // Sort orders by date
             stockList = stockList.OrderBy(Frame => Frame.EAN).ToList();

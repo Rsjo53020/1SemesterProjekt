@@ -12,7 +12,7 @@ namespace SemesterProjekt.GUI
 {
     public partial class VisLager : Form
     {
-        List<Models.Frame> stockList;
+        List<Models.Product> stockList;
         public VisLager()
         {
             InitializeComponent();
