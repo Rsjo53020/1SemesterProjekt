@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace SemesterProjekt.GUI
 {
@@ -32,8 +33,14 @@ namespace SemesterProjekt.GUI
         /// </summary>
         private void BTN_Kunde_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("C:\\Users\\Alexa\\Desktop\\1semesterProjekt\\SemesterProjekt GUI\\AICustomer\\bin\\Debug\\AICustomer.exe");
-            this.Hide();
+            ProcessStartInfo psi = new ProcessStartInfo
+            {
+                FileName = "C:\\Users\\ronni\\Desktop\\Datamatik\\Semester Projekt\\1semesterProjekt\\SemesterProjekt GUI\\AICustomer\\Program.exe",
+                UseShellExecute = false
+            };
+
+            Process process = Process.Start(psi);
+            process.WaitForExit();
         }
     }
 }
