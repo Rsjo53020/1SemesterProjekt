@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,7 +39,18 @@ namespace SemesterProjekt.GUI
 
             Services.Produkt.CreateProduct( product );
 
-
+               catch (IOException ex)
+            {
+                Console.WriteLine($"Der opstod en fejl under filhåndteringen: {ex.Message}");
+            }
+            catch (FormatException ex)
+            {
+                Console.WriteLine($"Formatfejl: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"En fejl opstod: {ex.Message}");
+            }
 
 
         }
