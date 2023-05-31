@@ -56,7 +56,13 @@ namespace SemesterProjekt.GUI
             }
             else if (TB_SearchEMailCustomer.Text != "")
             {
-                searchedEMailAdress = TB_SearchEMailCustomer.Text;
+                if (TB_SearchEMailCustomer.Text.Contains("@"))
+                {
+                    searchedEMailAdress = TB_SearchEMailCustomer.Text;
+                }
+                else
+                    MessageBox.Show("Email skal indeholde '@'");
+
 
             }
 
