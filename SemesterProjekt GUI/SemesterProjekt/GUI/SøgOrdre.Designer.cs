@@ -75,9 +75,9 @@
             this.LB_FindOrder.Location = new System.Drawing.Point(263, 23);
             this.LB_FindOrder.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LB_FindOrder.Name = "LB_FindOrder";
-            this.LB_FindOrder.Size = new System.Drawing.Size(119, 25);
+            this.LB_FindOrder.Size = new System.Drawing.Size(148, 25);
             this.LB_FindOrder.TabIndex = 16;
-            this.LB_FindOrder.Text = "Søg Ordre";
+            this.LB_FindOrder.Text = "SØG ORDRE";
             // 
             // DTP_EndDate
             // 

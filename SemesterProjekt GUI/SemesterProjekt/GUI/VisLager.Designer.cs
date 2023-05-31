@@ -61,12 +61,12 @@
             this.LB_ShowStock.AutoSize = true;
             this.LB_ShowStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.LB_ShowStock.ForeColor = System.Drawing.Color.Gainsboro;
-            this.LB_ShowStock.Location = new System.Drawing.Point(236, 24);
+            this.LB_ShowStock.Location = new System.Drawing.Point(168, 19);
             this.LB_ShowStock.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LB_ShowStock.Name = "LB_ShowStock";
-            this.LB_ShowStock.Size = new System.Drawing.Size(112, 25);
+            this.LB_ShowStock.Size = new System.Drawing.Size(242, 25);
             this.LB_ShowStock.TabIndex = 16;
-            this.LB_ShowStock.Text = "Vis Lager";
+            this.LB_ShowStock.Text = "LAGER BEHOLDNING";
             // 
             // dataGridView1
             // 

@@ -97,7 +97,7 @@
             this.Btn_ViewStock.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.Btn_ViewStock.Size = new System.Drawing.Size(267, 40);
             this.Btn_ViewStock.TabIndex = 0;
-            this.Btn_ViewStock.Text = "Vis Lager";
+            this.Btn_ViewStock.Text = "Lager Beholdning";
             this.Btn_ViewStock.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Btn_ViewStock.UseVisualStyleBackColor = false;
             this.Btn_ViewStock.Click += new System.EventHandler(this.Btn_ViewStock_Click);
