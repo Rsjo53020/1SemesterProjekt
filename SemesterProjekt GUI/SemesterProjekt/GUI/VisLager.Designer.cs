@@ -117,12 +117,13 @@
             this.Color,
             this.UsedFor});
             this.dataGridView1.DataSource = this.productBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 69);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 65);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(540, 457);
+            this.dataGridView1.Size = new System.Drawing.Size(540, 460);
             this.dataGridView1.TabIndex = 32;
             // 
             // productBindingSource1
