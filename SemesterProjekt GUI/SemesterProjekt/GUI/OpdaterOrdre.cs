@@ -21,7 +21,7 @@ namespace SemesterProjekt.GUI
         private void LL_Forklaring_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             // Path to file
-            string filePath = @"C:\SemesterProjekt GUI/Opdater Ordre.pdf";
+            string filePath = @"C:\SemesterProjekt GUI/Opdater Ordre.pdf.PDF";
 
             // Open file with with standard program
             Process.Start(filePath);
