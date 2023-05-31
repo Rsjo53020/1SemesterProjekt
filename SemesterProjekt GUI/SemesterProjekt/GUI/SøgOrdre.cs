@@ -33,5 +33,14 @@ namespace SemesterProjekt.GUI
             this.ordersTableAdapter.Fill(this.ordersTable.Orders);
 
         }
+
+        private void BTN_SearchOrder_Click(object sender, EventArgs e)
+        {
+            List<Models.Order> orders = Services.Orders.FindOrder(DTP_StartDate.Value, DTP_EndDate.Value);
+            DGV_ShowOrder.DataSource = orders;
+
+
+
+        }
     }
 }

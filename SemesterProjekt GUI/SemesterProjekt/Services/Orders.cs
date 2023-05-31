@@ -13,7 +13,7 @@ namespace SemesterProjekt.Services
         public static List<Models.Order> FindOrder(DateTime StartDate, DateTime EndDate)
         {
             List<Models.Order> orderList = Database.Database.SqlGetOrder(StartDate, EndDate);
-
+            
             return orderList;
 
         }
