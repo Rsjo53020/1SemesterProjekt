@@ -45,8 +45,17 @@ namespace SemesterProjekt.GUI
         /// </summary>
         private void BTN_SearchProdukt_Click(object sender, EventArgs e)
         {
-            var DataSource = Database.Database.SqlGetProduct(TB_SearchNameProduct.Text, TB_SearchKategory.Text);
-            DGV_Product.DataSource = DataSource;
+            try
+            {
+                var DataSource = Database.Database.SqlGetProduct(TB_SearchNameProduct.Text, TB_SearchKategory.Text);
+                DGV_Product.DataSource = DataSource;
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Fejl i indtastning");
+            }
+
         }
 
         private void OpdaterProdukt_Load(object sender, EventArgs e)

@@ -35,8 +35,17 @@ namespace SemesterProjekt.GUI
         /// </summary>
         private void BTN_SearchCustomer_Click(object sender, EventArgs e)
         {
-            var DataSource = Database.Database.SqlGetCustomer(TB_SearchTlfCustomer.Text, TB_SearchEMailCustomer.Text);
-            DGV_Customer.DataSource = DataSource;
+            try
+            {
+                var DataSource = Database.Database.SqlGetCustomer(TB_SearchTlfCustomer.Text, TB_SearchEMailCustomer.Text);
+                DGV_Customer.DataSource = DataSource;
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Fejl i indtastning");
+            }
+
         }
 
         /// <summary>
