@@ -13,6 +13,7 @@ using System.Drawing;
 using System.Xml.Linq;
 using System.Windows.Forms;
 using System.Runtime.InteropServices.ComTypes;
+using SemesterProjekt.Services;
 
 namespace SemesterProjekt.Database
 {
@@ -430,10 +431,11 @@ namespace SemesterProjekt.Database
 
             ConnectionToDatabase(sSQL);
         }
-        public static void SqlGetAllProductAI()
+        public static  SqlGetAllProductAI(List<string> AICustomer)
         {
-            List<Order> orders = new List<Order>;
-                return orders.Where(order => order.Date >= startDate && order.Date <= endDate).OrderBy(order => order.Date).ToList();
+           var resultat =  AICustomer.Where(color = AICustomer[3] && lenght >= string.lengtt <= lenght.).OrderBy(order => order.Date).ToList();
+
+            return resultat;
         }
     }
 
