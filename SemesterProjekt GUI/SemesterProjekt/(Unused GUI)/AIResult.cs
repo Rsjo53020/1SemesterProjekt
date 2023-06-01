@@ -16,5 +16,12 @@ namespace SemesterProjekt._Unused_GUI_
         {
             InitializeComponent();
         }
+
+        private void AIResult_Load(object sender, EventArgs e)
+        {
+            Services.IntelligentRådgivning intelligentRådgivning = new Services.IntelligentRådgivning();
+            List<Models.Product> products = intelligentRådgivning.ReturnProducts();
+            dataGridView1.DataSource = products;
+        }
     }
 }
