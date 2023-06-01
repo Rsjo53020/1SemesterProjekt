@@ -84,20 +84,21 @@ namespace SemesterProjekt.GUI
         /// </summary>
         private void BTN_UpdateProduct_Click_1(object sender, EventArgs e)
         {
+
             DialogResult result = MessageBox.Show("Er du sikker på at du gerne vil opdatere dette produkt?", "ALERT!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result == DialogResult.Yes)
             {
 
-                Product.SalesPrice = Convert.ToDecimal(TB_UpdatedSalesPrice.Text).
+                Product.SalesPrice = TrimStringAfterDot(TB_UpdatedSalesPrice.Text);
                 Product.NameProduct = TB_UpdatedNameProduct.Text;
                 Product.Description = TB_UpdatedDiscription.Text;
                 Product.Kategory = TB_UpdatedKategory.Text;
-                Product.PurchasePrice = Convert.ToDecimal(TB_PurchasePrice.Text.Substring(0, TB_PurchasePrice.Text.Length - 2));
+                Product.PurchasePrice = TrimStringAfterDot(TB_PurchasePrice.Text);
                 Product.VATSup = int.Parse(TB_UpdatedVATSup.Text);
                 Product.Gender = TB_UpdatedGender.Text;
                 Product.Age = int.Parse(TB_UpdatedAge.Text);
-                Product.Length = Convert.ToDecimal(TB_UpdatedLenght.Text.Substring(0, TB_UpdatedLenght.Text.Length - 2));
-                Product.Width = Convert.ToDecimal(TB_UpdatedWidth.Text.Substring(0, TB_UpdatedWidth.Text.Length - 2));
+                Product.Length = TrimStringAfterDot(TB_UpdatedLenght.Text);
+                Product.Width = TrimStringAfterDot(TB_UpdatedWidth.Text);
                 Product.Kind = TB_UpdatedKind.Text;
                 Product.Style = TB_UpdatedStyle.Text;
                 Product.Color = TB_UpdatedColor.Text;
@@ -114,30 +115,14 @@ namespace SemesterProjekt.GUI
         private void DGV_Product_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+
         }
-        public static string TrimStringAfterDot(string str)
+
+        public static decimal TrimStringAfterDot(string str)
         {
-            int dotIndex = str.IndexOf('.');
-
-            if (dotIndex == -1)
-            {
-                // Punktum findes ikke i strengen
-                Console.WriteLine("Punktum findes ikke i strengen.");
-                return str;
-            }
-
-            string charsAfterDot = str.Substring(dotIndex + 1);
-
-            if (charsAfterDot.Length > 2)
-            {
-                // Der er mere end to karakterer efter punktum
-                Console.WriteLine("Der er mere end to karakterer efter punktum.");
-                // Fjern de overflødige karakterer
-                charsAfterDot = charsAfterDot.Substring(0, 2);
-            }
-
-            return str.Substring(0, dotIndex + 1) + charsAfterDot;
+            var ConvertStrToDecimal = Convert.ToDecimal(str);
+            var Roundfunction = Math.Round(ConvertStrToDecimal, 2);
+            return Roundfunction;
         }
-
     }
 }
