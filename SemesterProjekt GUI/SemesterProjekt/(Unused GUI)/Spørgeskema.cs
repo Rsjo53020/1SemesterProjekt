@@ -20,6 +20,17 @@ namespace SemesterProjekt.GUI
 
         private void BTN_SearchProdukt_Click(object sender, EventArgs e)
         {
+            string Gender = CB_Gender.Text;
+            string Age = CB_Age.Text;
+            string Length = CB_Length.Text;
+            string Width = CB_Width.Text;
+            string Kind = CB_Kind.Text;
+            string UsedFor = CB_UsedFor.Text;
+            string Style = CB_Style.Text;
+            string Color = CB_Color.Text;
+
+            Services.IntelligentRådgivning intelligentRådgivning = new Services.IntelligentRådgivning();
+            intelligentRådgivning.FilterSearchResult(Gender, Age, Length, Width, Kind, UsedFor, Style, Color);
 
             AIResult aIResult = new AIResult();
             aIResult.Show();
