@@ -118,5 +118,10 @@ namespace SemesterProjekt.GUI
             }
                 
         }
+
+        private void LL_UpdateProductForklaring_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }
