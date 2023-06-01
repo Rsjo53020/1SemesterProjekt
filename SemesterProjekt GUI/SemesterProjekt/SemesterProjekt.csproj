@@ -48,10 +48,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="%28Unused GUI%29\AIResult.cs">
+    <Compile Include="GUI\AIResult.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="%28Unused GUI%29\AIResult.Designer.cs">
+    <Compile Include="GUI\AIResult.Designer.cs">
       <DependentUpon>AIResult.cs</DependentUpon>
     </Compile>
     <Compile Include="cskafte_dk_db_skafteDataSet.Designer.cs">
@@ -128,10 +128,10 @@
     <Compile Include="%28Unused GUI%29\SletProdukt.Designer.cs">
       <DependentUpon>SletProdukt.cs</DependentUpon>
     </Compile>
-    <Compile Include="%28Unused GUI%29\Spørgeskema.cs">
+    <Compile Include="GUI\Spørgeskema.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="%28Unused GUI%29\Spørgeskema.Designer.cs">
+    <Compile Include="GUI\Spørgeskema.Designer.cs">
       <DependentUpon>Spørgeskema.cs</DependentUpon>
     </Compile>
     <Compile Include="%28Unused GUI%29\SøgKunde.cs">
@@ -290,7 +290,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="%28Unused GUI%29\AIResult.resx">
+    <EmbeddedResource Include="GUI\AIResult.resx">
       <DependentUpon>AIResult.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\BGFStartside.resx">
@@ -320,7 +320,7 @@
     <EmbeddedResource Include="%28Unused GUI%29\SletProdukt.resx">
       <DependentUpon>SletProdukt.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="%28Unused GUI%29\Spørgeskema.resx">
+    <EmbeddedResource Include="GUI\Spørgeskema.resx">
       <DependentUpon>Spørgeskema.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="%28Unused GUI%29\SøgKunde.resx">
