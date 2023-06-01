@@ -29,11 +29,14 @@ namespace SemesterProjekt.GUI
             string Style = CB_Style.Text;
             string Color = CB_Color.Text;
 
-            Services.IntelligentRådgivning intelligentRådgivning = new Services.IntelligentRådgivning();
-            intelligentRådgivning.FilterSearchResult(Gender, Age, Length, Width, Kind, UsedFor, Style, Color);
+          
+            List<Models.Product> products = Services.IntelligentRådgivning.FilterSearchResult(Gender, Age, Length, Width, Kind, UsedFor, Style, Color);
 
             AIResult aIResult = new AIResult();
+
             aIResult.Show();
+            aIResult.SetData(products);
+
             this.Hide();
         }
     }

@@ -23,5 +23,9 @@ namespace SemesterProjekt._Unused_GUI_
             List<Models.Product> products = intelligentRådgivning.ReturnProducts();
             dataGridView1.DataSource = products;
         }
+        public void SetData (List<Models.Product> products) 
+        {
+            dataGridView1.DataSource = products;
+        }
     }
 }
