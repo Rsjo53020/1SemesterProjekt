@@ -87,7 +87,8 @@ namespace SemesterProjekt.GUI
             DialogResult result = MessageBox.Show("Er du sikker på at du gerne vil opdatere dette produkt?", "ALERT!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result == DialogResult.Yes)
             {
-                Product.SalesPrice = Convert.ToDecimal(TB_UpdatedSalesPrice.Text.Substring(0,TB_UpdatedSalesPrice.Text.Length - 2));
+
+                Product.SalesPrice = Convert.ToDecimal(TB_UpdatedSalesPrice.Text).
                 Product.NameProduct = TB_UpdatedNameProduct.Text;
                 Product.Description = TB_UpdatedDiscription.Text;
                 Product.Kategory = TB_UpdatedKategory.Text;
@@ -114,5 +115,7 @@ namespace SemesterProjekt.GUI
         {
 
         }
+
+
     }
 }
