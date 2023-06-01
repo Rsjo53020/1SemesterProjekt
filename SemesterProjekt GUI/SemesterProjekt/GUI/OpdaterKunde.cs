@@ -54,7 +54,11 @@ namespace SemesterProjekt.GUI
         /// </summary>
         private void DGV_Customer_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            Services.Customer.FindCustomerFromCustomerID(int.Parse(DGV_Customer.Rows[e.RowIndex].Cells["CustomerID"].Value));
+            DataGridViewRow selectedRow = DGV_Customer.CurrentRow;
+
+            // Få værdien af en bestemt celle i rækken baseret på kolonnens index
+            int customerid = Convert.ToInt32(selectedRow.Cells[0].Value);
+            //Services.Customer.FindCustomerFromCustomerID(int.Parse(DGV_Customer.Rows[e.RowIndex].Cells["CustomerID"].Value));
 
             //DGV_Customer.CurrentRow.Selected = true;
             //DGV_Customer.ReadOnly = true;
