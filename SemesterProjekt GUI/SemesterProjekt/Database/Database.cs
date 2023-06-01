@@ -430,6 +430,4 @@ namespace SemesterProjekt.Database
             ConnectionToDatabase(sSQL);
         }
     }
-
-
 }
