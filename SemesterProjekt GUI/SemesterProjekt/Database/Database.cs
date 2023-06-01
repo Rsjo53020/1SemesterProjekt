@@ -410,7 +410,7 @@ namespace SemesterProjekt.Database
         public static void SqlDeleteProduct(Models.Frame product)
         {
 
-            string sSQL = $"DELETE * FROM Product WHERE EAN = {product.EAN};";
+            string sSQL = $"DELETE FROM Product WHERE EAN = {product.EAN};";
 
             ConnectionToDatabase(sSQL);
 
@@ -423,13 +423,13 @@ namespace SemesterProjekt.Database
         /// <returns></returns>
         public static void SqlUpdateProduct(Models.Frame product)
         {
-            string sSQL = sSQL = $"UPDATE Product SET SalesPrice = ({product.SalesPrice}," +
-                $" NameProduct = {product.NameProduct}, Discription = {product.Description}," +
-                $" Kategory = {product.Kategory}, PurchasePrice = {product.PurchasePrice}," +
-                $" VATSup = {product.VATSup}, EAN = {product.EAN}, Gender = {product.Gender}," +
-                $" Gender = {product.Age}, Length = {product.Length}, Width = {product.Width}," +
-                $" Kind = {product.Kind}, UstedFor = {product.UsedFor}, Style = {product.Style}," +
-                $" Color = {product.Color}, WHERE EAN = {product.EAN}";
+            string sSQL = $"UPDATE Product SET SalesPrice = {product.SalesPrice}," +
+                $" NameProduct = '{product.NameProduct}', Discription = '{product.Description}'," +
+                $" Kategory = '{product.Kategory}', PurchasePrice = {product.PurchasePrice}," +
+                $" VATSup = {product.VATSup}, EAN = {product.EAN}, Gender = '{product.Gender}'," +
+                $" Age = {product.Age}, Length = {product.Length}, Width = {product.Width}," +
+                $" Kind = '{product.Kind}', UsedFor = '{product.UsedFor}', Style = '{product.Style}'," +
+                $" Color = '{product.Color}' WHERE EAN = {product.EAN}";
 
             ConnectionToDatabase(sSQL);
 

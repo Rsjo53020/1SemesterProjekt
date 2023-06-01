@@ -25,7 +25,7 @@ namespace SemesterProjekt.GUI
         private void DGV_Product_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow selectedRow = DGV_Product.CurrentRow;
-            int EAN = Convert.ToInt32(selectedRow.Cells[7].Value);
+            int EAN = Convert.ToInt32(selectedRow.Cells[5].Value);
             Product = Services.Produkt.GetProductFromEAN(EAN);
 
             TB_UpdatedSalesPrice.Text = Product.SalesPrice.ToString();
@@ -37,9 +37,11 @@ namespace SemesterProjekt.GUI
             TB_UpdatedAge.Text = Product.Age.ToString();
             TB_UpdatedLenght.Text = Product.Length.ToString();
             TB_UpdatedWidth.Text = Product.Width.ToString();
-            TB_UpdatedKind.Text = Product.Kind.ToString();
-            TB_UpdatedColor.Text = Product.Color.ToString();
-            TB_UpdatedUsedFor.Text = Product.UsedFor.ToString();
+            TB_UpdatedColor.Text = Product.Color;
+            TB_UpdatedUsedFor.Text = Product.UsedFor;
+            TB_UpdatedGender.Text = Product.Gender;
+            TB_UpdatedKind.Text = Product.Gender;
+            TB_UpdatedStyle.Text = Product.Style;
 
         }
 
@@ -66,7 +68,7 @@ namespace SemesterProjekt.GUI
         /// </summary>
         private void BTN_SletProdukt_Click_1(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Er du sikker på at du gerne vil slette denne kunde?", "ALERT!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            DialogResult result = MessageBox.Show("Er du sikker på at du gerne vil slette dette produkt?", "ALERT!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result == DialogResult.Yes)
             {
                 Services.Produkt.DeleteProduct(Product);
@@ -85,20 +87,21 @@ namespace SemesterProjekt.GUI
             DialogResult result = MessageBox.Show("Er du sikker på at du gerne vil opdatere dette produkt?", "ALERT!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result == DialogResult.Yes)
             {
-                Product.SalesPrice = Convert.ToDecimal(TB_UpdatedSalesPrice.Text);
+                Product.SalesPrice = Convert.ToDecimal(TB_UpdatedSalesPrice.Text.Substring(0,TB_UpdatedSalesPrice.Text.Length - 2));
                 Product.NameProduct = TB_UpdatedNameProduct.Text;
                 Product.Description = TB_UpdatedDiscription.Text;
                 Product.Kategory = TB_UpdatedKategory.Text;
-                Product.PurchasePrice = Convert.ToDecimal(TB_PurchasePrice.Text);
+                Product.PurchasePrice = Convert.ToDecimal(TB_PurchasePrice.Text.Substring(0, TB_PurchasePrice.Text.Length - 2));
                 Product.VATSup = int.Parse(TB_UpdatedVATSup.Text);
                 Product.Gender = TB_UpdatedGender.Text;
                 Product.Age = int.Parse(TB_UpdatedAge.Text);
-                Product.Length = Convert.ToDecimal(TB_UpdatedLenght.Text);
-                Product.Width = Convert.ToDecimal(TB_UpdatedWidth.Text);
+                Product.Length = Convert.ToDecimal(TB_UpdatedLenght.Text.Substring(0, TB_UpdatedLenght.Text.Length - 2));
+                Product.Width = Convert.ToDecimal(TB_UpdatedWidth.Text.Substring(0, TB_UpdatedWidth.Text.Length - 2));
                 Product.Kind = TB_UpdatedKind.Text;
                 Product.Style = TB_UpdatedStyle.Text;
                 Product.Color = TB_UpdatedColor.Text;
                 Product.UsedFor = TB_UpdatedUsedFor.Text;
+                Services.Produkt.UpdateProduct(Product);
 
             }
             else if (result == DialogResult.No)
