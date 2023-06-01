@@ -88,7 +88,7 @@ namespace SemesterProjekt.Database
 
             while (reader.Read())
             {
-                Customer customer = new Customer(
+                Models.Customer customer = new Models.Customer(
                     (int)reader["CustomerID"],
                     reader["FirstName"].ToString(),
                     reader["SurName"].ToString(),
@@ -125,7 +125,7 @@ namespace SemesterProjekt.Database
             Models.Customer customer = null;
             while (reader.Read())
             {
-                customer = new Customer(
+                customer = new Models.Customer(
                    (int)reader["CustomerID"],
                    reader["FirstName"].ToString(),
                    reader["SurName"].ToString(),
@@ -431,7 +431,7 @@ namespace SemesterProjekt.Database
 
             ConnectionToDatabase(sSQL);
         }
-        public static  SqlGetAllProductAI(List<string> AICustomer)
+        public static List<Models.Product> SqlGetAllProductAI(List<string> AICustomer)
         {
            var resultat =  AICustomer.Where(color = AICustomer[3] && lenght >= string.lengtt <= lenght.).OrderBy(order => order.Date).ToList();
 
