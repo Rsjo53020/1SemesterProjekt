@@ -419,8 +419,6 @@ namespace SemesterProjekt.Database
         /// <summary>
         /// CR(U)D on Product: Update a Product
         /// </summary>
-        /// <param name="product"></param>
-        /// <returns></returns>
         public static void SqlUpdateProduct(Models.Frame product)
         {
             string sSQL = $"UPDATE Product SET SalesPrice = {product.SalesPrice}," +
