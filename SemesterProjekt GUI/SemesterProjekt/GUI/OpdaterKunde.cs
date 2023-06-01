@@ -121,8 +121,6 @@ namespace SemesterProjekt.GUI
 
         private void LL_UpdateProductForklaring_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            var filepath = ("OpdaterKunde.pdf");
-            Process.Start(filepath);
         }
     }
 }

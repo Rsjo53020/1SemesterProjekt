@@ -1,6 +1,4 @@
-﻿using SemesterProjekt._Unused_GUI_;
-using SemesterProjekt.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,20 +8,11 @@ namespace SemesterProjekt.Services
 {
     public class IntelligentRådgivning
     {
-        List<string> intelligentRådgivning = new List<string>();
+        private string SearchPhrase { get; set; }
 
-        public void FilterSearchResult(List<string> AiResult)
+        public static void FilterSearchresult()
         {
-            AIResult aIResult = new AIResult();
-            aIResult.Show();
-            
-            intelligentRådgivning = AiResult;
         }
-        public static List<Models.Frame> GetMatchFrames() 
-        { 
-
-        }
-
     }
 
 

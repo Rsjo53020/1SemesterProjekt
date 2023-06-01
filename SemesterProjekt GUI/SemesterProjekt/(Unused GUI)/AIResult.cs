@@ -16,10 +16,5 @@ namespace SemesterProjekt._Unused_GUI_
         {
             InitializeComponent();
         }
-
-        private void AIResult_Load(object sender, EventArgs e)
-        {
-            Services.IntelligentRådgivning.
-        }
     }
 }

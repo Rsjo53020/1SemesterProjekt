@@ -438,6 +438,4 @@ namespace SemesterProjekt.Database
             return resultat;
         }
     }
-
-
 }
