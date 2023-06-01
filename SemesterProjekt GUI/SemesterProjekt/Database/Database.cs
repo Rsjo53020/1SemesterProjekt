@@ -12,6 +12,7 @@ using SemesterProjekt.Models;
 using System.Drawing;
 using System.Xml.Linq;
 using System.Windows.Forms;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace SemesterProjekt.Database
 {
@@ -428,6 +429,11 @@ namespace SemesterProjekt.Database
                 $" Color = '{product.Color}' WHERE EAN = {product.EAN}";
 
             ConnectionToDatabase(sSQL);
+        }
+        public static void SqlGetAllProductAI()
+        {
+            List<Order> orders = new List<Order>;
+                return orders.Where(order => order.Date >= startDate && order.Date <= endDate).OrderBy(order => order.Date).ToList();
         }
     }
 
