@@ -86,6 +86,11 @@ namespace SemesterProjekt.Services
 
             Console.WriteLine($"Udskriften er gemt i filen: {filePath}");
         }
+        public static Models.Frame GetProductFromEAN (int ean)
+        {
+            Models.Frame product = Database.Database.SqlGetProductFromEAN(ean);
+            return product;
+        }
 
 
 
