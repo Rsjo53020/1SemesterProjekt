@@ -20,6 +20,7 @@ namespace SemesterProjekt.Database
     public class Database
 
     {
+        //Connectionstring for database
         public static string strconn = "Data Source=mssql4.unoeuro.com;Initial Catalog=cskafte_dk_db_skafte;User ID=cskafte_dk;Password=3tfep5Gc4wgAzxDH2rEy";
 
         /// <summary>
@@ -35,7 +36,11 @@ namespace SemesterProjekt.Database
             OpenAndCloseTheConnectionToDatabase(conn, command);
 
         }
-
+        /// <summary>
+        /// Open then execute then close 
+        /// </summary>
+        /// <param name="conn"></param>
+        /// <param name="command"></param>
         public static void OpenAndCloseTheConnectionToDatabase(SqlConnection conn, SqlCommand command)
         {
             conn.Open(); //Open connection to Database
@@ -47,21 +52,21 @@ namespace SemesterProjekt.Database
         /// <summary>
         /// (C)RUD on Customer: FirstName (string), SurName(string), PhoneNr(string), EMailAdress(string), Adress(string),
         /// City(string), PostalCode(string),
-        /// Discount(Desimal), Birthday(DateTime(YYYY-MM-DD)), Age(int), VisionTest(string)
+        /// Discount(Desimal), Birthday(DateTime(YYYY-MM-DD)), Age(int), VisionTest(string), OrderID(int = 1)
         /// </summary>
         public static void SqlCreateCustumer(Models.Customer customer)
         {
             string sSQL = $"INSERT INTO Customer Values ('{customer.FirstName}', '{customer.SurName}', " +
                 $"'{customer.PhoneNr}', '{customer.EMailAdress}', '{customer.Adress}', '{customer.City}', " +
                 $"'{customer.PostalCode}', {customer.Discount}, '{customer.Birthday.ToString("yyyy-MM-dd")}', {customer.Age}, " +
-                $"'{customer.VisionTest}', null);";
+                $"'{customer.VisionTest}', 1);";
 
             ConnectionToDatabase(sSQL);
 
         }
 
         /// <summary>
-        /// C(R)UD on Customer: takes two parameters to find a customer
+        /// C(R)UD on Customer: takes two parameters to find a customer and uses only one to return a list of customers
         /// </summary>
         public static List<Models.Customer> SqlGetCustomer(string phoneNr = "", string mail = "")
         {
@@ -86,6 +91,7 @@ namespace SemesterProjekt.Database
             SqlDataReader reader = command.ExecuteReader();
             List<Models.Customer> customerlist = new List<Models.Customer>();
 
+            //set values for customer and add to list
             while (reader.Read())
             {
                 Models.Customer customer = new Models.Customer(
@@ -110,7 +116,11 @@ namespace SemesterProjekt.Database
 
             return customerlist;
         }
-
+        /// <summary>
+        /// Finds specific customer on CustomerID
+        /// </summary>
+        /// <param name="customerID"></param>
+        /// <returns></returns>
         public static Models.Customer SqlFindCustomerFromCustomerID(int customerID)
         {
             string sSQL = $"SELECT * FROM Customer WHERE CustomerID = {customerID};";
@@ -123,6 +133,7 @@ namespace SemesterProjekt.Database
             SqlDataReader reader = command.ExecuteReader();
 
             Models.Customer customer = null;
+            //sets values of customer
             while (reader.Read())
             {
                 customer = new Models.Customer(
@@ -162,7 +173,7 @@ namespace SemesterProjekt.Database
 
         }
         /// <summary>
-        ///  CR(U)D on Customer: uppdate a customer  
+        ///  CR(U)D on Customer: update a customer based on old customerID and new values
         /// </summary>
         /// <param name="customer"></param>
         public static void SqlUpdateCustomer(Models.Customer customer)
@@ -186,7 +197,7 @@ namespace SemesterProjekt.Database
 
         }
         /// <summary>
-        /// C(R)UD on Order: Find a order by date
+        /// C(R)UD on Order: Find orders by two dates and return list of orders 
         /// </summary>
         /// <param name="dateStart"></param>
         /// <param name="dateEnd"></param>
@@ -206,7 +217,7 @@ namespace SemesterProjekt.Database
             conn.Open(); //Open connection to Database
             SqlDataReader reader = command.ExecuteReader();
 
-
+            //set order values 
             while (reader.Read())
             {
                 Order order = new Order(
@@ -248,7 +259,7 @@ namespace SemesterProjekt.Database
 
         }
         /// <summary>
-        /// (C)RUD on Product: Create a produckt 
+        /// (C)RUD on Product: Create a product only frame in this version productID will auto generate
         /// </summary>
         /// <param name="product"></param>
         public static void SqlCreateProduct(Models.Frame product)
@@ -264,7 +275,7 @@ namespace SemesterProjekt.Database
             ConnectionToDatabase(sSQL);
         }
         /// <summary>
-        /// C(R)UD on Product: takes two parameters to find a product
+        /// C(R)UD on Product: takes two parameters to find a product needs only one and returns a list of products
         /// </summary>
         public static List<Models.Product> SqlGetProduct(string getNameProdukt = "", string getKategory = "")
         {
@@ -288,6 +299,7 @@ namespace SemesterProjekt.Database
             SqlDataReader reader = command.ExecuteReader();
             List<Models.Product> ProductList = new List<Models.Product>();
 
+            // set frame values and add to list 
             while (reader.Read())
             {
                 Frame frame = new Frame(
@@ -318,6 +330,11 @@ namespace SemesterProjekt.Database
             return ProductList;
 
         }
+        /// <summary>
+        /// get specific product based on EAN and retun one product 
+        /// </summary>
+        /// <param name="EAN"></param>
+        /// <returns></returns>
         public static Models.Frame SqlGetProductFromEAN(int EAN)
         {
 
@@ -331,6 +348,7 @@ namespace SemesterProjekt.Database
             SqlDataReader reader = command.ExecuteReader();
 
             Models.Frame product = null;
+            //set frame values 
             while (reader.Read())
             {
                 product = new Frame(
@@ -363,6 +381,10 @@ namespace SemesterProjekt.Database
 
 
         }
+        /// <summary>
+        /// gets alle products from database and returns them in a list
+        /// </summary>
+        /// <returns></returns>
         public static List<Models.Product> SqlGetAllProductFromDatabase()
         {
             string sSQL = $"SELECT * FROM Product";
@@ -375,6 +397,7 @@ namespace SemesterProjekt.Database
             SqlDataReader reader = command.ExecuteReader();
             List<Models.Product> ProductList = new List<Models.Product>();
 
+            //set product values and add to list
             while (reader.Read())
             {
                 Frame frame = new Frame(
@@ -417,7 +440,7 @@ namespace SemesterProjekt.Database
         }
 
         /// <summary>
-        /// CR(U)D on Product: Update a Product
+        /// CR(U)D on Product: Update a Product with old EAN and new values
         /// </summary>
         public static void SqlUpdateProduct(Models.Frame product)
         {
@@ -431,6 +454,18 @@ namespace SemesterProjekt.Database
 
             ConnectionToDatabase(sSQL);
         }
+        /// <summary>
+        /// return all products with values equal to strings in a list
+        /// </summary>
+        /// <param name="Gender"></param>
+        /// <param name="Age"></param>
+        /// <param name="Length"></param>
+        /// <param name="Width"></param>
+        /// <param name="Kind"></param>
+        /// <param name="UsedFor"></param>
+        /// <param name="Style"></param>
+        /// <param name="Color"></param>
+        /// <returns></returns>
         public static List<Models.Product> SqlGetAllProductAI(string Gender, string Age, string Length, string Width, string Kind,
         string UsedFor, string Style, string Color)
         {
@@ -446,6 +481,7 @@ namespace SemesterProjekt.Database
             SqlDataReader reader = command.ExecuteReader();
             List<Models.Product> ProductList = new List<Models.Product>();
 
+            //set product values and add to list
             while (reader.Read())
             {
                 Frame frame = new Frame(
