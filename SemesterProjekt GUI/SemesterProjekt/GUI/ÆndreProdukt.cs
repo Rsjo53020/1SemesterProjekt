@@ -80,7 +80,7 @@ namespace SemesterProjekt.GUI
         }
 
         /// <summary>
-        /// Method update product from textbox values.
+        /// Method updates product from textbox values. and old EAN
         /// </summary>
         private void BTN_UpdateProduct_Click_1(object sender, EventArgs e)
         {
@@ -116,7 +116,11 @@ namespace SemesterProjekt.GUI
         {
 
         }
-
+        /// <summary>
+        /// removes everything in a string from two charactors after a period symbol
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
         public static decimal TrimStringAfterDot(string str)
         {
             var ReaplaceComma = str.Replace(',', '.');

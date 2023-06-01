@@ -36,7 +36,7 @@ namespace SemesterProjekt.GUI
             DateTime birthday = Convert.ToDateTime(TB_Birthday.Text);
             int age = Convert.ToInt32(Regex.Replace(TB_Age.Text, @"\D", ""));
             string visiontest = TB_VisionTest.Text;
-            
+            //add all values into a customer variable
             try
             {
                 Models.Customer customer = new Models.Customer(

@@ -17,12 +17,20 @@ namespace SemesterProjekt.GUI
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Creates txt file from all products in database
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BTN_CreateTXTFile_Click(object sender, EventArgs e)
         {
             Services.Produkt.GetStockStatus();
         }
-
+        /// <summary>
+        /// adds all products from database into datagridview
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void VisLager_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'cskafte_dk_db_skafteDataSet2.Product' table. You can move, or remove it, as needed.

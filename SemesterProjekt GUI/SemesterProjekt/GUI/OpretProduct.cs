@@ -18,7 +18,11 @@ namespace SemesterProjekt.GUI
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// create product based on values ind textbox'es and enter into database
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BTN_CreateProduct_Click(object sender, EventArgs e)
         {
             decimal salesprice = Convert.ToDecimal(Regex.Replace(TB_SalesPrice.Text, @"[^0-9,]", "")); 
@@ -35,7 +39,7 @@ namespace SemesterProjekt.GUI
             string usedfor = TB_UsedFor.Text;
             string style = TB_Style.Text;
             string color = TB_Color.Text;
-
+            // add all values to frame and add to database
 
             try
             {

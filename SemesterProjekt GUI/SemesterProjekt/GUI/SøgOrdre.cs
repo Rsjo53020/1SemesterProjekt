@@ -29,7 +29,11 @@ namespace SemesterProjekt.GUI
             string filePath = @"C:\SemesterProjekt GUI/Søg ordre.pdf";
             Process.Start(filePath);
         }
-
+        /// <summary>
+        /// find orders based on start and end date from database and display in datagridview
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BTN_SearchOrder_Click(object sender, EventArgs e)
         {
             orders = Services.Orders.FindOrder(DTP_StartDate.Value, DTP_EndDate.Value);

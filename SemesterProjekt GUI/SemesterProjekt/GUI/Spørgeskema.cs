@@ -17,7 +17,11 @@ namespace SemesterProjekt.GUI
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// find matching products based on parameters ind combobox'es
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BTN_SearchProdukt_Click(object sender, EventArgs e)
         {
             string Gender = CB_Gender.Text;
