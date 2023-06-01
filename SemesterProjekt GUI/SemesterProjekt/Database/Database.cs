@@ -316,7 +316,7 @@ namespace SemesterProjekt.Database
             return ProductList;
             
         }
-        public static List<Models.Product> GetAllProductFromDatabase(Models.Frame product)
+        public static List<Models.Product> SqlGetAllProductFromDatabase()
         {
             string sSQL = $"SELECT * FROM Product";
 

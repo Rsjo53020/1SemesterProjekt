@@ -11,6 +11,7 @@ namespace SemesterProjekt.Services
 {
     public class Produkt
     {
+        
         /// <summary>
         /// Method returns a List of products using a NameProduct and Kategory 
         /// Using SQL satement from Database
@@ -48,8 +49,11 @@ namespace SemesterProjekt.Services
             Database.Database.SqlDeleteProduct(product);
         }
 
-        public static void GetStockStatus(List<Models.Product> stockList)
+        public static void GetStockStatus()
         {
+            List<Models.Product> stockList = new List<Models.Product>();
+
+            stockList = Database.Database.SqlGetAllProductFromDatabase();
             // Sort orders by date
             stockList = stockList.OrderBy(Frame => Frame.EAN).ToList();
 
