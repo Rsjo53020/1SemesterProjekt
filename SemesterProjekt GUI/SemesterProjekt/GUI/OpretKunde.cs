@@ -21,7 +21,7 @@ namespace SemesterProjekt.GUI
         }
 
         /// <summary>
-        /// Convert textboxes to Models.Customer(constructor) and parse to service layer
+        /// Convert textboxes to Models.Customer(constructor) and parse to service layer to create a customer in database
         /// </summary>
         private void BTN_CreateCustomer_Click(object sender, EventArgs e)
         {

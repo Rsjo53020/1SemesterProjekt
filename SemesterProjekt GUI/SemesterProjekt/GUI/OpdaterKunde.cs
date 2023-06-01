@@ -74,12 +74,20 @@ namespace SemesterProjekt.GUI
             TB_CustomerVisionTest.Text = Customer.VisionTest.ToString();
 
         }
-
+        /// <summary>
+        /// no longer exists
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BTN_UpdateProduct_Click(object sender, EventArgs e)
         {
 
         }
-
+        /// <summary>
+        /// deletes highlighted customer from database
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BTN_DeleteCustomer_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Er du sikker på at du gerne vil slette denne kunde?", "ALERT!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
@@ -93,6 +101,11 @@ namespace SemesterProjekt.GUI
             }
             
         }
+        /// <summary>
+        /// updates highlighted customer with new values in database
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
 
         private void BTN_UpdateCustomer_Click(object sender, EventArgs e)
         {
