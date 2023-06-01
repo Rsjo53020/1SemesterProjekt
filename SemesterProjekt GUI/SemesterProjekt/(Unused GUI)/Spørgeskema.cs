@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SemesterProjekt._Unused_GUI_;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,14 @@ namespace SemesterProjekt.GUI
         public Spørgeskema()
         {
             InitializeComponent();
+        }
+
+        private void BTN_SearchProdukt_Click(object sender, EventArgs e)
+        {
+
+            AIResult aIResult = new AIResult();
+            aIResult.Show();
+            this.Hide();
         }
     }
 }
