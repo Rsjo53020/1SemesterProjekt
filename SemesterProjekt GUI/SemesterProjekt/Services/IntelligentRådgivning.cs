@@ -16,6 +16,12 @@ namespace SemesterProjekt.Services
              
             products = Database.Database.SqlGetAllProductAI(Gender, Age, Length, Width, Kind, UsedFor, Style, Color);
 
+
+        }
+        public List<Models.Product> ReturnProducts()
+        {
+
+            return products;
         }
     }
 
