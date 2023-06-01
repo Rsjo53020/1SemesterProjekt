@@ -19,6 +19,7 @@ namespace SemesterProjekt.GUI
         }
 
         List<Models.Customer> customers = new List<Models.Customer>();
+        Models.Customer Customer;
 
         /// <summary>
         /// Method Opens .pdf explanation of UI
@@ -37,8 +38,8 @@ namespace SemesterProjekt.GUI
         {
             try
             {
-                var DataSource = Database.Database.SqlGetCustomer(TB_SearchTlfCustomer.Text, TB_SearchEMailCustomer.Text);
-                DGV_Customer.DataSource = DataSource;
+                customers = Services.Customer.FindCostumer(TB_SearchTlfCustomer.Text, TB_SearchEMailCustomer.Text);
+                DGV_Customer.DataSource = customers;
             }
             catch (Exception)
             {
@@ -55,21 +56,29 @@ namespace SemesterProjekt.GUI
         {
             DGV_Customer.CurrentRow.Selected = true;
             DGV_Customer.ReadOnly = true;
-            TB_CustomerFirstName.Text = DGV_Customer.Rows[e.RowIndex].Cells["FirstName"].Value.ToString();
-            TB_CustomerPhoneNr.Text = DGV_Customer.Rows[e.RowIndex].Cells["PhoneNr"].Value.ToString();
-            TB_CustomerEMailAdress.Text = DGV_Customer.Rows[e.RowIndex].Cells["EMailAdress"].Value.ToString();
-            TB_CustomerAdress.Text = DGV_Customer.Rows[e.RowIndex].Cells["Adress"].Value.ToString();
-            TB_CustomerCity.Text = DGV_Customer.Rows[e.RowIndex].Cells["City"].Value.ToString();
-            TB_CustomerPostalCode.Text = DGV_Customer.Rows[e.RowIndex].Cells["PostalCode"].Value.ToString();
-            TB_CustomerDiscount.Text = DGV_Customer.Rows[e.RowIndex].Cells["Discount"].Value.ToString();
-            TB_CustomerBirthday.Text = DGV_Customer.Rows[e.RowIndex].Cells["Birthday"].Value.ToString();
-            TB_CustomerAge.Text = DGV_Customer.Rows[e.RowIndex].Cells["Age"].Value.ToString();
-            TB_CustomerVisionTest.Text = DGV_Customer.Rows[e.RowIndex].Cells["VisionTest"].Value.ToString();
+            Customer.FirstName = DGV_Customer.Rows[e.RowIndex].Cells["FirstName"].Value?.ToString();
+
+            Customer.SurName = DGV_Customer.Rows[e.RowIndex].Cells["PhoneNr"].Value.ToString();
+            Customer.EMailAdress = DGV_Customer.Rows[e.RowIndex].Cells["EMailAdress"].Value.ToString();
+            Customer.Adress = DGV_Customer.Rows[e.RowIndex].Cells["Adress"].Value.ToString();
+            Customer.City = DGV_Customer.Rows[e.RowIndex].Cells["City"].Value.ToString();
+            Customer.PostalCode = DGV_Customer.Rows[e.RowIndex].Cells["PostalCode"].Value.ToString();
+            Customer.Discount = Convert.ToDecimal(DGV_Customer.Rows[e.RowIndex].Cells["Discount"].Value);
+            Customer.Birthday = Convert.ToDateTime(DGV_Customer.Rows[e.RowIndex].Cells["Birthday"].Value);
+            Customer.Age = Convert.ToInt32(DGV_Customer.Rows[e.RowIndex].Cells["Age"].Value);
+            Customer.VisionTest = DGV_Customer.Rows[e.RowIndex].Cells["VisionTest"].Value.ToString();
+            Customer.CustomerID = Convert.ToInt32(DGV_Customer.Rows[e.RowIndex].Cells["CustomerID"].Value);
+            Customer.PhoneNr = DGV_Customer.Rows[e.RowIndex].Cells["Age"].Value.ToString();
         }
 
         private void BTN_UpdateProduct_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void BTN_DeleteCustomer_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }
