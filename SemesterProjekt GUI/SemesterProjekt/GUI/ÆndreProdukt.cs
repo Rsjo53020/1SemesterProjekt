@@ -119,7 +119,8 @@ namespace SemesterProjekt.GUI
 
         public static decimal TrimStringAfterDot(string str)
         {
-            var ConvertStrToDecimal = Convert.ToDecimal(str);
+            var ReaplaceComma = str.Replace(',', '.');
+            var ConvertStrToDecimal = Convert.ToDecimal(ReaplaceComma);
             var Roundfunction = Math.Round(ConvertStrToDecimal, 2);
             return Roundfunction;
         }
