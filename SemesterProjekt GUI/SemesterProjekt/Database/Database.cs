@@ -153,7 +153,7 @@ namespace SemesterProjekt.Database
         public static void SqlDeleteCustomer(Models.Customer customer)
         {
 
-            string sSQL = $"DELETE * FROM Customer WHERE CustomerID = '{customer.CustomerID}';";
+            string sSQL = $"DELETE FROM Customer WHERE CustomerID = {customer.CustomerID};";
 
             ConnectionToDatabase(sSQL);
 

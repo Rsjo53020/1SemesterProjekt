@@ -34,7 +34,7 @@ namespace SemesterProjekt.Services
         /// Method Deletes a Customer, containing a full Customer from Models. 
         /// using SQL Statement from Database
         /// </summary>
-        public void DeleteCustomer(Models.Customer customer)
+        public static void DeleteCustomer(Models.Customer customer)
         {
             Database.Database.SqlDeleteCustomer(customer);
         }
@@ -43,7 +43,7 @@ namespace SemesterProjekt.Services
         /// Method Updates a Customer, containing a full Customer from Models. 
         /// using SQL Statement from Database
         /// </summary>
-        public void UpdateCustomer(Models.Customer customer)
+        public static void UpdateCustomer(Models.Customer customer)
         {
             Database.Database.SqlUpdateCustomer(customer);
         }

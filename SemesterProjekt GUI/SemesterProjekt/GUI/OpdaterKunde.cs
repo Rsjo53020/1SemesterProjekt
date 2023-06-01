@@ -58,22 +58,22 @@ namespace SemesterProjekt.GUI
 
             // Få værdien af en bestemt celle i rækken baseret på kolonnens index
             int customerid = Convert.ToInt32(selectedRow.Cells[0].Value);
+            Customer = Services.Customer.FindCustomerFromCustomerID(customerid);
             //Services.Customer.FindCustomerFromCustomerID(int.Parse(DGV_Customer.Rows[e.RowIndex].Cells["CustomerID"].Value));
 
-            //DGV_Customer.CurrentRow.Selected = true;
-            //DGV_Customer.ReadOnly = true;
-            //Customer.FirstName = DGV_Customer.Rows[e.RowIndex].Cells["FirstName"].Value?.ToString();
-            //Customer.SurName = DGV_Customer.Rows[e.RowIndex].Cells["PhoneNr"].Value.ToString();
-            //Customer.EMailAdress = DGV_Customer.Rows[e.RowIndex].Cells["EMailAdress"].Value.ToString();
-            //Customer.Adress = DGV_Customer.Rows[e.RowIndex].Cells["Adress"].Value.ToString();
-            //Customer.City = DGV_Customer.Rows[e.RowIndex].Cells["City"].Value.ToString();
-            //Customer.PostalCode = DGV_Customer.Rows[e.RowIndex].Cells["PostalCode"].Value.ToString();
-            //Customer.Discount = Convert.ToDecimal(DGV_Customer.Rows[e.RowIndex].Cells["Discount"].Value);
-            //Customer.Birthday = Convert.ToDateTime(DGV_Customer.Rows[e.RowIndex].Cells["Birthday"].Value);
-            //Customer.Age = Convert.ToInt32(DGV_Customer.Rows[e.RowIndex].Cells["Age"].Value);
-            //Customer.VisionTest = DGV_Customer.Rows[e.RowIndex].Cells["VisionTest"].Value.ToString();
-            //Customer.CustomerID = Convert.ToInt32(DGV_Customer.Rows[e.RowIndex].Cells["CustomerID"].Value);
-            //Customer.PhoneNr = DGV_Customer.Rows[e.RowIndex].Cells["Age"].Value.ToString();
+            TB_CustomerFirstName.Text = Customer.FirstName;
+            TB_CustomerPhoneNr.Text = Customer.PhoneNr.ToString();
+            TB_CustomerEMailAdress.Text = Customer.EMailAdress;
+            TB_CustomerAdress.Text = Customer.Adress;
+            TB_CustomerCity.Text = Customer.City;
+            TB_CustomerPostalCode.Text = Customer.PostalCode;
+            TB_CustomerDiscount.Text = Customer.Discount.ToString();
+            TB_CustomerBirthday.Text = Customer.Birthday.ToString("yyyy-MM-dd");
+            TB_CustomerAge.Text = Customer.Age.ToString();
+            TB_CustomerVisionTest.Text = Customer.VisionTest.ToString();
+
+
+            
         }
 
         private void BTN_UpdateProduct_Click(object sender, EventArgs e)
@@ -83,7 +83,16 @@ namespace SemesterProjekt.GUI
 
         private void BTN_DeleteCustomer_Click(object sender, EventArgs e)
         {
-           
+            DialogResult result = MessageBox.Show("Er du sikker på at du gerne vil slette denne kunde?", "ALERT!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes) 
+            {
+                Services.Customer.DeleteCustomer(Customer);
+            }
+            else if (result == DialogResult.No) 
+            {
+                this.Close();
+            }
+            
         }
     }
 }
