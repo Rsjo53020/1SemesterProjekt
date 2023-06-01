@@ -405,8 +405,6 @@ namespace SemesterProjekt.Database
         }
         /// <summary>
         /// CRU(D) on Product: Delete a Product
-        /// </summary>
-        /// <param name="product"></param>
         public static void SqlDeleteProduct(Models.Frame product)
         {
 
