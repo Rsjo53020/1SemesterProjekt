@@ -48,6 +48,8 @@ namespace SemesterProjekt.GUI
         private void BTN_CreateTXTFile_Click(object sender, EventArgs e)
         {
             Services.Orders.GetCustomerPurchaseOrdersBetweenDates(orders, DateStart, DateEnd);
+            string filePath = "salgsstatistik.txt";
+            Process.Start(filePath);
         }
 
 

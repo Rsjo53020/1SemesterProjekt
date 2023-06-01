@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -25,6 +26,8 @@ namespace SemesterProjekt.GUI
         private void BTN_CreateTXTFile_Click(object sender, EventArgs e)
         {
             Services.Produkt.GetStockStatus();
+            string filePath = "LagerStatus.txt";
+            Process.Start(filePath);
         }
         /// <summary>
         /// adds all products from database into datagridview
