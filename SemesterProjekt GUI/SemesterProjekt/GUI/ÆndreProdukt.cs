@@ -128,5 +128,10 @@ namespace SemesterProjekt.GUI
             var Roundfunction = Math.Round(ConvertStrToDecimal, 2);
             return Roundfunction;
         }
+
+        private void LL_UpdateProductForklaring_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }
