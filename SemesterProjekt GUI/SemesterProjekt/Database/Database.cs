@@ -431,11 +431,24 @@ namespace SemesterProjekt.Database
 
             ConnectionToDatabase(sSQL);
         }
-        public static  SqlGetAllProductAI(List<string> AICustomer)
+        public static SqlGetAllProductAI()
         {
-           var resultat =  AICustomer.Where(color = AICustomer[3] && lenght >= string.lengtt <= lenght.).OrderBy(order => order.Date).ToList();
+            string sSQL = from  in context.GetTable<Order>()
+                        where order.Date >= startDate && order.Date <= endDate
+                        select order;
 
-            return resultat;
+            var result = from person in persons
+                         where person.Age > 18
+                         select person.Name;
+
+
+
+
+
+            ConnectionToDatabase(sSQL); 
+            
+            return sSQL.ToList();
         }
     }
+    
 }
