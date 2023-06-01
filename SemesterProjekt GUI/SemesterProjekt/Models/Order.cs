@@ -8,6 +8,7 @@ namespace SemesterProjekt.Models
 {
     public class Order
     {
+        //Properties
         public int OrderID { get; set; }
         public DateTime OrderDate { get; set; }
         public string OrderStatus { get; set; }

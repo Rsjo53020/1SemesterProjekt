@@ -10,6 +10,7 @@ namespace SemesterProjekt.Models
 {
     public class Customer
     {
+        //Properties
         public int CustomerID { get; set; }
         public string FirstName { get; set; }
         public string SurName { get; set; }

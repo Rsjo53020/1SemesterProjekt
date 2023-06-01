@@ -8,6 +8,7 @@ namespace SemesterProjekt.Models
 {
     public class ProductLine
     {
+        //Properties
         private int LineID {get; set;}
         private int ProductAmount { get; set; }
         private decimal TotalPrice { get; set; }

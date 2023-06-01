@@ -8,6 +8,7 @@ namespace SemesterProjekt.Models
 {
     public class Reports
     {
+        //Property
         private DateTime Date { get; set; }
         /// <summary>
         /// Constructor 

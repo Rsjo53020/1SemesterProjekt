@@ -11,6 +11,7 @@ namespace SemesterProjekt.Models
 {
     public abstract class Product
     {
+        //Properties
         public decimal PurchasePrice { get; set; }
         public string Description { get; set; }
         public string NameProduct { get; set; }
@@ -82,6 +83,7 @@ namespace SemesterProjekt.Models
 
     public class Binocular : Product
     {
+        //Properties
         public string BinocularMaterial { get; set; }
         public string BinocularColor { get; set; }
         public int BinocularIntensity { get; set; }
@@ -140,6 +142,7 @@ namespace SemesterProjekt.Models
 
     public class SpectacleLens : Product
     {
+        //Properties
         public string LensIntensity { get; set; }
         public string LensSize { get; set; }
 
@@ -193,6 +196,7 @@ namespace SemesterProjekt.Models
 
         public class ContactLens : Product
         {
+            //Properties
             public string LensSize { get; set; }
             public string Lifetime { get; set; }
             public string LensIntensity { get; set; }
