@@ -20,9 +20,20 @@ namespace SemesterProjekt.GUI
 
         private void BTN_SearchProdukt_Click(object sender, EventArgs e)
         {
+            List<string> Ansvers = new List<string>();
+            Ansvers.Add(CB_Age.Text);
+            Ansvers.Add(CB_Gender.Text);
+            Ansvers.Add(CB_Length.Text);
+            Ansvers.Add(CB_Width.Text);
+            Ansvers.Add(CB_Kind.Text);
+            Ansvers.Add(CB_UsedFor.Text);
+            Ansvers.Add(CB_Style.Text);
+            Ansvers.Add(CB_Color.Text);
 
-            AIResult aIResult = new AIResult();
-            aIResult.Show();
+            Services.IntelligentRådgivning intelligentRådgivning = new Services.IntelligentRådgivning();
+            intelligentRådgivning.FilterSearchResult(Ansvers);
+
+            
             this.Hide();
         }
     }
