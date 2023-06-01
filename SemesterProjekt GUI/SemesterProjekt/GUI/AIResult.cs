@@ -19,10 +19,14 @@ namespace SemesterProjekt._Unused_GUI_
 
         private void AIResult_Load(object sender, EventArgs e)
         {
-            Services.IntelligentRådgivning intelligentRådgivning = new Services.IntelligentRådgivning();
-            List<Models.Product> products = intelligentRådgivning.ReturnProducts();
-            dataGridView1.DataSource = products;
+            //Services.IntelligentRådgivning intelligentRådgivning = new Services.IntelligentRådgivning();
+            //List<Models.Product> products = intelligentRådgivning.ReturnProducts();
+            //dataGridView1.DataSource = products;
         }
+        /// <summary>
+        /// sets data in datagridview to list
+        /// </summary>
+        /// <param name="products"></param>
         public void SetData (List<Models.Product> products) 
         {
             dataGridView1.DataSource = products;
