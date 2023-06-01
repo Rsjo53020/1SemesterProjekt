@@ -12,7 +12,7 @@ namespace SemesterProjekt.GUI
 {
     public partial class VisLager : Form
     {
-        List<Models.Product> stockList;
+        
         public VisLager()
         {
             InitializeComponent();
@@ -20,7 +20,8 @@ namespace SemesterProjekt.GUI
 
         private void BTN_CreateTXTFile_Click(object sender, EventArgs e)
         {
-            Services.Produkt.GetStockStatus(stockList);
+           var DataSource = Services.Produkt.GetStockStatus(dataGridView1.ro);
+           dataGridView1.DataSource = DataSource;
         }
 
         private void VisLager_Load(object sender, EventArgs e)

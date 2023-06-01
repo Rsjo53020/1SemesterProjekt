@@ -68,7 +68,7 @@ namespace SemesterProjekt.Services
             {
                 writer.Write("Lager status i sorteret rækkefølge");
                 writer.WriteLine();
-                writer.WriteLine("Kundenummer           Navn                     Dato        Køb");
+                writer.WriteLine("Kundenummer           Navn                     Dato          Køb");
                 writer.WriteLine();
 
                 foreach (Frame frames in stockList)

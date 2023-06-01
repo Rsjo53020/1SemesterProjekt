@@ -35,7 +35,7 @@ namespace SemesterProjekt.Services
 
             Console.WriteLine("SALGSSTATISTIK 2023");
             Console.WriteLine($"Fra dato: {startDate.ToShortDateString()} Til dato: {endDate.ToShortDateString()}");
-            Console.WriteLine("Kundenummer   OrderStatus                     Dato        Køb");
+            Console.WriteLine("Kundenummer   OrderStatus                     Dato          Køb");
             Console.WriteLine("----------------------------------------------");
             
             foreach (Order order in orders)
