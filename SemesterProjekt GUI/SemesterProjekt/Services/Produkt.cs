@@ -48,7 +48,9 @@ namespace SemesterProjekt.Services
         {
             Database.Database.SqlDeleteProduct(product);
         }
-
+        /// <summary>
+        /// prints all products in database to txt file
+        /// </summary>
         public static void GetStockStatus()
         {
             List<Models.Product> stockList = Database.Database.SqlGetAllProductFromDatabase();
@@ -83,6 +85,11 @@ namespace SemesterProjekt.Services
 
             Console.WriteLine($"Udskriften er gemt i filen: {filePath}");
         }
+        /// <summary>
+        /// find a product based on EAN
+        /// </summary>
+        /// <param name="ean"></param>
+        /// <returns></returns>
         public static Models.Frame GetProductFromEAN (int ean)
         {
             Models.Frame product = Database.Database.SqlGetProductFromEAN(ean);
