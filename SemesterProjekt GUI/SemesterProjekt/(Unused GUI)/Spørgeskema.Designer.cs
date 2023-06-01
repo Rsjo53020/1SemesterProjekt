@@ -163,7 +163,6 @@
             // 
             // CB_Width
             // 
-            this.CB_Width.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CB_Width.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.CB_Width.FormattingEnabled = true;
             this.CB_Width.Location = new System.Drawing.Point(484, 343);
@@ -173,7 +172,6 @@
             // 
             // CB_Length
             // 
-            this.CB_Length.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CB_Length.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.CB_Length.FormattingEnabled = true;
             this.CB_Length.Location = new System.Drawing.Point(484, 270);
@@ -183,7 +181,6 @@
             // 
             // CB_Age
             // 
-            this.CB_Age.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CB_Age.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.CB_Age.FormattingEnabled = true;
             this.CB_Age.Location = new System.Drawing.Point(484, 199);

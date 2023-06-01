@@ -434,9 +434,9 @@ namespace SemesterProjekt.Database
         public static List<Models.Product> SqlGetAllProductAI(string Gender, string Age, string Length, string Width, string Kind,
         string UsedFor, string Style, string Color)
         {
-            string sSQL = $"SELECT FROM Product WHERE Gender = '{Gender}', Age = {Age}, " +
-                $"Lenght = {Length}, Width = {Width}, Kind = '{Kind}', " +
-                $"UsedFor = '{UsedFor}', Style = '{Style}', Color = '{Color}'";
+            string sSQL = $"SELECT * FROM Product WHERE Gender = '{Gender}' and Age = {Age} and " +
+                $"Lenght = {Length} and Width = {Width} and Kind = '{Kind}' and " +
+                $"UsedFor = '{UsedFor}' and Style = '{Style}' and Color = '{Color}';";
 
             //call connection to database
             SqlConnection conn = new SqlConnection(strconn);
