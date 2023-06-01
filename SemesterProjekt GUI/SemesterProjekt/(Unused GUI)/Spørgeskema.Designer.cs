@@ -37,14 +37,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.Label2 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.CB_Gender = new System.Windows.Forms.ComboBox();
+            this.CB_Width = new System.Windows.Forms.ComboBox();
+            this.CB_Length = new System.Windows.Forms.ComboBox();
+            this.CB_Age = new System.Windows.Forms.ComboBox();
+            this.CB_Style = new System.Windows.Forms.ComboBox();
+            this.CB_Color = new System.Windows.Forms.ComboBox();
+            this.CB_UsedFor = new System.Windows.Forms.ComboBox();
+            this.CB_Kind = new System.Windows.Forms.ComboBox();
+            this.BTN_SearchProdukt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -146,70 +147,70 @@
             this.label12.TabIndex = 55;
             this.label12.Text = "Hvor ønsker de at starte?";
             // 
-            // comboBox1
+            // CB_Gender
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.CB_Gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CB_Gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.CB_Gender.FormattingEnabled = true;
+            this.CB_Gender.Items.AddRange(new object[] {
             "Herrer",
             "Damer",
             "Børn"});
-            this.comboBox1.Location = new System.Drawing.Point(484, 128);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(518, 45);
-            this.comboBox1.TabIndex = 70;
+            this.CB_Gender.Location = new System.Drawing.Point(484, 128);
+            this.CB_Gender.Name = "CB_Gender";
+            this.CB_Gender.Size = new System.Drawing.Size(518, 45);
+            this.CB_Gender.TabIndex = 70;
             // 
-            // comboBox2
+            // CB_Width
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(484, 343);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(518, 45);
-            this.comboBox2.TabIndex = 71;
+            this.CB_Width.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CB_Width.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.CB_Width.FormattingEnabled = true;
+            this.CB_Width.Location = new System.Drawing.Point(484, 343);
+            this.CB_Width.Name = "CB_Width";
+            this.CB_Width.Size = new System.Drawing.Size(518, 45);
+            this.CB_Width.TabIndex = 71;
             // 
-            // comboBox3
+            // CB_Length
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(484, 270);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(518, 45);
-            this.comboBox3.TabIndex = 72;
+            this.CB_Length.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CB_Length.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.CB_Length.FormattingEnabled = true;
+            this.CB_Length.Location = new System.Drawing.Point(484, 270);
+            this.CB_Length.Name = "CB_Length";
+            this.CB_Length.Size = new System.Drawing.Size(518, 45);
+            this.CB_Length.TabIndex = 72;
             // 
-            // comboBox4
+            // CB_Age
             // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(484, 199);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(518, 45);
-            this.comboBox4.TabIndex = 73;
+            this.CB_Age.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CB_Age.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.CB_Age.FormattingEnabled = true;
+            this.CB_Age.Location = new System.Drawing.Point(484, 199);
+            this.CB_Age.Name = "CB_Age";
+            this.CB_Age.Size = new System.Drawing.Size(518, 45);
+            this.CB_Age.TabIndex = 73;
             // 
-            // comboBox5
+            // CB_Style
             // 
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.CB_Style.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CB_Style.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.CB_Style.FormattingEnabled = true;
+            this.CB_Style.Items.AddRange(new object[] {
             "Klassisk",
             "Moderne",
             "Sporty"});
-            this.comboBox5.Location = new System.Drawing.Point(484, 556);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(518, 45);
-            this.comboBox5.TabIndex = 77;
+            this.CB_Style.Location = new System.Drawing.Point(484, 556);
+            this.CB_Style.Name = "CB_Style";
+            this.CB_Style.Size = new System.Drawing.Size(518, 45);
+            this.CB_Style.TabIndex = 77;
             // 
-            // comboBox6
+            // CB_Color
             // 
-            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
+            this.CB_Color.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CB_Color.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.CB_Color.FormattingEnabled = true;
+            this.CB_Color.Items.AddRange(new object[] {
             "Sort",
             "Gul",
             "Orange",
@@ -217,38 +218,52 @@
             "Blå",
             "Grøn",
             "Brun"});
-            this.comboBox6.Location = new System.Drawing.Point(484, 627);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(518, 45);
-            this.comboBox6.TabIndex = 76;
+            this.CB_Color.Location = new System.Drawing.Point(484, 627);
+            this.CB_Color.Name = "CB_Color";
+            this.CB_Color.Size = new System.Drawing.Size(518, 45);
+            this.CB_Color.TabIndex = 76;
             // 
-            // comboBox7
+            // CB_UsedFor
             // 
-            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
+            this.CB_UsedFor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CB_UsedFor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.CB_UsedFor.FormattingEnabled = true;
+            this.CB_UsedFor.Items.AddRange(new object[] {
             "Hverdagsbrug",
             "Sport"});
-            this.comboBox7.Location = new System.Drawing.Point(484, 485);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(518, 45);
-            this.comboBox7.TabIndex = 75;
+            this.CB_UsedFor.Location = new System.Drawing.Point(484, 485);
+            this.CB_UsedFor.Name = "CB_UsedFor";
+            this.CB_UsedFor.Size = new System.Drawing.Size(518, 45);
+            this.CB_UsedFor.TabIndex = 75;
             // 
-            // comboBox8
+            // CB_Kind
             // 
-            this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Items.AddRange(new object[] {
+            this.CB_Kind.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CB_Kind.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.CB_Kind.FormattingEnabled = true;
+            this.CB_Kind.Items.AddRange(new object[] {
             "Almindelige briller",
             "Solbriller",
             "Læsebriller",
             "Skærmbriller"});
-            this.comboBox8.Location = new System.Drawing.Point(484, 414);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(518, 45);
-            this.comboBox8.TabIndex = 74;
+            this.CB_Kind.Location = new System.Drawing.Point(484, 414);
+            this.CB_Kind.Name = "CB_Kind";
+            this.CB_Kind.Size = new System.Drawing.Size(518, 45);
+            this.CB_Kind.TabIndex = 74;
+            // 
+            // BTN_SearchProdukt
+            // 
+            this.BTN_SearchProdukt.BackColor = System.Drawing.Color.White;
+            this.BTN_SearchProdukt.FlatAppearance.BorderSize = 0;
+            this.BTN_SearchProdukt.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTN_SearchProdukt.Location = new System.Drawing.Point(1066, 627);
+            this.BTN_SearchProdukt.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.BTN_SearchProdukt.Name = "BTN_SearchProdukt";
+            this.BTN_SearchProdukt.Size = new System.Drawing.Size(122, 42);
+            this.BTN_SearchProdukt.TabIndex = 115;
+            this.BTN_SearchProdukt.Text = "Find dit match";
+            this.BTN_SearchProdukt.UseVisualStyleBackColor = false;
+            this.BTN_SearchProdukt.Click += new System.EventHandler(this.BTN_SearchProdukt_Click);
             // 
             // Spørgeskema
             // 
@@ -256,14 +271,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(1200, 692);
-            this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.comboBox6);
-            this.Controls.Add(this.comboBox7);
-            this.Controls.Add(this.comboBox8);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.BTN_SearchProdukt);
+            this.Controls.Add(this.CB_Style);
+            this.Controls.Add(this.CB_Color);
+            this.Controls.Add(this.CB_UsedFor);
+            this.Controls.Add(this.CB_Kind);
+            this.Controls.Add(this.CB_Age);
+            this.Controls.Add(this.CB_Length);
+            this.Controls.Add(this.CB_Width);
+            this.Controls.Add(this.CB_Gender);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -291,13 +307,14 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label Label2;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.ComboBox CB_Gender;
+        private System.Windows.Forms.ComboBox CB_Width;
+        private System.Windows.Forms.ComboBox CB_Length;
+        private System.Windows.Forms.ComboBox CB_Age;
+        private System.Windows.Forms.ComboBox CB_Style;
+        private System.Windows.Forms.ComboBox CB_Color;
+        private System.Windows.Forms.ComboBox CB_UsedFor;
+        private System.Windows.Forms.ComboBox CB_Kind;
+        private System.Windows.Forms.Button BTN_SearchProdukt;
     }
 }
