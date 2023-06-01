@@ -115,7 +115,6 @@ namespace SemesterProjekt.GUI
         private void DGV_Product_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
-
         }
 
         public static decimal TrimStringAfterDot(string str)
