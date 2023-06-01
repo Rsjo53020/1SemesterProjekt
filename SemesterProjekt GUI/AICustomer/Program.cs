@@ -174,6 +174,10 @@ namespace AICustomer
             Console.WriteLine();
             Console.WriteLine("Vi håber, at du finder denne information nyttig. God dag!");
 
+            string test = "1299,9900";
+            decimal decimalValue = decimal.Parse(test);
+            decimal truncatedValue = Math.Truncate(decimalValue);
+
         }
     }
 }
