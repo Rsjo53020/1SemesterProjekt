@@ -20,6 +20,7 @@ namespace SemesterProjekt.GUI
 
         private void BTN_CreateTXTFile_Click(object sender, EventArgs e)
         {
+            Services.Produkt.GetStockStatus();
         }
 
         private void VisLager_Load(object sender, EventArgs e)

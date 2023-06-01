@@ -11,6 +11,7 @@ namespace SemesterProjekt.Services
 {
     public class Produkt
     {
+        
         /// <summary>
         /// Method returns a List of products using a NameProduct and Kategory 
         /// Using SQL satement from Database
@@ -48,18 +49,20 @@ namespace SemesterProjekt.Services
             Database.Database.SqlDeleteProduct(product);
         }
 
-        public static void GetStockStatus(List<Models.Product> stockList)
+        public static void GetStockStatus()
         {
+            List<Models.Product> stockList = new List<Models.Product>();
+
+            stockList = Database.Database.SqlGetAllProductFromDatabase();
             // Sort orders by date
             stockList = stockList.OrderBy(Frame => Frame.EAN).ToList();
 
             Console.WriteLine("Lager status i sorteret rækkefølge");
+            
            
             foreach (Frame frames in stockList)
             {
-                Console.WriteLine($"{frames.EAN} {frames.NameProduct} {frames.SalesPrice} {frames.Description} {frames.Kategory}" +
-                    $"{frames.PurchasePrice} {frames.VATSup} {frames.Gender} {frames.Age} {frames.Length} {frames.Width} {frames.Kind}" +
-                    $"{frames.Style} {frames.Color} {frames.UsedFor}");
+                Console.WriteLine($"{frames.EAN} {frames.NameProduct} {frames.PurchasePrice} {frames.SalesPrice} ");
             }
 
             // Write to text file
@@ -68,14 +71,13 @@ namespace SemesterProjekt.Services
             {
                 writer.Write("Lager status i sorteret rækkefølge");
                 writer.WriteLine();
-                writer.WriteLine("Kundenummer           Navn                     Dato          Køb");
+                writer.WriteLine();
+                writer.WriteLine("EAN            Navn                     Indkøbspris          Salgspris");
                 writer.WriteLine();
 
                 foreach (Frame frames in stockList)
                 {
-                    writer.WriteLine($"{frames.EAN} {frames.NameProduct} {frames.SalesPrice} {frames.Description} {frames.Kategory}" +
-                    $"{frames.PurchasePrice} {frames.VATSup} {frames.Gender} {frames.Age} {frames.Length} {frames.Width} {frames.Kind}" +
-                    $"{frames.Style} {frames.Color} {frames.UsedFor}");
+                    writer.WriteLine($"{frames.EAN}              {frames.NameProduct}                     {frames.PurchasePrice}          {frames.SalesPrice}");
                 }
 
                 writer.WriteLine("-------------------------------------------------------------------------------");
@@ -83,6 +85,11 @@ namespace SemesterProjekt.Services
             }
 
             Console.WriteLine($"Udskriften er gemt i filen: {filePath}");
+        }
+        public static Models.Frame GetProductFromEAN (int ean)
+        {
+            Models.Frame product = Database.Database.SqlGetProductFromEAN(ean);
+            return product;
         }
 
 
