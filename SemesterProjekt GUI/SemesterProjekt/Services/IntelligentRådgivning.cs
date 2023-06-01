@@ -19,6 +19,10 @@ namespace SemesterProjekt.Services
             
             intelligentRådgivning = AiResult;
         }
+        public static List<Models.Frame> GetMatchFrames() 
+        { 
+
+        }
 
     }
 
