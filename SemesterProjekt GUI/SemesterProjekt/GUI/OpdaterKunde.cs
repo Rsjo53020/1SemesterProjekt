@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -93,6 +94,30 @@ namespace SemesterProjekt.GUI
                 this.Close();
             }
             
+        }
+
+        private void BTN_UpdateCustomer_Click(object sender, EventArgs e)
+        {
+
+            DialogResult result = MessageBox.Show("Er du sikker på at du gerne vil opdatere denne kunde?", "ALERT!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                Customer.FirstName = TB_CustomerFirstName.Text;
+                Customer.PhoneNr = TB_CustomerPhoneNr.Text;
+                Customer.EMailAdress = TB_CustomerEMailAdress.Text;
+                Customer.Adress = TB_CustomerAdress.Text;
+                Customer.City = TB_CustomerCity.Text;
+                Customer.PostalCode = TB_CustomerPostalCode.Text;
+                Customer.Discount = Convert.ToDecimal(Regex.Replace(TB_CustomerDiscount.Text, @"[^0-9.]", ""));
+                Customer.Birthday = Convert.ToDateTime(TB_CustomerBirthday.Text);
+                Customer.Age = Convert.ToInt32(Regex.Replace(TB_CustomerAge.Text, @"\D", ""));
+                Customer.VisionTest = TB_CustomerVisionTest.Text; 
+                Services.Customer.UpdateCustomer(Customer);
+            }
+            else if (result == DialogResult.No)
+            {
+                this.Close();
+                
         }
     }
 }

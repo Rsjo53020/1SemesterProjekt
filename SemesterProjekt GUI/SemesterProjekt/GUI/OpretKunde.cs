@@ -32,7 +32,7 @@ namespace SemesterProjekt.GUI
             string adress = TB_Adress.Text;
             string city = TB_City.Text;
             string postalcode = TB_PostalCode.Text;
-            decimal discount = Convert.ToDecimal(Regex.Replace(TB_Discount.Text, @"[^0-9,]", ""));
+            decimal discount = Convert.ToDecimal(Regex.Replace(TB_Discount.Text, @"[^0-9.]", ""));
             DateTime birthday = Convert.ToDateTime(TB_Birthday.Text);
             int age = Convert.ToInt32(Regex.Replace(TB_Age.Text, @"\D", ""));
             string visiontest = TB_VisionTest.Text;
