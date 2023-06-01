@@ -53,7 +53,6 @@
             this.customerTable = new SemesterProjekt.CustomerTable();
             this.BTN_SearchCustomer = new System.Windows.Forms.Button();
             this.customerTableAdapter = new SemesterProjekt.CustomerTableTableAdapters.CustomerTableAdapter();
-            this.LL_UpdateProductForklaring = new System.Windows.Forms.LinkLabel();
             this.PANEL_FindOrder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Customers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
@@ -282,24 +281,12 @@
             // 
             this.customerTableAdapter.ClearBeforeFill = true;
             // 
-            // LL_UpdateProductForklaring
-            // 
-            this.LL_UpdateProductForklaring.AutoSize = true;
-            this.LL_UpdateProductForklaring.LinkColor = System.Drawing.Color.White;
-            this.LL_UpdateProductForklaring.Location = new System.Drawing.Point(32, 496);
-            this.LL_UpdateProductForklaring.Name = "LL_UpdateProductForklaring";
-            this.LL_UpdateProductForklaring.Size = new System.Drawing.Size(67, 16);
-            this.LL_UpdateProductForklaring.TabIndex = 186;
-            this.LL_UpdateProductForklaring.TabStop = true;
-            this.LL_UpdateProductForklaring.Text = "Forklaring";
-            // 
             // SøgKunde
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.LL_UpdateProductForklaring);
             this.Controls.Add(this.BTN_SearchCustomer);
             this.Controls.Add(this.DGV_Customers);
             this.Controls.Add(this.TB_SearchEMailAdress);
@@ -346,6 +333,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn visionTestDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn orderIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn customerIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.LinkLabel LL_UpdateProductForklaring;
     }
 }
