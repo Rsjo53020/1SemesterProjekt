@@ -165,10 +165,10 @@ namespace SemesterProjekt.Database
         /// <param name="customer"></param>
         public static void SqlUpdateCustomer(Models.Customer customer)
         {
-            string sSQL = $"UPDATE Customer SET FirstName = ('{customer.FirstName}', '{customer.SurName}', " +
-                $"'{customer.PhoneNr}', '{customer.EMailAdress}', '{customer.Adress}', '{customer.City}', " +
-                $"'{customer.PostalCode}', {customer.Discount}, '{customer.Birthday.ToString("yyyy-MM-dd")}', {customer.Age}, " +
-                $"'{customer.VisionTest}', null);";
+            string sSQL = $"UPDATE Customer SET FirstName = ('{customer.FirstName}', SurName = '{customer.SurName}', " +
+                $" PhoneNr = '{customer.PhoneNr}', EMilAdress = '{customer.EMailAdress}', Adress = '{customer.Adress}', City = '{customer.City}', " +
+                $"PostalCode = '{customer.PostalCode}', Discount = {customer.Discount}, Birthday = '{customer.Birthday.ToString("yyyy-MM-dd")}', Age = {customer.Age}, " +
+                $" VisionTest = '{customer.VisionTest}', WHERE CustomerID = {customer.CustomerID};";
 
             ConnectionToDatabase(sSQL);
 
