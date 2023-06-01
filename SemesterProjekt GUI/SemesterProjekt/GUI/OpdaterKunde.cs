@@ -54,21 +54,22 @@ namespace SemesterProjekt.GUI
         /// </summary>
         private void DGV_Customer_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            DGV_Customer.CurrentRow.Selected = true;
-            DGV_Customer.ReadOnly = true;
-            Customer.FirstName = DGV_Customer.Rows[e.RowIndex].Cells["FirstName"].Value?.ToString();
+            Services.Customer.FindCustomerFromCustomerID(int.Parse(DGV_Customer.Rows[e.RowIndex].Cells["CustomerID"].Value));
 
-            Customer.SurName = DGV_Customer.Rows[e.RowIndex].Cells["PhoneNr"].Value.ToString();
-            Customer.EMailAdress = DGV_Customer.Rows[e.RowIndex].Cells["EMailAdress"].Value.ToString();
-            Customer.Adress = DGV_Customer.Rows[e.RowIndex].Cells["Adress"].Value.ToString();
-            Customer.City = DGV_Customer.Rows[e.RowIndex].Cells["City"].Value.ToString();
-            Customer.PostalCode = DGV_Customer.Rows[e.RowIndex].Cells["PostalCode"].Value.ToString();
-            Customer.Discount = Convert.ToDecimal(DGV_Customer.Rows[e.RowIndex].Cells["Discount"].Value);
-            Customer.Birthday = Convert.ToDateTime(DGV_Customer.Rows[e.RowIndex].Cells["Birthday"].Value);
-            Customer.Age = Convert.ToInt32(DGV_Customer.Rows[e.RowIndex].Cells["Age"].Value);
-            Customer.VisionTest = DGV_Customer.Rows[e.RowIndex].Cells["VisionTest"].Value.ToString();
-            Customer.CustomerID = Convert.ToInt32(DGV_Customer.Rows[e.RowIndex].Cells["CustomerID"].Value);
-            Customer.PhoneNr = DGV_Customer.Rows[e.RowIndex].Cells["Age"].Value.ToString();
+            //DGV_Customer.CurrentRow.Selected = true;
+            //DGV_Customer.ReadOnly = true;
+            //Customer.FirstName = DGV_Customer.Rows[e.RowIndex].Cells["FirstName"].Value?.ToString();
+            //Customer.SurName = DGV_Customer.Rows[e.RowIndex].Cells["PhoneNr"].Value.ToString();
+            //Customer.EMailAdress = DGV_Customer.Rows[e.RowIndex].Cells["EMailAdress"].Value.ToString();
+            //Customer.Adress = DGV_Customer.Rows[e.RowIndex].Cells["Adress"].Value.ToString();
+            //Customer.City = DGV_Customer.Rows[e.RowIndex].Cells["City"].Value.ToString();
+            //Customer.PostalCode = DGV_Customer.Rows[e.RowIndex].Cells["PostalCode"].Value.ToString();
+            //Customer.Discount = Convert.ToDecimal(DGV_Customer.Rows[e.RowIndex].Cells["Discount"].Value);
+            //Customer.Birthday = Convert.ToDateTime(DGV_Customer.Rows[e.RowIndex].Cells["Birthday"].Value);
+            //Customer.Age = Convert.ToInt32(DGV_Customer.Rows[e.RowIndex].Cells["Age"].Value);
+            //Customer.VisionTest = DGV_Customer.Rows[e.RowIndex].Cells["VisionTest"].Value.ToString();
+            //Customer.CustomerID = Convert.ToInt32(DGV_Customer.Rows[e.RowIndex].Cells["CustomerID"].Value);
+            //Customer.PhoneNr = DGV_Customer.Rows[e.RowIndex].Cells["Age"].Value.ToString();
         }
 
         private void BTN_UpdateProduct_Click(object sender, EventArgs e)
