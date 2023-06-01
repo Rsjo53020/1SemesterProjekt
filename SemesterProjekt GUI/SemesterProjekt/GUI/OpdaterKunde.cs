@@ -134,7 +134,7 @@ namespace SemesterProjekt.GUI
 
         private void LL_UpdateProductForklaring_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            string filePath = @"C:\Søg kunde.pdf";
+            string filePath = "SemesterProjekt GUI\\Søg kunde.pdf";
             Process.Start(filePath);
         }
     }
