@@ -29,6 +29,9 @@ namespace SemesterProjekt.GUI
             string Style = CB_Style.Text;
             string Color = CB_Color.Text;
 
+            Services.IntelligentRådgivning intelligentRådgivning = new Services.IntelligentRådgivning();
+            intelligentRådgivning.FilterSearchResult(Gender, Age, Length, Width, Kind, UsedFor, Style, Color);
+
             AIResult aIResult = new AIResult();
             aIResult.Show();
             this.Hide();

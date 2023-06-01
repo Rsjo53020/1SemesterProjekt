@@ -10,8 +10,10 @@ namespace SemesterProjekt.Services
     {
         private string SearchPhrase { get; set; }
 
-        public static void FilterSearchresult()
+        public void FilterSearchResult(string Gender, string Age, string Length, string Width, string Kind,
+        string UsedFor, string Style, string Color)
         {
+
         }
     }
 
