@@ -147,5 +147,10 @@ namespace SemesterProjekt.GUI
         {
 
         }
+
+        private void BTN_SletProdukt_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
