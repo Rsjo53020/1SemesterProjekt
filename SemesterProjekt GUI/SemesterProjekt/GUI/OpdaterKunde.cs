@@ -111,12 +111,13 @@ namespace SemesterProjekt.GUI
                 Customer.Discount = Convert.ToDecimal(Regex.Replace(TB_CustomerDiscount.Text, @"[^0-9.]", ""));
                 Customer.Birthday = Convert.ToDateTime(TB_CustomerBirthday.Text);
                 Customer.Age = Convert.ToInt32(Regex.Replace(TB_CustomerAge.Text, @"\D", ""));
-                Customer.VisionTest = TB_CustomerVisionTest.Text; 
+                Customer.VisionTest = TB_CustomerVisionTest.Text;
                 Services.Customer.UpdateCustomer(Customer);
             }
             else if (result == DialogResult.No)
             {
                 this.Close();
+            }
                 
         }
     }
