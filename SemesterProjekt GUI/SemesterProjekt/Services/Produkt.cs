@@ -51,33 +51,30 @@ namespace SemesterProjekt.Services
 
         public static void GetStockStatus()
         {
-            List<Models.Product> stockList = new List<Models.Product>();
+            List<Models.Product> stockList = Database.Database.SqlGetAllProductFromDatabase();
 
-            stockList = Database.Database.SqlGetAllProductFromDatabase();
-            // Sort orders by date
-            stockList = stockList.OrderBy(Frame => Frame.EAN).ToList();
+            // Sort orders by EAN
+            stockList = stockList.OrderBy(frame => frame.EAN).ToList();
 
             Console.WriteLine("Lager status i sorteret rækkefølge");
-            
-           
-            foreach (Frame frames in stockList)
+
+            foreach (Models.Product product in stockList)
             {
-                Console.WriteLine($"{frames.EAN} {frames.NameProduct} {frames.PurchasePrice} {frames.SalesPrice} ");
+                Console.WriteLine($"{product.EAN} {product.NameProduct} {product.PurchasePrice} {product.SalesPrice}");
             }
 
             // Write to text file
             string filePath = "LagerStatus.txt";
             using (StreamWriter writer = new StreamWriter(filePath))
             {
-                writer.Write("Lager status i sorteret rækkefølge");
-                writer.WriteLine();
+                writer.WriteLine("Lager status i sorteret rækkefølge");
                 writer.WriteLine();
                 writer.WriteLine("EAN            Navn                     Indkøbspris          Salgspris");
                 writer.WriteLine();
 
-                foreach (Frame frames in stockList)
+                foreach (Models.Product product in stockList)
                 {
-                    writer.WriteLine($"{frames.EAN}              {frames.NameProduct}                     {frames.PurchasePrice}          {frames.SalesPrice}");
+                    writer.WriteLine($"{product.EAN,-20} {product.NameProduct,-25} {product.PurchasePrice,-20} {product.SalesPrice}");
                 }
 
                 writer.WriteLine("-------------------------------------------------------------------------------");
