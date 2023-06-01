@@ -73,8 +73,6 @@ namespace SemesterProjekt.GUI
             TB_CustomerAge.Text = Customer.Age.ToString();
             TB_CustomerVisionTest.Text = Customer.VisionTest.ToString();
 
-
-            
         }
 
         private void BTN_UpdateProduct_Click(object sender, EventArgs e)

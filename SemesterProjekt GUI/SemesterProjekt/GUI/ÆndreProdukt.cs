@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -12,6 +13,7 @@ namespace SemesterProjekt.GUI
 {
     public partial class ÆndreProdukt : Form
     {
+        Models.Frame Product;
         public ÆndreProdukt()
         {
             InitializeComponent();
@@ -22,22 +24,23 @@ namespace SemesterProjekt.GUI
         /// </summary>
         private void DGV_Product_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            DGV_Product.CurrentRow.Selected = true;
-            DGV_Product.ReadOnly = true;
-            TB_UpdatedSalesPrice.Text = DGV_Product.Rows[e.RowIndex].Cells["SalesPrice"].Value.ToString();
-            TB_UpdatedNameProduct.Text = DGV_Product.Rows[e.RowIndex].Cells["NameProduct"].Value.ToString();
-            TB_UpdatedDiscription.Text = DGV_Product.Rows[e.RowIndex].Cells["Description"].Value.ToString();
-            TB_UpdatedKategory.Text = DGV_Product.Rows[e.RowIndex].Cells["Kategory"].Value.ToString();
-            TB_PurchasePrice.Text = DGV_Product.Rows[e.RowIndex].Cells["PurchasePrice"].Value.ToString();
-            TB_UpdatedVATSup.Text = DGV_Product.Rows[e.RowIndex].Cells["VATSup"].Value.ToString();
-            TB_UpdatedGender.Text = DGV_Product.Rows[e.RowIndex].Cells["Gender"].Value.ToString();
-            TB_UpdatedAge.Text = DGV_Product.Rows[e.RowIndex].Cells["Age"].Value.ToString();
-            TB_UpdatedLenght.Text = DGV_Product.Rows[e.RowIndex].Cells["Length"].Value.ToString();
-            TB_UpdatedWidth.Text = DGV_Product.Rows[e.RowIndex].Cells["Width"].Value.ToString();
-            TB_UpdatedKind.Text = DGV_Product.Rows[e.RowIndex].Cells["Kind"].Value.ToString();
-            TB_UpdatedStyle.Text = DGV_Product.Rows[e.RowIndex].Cells["Style"].Value.ToString();
-            TB_UpdatedColor.Text = DGV_Product.Rows[e.RowIndex].Cells["Color"].Value.ToString();
-            TB_UpdatedUsedFor.Text = DGV_Product.Rows[e.RowIndex].Cells["UsedFor"].Value.ToString();
+            DataGridViewRow selectedRow = DGV_Product.CurrentRow;
+            int EAN = Convert.ToInt32(selectedRow.Cells[7].Value);
+            Product = Services.Produkt.GetProductFromEAN(EAN);
+
+            TB_UpdatedSalesPrice.Text = Product.SalesPrice.ToString();
+            TB_UpdatedNameProduct.Text = Product.NameProduct;
+            TB_UpdatedDiscription.Text = Product.Description;
+            TB_UpdatedKategory.Text = Product.Kategory;
+            TB_PurchasePrice.Text = Product.PurchasePrice.ToString();
+            TB_UpdatedVATSup.Text = Product.VATSup.ToString();
+            TB_UpdatedAge.Text = Product.Age.ToString();
+            TB_UpdatedLenght.Text = Product.Length.ToString();
+            TB_UpdatedWidth.Text = Product.Width.ToString();
+            TB_UpdatedKind.Text = Product.Kind.ToString();
+            TB_UpdatedColor.Text = Product.Color.ToString();
+            TB_UpdatedUsedFor.Text = Product.UsedFor.ToString();
+
         }
 
         /// <summary>
@@ -58,97 +61,53 @@ namespace SemesterProjekt.GUI
 
         }
 
-        private void OpdaterProdukt_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BTN_SletProdukt_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BTN_UpdateProduct_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TB_UpdatedUsedFor_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TB_UpdatedColor_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TB_UpdatedStyle_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TB_UpdatedKind_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TB_UpdatedWidth_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TB_UpdatedLenght_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TB_UpdatedAge_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TB_UpdatedGender_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TB_UpdatedVATSup_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TB_UpdatedSalesPrice_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TB_UpdatedKategory_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TB_UpdatedDiscription_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TB_UpdatedNameProduct_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TB_OpdateFindKategory_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        /// <summary>
+        /// Method deletes product from database using a refrence to Serives.deleteProduct
+        /// </summary>
         private void BTN_SletProdukt_Click_1(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Er du sikker på at du gerne vil slette denne kunde?", "ALERT!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                Services.Produkt.DeleteProduct(Product);
+            }
+            else if (result == DialogResult.No)
+            {
+                this.Close();
+            }
+        }
+
+        /// <summary>
+        /// Method update product from textbox values.
+        /// </summary>
+        private void BTN_UpdateProduct_Click_1(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Er du sikker på at du gerne vil opdatere dette produkt?", "ALERT!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                Product.SalesPrice = Convert.ToDecimal(TB_UpdatedSalesPrice.Text);
+                Product.NameProduct = TB_UpdatedNameProduct.Text;
+                Product.Description = TB_UpdatedDiscription.Text;
+                Product.Kategory = TB_UpdatedKategory.Text;
+                Product.PurchasePrice = Convert.ToDecimal(TB_PurchasePrice.Text);
+                Product.VATSup = int.Parse(TB_UpdatedVATSup.Text);
+                Product.Gender = TB_UpdatedGender.Text;
+                Product.Age = int.Parse(TB_UpdatedAge.Text);
+                Product.Length = Convert.ToDecimal(TB_UpdatedLenght.Text);
+                Product.Width = Convert.ToDecimal(TB_UpdatedWidth.Text);
+                Product.Kind = TB_UpdatedKind.Text;
+                Product.Style = TB_UpdatedStyle.Text;
+                Product.Color = TB_UpdatedColor.Text;
+                Product.UsedFor = TB_UpdatedUsedFor.Text;
+
+            }
+            else if (result == DialogResult.No)
+            {
+                this.Close();
+            }
+        }
+
+        private void DGV_Product_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

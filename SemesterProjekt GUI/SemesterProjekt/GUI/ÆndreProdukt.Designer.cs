@@ -151,6 +151,7 @@
             this.DGV_Product.Size = new System.Drawing.Size(716, 176);
             this.DGV_Product.TabIndex = 97;
             this.DGV_Product.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Product_CellClick);
+            this.DGV_Product.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Product_CellContentClick);
             // 
             // productBindingSource
             // 
@@ -230,7 +231,6 @@
             this.TB_SearchKategory.Name = "TB_SearchKategory";
             this.TB_SearchKategory.Size = new System.Drawing.Size(171, 22);
             this.TB_SearchKategory.TabIndex = 113;
-            this.TB_SearchKategory.TextChanged += new System.EventHandler(this.TB_OpdateFindKategory_TextChanged);
             // 
             // BTN_SearchProdukt
             // 
@@ -376,7 +376,6 @@
             this.TB_UpdatedNameProduct.Name = "TB_UpdatedNameProduct";
             this.TB_UpdatedNameProduct.Size = new System.Drawing.Size(516, 22);
             this.TB_UpdatedNameProduct.TabIndex = 141;
-            this.TB_UpdatedNameProduct.TextChanged += new System.EventHandler(this.TB_UpdatedNameProduct_TextChanged);
             // 
             // TB_UpdatedDiscription
             // 
@@ -385,7 +384,6 @@
             this.TB_UpdatedDiscription.Name = "TB_UpdatedDiscription";
             this.TB_UpdatedDiscription.Size = new System.Drawing.Size(516, 22);
             this.TB_UpdatedDiscription.TabIndex = 142;
-            this.TB_UpdatedDiscription.TextChanged += new System.EventHandler(this.TB_UpdatedDiscription_TextChanged);
             // 
             // TB_UpdatedKategory
             // 
@@ -394,7 +392,6 @@
             this.TB_UpdatedKategory.Name = "TB_UpdatedKategory";
             this.TB_UpdatedKategory.Size = new System.Drawing.Size(516, 22);
             this.TB_UpdatedKategory.TabIndex = 143;
-            this.TB_UpdatedKategory.TextChanged += new System.EventHandler(this.TB_UpdatedKategory_TextChanged);
             // 
             // TB_UpdatedSalesPrice
             // 
@@ -403,7 +400,6 @@
             this.TB_UpdatedSalesPrice.Name = "TB_UpdatedSalesPrice";
             this.TB_UpdatedSalesPrice.Size = new System.Drawing.Size(516, 22);
             this.TB_UpdatedSalesPrice.TabIndex = 144;
-            this.TB_UpdatedSalesPrice.TextChanged += new System.EventHandler(this.TB_UpdatedSalesPrice_TextChanged);
             // 
             // TB_UpdatedVATSup
             // 
@@ -412,7 +408,6 @@
             this.TB_UpdatedVATSup.Name = "TB_UpdatedVATSup";
             this.TB_UpdatedVATSup.Size = new System.Drawing.Size(516, 22);
             this.TB_UpdatedVATSup.TabIndex = 145;
-            this.TB_UpdatedVATSup.TextChanged += new System.EventHandler(this.TB_UpdatedVATSup_TextChanged);
             // 
             // TB_UpdatedGender
             // 
@@ -421,7 +416,6 @@
             this.TB_UpdatedGender.Name = "TB_UpdatedGender";
             this.TB_UpdatedGender.Size = new System.Drawing.Size(516, 22);
             this.TB_UpdatedGender.TabIndex = 146;
-            this.TB_UpdatedGender.TextChanged += new System.EventHandler(this.TB_UpdatedGender_TextChanged);
             // 
             // TB_UpdatedAge
             // 
@@ -430,7 +424,6 @@
             this.TB_UpdatedAge.Name = "TB_UpdatedAge";
             this.TB_UpdatedAge.Size = new System.Drawing.Size(516, 22);
             this.TB_UpdatedAge.TabIndex = 147;
-            this.TB_UpdatedAge.TextChanged += new System.EventHandler(this.TB_UpdatedAge_TextChanged);
             // 
             // TB_UpdatedLenght
             // 
@@ -439,7 +432,6 @@
             this.TB_UpdatedLenght.Name = "TB_UpdatedLenght";
             this.TB_UpdatedLenght.Size = new System.Drawing.Size(516, 22);
             this.TB_UpdatedLenght.TabIndex = 148;
-            this.TB_UpdatedLenght.TextChanged += new System.EventHandler(this.TB_UpdatedLenght_TextChanged);
             // 
             // TB_UpdatedWidth
             // 
@@ -448,7 +440,6 @@
             this.TB_UpdatedWidth.Name = "TB_UpdatedWidth";
             this.TB_UpdatedWidth.Size = new System.Drawing.Size(516, 22);
             this.TB_UpdatedWidth.TabIndex = 149;
-            this.TB_UpdatedWidth.TextChanged += new System.EventHandler(this.TB_UpdatedWidth_TextChanged);
             // 
             // TB_UpdatedKind
             // 
@@ -457,7 +448,6 @@
             this.TB_UpdatedKind.Name = "TB_UpdatedKind";
             this.TB_UpdatedKind.Size = new System.Drawing.Size(516, 22);
             this.TB_UpdatedKind.TabIndex = 150;
-            this.TB_UpdatedKind.TextChanged += new System.EventHandler(this.TB_UpdatedKind_TextChanged);
             // 
             // TB_UpdatedStyle
             // 
@@ -466,7 +456,6 @@
             this.TB_UpdatedStyle.Name = "TB_UpdatedStyle";
             this.TB_UpdatedStyle.Size = new System.Drawing.Size(516, 22);
             this.TB_UpdatedStyle.TabIndex = 151;
-            this.TB_UpdatedStyle.TextChanged += new System.EventHandler(this.TB_UpdatedStyle_TextChanged);
             // 
             // TB_UpdatedColor
             // 
@@ -475,7 +464,6 @@
             this.TB_UpdatedColor.Name = "TB_UpdatedColor";
             this.TB_UpdatedColor.Size = new System.Drawing.Size(516, 22);
             this.TB_UpdatedColor.TabIndex = 152;
-            this.TB_UpdatedColor.TextChanged += new System.EventHandler(this.TB_UpdatedColor_TextChanged);
             // 
             // TB_UpdatedUsedFor
             // 
@@ -484,7 +472,6 @@
             this.TB_UpdatedUsedFor.Name = "TB_UpdatedUsedFor";
             this.TB_UpdatedUsedFor.Size = new System.Drawing.Size(516, 22);
             this.TB_UpdatedUsedFor.TabIndex = 153;
-            this.TB_UpdatedUsedFor.TextChanged += new System.EventHandler(this.TB_UpdatedUsedFor_TextChanged);
             // 
             // BTN_UpdateProduct
             // 
@@ -498,6 +485,7 @@
             this.BTN_UpdateProduct.TabIndex = 154;
             this.BTN_UpdateProduct.Text = "Opdater Produkt";
             this.BTN_UpdateProduct.UseVisualStyleBackColor = false;
+            this.BTN_UpdateProduct.Click += new System.EventHandler(this.BTN_UpdateProduct_Click_1);
             // 
             // LL_UpdateProductForklaring
             // 

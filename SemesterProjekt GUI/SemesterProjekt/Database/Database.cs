@@ -316,10 +316,10 @@ namespace SemesterProjekt.Database
             return ProductList;
 
         }
-        public static Models.Frame SqlGetProductFromEAN(int ean)
+        public static Models.Frame SqlGetProductFromEAN(int EAN)
         {
 
-            string sSQL = $"SELECT FROM Product WHERE EAN = {ean};";
+            string sSQL = $"SELECT * FROM Product WHERE EAN = {EAN};";
 
             //call connection to database
             SqlConnection conn = new SqlConnection(strconn);
