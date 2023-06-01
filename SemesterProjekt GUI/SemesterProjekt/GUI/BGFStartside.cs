@@ -29,18 +29,13 @@ namespace SemesterProjekt.GUI
         }
 
         /// <summary>
-        /// Method Opens "AICustomer" Solution
+        /// Method Opens "Spørgeskema" Form
         /// </summary>
         private void BTN_Kunde_Click(object sender, EventArgs e)
         {
-            ProcessStartInfo psi = new ProcessStartInfo
-            {
-                FileName = "C:\\Users\\ronni\\Desktop\\Datamatik\\Semester Projekt\\1semesterProjekt\\SemesterProjekt GUI\\AICustomer\\Program.exe",
-                UseShellExecute = false
-            };
-
-            Process process = Process.Start(psi);
-            process.WaitForExit();
+            Spørgeskema spørgeskema = new Spørgeskema();
+            spørgeskema.Show();
+            this.Hide();
         }
     }
 }
