@@ -431,11 +431,49 @@ namespace SemesterProjekt.Database
 
             ConnectionToDatabase(sSQL);
         }
-        public static List<Models.Product> SqlGetAllProductAI(List<string> AICustomer)
+        public static List<Models.Product> SqlGetAllProductAI(string Gender, string Age, string Length, string Width, string Kind,
+        string UsedFor, string Style, string Color)
         {
-           var resultat =  AICustomer.Where(color = AICustomer[3] && lenght >= string.lengtt <= lenght.).OrderBy(order => order.Date).ToList();
+            string sSQL = $"SELECT FROM Product WHERE Gender = '{Gender}', Age = {Age}, " +
+                $"Lenght = {Length}, Width = {Width}, Kind = '{Kind}', " +
+                $"UsedFor = '{UsedFor}', Style = '{Style}', Color = '{Color}'";
 
-            return resultat;
+            //call connection to database
+            SqlConnection conn = new SqlConnection(strconn);
+            SqlCommand command = new SqlCommand(sSQL, conn);
+
+            conn.Open(); //Open connection to Database
+            SqlDataReader reader = command.ExecuteReader();
+            List<Models.Product> ProductList = new List<Models.Product>();
+
+            while (reader.Read())
+            {
+                Frame frame = new Frame(
+                    (Decimal)reader["SalesPrice"],
+                    reader["NameProduct"].ToString(),
+                    reader["Discription"].ToString(),
+                    reader["Kategory"].ToString(),
+                    (Decimal)reader["PurchasePrice"],
+                    (int)reader["VATSup"],
+                    (int)reader["EAN"],
+                    reader["Gender"].ToString(),
+                    (int)reader["Age"],
+                    (Decimal)reader["Lenght"],
+                    (Decimal)reader["Width"],
+                    reader["Kind"].ToString(),
+                    reader["UsedFor"].ToString(),
+                    reader["Style"].ToString(),
+                    reader["Color"].ToString()
+                    );
+
+                ProductList.Add(frame);
+
+
+            }
+            reader.Close();
+            conn.Close(); //Close connection to Database
+
+            return ProductList;
         }
     }
 }
