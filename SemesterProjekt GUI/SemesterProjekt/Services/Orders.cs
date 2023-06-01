@@ -19,9 +19,6 @@ namespace SemesterProjekt.Services
             return orderList;
         }
 
-        public static void DeleteOrder(Models.Order order)
-        {
-        }
 
         /// <summary>
         /// Method print all orders from a customer, 
