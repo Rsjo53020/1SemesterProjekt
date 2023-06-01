@@ -115,7 +115,29 @@ namespace SemesterProjekt.GUI
         {
 
         }
+        public static string TrimStringAfterDot(string str)
+        {
+            int dotIndex = str.IndexOf('.');
 
+            if (dotIndex == -1)
+            {
+                // Punktum findes ikke i strengen
+                Console.WriteLine("Punktum findes ikke i strengen.");
+                return str;
+            }
+
+            string charsAfterDot = str.Substring(dotIndex + 1);
+
+            if (charsAfterDot.Length > 2)
+            {
+                // Der er mere end to karakterer efter punktum
+                Console.WriteLine("Der er mere end to karakterer efter punktum.");
+                // Fjern de overflødige karakterer
+                charsAfterDot = charsAfterDot.Substring(0, 2);
+            }
+
+            return str.Substring(0, dotIndex + 1) + charsAfterDot;
+        }
 
     }
 }
