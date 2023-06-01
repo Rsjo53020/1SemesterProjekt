@@ -405,8 +405,6 @@ namespace SemesterProjekt.Database
         }
         /// <summary>
         /// CRU(D) on Product: Delete a Product
-        /// </summary>
-        /// <param name="product"></param>
         public static void SqlDeleteProduct(Models.Frame product)
         {
 
@@ -419,20 +417,17 @@ namespace SemesterProjekt.Database
         /// <summary>
         /// CR(U)D on Product: Update a Product
         /// </summary>
-        /// <param name="product"></param>
-        /// <returns></returns>
         public static void SqlUpdateProduct(Models.Frame product)
         {
             string sSQL = $"UPDATE Product SET SalesPrice = {product.SalesPrice}," +
                 $" NameProduct = '{product.NameProduct}', Discription = '{product.Description}'," +
                 $" Kategory = '{product.Kategory}', PurchasePrice = {product.PurchasePrice}," +
-                $" VATSup = {product.VATSup}, EAN = {product.EAN}, Gender = '{product.Gender}'," +
-                $" Age = {product.Age}, Length = {product.Length}, Width = {product.Width}," +
+                $" VATSup = {product.VATSup}, Gender = '{product.Gender}'," +
+                $" Age = {product.Age}, Lenght = {product.Length}, Width = {product.Width}," +
                 $" Kind = '{product.Kind}', UsedFor = '{product.UsedFor}', Style = '{product.Style}'," +
                 $" Color = '{product.Color}' WHERE EAN = {product.EAN}";
 
             ConnectionToDatabase(sSQL);
-
         }
     }
 

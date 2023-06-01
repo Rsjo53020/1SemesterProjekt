@@ -65,9 +65,9 @@
             this.PANEL_FindOrder.Controls.Add(this.Label1);
             this.PANEL_FindOrder.Dock = System.Windows.Forms.DockStyle.Top;
             this.PANEL_FindOrder.Location = new System.Drawing.Point(0, 0);
-            this.PANEL_FindOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PANEL_FindOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PANEL_FindOrder.Name = "PANEL_FindOrder";
-            this.PANEL_FindOrder.Size = new System.Drawing.Size(800, 62);
+            this.PANEL_FindOrder.Size = new System.Drawing.Size(1067, 76);
             this.PANEL_FindOrder.TabIndex = 91;
             // 
             // Label1
@@ -75,19 +75,18 @@
             this.Label1.AutoSize = true;
             this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.Label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Label1.Location = new System.Drawing.Point(333, 20);
-            this.Label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label1.Location = new System.Drawing.Point(444, 25);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(129, 26);
+            this.Label1.Size = new System.Drawing.Size(156, 31);
             this.Label1.TabIndex = 16;
             this.Label1.Text = "Søg Kunde";
             // 
             // TB_SearchEMailAdress
             // 
-            this.TB_SearchEMailAdress.Location = new System.Drawing.Point(236, 113);
-            this.TB_SearchEMailAdress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TB_SearchEMailAdress.Location = new System.Drawing.Point(315, 139);
+            this.TB_SearchEMailAdress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TB_SearchEMailAdress.Name = "TB_SearchEMailAdress";
-            this.TB_SearchEMailAdress.Size = new System.Drawing.Size(296, 20);
+            this.TB_SearchEMailAdress.Size = new System.Drawing.Size(393, 22);
             this.TB_SearchEMailAdress.TabIndex = 95;
             // 
             // label4
@@ -95,19 +94,18 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.label4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label4.Location = new System.Drawing.Point(62, 106);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(83, 130);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 25);
+            this.label4.Size = new System.Drawing.Size(105, 31);
             this.label4.TabIndex = 94;
             this.label4.Text = "E-Mail :";
             // 
             // TB_SearchPhoneNr
             // 
-            this.TB_SearchPhoneNr.Location = new System.Drawing.Point(236, 80);
-            this.TB_SearchPhoneNr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TB_SearchPhoneNr.Location = new System.Drawing.Point(315, 98);
+            this.TB_SearchPhoneNr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TB_SearchPhoneNr.Name = "TB_SearchPhoneNr";
-            this.TB_SearchPhoneNr.Size = new System.Drawing.Size(296, 20);
+            this.TB_SearchPhoneNr.Size = new System.Drawing.Size(393, 22);
             this.TB_SearchPhoneNr.TabIndex = 93;
             // 
             // label3
@@ -115,10 +113,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.label3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label3.Location = new System.Drawing.Point(62, 73);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(83, 90);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 25);
+            this.label3.Size = new System.Drawing.Size(113, 31);
             this.label3.TabIndex = 92;
             this.label3.Text = "Tlf +45 :";
             // 
@@ -146,10 +143,11 @@
             this.orderIDDataGridViewTextBoxColumn,
             this.customerIDDataGridViewTextBoxColumn});
             this.DGV_Customers.DataSource = this.customerBindingSource;
-            this.DGV_Customers.Location = new System.Drawing.Point(0, 159);
+            this.DGV_Customers.Location = new System.Drawing.Point(0, 196);
+            this.DGV_Customers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DGV_Customers.Name = "DGV_Customers";
             this.DGV_Customers.RowHeadersWidth = 62;
-            this.DGV_Customers.Size = new System.Drawing.Size(800, 290);
+            this.DGV_Customers.Size = new System.Drawing.Size(1067, 357);
             this.DGV_Customers.TabIndex = 96;
             // 
             // firstNameDataGridViewTextBoxColumn
@@ -271,9 +269,10 @@
             // 
             this.BTN_SearchCustomer.BackColor = System.Drawing.Color.White;
             this.BTN_SearchCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTN_SearchCustomer.Location = new System.Drawing.Point(548, 86);
+            this.BTN_SearchCustomer.Location = new System.Drawing.Point(731, 106);
+            this.BTN_SearchCustomer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BTN_SearchCustomer.Name = "BTN_SearchCustomer";
-            this.BTN_SearchCustomer.Size = new System.Drawing.Size(120, 47);
+            this.BTN_SearchCustomer.Size = new System.Drawing.Size(160, 58);
             this.BTN_SearchCustomer.TabIndex = 97;
             this.BTN_SearchCustomer.Text = "Søg ";
             this.BTN_SearchCustomer.UseVisualStyleBackColor = false;
@@ -284,10 +283,10 @@
             // 
             // SøgKunde
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.BTN_SearchCustomer);
             this.Controls.Add(this.DGV_Customers);
             this.Controls.Add(this.TB_SearchEMailAdress);
@@ -295,6 +294,7 @@
             this.Controls.Add(this.TB_SearchPhoneNr);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.PANEL_FindOrder);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "SøgKunde";
             this.Text = "SøgKunde";
             this.PANEL_FindOrder.ResumeLayout(false);

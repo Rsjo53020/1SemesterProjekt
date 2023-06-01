@@ -108,9 +108,9 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(914, 78);
+            this.panel1.Size = new System.Drawing.Size(812, 62);
             this.panel1.TabIndex = 1;
             // 
             // label1
@@ -119,9 +119,9 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(309, 25);
+            this.label1.Location = new System.Drawing.Point(275, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(335, 37);
+            this.label1.Size = new System.Drawing.Size(288, 31);
             this.label1.TabIndex = 17;
             this.label1.Text = "RET OPLYSNINGER";
             // 
@@ -133,12 +133,12 @@
             this.DGV_Customer.AllowUserToResizeRows = false;
             this.DGV_Customer.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.DGV_Customer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV_Customer.Location = new System.Drawing.Point(30, 148);
-            this.DGV_Customer.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.DGV_Customer.Location = new System.Drawing.Point(27, 118);
+            this.DGV_Customer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.DGV_Customer.Name = "DGV_Customer";
             this.DGV_Customer.RowHeadersWidth = 51;
             this.DGV_Customer.RowTemplate.Height = 24;
-            this.DGV_Customer.Size = new System.Drawing.Size(849, 225);
+            this.DGV_Customer.Size = new System.Drawing.Size(755, 180);
             this.DGV_Customer.TabIndex = 19;
             this.DGV_Customer.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Customer_CellClick);
             // 
@@ -154,10 +154,10 @@
             // 
             // TB_Discount
             // 
-            this.TB_Discount.Location = new System.Drawing.Point(690, 1108);
-            this.TB_Discount.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.TB_Discount.Location = new System.Drawing.Point(613, 886);
+            this.TB_Discount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_Discount.Name = "TB_Discount";
-            this.TB_Discount.Size = new System.Drawing.Size(444, 26);
+            this.TB_Discount.Size = new System.Drawing.Size(395, 22);
             this.TB_Discount.TabIndex = 76;
             // 
             // label11
@@ -165,18 +165,18 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.label11.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label11.Location = new System.Drawing.Point(428, 1095);
+            this.label11.Location = new System.Drawing.Point(380, 876);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(160, 37);
+            this.label11.Size = new System.Drawing.Size(136, 31);
             this.label11.TabIndex = 75;
             this.label11.Text = "Discount :";
             // 
             // TB_PostNr
             // 
-            this.TB_PostNr.Location = new System.Drawing.Point(690, 1048);
-            this.TB_PostNr.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.TB_PostNr.Location = new System.Drawing.Point(613, 838);
+            this.TB_PostNr.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_PostNr.Name = "TB_PostNr";
-            this.TB_PostNr.Size = new System.Drawing.Size(444, 26);
+            this.TB_PostNr.Size = new System.Drawing.Size(395, 22);
             this.TB_PostNr.TabIndex = 74;
             // 
             // label8
@@ -184,18 +184,18 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.label8.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label8.Location = new System.Drawing.Point(428, 1035);
+            this.label8.Location = new System.Drawing.Point(380, 828);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(143, 37);
+            this.label8.Size = new System.Drawing.Size(120, 31);
             this.label8.TabIndex = 73;
             this.label8.Text = "PostNr : ";
             // 
             // TB_Test
             // 
-            this.TB_Test.Location = new System.Drawing.Point(690, 989);
-            this.TB_Test.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.TB_Test.Location = new System.Drawing.Point(613, 791);
+            this.TB_Test.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_Test.Name = "TB_Test";
-            this.TB_Test.Size = new System.Drawing.Size(444, 26);
+            this.TB_Test.Size = new System.Drawing.Size(395, 22);
             this.TB_Test.TabIndex = 72;
             // 
             // label9
@@ -203,18 +203,18 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.label9.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label9.Location = new System.Drawing.Point(428, 978);
+            this.label9.Location = new System.Drawing.Point(380, 782);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(156, 37);
+            this.label9.Size = new System.Drawing.Size(135, 31);
             this.label9.TabIndex = 71;
             this.label9.Text = "Synstest :";
             // 
             // TB_Age
             // 
-            this.TB_Age.Location = new System.Drawing.Point(690, 925);
-            this.TB_Age.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.TB_Age.Location = new System.Drawing.Point(613, 740);
+            this.TB_Age.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_Age.Name = "TB_Age";
-            this.TB_Age.Size = new System.Drawing.Size(444, 26);
+            this.TB_Age.Size = new System.Drawing.Size(395, 22);
             this.TB_Age.TabIndex = 70;
             // 
             // label10
@@ -222,18 +222,18 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.label10.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label10.Location = new System.Drawing.Point(428, 914);
+            this.label10.Location = new System.Drawing.Point(380, 731);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(119, 37);
+            this.label10.Size = new System.Drawing.Size(99, 31);
             this.label10.TabIndex = 69;
             this.label10.Text = "Alder : ";
             // 
             // TB_PostalCode
             // 
-            this.TB_PostalCode.Location = new System.Drawing.Point(690, 869);
-            this.TB_PostalCode.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.TB_PostalCode.Location = new System.Drawing.Point(613, 695);
+            this.TB_PostalCode.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_PostalCode.Name = "TB_PostalCode";
-            this.TB_PostalCode.Size = new System.Drawing.Size(444, 26);
+            this.TB_PostalCode.Size = new System.Drawing.Size(395, 22);
             this.TB_PostalCode.TabIndex = 68;
             // 
             // label7
@@ -241,9 +241,9 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.label7.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label7.Location = new System.Drawing.Point(428, 858);
+            this.label7.Location = new System.Drawing.Point(380, 686);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(143, 37);
+            this.label7.Size = new System.Drawing.Size(120, 31);
             this.label7.TabIndex = 67;
             this.label7.Text = "PostNr : ";
             // 
@@ -256,10 +256,10 @@
             this.BTN_SearchCustomer.BackColor = System.Drawing.Color.White;
             this.BTN_SearchCustomer.FlatAppearance.BorderSize = 0;
             this.BTN_SearchCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BTN_SearchCustomer.Location = new System.Drawing.Point(759, 95);
-            this.BTN_SearchCustomer.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.BTN_SearchCustomer.Location = new System.Drawing.Point(675, 76);
+            this.BTN_SearchCustomer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BTN_SearchCustomer.Name = "BTN_SearchCustomer";
-            this.BTN_SearchCustomer.Size = new System.Drawing.Size(122, 42);
+            this.BTN_SearchCustomer.Size = new System.Drawing.Size(108, 34);
             this.BTN_SearchCustomer.TabIndex = 119;
             this.BTN_SearchCustomer.Text = "Søg Kunde";
             this.BTN_SearchCustomer.UseVisualStyleBackColor = false;
@@ -267,18 +267,18 @@
             // 
             // TB_SearchEMailCustomer
             // 
-            this.TB_SearchEMailCustomer.Location = new System.Drawing.Point(544, 102);
-            this.TB_SearchEMailCustomer.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.TB_SearchEMailCustomer.Location = new System.Drawing.Point(484, 82);
+            this.TB_SearchEMailCustomer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_SearchEMailCustomer.Name = "TB_SearchEMailCustomer";
-            this.TB_SearchEMailCustomer.Size = new System.Drawing.Size(192, 26);
+            this.TB_SearchEMailCustomer.Size = new System.Drawing.Size(171, 22);
             this.TB_SearchEMailCustomer.TabIndex = 118;
             // 
             // TB_SearchTlfCustomer
             // 
-            this.TB_SearchTlfCustomer.Location = new System.Drawing.Point(192, 102);
-            this.TB_SearchTlfCustomer.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.TB_SearchTlfCustomer.Location = new System.Drawing.Point(171, 82);
+            this.TB_SearchTlfCustomer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_SearchTlfCustomer.Name = "TB_SearchTlfCustomer";
-            this.TB_SearchTlfCustomer.Size = new System.Drawing.Size(192, 26);
+            this.TB_SearchTlfCustomer.Size = new System.Drawing.Size(171, 22);
             this.TB_SearchTlfCustomer.TabIndex = 117;
             // 
             // label4
@@ -286,9 +286,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label4.Location = new System.Drawing.Point(392, 105);
+            this.label4.Location = new System.Drawing.Point(348, 84);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 25);
+            this.label4.Size = new System.Drawing.Size(119, 20);
             this.label4.TabIndex = 116;
             this.label4.Text = "Kunde E-Mail :";
             // 
@@ -297,9 +297,9 @@
             this.Label2.AutoSize = true;
             this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.Label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Label2.Location = new System.Drawing.Point(26, 105);
+            this.Label2.Location = new System.Drawing.Point(23, 84);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(147, 25);
+            this.Label2.Size = new System.Drawing.Size(123, 20);
             this.Label2.TabIndex = 115;
             this.Label2.Text = "Kunde Tlf +45 :";
             // 
@@ -307,22 +307,23 @@
             // 
             this.LL_UpdateProductForklaring.AutoSize = true;
             this.LL_UpdateProductForklaring.LinkColor = System.Drawing.Color.White;
-            this.LL_UpdateProductForklaring.Location = new System.Drawing.Point(40, 720);
+            this.LL_UpdateProductForklaring.Location = new System.Drawing.Point(36, 576);
             this.LL_UpdateProductForklaring.Name = "LL_UpdateProductForklaring";
-            this.LL_UpdateProductForklaring.Size = new System.Drawing.Size(79, 20);
+            this.LL_UpdateProductForklaring.Size = new System.Drawing.Size(67, 16);
             this.LL_UpdateProductForklaring.TabIndex = 185;
             this.LL_UpdateProductForklaring.TabStop = true;
             this.LL_UpdateProductForklaring.Text = "Forklaring";
+            this.LL_UpdateProductForklaring.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LL_UpdateProductForklaring_LinkClicked);
             // 
             // BTN_UpdateCustomer
             // 
             this.BTN_UpdateCustomer.BackColor = System.Drawing.Color.White;
             this.BTN_UpdateCustomer.FlatAppearance.BorderSize = 0;
             this.BTN_UpdateCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BTN_UpdateCustomer.Location = new System.Drawing.Point(735, 695);
-            this.BTN_UpdateCustomer.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.BTN_UpdateCustomer.Location = new System.Drawing.Point(653, 556);
+            this.BTN_UpdateCustomer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BTN_UpdateCustomer.Name = "BTN_UpdateCustomer";
-            this.BTN_UpdateCustomer.Size = new System.Drawing.Size(141, 45);
+            this.BTN_UpdateCustomer.Size = new System.Drawing.Size(125, 36);
             this.BTN_UpdateCustomer.TabIndex = 184;
             this.BTN_UpdateCustomer.Text = "Opdater Kunde";
             this.BTN_UpdateCustomer.UseVisualStyleBackColor = false;
@@ -330,66 +331,66 @@
             // 
             // TB_CustomerVisionTest
             // 
-            this.TB_CustomerVisionTest.Location = new System.Drawing.Point(243, 651);
-            this.TB_CustomerVisionTest.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.TB_CustomerVisionTest.Location = new System.Drawing.Point(216, 521);
+            this.TB_CustomerVisionTest.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_CustomerVisionTest.Name = "TB_CustomerVisionTest";
-            this.TB_CustomerVisionTest.Size = new System.Drawing.Size(634, 26);
+            this.TB_CustomerVisionTest.Size = new System.Drawing.Size(564, 22);
             this.TB_CustomerVisionTest.TabIndex = 180;
             // 
             // TB_CustomerAge
             // 
-            this.TB_CustomerAge.Location = new System.Drawing.Point(243, 626);
-            this.TB_CustomerAge.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.TB_CustomerAge.Location = new System.Drawing.Point(216, 501);
+            this.TB_CustomerAge.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_CustomerAge.Name = "TB_CustomerAge";
-            this.TB_CustomerAge.Size = new System.Drawing.Size(634, 26);
+            this.TB_CustomerAge.Size = new System.Drawing.Size(564, 22);
             this.TB_CustomerAge.TabIndex = 179;
             // 
             // TB_CustomerBirthday
             // 
-            this.TB_CustomerBirthday.Location = new System.Drawing.Point(243, 600);
-            this.TB_CustomerBirthday.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.TB_CustomerBirthday.Location = new System.Drawing.Point(216, 480);
+            this.TB_CustomerBirthday.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_CustomerBirthday.Name = "TB_CustomerBirthday";
-            this.TB_CustomerBirthday.Size = new System.Drawing.Size(634, 26);
+            this.TB_CustomerBirthday.Size = new System.Drawing.Size(564, 22);
             this.TB_CustomerBirthday.TabIndex = 178;
             // 
             // TB_CustomerDiscount
             // 
-            this.TB_CustomerDiscount.Location = new System.Drawing.Point(243, 574);
-            this.TB_CustomerDiscount.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.TB_CustomerDiscount.Location = new System.Drawing.Point(216, 459);
+            this.TB_CustomerDiscount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_CustomerDiscount.Name = "TB_CustomerDiscount";
-            this.TB_CustomerDiscount.Size = new System.Drawing.Size(634, 26);
+            this.TB_CustomerDiscount.Size = new System.Drawing.Size(564, 22);
             this.TB_CustomerDiscount.TabIndex = 177;
             // 
             // TB_CustomerPostalCode
             // 
-            this.TB_CustomerPostalCode.Location = new System.Drawing.Point(243, 548);
-            this.TB_CustomerPostalCode.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.TB_CustomerPostalCode.Location = new System.Drawing.Point(216, 438);
+            this.TB_CustomerPostalCode.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_CustomerPostalCode.Name = "TB_CustomerPostalCode";
-            this.TB_CustomerPostalCode.Size = new System.Drawing.Size(634, 26);
+            this.TB_CustomerPostalCode.Size = new System.Drawing.Size(564, 22);
             this.TB_CustomerPostalCode.TabIndex = 176;
             // 
             // TB_CustomerCity
             // 
-            this.TB_CustomerCity.Location = new System.Drawing.Point(243, 522);
-            this.TB_CustomerCity.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.TB_CustomerCity.Location = new System.Drawing.Point(216, 418);
+            this.TB_CustomerCity.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_CustomerCity.Name = "TB_CustomerCity";
-            this.TB_CustomerCity.Size = new System.Drawing.Size(634, 26);
+            this.TB_CustomerCity.Size = new System.Drawing.Size(564, 22);
             this.TB_CustomerCity.TabIndex = 175;
             // 
             // TB_CustomerAdress
             // 
-            this.TB_CustomerAdress.Location = new System.Drawing.Point(243, 495);
-            this.TB_CustomerAdress.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.TB_CustomerAdress.Location = new System.Drawing.Point(216, 396);
+            this.TB_CustomerAdress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_CustomerAdress.Name = "TB_CustomerAdress";
-            this.TB_CustomerAdress.Size = new System.Drawing.Size(634, 26);
+            this.TB_CustomerAdress.Size = new System.Drawing.Size(564, 22);
             this.TB_CustomerAdress.TabIndex = 174;
             // 
             // TB_CustomerEMailAdress
             // 
-            this.TB_CustomerEMailAdress.Location = new System.Drawing.Point(243, 469);
-            this.TB_CustomerEMailAdress.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.TB_CustomerEMailAdress.Location = new System.Drawing.Point(216, 375);
+            this.TB_CustomerEMailAdress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_CustomerEMailAdress.Name = "TB_CustomerEMailAdress";
-            this.TB_CustomerEMailAdress.Size = new System.Drawing.Size(634, 26);
+            this.TB_CustomerEMailAdress.Size = new System.Drawing.Size(564, 22);
             this.TB_CustomerEMailAdress.TabIndex = 173;
             // 
             // label5
@@ -397,9 +398,9 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label5.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label5.Location = new System.Drawing.Point(36, 651);
+            this.label5.Location = new System.Drawing.Point(32, 521);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(104, 25);
+            this.label5.Size = new System.Drawing.Size(89, 20);
             this.label5.TabIndex = 167;
             this.label5.Text = "Syns test :";
             // 
@@ -408,9 +409,9 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label14.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label14.Location = new System.Drawing.Point(33, 626);
+            this.label14.Location = new System.Drawing.Point(29, 501);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(69, 25);
+            this.label14.Size = new System.Drawing.Size(58, 20);
             this.label14.TabIndex = 166;
             this.label14.Text = "Alder :";
             // 
@@ -419,9 +420,9 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label13.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label13.Location = new System.Drawing.Point(36, 600);
+            this.label13.Location = new System.Drawing.Point(32, 480);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(130, 25);
+            this.label13.Size = new System.Drawing.Size(110, 20);
             this.label13.TabIndex = 165;
             this.label13.Text = "Fødselsdato :";
             // 
@@ -430,9 +431,9 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label12.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label12.Location = new System.Drawing.Point(36, 574);
+            this.label12.Location = new System.Drawing.Point(32, 459);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(99, 25);
+            this.label12.Size = new System.Drawing.Size(86, 20);
             this.label12.TabIndex = 164;
             this.label12.Text = "Discount :";
             // 
@@ -441,9 +442,9 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label17.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label17.Location = new System.Drawing.Point(36, 548);
+            this.label17.Location = new System.Drawing.Point(32, 438);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(77, 25);
+            this.label17.Size = new System.Drawing.Size(66, 20);
             this.label17.TabIndex = 163;
             this.label17.Text = "PostNr:";
             // 
@@ -452,9 +453,9 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label18.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label18.Location = new System.Drawing.Point(33, 649);
+            this.label18.Location = new System.Drawing.Point(29, 519);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(0, 25);
+            this.label18.Size = new System.Drawing.Size(0, 20);
             this.label18.TabIndex = 162;
             // 
             // label19
@@ -462,9 +463,9 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label19.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label19.Location = new System.Drawing.Point(36, 522);
+            this.label19.Location = new System.Drawing.Point(32, 418);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(46, 25);
+            this.label19.Size = new System.Drawing.Size(39, 20);
             this.label19.TabIndex = 161;
             this.label19.Text = "By :";
             // 
@@ -473,10 +474,10 @@
             this.BTN_DeleteCustomer.BackColor = System.Drawing.Color.White;
             this.BTN_DeleteCustomer.FlatAppearance.BorderSize = 0;
             this.BTN_DeleteCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BTN_DeleteCustomer.Location = new System.Drawing.Point(609, 694);
-            this.BTN_DeleteCustomer.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.BTN_DeleteCustomer.Location = new System.Drawing.Point(541, 555);
+            this.BTN_DeleteCustomer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BTN_DeleteCustomer.Name = "BTN_DeleteCustomer";
-            this.BTN_DeleteCustomer.Size = new System.Drawing.Size(122, 46);
+            this.BTN_DeleteCustomer.Size = new System.Drawing.Size(108, 37);
             this.BTN_DeleteCustomer.TabIndex = 160;
             this.BTN_DeleteCustomer.Text = "Slet Kunde";
             this.BTN_DeleteCustomer.UseVisualStyleBackColor = false;
@@ -488,18 +489,18 @@
             // 
             // TB_CustomerPhoneNr
             // 
-            this.TB_CustomerPhoneNr.Location = new System.Drawing.Point(243, 442);
-            this.TB_CustomerPhoneNr.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.TB_CustomerPhoneNr.Location = new System.Drawing.Point(216, 354);
+            this.TB_CustomerPhoneNr.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_CustomerPhoneNr.Name = "TB_CustomerPhoneNr";
-            this.TB_CustomerPhoneNr.Size = new System.Drawing.Size(634, 26);
+            this.TB_CustomerPhoneNr.Size = new System.Drawing.Size(564, 22);
             this.TB_CustomerPhoneNr.TabIndex = 172;
             // 
             // TB_CustomerFirstName
             // 
-            this.TB_CustomerFirstName.Location = new System.Drawing.Point(243, 415);
-            this.TB_CustomerFirstName.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.TB_CustomerFirstName.Location = new System.Drawing.Point(216, 332);
+            this.TB_CustomerFirstName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_CustomerFirstName.Name = "TB_CustomerFirstName";
-            this.TB_CustomerFirstName.Size = new System.Drawing.Size(634, 26);
+            this.TB_CustomerFirstName.Size = new System.Drawing.Size(564, 22);
             this.TB_CustomerFirstName.TabIndex = 171;
             // 
             // label20
@@ -507,9 +508,9 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label20.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label20.Location = new System.Drawing.Point(36, 442);
+            this.label20.Location = new System.Drawing.Point(32, 354);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(84, 25);
+            this.label20.Size = new System.Drawing.Size(71, 20);
             this.label20.TabIndex = 159;
             this.label20.Text = "Tlf + 45:";
             // 
@@ -518,9 +519,9 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label21.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label21.Location = new System.Drawing.Point(36, 469);
+            this.label21.Location = new System.Drawing.Point(32, 375);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(79, 25);
+            this.label21.Size = new System.Drawing.Size(67, 20);
             this.label21.TabIndex = 158;
             this.label21.Text = "E-Mail :";
             // 
@@ -529,9 +530,9 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label22.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label22.Location = new System.Drawing.Point(33, 415);
+            this.label22.Location = new System.Drawing.Point(29, 332);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(158, 25);
+            this.label22.Size = new System.Drawing.Size(131, 20);
             this.label22.TabIndex = 157;
             this.label22.Text = "Kunde Fornavn :";
             // 
@@ -690,18 +691,18 @@
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label23.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label23.Location = new System.Drawing.Point(36, 495);
+            this.label23.Location = new System.Drawing.Point(32, 396);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(96, 25);
+            this.label23.Size = new System.Drawing.Size(81, 20);
             this.label23.TabIndex = 156;
             this.label23.Text = "Adresse :";
             // 
             // OpdaterKunde
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(914, 789);
+            this.ClientSize = new System.Drawing.Size(812, 631);
             this.Controls.Add(this.LL_UpdateProductForklaring);
             this.Controls.Add(this.BTN_UpdateCustomer);
             this.Controls.Add(this.TB_CustomerVisionTest);
@@ -743,7 +744,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.DGV_Customer);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "OpdaterKunde";
             this.Text = "OpdaterKunde";
             this.panel1.ResumeLayout(false);
