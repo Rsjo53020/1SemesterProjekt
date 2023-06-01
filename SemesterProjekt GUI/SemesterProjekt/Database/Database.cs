@@ -426,13 +426,12 @@ namespace SemesterProjekt.Database
             string sSQL = $"UPDATE Product SET SalesPrice = {product.SalesPrice}," +
                 $" NameProduct = '{product.NameProduct}', Discription = '{product.Description}'," +
                 $" Kategory = '{product.Kategory}', PurchasePrice = {product.PurchasePrice}," +
-                $" VATSup = {product.VATSup}, EAN = {product.EAN}, Gender = '{product.Gender}'," +
-                $" Age = {product.Age}, Length = {product.Length}, Width = {product.Width}," +
+                $" VATSup = {product.VATSup}, Gender = '{product.Gender}'," +
+                $" Age = {product.Age}, Lenght = {product.Length}, Width = {product.Width}," +
                 $" Kind = '{product.Kind}', UsedFor = '{product.UsedFor}', Style = '{product.Style}'," +
                 $" Color = '{product.Color}' WHERE EAN = {product.EAN}";
 
             ConnectionToDatabase(sSQL);
-
         }
     }
 

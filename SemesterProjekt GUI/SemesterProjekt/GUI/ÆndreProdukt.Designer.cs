@@ -63,7 +63,7 @@
             this.TB_UpdatedVATSup = new System.Windows.Forms.TextBox();
             this.TB_UpdatedGender = new System.Windows.Forms.TextBox();
             this.TB_UpdatedAge = new System.Windows.Forms.TextBox();
-            this.TB_UpdatedLenght = new System.Windows.Forms.TextBox();
+            this.TB_UpdatedLength = new System.Windows.Forms.TextBox();
             this.TB_UpdatedWidth = new System.Windows.Forms.TextBox();
             this.TB_UpdatedKind = new System.Windows.Forms.TextBox();
             this.TB_UpdatedStyle = new System.Windows.Forms.TextBox();
@@ -425,13 +425,13 @@
             this.TB_UpdatedAge.Size = new System.Drawing.Size(516, 22);
             this.TB_UpdatedAge.TabIndex = 147;
             // 
-            // TB_UpdatedLenght
+            // TB_UpdatedLength
             // 
-            this.TB_UpdatedLenght.Location = new System.Drawing.Point(225, 505);
-            this.TB_UpdatedLenght.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.TB_UpdatedLenght.Name = "TB_UpdatedLenght";
-            this.TB_UpdatedLenght.Size = new System.Drawing.Size(516, 22);
-            this.TB_UpdatedLenght.TabIndex = 148;
+            this.TB_UpdatedLength.Location = new System.Drawing.Point(225, 505);
+            this.TB_UpdatedLength.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.TB_UpdatedLength.Name = "TB_UpdatedLength";
+            this.TB_UpdatedLength.Size = new System.Drawing.Size(516, 22);
+            this.TB_UpdatedLength.TabIndex = 148;
             // 
             // TB_UpdatedWidth
             // 
@@ -548,7 +548,7 @@
             this.Controls.Add(this.TB_UpdatedStyle);
             this.Controls.Add(this.TB_UpdatedKind);
             this.Controls.Add(this.TB_UpdatedWidth);
-            this.Controls.Add(this.TB_UpdatedLenght);
+            this.Controls.Add(this.TB_UpdatedLength);
             this.Controls.Add(this.TB_UpdatedAge);
             this.Controls.Add(this.TB_UpdatedGender);
             this.Controls.Add(this.TB_UpdatedVATSup);
@@ -632,7 +632,7 @@
         private System.Windows.Forms.TextBox TB_UpdatedVATSup;
         private System.Windows.Forms.TextBox TB_UpdatedGender;
         private System.Windows.Forms.TextBox TB_UpdatedAge;
-        private System.Windows.Forms.TextBox TB_UpdatedLenght;
+        private System.Windows.Forms.TextBox TB_UpdatedLength;
         private System.Windows.Forms.TextBox TB_UpdatedWidth;
         private System.Windows.Forms.TextBox TB_UpdatedKind;
         private System.Windows.Forms.TextBox TB_UpdatedStyle;

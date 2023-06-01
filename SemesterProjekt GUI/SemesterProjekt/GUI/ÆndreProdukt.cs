@@ -35,7 +35,7 @@ namespace SemesterProjekt.GUI
             TB_PurchasePrice.Text = Product.PurchasePrice.ToString();
             TB_UpdatedVATSup.Text = Product.VATSup.ToString();
             TB_UpdatedAge.Text = Product.Age.ToString();
-            TB_UpdatedLenght.Text = Product.Length.ToString();
+            TB_UpdatedLength.Text = Product.Length.ToString();
             TB_UpdatedWidth.Text = Product.Width.ToString();
             TB_UpdatedColor.Text = Product.Color;
             TB_UpdatedUsedFor.Text = Product.UsedFor;
@@ -97,7 +97,7 @@ namespace SemesterProjekt.GUI
                 Product.VATSup = int.Parse(TB_UpdatedVATSup.Text);
                 Product.Gender = TB_UpdatedGender.Text;
                 Product.Age = int.Parse(TB_UpdatedAge.Text);
-                Product.Length = TrimStringAfterDot(TB_UpdatedLenght.Text);
+                Product.Length = TrimStringAfterDot(TB_UpdatedLength.Text);
                 Product.Width = TrimStringAfterDot(TB_UpdatedWidth.Text);
                 Product.Kind = TB_UpdatedKind.Text;
                 Product.Style = TB_UpdatedStyle.Text;
