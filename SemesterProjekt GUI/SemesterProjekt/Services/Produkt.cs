@@ -69,7 +69,7 @@ namespace SemesterProjekt.Services
             {
                 writer.WriteLine("Lager status i sorteret rækkefølge");
                 writer.WriteLine();
-                writer.WriteLine("EAN            Navn                     Indkøbspris          Salgspris");
+                writer.WriteLine("EAN                  Navn                     Indkøbspris          Salgspris");
                 writer.WriteLine();
 
                 foreach (Models.Product product in stockList)
