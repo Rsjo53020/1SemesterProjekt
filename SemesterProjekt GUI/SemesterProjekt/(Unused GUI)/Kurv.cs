@@ -20,8 +20,9 @@ namespace SemesterProjekt.GUI
 
         private void LL_Forklaring_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+
             // Path to file
-            string filePath = @"C:\SemesterProjekt GUI/Kurv.pdf";
+            string filePath = "Kurv.pdf";
 
             // Open file with with standard program
             Process.Start(filePath);

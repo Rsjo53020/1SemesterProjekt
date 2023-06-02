@@ -57,6 +57,7 @@
             this.PANEL_FindOrder = new System.Windows.Forms.Panel();
             this.LB_ShowProduct = new System.Windows.Forms.Label();
             this.productTableAdapter = new SemesterProjekt.ProductTableTableAdapters.ProductTableAdapter();
+            this.LL_Forklaring = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_DeleteSelectProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productTableBindingSource)).BeginInit();
@@ -87,12 +88,12 @@
             this.usedForDataGridViewTextBoxColumn});
             this.DGV_DeleteSelectProduct.DataSource = this.productBindingSource;
             this.DGV_DeleteSelectProduct.GridColor = System.Drawing.SystemColors.ButtonFace;
-            this.DGV_DeleteSelectProduct.Location = new System.Drawing.Point(0, 377);
+            this.DGV_DeleteSelectProduct.Location = new System.Drawing.Point(0, 471);
             this.DGV_DeleteSelectProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DGV_DeleteSelectProduct.Name = "DGV_DeleteSelectProduct";
             this.DGV_DeleteSelectProduct.RowHeadersWidth = 82;
             this.DGV_DeleteSelectProduct.RowTemplate.Height = 33;
-            this.DGV_DeleteSelectProduct.Size = new System.Drawing.Size(869, 263);
+            this.DGV_DeleteSelectProduct.Size = new System.Drawing.Size(978, 329);
             this.DGV_DeleteSelectProduct.TabIndex = 119;
             // 
             // salesPriceDataGridViewTextBoxColumn
@@ -235,10 +236,10 @@
             // 
             this.BTN_DeleteProduct.BackColor = System.Drawing.Color.White;
             this.BTN_DeleteProduct.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BTN_DeleteProduct.Location = new System.Drawing.Point(404, 262);
+            this.BTN_DeleteProduct.Location = new System.Drawing.Point(454, 328);
             this.BTN_DeleteProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BTN_DeleteProduct.Name = "BTN_DeleteProduct";
-            this.BTN_DeleteProduct.Size = new System.Drawing.Size(217, 86);
+            this.BTN_DeleteProduct.Size = new System.Drawing.Size(244, 108);
             this.BTN_DeleteProduct.TabIndex = 118;
             this.BTN_DeleteProduct.Text = "Slet Produkt";
             this.BTN_DeleteProduct.UseVisualStyleBackColor = false;
@@ -247,10 +248,10 @@
             // 
             this.BTN_DeleteFindProdukt.BackColor = System.Drawing.Color.White;
             this.BTN_DeleteFindProdukt.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BTN_DeleteFindProdukt.Location = new System.Drawing.Point(625, 262);
+            this.BTN_DeleteFindProdukt.Location = new System.Drawing.Point(703, 328);
             this.BTN_DeleteFindProdukt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BTN_DeleteFindProdukt.Name = "BTN_DeleteFindProdukt";
-            this.BTN_DeleteFindProdukt.Size = new System.Drawing.Size(217, 86);
+            this.BTN_DeleteFindProdukt.Size = new System.Drawing.Size(244, 108);
             this.BTN_DeleteFindProdukt.TabIndex = 117;
             this.BTN_DeleteFindProdukt.Text = "Vis Produkt";
             this.BTN_DeleteFindProdukt.UseVisualStyleBackColor = false;
@@ -258,19 +259,19 @@
             // TB_DeleteFindKategory
             // 
             this.TB_DeleteFindKategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.TB_DeleteFindKategory.Location = new System.Drawing.Point(403, 194);
+            this.TB_DeleteFindKategory.Location = new System.Drawing.Point(453, 242);
             this.TB_DeleteFindKategory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TB_DeleteFindKategory.Name = "TB_DeleteFindKategory";
-            this.TB_DeleteFindKategory.Size = new System.Drawing.Size(389, 37);
+            this.TB_DeleteFindKategory.Size = new System.Drawing.Size(437, 43);
             this.TB_DeleteFindKategory.TabIndex = 116;
             // 
             // TB_DeleteFindProductName
             // 
             this.TB_DeleteFindProductName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.TB_DeleteFindProductName.Location = new System.Drawing.Point(403, 118);
+            this.TB_DeleteFindProductName.Location = new System.Drawing.Point(453, 148);
             this.TB_DeleteFindProductName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TB_DeleteFindProductName.Name = "TB_DeleteFindProductName";
-            this.TB_DeleteFindProductName.Size = new System.Drawing.Size(389, 37);
+            this.TB_DeleteFindProductName.Size = new System.Drawing.Size(437, 43);
             this.TB_DeleteFindProductName.TabIndex = 115;
             // 
             // label4
@@ -278,9 +279,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.label4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label4.Location = new System.Drawing.Point(35, 198);
+            this.label4.Location = new System.Drawing.Point(39, 248);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 31);
+            this.label4.Size = new System.Drawing.Size(145, 37);
             this.label4.TabIndex = 114;
             this.label4.Text = "Kategori:";
             // 
@@ -289,9 +290,9 @@
             this.Label2.AutoSize = true;
             this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.Label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Label2.Location = new System.Drawing.Point(35, 123);
+            this.Label2.Location = new System.Drawing.Point(39, 154);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(182, 31);
+            this.Label2.Size = new System.Drawing.Size(215, 37);
             this.Label2.TabIndex = 113;
             this.Label2.Text = "Produkt navn:";
             // 
@@ -303,7 +304,7 @@
             this.PANEL_FindOrder.Location = new System.Drawing.Point(0, 0);
             this.PANEL_FindOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PANEL_FindOrder.Name = "PANEL_FindOrder";
-            this.PANEL_FindOrder.Size = new System.Drawing.Size(869, 94);
+            this.PANEL_FindOrder.Size = new System.Drawing.Size(978, 118);
             this.PANEL_FindOrder.TabIndex = 112;
             // 
             // LB_ShowProduct
@@ -311,9 +312,9 @@
             this.LB_ShowProduct.AutoSize = true;
             this.LB_ShowProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.LB_ShowProduct.ForeColor = System.Drawing.Color.Gainsboro;
-            this.LB_ShowProduct.Location = new System.Drawing.Point(397, 39);
+            this.LB_ShowProduct.Location = new System.Drawing.Point(447, 49);
             this.LB_ShowProduct.Name = "LB_ShowProduct";
-            this.LB_ShowProduct.Size = new System.Drawing.Size(235, 31);
+            this.LB_ShowProduct.Size = new System.Drawing.Size(273, 37);
             this.LB_ShowProduct.TabIndex = 16;
             this.LB_ShowProduct.Text = "SLET PRODUKT";
             // 
@@ -321,12 +322,25 @@
             // 
             this.productTableAdapter.ClearBeforeFill = true;
             // 
+            // LL_Forklaring
+            // 
+            this.LL_Forklaring.AutoSize = true;
+            this.LL_Forklaring.LinkColor = System.Drawing.Color.White;
+            this.LL_Forklaring.Location = new System.Drawing.Point(46, 415);
+            this.LL_Forklaring.Name = "LL_Forklaring";
+            this.LL_Forklaring.Size = new System.Drawing.Size(79, 20);
+            this.LL_Forklaring.TabIndex = 120;
+            this.LL_Forklaring.TabStop = true;
+            this.LL_Forklaring.Text = "Forklaring";
+            this.LL_Forklaring.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LL_Forklaring_LinkClicked);
+            // 
             // SletProdukt
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(869, 634);
+            this.ClientSize = new System.Drawing.Size(978, 792);
+            this.Controls.Add(this.LL_Forklaring);
             this.Controls.Add(this.DGV_DeleteSelectProduct);
             this.Controls.Add(this.BTN_DeleteProduct);
             this.Controls.Add(this.BTN_DeleteFindProdukt);
@@ -378,5 +392,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn styleDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn colorDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn usedForDataGridViewTextBoxColumn;
+        private System.Windows.Forms.LinkLabel LL_Forklaring;
     }
 }

@@ -53,6 +53,7 @@
             this.customerTable = new SemesterProjekt.CustomerTable();
             this.BTN_SearchCustomer = new System.Windows.Forms.Button();
             this.customerTableAdapter = new SemesterProjekt.CustomerTableTableAdapters.CustomerTableAdapter();
+            this.LL_Forklaring = new System.Windows.Forms.LinkLabel();
             this.PANEL_FindOrder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Customers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
@@ -67,7 +68,7 @@
             this.PANEL_FindOrder.Location = new System.Drawing.Point(0, 0);
             this.PANEL_FindOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PANEL_FindOrder.Name = "PANEL_FindOrder";
-            this.PANEL_FindOrder.Size = new System.Drawing.Size(1067, 76);
+            this.PANEL_FindOrder.Size = new System.Drawing.Size(1200, 95);
             this.PANEL_FindOrder.TabIndex = 91;
             // 
             // Label1
@@ -75,18 +76,18 @@
             this.Label1.AutoSize = true;
             this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.Label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Label1.Location = new System.Drawing.Point(444, 25);
+            this.Label1.Location = new System.Drawing.Point(500, 31);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(156, 31);
+            this.Label1.Size = new System.Drawing.Size(184, 37);
             this.Label1.TabIndex = 16;
             this.Label1.Text = "Søg Kunde";
             // 
             // TB_SearchEMailAdress
             // 
-            this.TB_SearchEMailAdress.Location = new System.Drawing.Point(315, 139);
+            this.TB_SearchEMailAdress.Location = new System.Drawing.Point(354, 174);
             this.TB_SearchEMailAdress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TB_SearchEMailAdress.Name = "TB_SearchEMailAdress";
-            this.TB_SearchEMailAdress.Size = new System.Drawing.Size(393, 22);
+            this.TB_SearchEMailAdress.Size = new System.Drawing.Size(442, 26);
             this.TB_SearchEMailAdress.TabIndex = 95;
             // 
             // label4
@@ -94,18 +95,18 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.label4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label4.Location = new System.Drawing.Point(83, 130);
+            this.label4.Location = new System.Drawing.Point(93, 162);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 31);
+            this.label4.Size = new System.Drawing.Size(124, 37);
             this.label4.TabIndex = 94;
             this.label4.Text = "E-Mail :";
             // 
             // TB_SearchPhoneNr
             // 
-            this.TB_SearchPhoneNr.Location = new System.Drawing.Point(315, 98);
+            this.TB_SearchPhoneNr.Location = new System.Drawing.Point(354, 122);
             this.TB_SearchPhoneNr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TB_SearchPhoneNr.Name = "TB_SearchPhoneNr";
-            this.TB_SearchPhoneNr.Size = new System.Drawing.Size(393, 22);
+            this.TB_SearchPhoneNr.Size = new System.Drawing.Size(442, 26);
             this.TB_SearchPhoneNr.TabIndex = 93;
             // 
             // label3
@@ -113,9 +114,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.label3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label3.Location = new System.Drawing.Point(83, 90);
+            this.label3.Location = new System.Drawing.Point(93, 112);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 31);
+            this.label3.Size = new System.Drawing.Size(135, 37);
             this.label3.TabIndex = 92;
             this.label3.Text = "Tlf +45 :";
             // 
@@ -143,11 +144,11 @@
             this.orderIDDataGridViewTextBoxColumn,
             this.customerIDDataGridViewTextBoxColumn});
             this.DGV_Customers.DataSource = this.customerBindingSource;
-            this.DGV_Customers.Location = new System.Drawing.Point(0, 196);
-            this.DGV_Customers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DGV_Customers.Location = new System.Drawing.Point(0, 245);
+            this.DGV_Customers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.DGV_Customers.Name = "DGV_Customers";
             this.DGV_Customers.RowHeadersWidth = 62;
-            this.DGV_Customers.Size = new System.Drawing.Size(1067, 357);
+            this.DGV_Customers.Size = new System.Drawing.Size(1200, 446);
             this.DGV_Customers.TabIndex = 96;
             // 
             // firstNameDataGridViewTextBoxColumn
@@ -269,10 +270,10 @@
             // 
             this.BTN_SearchCustomer.BackColor = System.Drawing.Color.White;
             this.BTN_SearchCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTN_SearchCustomer.Location = new System.Drawing.Point(731, 106);
-            this.BTN_SearchCustomer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTN_SearchCustomer.Location = new System.Drawing.Point(822, 132);
+            this.BTN_SearchCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BTN_SearchCustomer.Name = "BTN_SearchCustomer";
-            this.BTN_SearchCustomer.Size = new System.Drawing.Size(160, 58);
+            this.BTN_SearchCustomer.Size = new System.Drawing.Size(180, 72);
             this.BTN_SearchCustomer.TabIndex = 97;
             this.BTN_SearchCustomer.Text = "Søg ";
             this.BTN_SearchCustomer.UseVisualStyleBackColor = false;
@@ -281,12 +282,25 @@
             // 
             this.customerTableAdapter.ClearBeforeFill = true;
             // 
+            // LL_Forklaring
+            // 
+            this.LL_Forklaring.AutoSize = true;
+            this.LL_Forklaring.LinkColor = System.Drawing.Color.White;
+            this.LL_Forklaring.Location = new System.Drawing.Point(1079, 184);
+            this.LL_Forklaring.Name = "LL_Forklaring";
+            this.LL_Forklaring.Size = new System.Drawing.Size(79, 20);
+            this.LL_Forklaring.TabIndex = 121;
+            this.LL_Forklaring.TabStop = true;
+            this.LL_Forklaring.Text = "Forklaring";
+            this.LL_Forklaring.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LL_Forklaring_LinkClicked);
+            // 
             // SøgKunde
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.Controls.Add(this.LL_Forklaring);
             this.Controls.Add(this.BTN_SearchCustomer);
             this.Controls.Add(this.DGV_Customers);
             this.Controls.Add(this.TB_SearchEMailAdress);
@@ -294,7 +308,7 @@
             this.Controls.Add(this.TB_SearchPhoneNr);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.PANEL_FindOrder);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "SøgKunde";
             this.Text = "SøgKunde";
             this.PANEL_FindOrder.ResumeLayout(false);
@@ -333,5 +347,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn visionTestDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn orderIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn customerIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.LinkLabel LL_Forklaring;
     }
 }
