@@ -77,6 +77,7 @@
             this.productBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.frameBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.frameBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.LL_TilKurv = new System.Windows.Forms.LinkLabel();
             this.PANEL_FindOrder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Product)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
@@ -124,6 +125,7 @@
             // PANEL_FindOrder
             // 
             this.PANEL_FindOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.PANEL_FindOrder.Controls.Add(this.LL_TilKurv);
             this.PANEL_FindOrder.Controls.Add(this.LB_ShowProduct);
             this.PANEL_FindOrder.Dock = System.Windows.Forms.DockStyle.Top;
             this.PANEL_FindOrder.Location = new System.Drawing.Point(0, 0);
@@ -534,6 +536,18 @@
             // 
             this.frameBindingSource.DataSource = typeof(SemesterProjekt.Models.Frame);
             // 
+            // LL_TilKurv
+            // 
+            this.LL_TilKurv.AutoSize = true;
+            this.LL_TilKurv.LinkColor = System.Drawing.Color.White;
+            this.LL_TilKurv.Location = new System.Drawing.Point(754, 34);
+            this.LL_TilKurv.Name = "LL_TilKurv";
+            this.LL_TilKurv.Size = new System.Drawing.Size(59, 20);
+            this.LL_TilKurv.TabIndex = 158;
+            this.LL_TilKurv.TabStop = true;
+            this.LL_TilKurv.Text = "Til Kurv";
+            this.LL_TilKurv.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LL_TilKurv_LinkClicked);
+            // 
             // ÆndreProdukt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -647,5 +661,6 @@
         private System.Windows.Forms.BindingSource frameBindingSource1;
         private System.Windows.Forms.BindingSource productBindingSource1;
         private System.Windows.Forms.BindingSource productBindingSource2;
+        private System.Windows.Forms.LinkLabel LL_TilKurv;
     }
 }

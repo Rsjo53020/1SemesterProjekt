@@ -104,8 +104,8 @@ namespace SemesterProjekt
         /// </summary>
         private void Btn_ViewProduct_Click(object sender, EventArgs e)
         {
-            panelFormsLoader.Visible = true;
-            openFormsLoader(new VisProdukt());
+            //panelFormsLoader.Visible = true;
+            //openFormsLoader(new VisProdukt());
         }
 
         /// <summary>
@@ -113,8 +113,8 @@ namespace SemesterProjekt
         /// </summary>
         private void Btn_DeleteProduct_Click(object sender, EventArgs e)
         {
-            panelFormsLoader.Visible = true;
-            openFormsLoader(new SletProdukt());
+            //    panelFormsLoader.Visible = true;
+            //    openFormsLoader(new SletProdukt());
         }
 
         /// <summary>
@@ -140,8 +140,8 @@ namespace SemesterProjekt
         /// </summary>
         private void Btn_ViewCustomer_Click(object sender, EventArgs e)
         {
-            panelFormsLoader.Visible = true;
-            openFormsLoader(new SøgKunde());
+            //panelFormsLoader.Visible = true;
+            //openFormsLoader(new SøgKunde());
         }
 
         /// <summary>

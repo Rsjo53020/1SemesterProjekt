@@ -133,5 +133,11 @@ namespace SemesterProjekt.GUI
         {
 
         }
+
+        private void LL_TilKurv_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Kurv kurv = new Kurv();
+            kurv.Show();
+        }
     }
 }

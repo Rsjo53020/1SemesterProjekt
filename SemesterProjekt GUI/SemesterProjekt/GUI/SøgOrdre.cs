@@ -62,5 +62,11 @@ namespace SemesterProjekt.GUI
             FundetOrdre.Show();
             this.Hide();
         }
+
+        private void LL_TilFundetOrdre_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FundetOrdre fundetOrdre = new FundetOrdre();
+            fundetOrdre.Show();
+        }
     }
 }
